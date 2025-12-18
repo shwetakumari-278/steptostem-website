@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    cursor: url('/asset/cursor.png') 8 8, auto;
+  }
+  
+  * {
+    cursor: url('/asset/cursor.png') 8 8, auto;
+  }
+  
+  /* Additional cursor rules for better compatibility */
+  html {
+    cursor: url('/asset/cursor.png') 8 8, auto;
+  }
+  
+  div, span, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
+    cursor: url('/asset/cursor.png') 8 8, auto;
+  }
+  
+  /* Force cursor on all elements */
+  *:not(input):not(textarea):not(select) {
+    cursor: url('/asset/cursor.png') 8 8, auto !important;
+  }
+  
+  /* Override any conflicting cursor styles */
+  * {
+    cursor: url('/asset/cursor.png') 8 8, auto !important;
+  }
+  
+  /* Specific elements that might override cursor */
+  button, a, div, span, p, h1, h2, h3, h4, h5, h6 {
+    cursor: url('/asset/cursor.png') 8 8, auto !important;
+  }
+  
+  /* Cursor transparency when mouse is pressed and held */
+  *:active {
+    cursor: url('/asset/cursor-transparent.png') 8 8, auto !important;
+  }
+  
+  /* Alternative approach using focus-within for better button press detection */
+  button:active, a:active, div:active {
+    cursor: url('/asset/cursor-transparent.png') 8 8, auto !important;
+  }
+  
+  /* Ensure cursor stays transparent while pressed */
+  *:active, *:focus:active {
+    cursor: url('/asset/cursor-transparent.png') 8 8, auto !important;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+  
+  .button-primary {
+    @apply bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .button-secondary {
+    @apply bg-gradient-to-r from-secondary-600 to-secondary-700 hover:from-secondary-700 hover:to-secondary-800 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #0ea5e9, #d946ef);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0284c7, #c026d3);
+}

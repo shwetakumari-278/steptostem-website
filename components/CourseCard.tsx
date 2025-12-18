@@ -1,0 +1,131 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowRight, Play, Users, Clock, Star } from "lucide-react";
+import { StaticImageData } from "next/image";
+
+interface Course {
+  id: string;
+  title: string;
+  description: string;
+  icon: any;
+  color: string;
+  bgColor: string;
+  image: string | StaticImageData;
+  features: string[];
+}
+
+interface CourseCardProps {
+  course: Course;
+}
+
+export default function CourseCard({ course }: CourseCardProps) {
+  const IconComponent = course.icon;
+
+  return (
+    <motion.div
+      whileHover={{ y: -10 }}
+      className={`relative group cursor-pointer ${course.bgColor} rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden`}
+    >
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className={`w-full h-full bg-gradient-to-br ${course.color}`} />
+      </div>
+
+      {/* Course Icon */}
+      <motion.div
+        whileHover={{ rotate: 360, scale: 1.1 }}
+        transition={{ duration: 0.6 }}
+        className={`relative z-10 w-16 h-16 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center mb-6 shadow-lg`}
+      >
+        <IconComponent className="w-8 h-8 text-white" />
+      </motion.div>
+
+      {/* Course Image */}
+      <div className="relative mb-6 overflow-hidden rounded-xl">
+        <motion.img
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.6 }}
+          src={
+            typeof course.image === "string" ? course.image : course.image.src
+          }
+          alt={course.title}
+          className="w-full h-32 object-cover"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.style.display = "none";
+          }}
+        />
+        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          className="absolute top-3 right-3 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center shadow-lg"
+        >
+          <Play className="w-5 h-5 text-gray-700" />
+        </motion.div>
+      </div>
+
+      {/* Course Content */}
+      <div className="relative z-10">
+        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors duration-300">
+          {course.title}
+        </h3>
+
+        <p className="text-gray-600 mb-4 leading-relaxed">
+          {course.description}
+        </p>
+
+        {/* Course Features */}
+        <div className="space-y-2 mb-6">
+          {course.features.slice(0, 3).map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="flex items-center space-x-2"
+            >
+              <div
+                className={`w-2 h-2 rounded-full bg-gradient-to-r ${course.color}`}
+              />
+              <span className="text-sm text-gray-600">{feature}</span>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Course Stats */}
+        <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
+          <div className="flex items-center space-x-1">
+            <Users className="w-4 h-4" />
+            <span>500+ students</span>
+          </div>
+          <div className="flex items-center space-x-1">
+            <Clock className="w-4 h-4" />
+            <span>12 weeks</span>
+          </div>
+          <div className="flex items-center space-x-1">
+            <Star className="w-4 h-4 text-yellow-500 fill-current" />
+            <span>4.9</span>
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={`w-full bg-gradient-to-r ${course.color} text-white py-3 px-4 rounded-xl font-semibold flex items-center justify-center space-x-2 group-hover:shadow-lg transition-all duration-300`}
+        >
+          <span>Learn More</span>
+          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+        </motion.button>
+      </div>
+
+      {/* Hover Effect Overlay */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileHover={{ opacity: 1 }}
+        className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      />
+    </motion.div>
+  );
+}
