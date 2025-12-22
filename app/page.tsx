@@ -27,6 +27,7 @@ import FeatureCard from "@/components/FeatureCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import ChatButton from "@/components/ChatButton";
 import BackgroundAnimation from "@/components/BackgroundAnimation";
+import ContactBlock from "@/components/components/ContactBlock";
 
 export default function Home() {
   const [activeCourse, setActiveCourse] = useState<string | null>(null);
@@ -999,6 +1000,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      {/* Contact Section */}
+      <ContactBlock />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
@@ -1041,7 +1044,7 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>info@steptostem.com</li>
+                <li>ekjotnanda9@gmail.com</li>
                 <li>+91 82890 04978</li>
                 <li>Mon-Fri: 9AM-6PM</li>
               </ul>
