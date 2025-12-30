@@ -435,8 +435,7 @@ export default function Home() {
                 Build intelligent chatbots and AI assistants with GPT technology
               </p>
             </motion.div>
-
-            {/* Robotics Projects */}
+            {/* AI Content & Creativity */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -448,18 +447,21 @@ export default function Home() {
                 <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6 }}
-                  src="/asset/undefined_generate_for_robotic.png"
-                  alt="Robotics Project"
+                  src="/asset/ai_creativity_students.jpg"
+                  alt="AI Content & Creativity"
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-bold text-lg">Robotics Projects</h3>
-                  <p className="text-sm opacity-90">AI + Hardware</p>
+                  <h3 className="font-bold text-lg">AI Content & Creativity</h3>
+                  <p className="text-sm opacity-90">
+                    Images • Posters • Stories
+                  </p>
                 </div>
               </div>
               <p className="text-gray-600 text-center">
-                Combine AI with physical robotics for innovative solutions
+                Create images, posters, stories, and presentations using
+                powerful AI tools
               </p>
             </motion.div>
           </div>
