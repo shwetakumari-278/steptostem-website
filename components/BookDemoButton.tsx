@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-
 export default function BookDemoButton({
   course,
   variant = "floating",
@@ -42,13 +41,20 @@ export default function BookDemoButton({
         <button
           onClick={() => setOpen(true)}
           className="fixed bottom-6 right-24 z-40
-      bg-white/90 backdrop-blur-md
-      border border-purple-200
-      text-purple-700 px-5 py-3 rounded-full
-      shadow-lg font-semibold text-sm
-      hover:scale-105 transition-all"
+            bg-white/90 backdrop-blur-md
+            border border-purple-300
+            text-purple-700 px-5 py-3 rounded-full
+            shadow-lg shadow-purple-200/50
+            font-semibold text-sm
+            hover:scale-105 hover:shadow-purple-300/70
+            transition-all duration-300 animate-pulse-slow"
         >
-          📘 Book Free Demo
+          <div className="text-left">
+            <div className="font-semibold">🎓 Book 10 Free Demo Classes</div>
+            <div className="text-xs text-purple-500">
+              No payment • Try before enrolling
+            </div>
+          </div>
         </button>
       )}
 
@@ -57,10 +63,20 @@ export default function BookDemoButton({
         <button
           onClick={() => setOpen(true)}
           className="w-full bg-gradient-to-r from-purple-600 to-blue-600
-      hover:from-purple-700 hover:to-blue-700
-      text-white py-3 rounded-lg font-semibold transition"
+          hover:from-purple-700 hover:to-blue-700
+          text-white py-3 rounded-lg font-semibold
+          shadow-md shadow-purple-300/40
+          hover:shadow-purple-400/60
+          transition-all duration-300"
         >
-          Explore a Free Demo Session
+          <div className="text-center">
+            <div className="font-semibold text-lg">
+              🎓 Book 10 Free Demo Classes
+            </div>
+            <div className="text-xs opacity-90 mt-1">
+              No payment • Try before enrolling
+            </div>
+          </div>
         </button>
       )}
 
@@ -100,7 +116,7 @@ export default function BookDemoButton({
                   formData.append("countryCode", form.countryCode);
                   formData.append("phone", form.phone);
                   formData.append("grade", form.grade);
-                  formData.append("course", course); 
+                  formData.append("course", course);
 
                   fetch(
                     "https://script.google.com/macros/s/AKfycbwki1W2xh37WHLI2sc2iRF-cURyeYg_gcC8S1eeYOmrFfumQ0Big0J87BWFn4SvyNaoDA/exec",
