@@ -3,7 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function BookDemoButton() {
+
+export default function BookDemoButton({
+  course,
+  variant = "floating",
+}: {
+  course: string;
+  variant?: "floating" | "inline";
+}) {
+  console.log("COURSE PROP =", course);
+
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -28,18 +37,32 @@ export default function BookDemoButton() {
 
   return (
     <>
-      {/* Floating Button */}
-      <button
-        onClick={() => setOpen(true)}
-        className="fixed bottom-6 right-24 z-40
-                    bg-white/90 backdrop-blur-md
-                    border border-purple-200
-                    text-purple-700 px-5 py-3 rounded-full
-                    shadow-lg font-semibold text-sm
-                    hover:scale-105 transition-all"
-      >
-        📘 Book Free Demo
-      </button>
+      {/* FLOATING BUTTON */}
+      {variant === "floating" && (
+        <button
+          onClick={() => setOpen(true)}
+          className="fixed bottom-6 right-24 z-40
+      bg-white/90 backdrop-blur-md
+      border border-purple-200
+      text-purple-700 px-5 py-3 rounded-full
+      shadow-lg font-semibold text-sm
+      hover:scale-105 transition-all"
+        >
+          📘 Book Free Demo
+        </button>
+      )}
+
+      {/* INLINE / SIDEBAR BUTTON */}
+      {variant === "inline" && (
+        <button
+          onClick={() => setOpen(true)}
+          className="w-full bg-gradient-to-r from-purple-600 to-blue-600
+      hover:from-purple-700 hover:to-blue-700
+      text-white py-3 rounded-lg font-semibold transition"
+        >
+          Explore a Free Demo Session
+        </button>
+      )}
 
       {/* Popup Modal */}
       <AnimatePresence>
@@ -77,9 +100,10 @@ export default function BookDemoButton() {
                   formData.append("countryCode", form.countryCode);
                   formData.append("phone", form.phone);
                   formData.append("grade", form.grade);
+                  formData.append("course", course); 
 
                   fetch(
-                    "https://script.google.com/macros/s/AKfycbz_oxnd37QWdcMnMr62hd2nxhUtuhmzA3sfO-6aJ7JOsKGHzd1-gSGUsAK-F0-SH5yZsw/exec",
+                    "https://script.google.com/macros/s/AKfycbwki1W2xh37WHLI2sc2iRF-cURyeYg_gcC8S1eeYOmrFfumQ0Big0J87BWFn4SvyNaoDA/exec",
                     {
                       method: "POST",
                       body: formData, // 👈 NO headers

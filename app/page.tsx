@@ -29,6 +29,7 @@ import BookDemoButton from "@/components/BookDemoButton";
 import ChatButton from "@/components/ChatButton";
 import BackgroundAnimation from "@/components/BackgroundAnimation";
 import ContactBlock from "@/components/components/ContactBlock";
+import Link from "next/link";
 
 export default function Home() {
   const [activeCourse, setActiveCourse] = useState<string | null>(null);
@@ -300,7 +301,11 @@ export default function Home() {
                 onHoverStart={() => setActiveCourse(course.id)}
                 onHoverEnd={() => setActiveCourse(null)}
               >
-                <CourseCard course={course} />
+                <Link href={`/courses/${course.id}`}>
+                  <div className="h-full cursor-pointer">
+                    <CourseCard course={course} />
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -1064,7 +1069,7 @@ export default function Home() {
       </footer>
 
       <ChatButton />
-      <BookDemoButton />
+      <BookDemoButton course="General Enquiry" />
     </div>
   );
 }
