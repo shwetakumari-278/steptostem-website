@@ -3,6 +3,11 @@
 import {
   Star,
   Users,
+  Video,
+  BookOpen,
+  Layers,
+  BarChart,
+  CalendarCheck,
   Award,
   Clock,
   ShieldCheck,
@@ -27,18 +32,9 @@ export default function AIMLCoursePage() {
               AI & Machine Learning for Kids & Teens
             </h1>
 
-            <div className="flex items-center gap-3 text-sm mb-4">
-              <div className="flex text-yellow-400">
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-              </div>
-              <span className="text-gray-600">
-                Loved by students & trusted by parents
-              </span>
-            </div>
+            <p className="text-sm text-gray-500 mb-4 tracking-wide">
+              Loved by students & trusted by parents
+            </p>
 
             <p className="text-gray-700 text-lg leading-relaxed">
               This course introduces students to Artificial Intelligence and
@@ -53,12 +49,73 @@ export default function AIMLCoursePage() {
             </p>
           </div>
 
-          {/* TRUST STRIP */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white p-6 rounded-xl shadow">
-            <TrustItem icon={<Users />} title="Student-Focused Learning" />
-            <TrustItem icon={<Award />} title="Certificate on Completion" />
-            <TrustItem icon={<Clock />} title="12-Week Structured Program" />
-            <TrustItem icon={<ShieldCheck />} title="Safe & Age-Appropriate" />
+          {/* FEATURE ROW – PROFESSIONAL */}
+          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+            <FeatureCard
+              icon={<Users size={22} />}
+              title="Student-Focused"
+              subtitle="Built for kids & teens"
+            />
+            <FeatureCard
+              icon={<Award size={22} />}
+              title="Certified"
+              subtitle="Completion certificate"
+            />
+            <FeatureCard
+              icon={<Clock size={22} />}
+              title="12-Week Program"
+              subtitle="Structured & guided"
+            />
+            <FeatureCard
+              icon={<ShieldCheck size={22} />}
+              title="Safe Learning"
+              subtitle="Age-appropriate content"
+            />
+          </div>
+
+          {/* TRUST STRIP – CODINGAL STYLE (CLICKABLE & HONEST) */}
+          <div className="mt-10 flex flex-wrap items-center gap-10 text-sm text-gray-700">
+            {/* GOOGLE */}
+            <a
+              href="https://www.google.com/search?q=StepToSTEM+reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:opacity-80 transition"
+            >
+              <span className="text-lg font-semibold">Google</span>
+
+              <div className="flex items-center gap-1 text-yellow-400">
+                ★ ★ ★ ★ ★
+              </div>
+
+              <span className="text-gray-500">Reviews coming soon</span>
+            </a>
+
+            {/* TRUSTPILOT */}
+            <a
+              href="https://www.trustpilot.com/review/steptostem.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:opacity-80 transition"
+            >
+              <span className="flex items-center gap-1 font-semibold">
+                <span className="text-green-600">★</span>
+                Trustpilot
+              </span>
+
+              <div className="flex gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex h-4 w-4 items-center justify-center rounded-sm border border-green-500 text-green-600 text-xs"
+                  >
+                    ★
+                  </span>
+                ))}
+              </div>
+
+              <span className="text-gray-500">Reviews coming soon</span>
+            </a>
           </div>
 
           {/* WHAT IS AI */}
@@ -208,6 +265,101 @@ export default function AIMLCoursePage() {
               </div>
             </div>
           </section>
+          {/* PRICING PLANS */}
+          <section className="mt-16">
+            <h2 className="text-3xl font-bold mb-4 text-center">
+              Choose the Right Learning Plan
+            </h2>
+            <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+              Flexible learning options designed to match your child’s pace,
+              learning style, and goals.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* STARTER PLAN */}
+              <div className="rounded-2xl border border-red-300 bg-red-50 overflow-hidden">
+                <div className="bg-red-500 text-white text-center py-4 text-xl font-semibold">
+                  Starter
+                </div>
+
+                <div className="p-6 text-center">
+                  <p className="text-3xl font-bold">
+                    ₹ 1,120{" "}
+                    <span className="text-sm font-medium">/ session</span>
+                  </p>
+
+                  <p className="text-gray-500 line-through mt-1">₹ 1,600</p>
+
+                  <span className="inline-block mt-2 px-4 py-1 rounded-full bg-white text-red-600 text-sm font-medium">
+                    30% off
+                  </span>
+
+                  <p className="text-sm text-gray-600 mt-4">₹ 8,960 / month</p>
+                  <p className="text-xs text-gray-500">
+                    (total discounted course fee: ₹ 53,760)
+                  </p>
+
+                  <div className="mt-6">
+                    <BookDemoButton course="AI & Machine Learning" />
+                  </div>
+                </div>
+
+                <div className="border-t p-6">
+                  <h4 className="font-semibold mb-4">
+                    1:1 Personalized Learning
+                  </h4>
+                  <ul className="space-y-3 text-sm text-gray-700">
+                    <PricingPoint text="1:1 live personalized AI & ML sessions" />
+                    <PricingPoint text="Dedicated mentor for individual attention" />
+                    <PricingPoint text="Flexible class scheduling" />
+                    <PricingPoint text="Focused learning pace tailored to your child" />
+                    <PricingPoint text="Best for beginners & fast learners" />
+                  </ul>
+                </div>
+              </div>
+
+              {/* GROWTH PLAN */}
+              <div className="rounded-2xl border border-purple-300 bg-purple-50 overflow-hidden">
+                <div className="bg-purple-500 text-white text-center py-4 text-xl font-semibold">
+                  Growth
+                </div>
+
+                <div className="p-6 text-center">
+                  <p className="text-3xl font-bold">
+                    ₹ 900 <span className="text-sm font-medium">/ session</span>
+                  </p>
+
+                  <p className="text-gray-500 line-through mt-1">₹ 1,200</p>
+
+                  <span className="inline-block mt-2 px-4 py-1 rounded-full bg-white text-purple-600 text-sm font-medium">
+                    25% off
+                  </span>
+
+                  <p className="text-sm text-gray-600 mt-4">₹ 7,200 / month</p>
+                  <p className="text-xs text-gray-500">
+                    (total discounted course fee: ₹ 43,200)
+                  </p>
+
+                  <div className="mt-6">
+                    <BookDemoButton course="AI & Machine Learning" />
+                  </div>
+                </div>
+
+                <div className="border-t p-6">
+                  <h4 className="font-semibold mb-4">
+                    Small Group Learning (2–3 students)
+                  </h4>
+                  <ul className="space-y-3 text-sm text-gray-700">
+                    <PricingPoint text="Live interactive group classes" />
+                    <PricingPoint text="Peer learning with guided mentor support" />
+                    <PricingPoint text="Structured weekly schedule" />
+                    <PricingPoint text="Engaging discussions & collaborative projects" />
+                    <PricingPoint text="Budget-friendly learning option" />
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* RIGHT SIDEBAR */}
@@ -215,15 +367,39 @@ export default function AIMLCoursePage() {
           <div className="bg-white rounded-2xl shadow-xl p-6 space-y-5">
             <BookDemoButton course="AI & Machine Learning" variant="inline" />
 
-            <h3 className="font-bold text-lg">What your child gets</h3>
+            <h3 className="font-bold text-lg mt-6 mb-4">
+              This course includes:
+            </h3>
 
-            <ul className="space-y-3 text-sm">
-              <SidebarItem text="Live, instructor-led sessions" />
-              <SidebarItem text="Hands-on, project-based learning" />
-              <SidebarItem text="Certificate after course completion" />
-              <SidebarItem text="Beginner-friendly teaching approach" />
-              <SidebarItem text="Mentor guidance & doubt support" />
-              <SidebarItem text="Access to learning resources" />
+            <ul className="space-y-4 text-sm text-gray-700">
+              <SidebarRow
+                icon={<Video size={16} />}
+                text="Live instructor-led AI & ML classes"
+              />
+              <SidebarRow
+                icon={<Users size={16} />}
+                text="Option for 1:1 or small group learning"
+              />
+              <SidebarRow
+                icon={<BookOpen size={16} />}
+                text="Structured curriculum with real-world projects"
+              />
+              <SidebarRow
+                icon={<Layers size={16} />}
+                text="50+ hands-on activities & mini projects"
+              />
+              <SidebarRow
+                icon={<Award size={16} />}
+                text="Certificate after course completion"
+              />
+              <SidebarRow
+                icon={<BarChart size={16} />}
+                text="Progress tracking & parent updates"
+              />
+              <SidebarRow
+                icon={<CalendarCheck size={16} />}
+                text="Flexible scheduling options"
+              />
             </ul>
           </div>
         </div>
@@ -256,6 +432,35 @@ function Curriculum({ title, text }: any) {
 function SidebarItem({ text }: any) {
   return (
     <li className="flex items-start gap-2">
+      <CheckCircle className="text-green-600 mt-0.5" size={16} />
+      <span>{text}</span>
+    </li>
+  );
+}
+function FeatureCard({ icon, title, subtitle }: any) {
+  return (
+    <div className="flex items-center gap-4 rounded-xl bg-white px-5 py-4 shadow-sm border">
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-50 text-purple-600">
+        {icon}
+      </div>
+      <div>
+        <p className="font-semibold text-sm">{title}</p>
+        <p className="text-xs text-gray-500">{subtitle}</p>
+      </div>
+    </div>
+  );
+}
+function SidebarRow({ icon, text }: any) {
+  return (
+    <li className="flex items-start gap-3">
+      <span className="text-green-600 mt-0.5">{icon}</span>
+      <span>{text}</span>
+    </li>
+  );
+}
+function PricingPoint({ text }: any) {
+  return (
+    <li className="flex items-start gap-3">
       <CheckCircle className="text-green-600 mt-0.5" size={16} />
       <span>{text}</span>
     </li>
