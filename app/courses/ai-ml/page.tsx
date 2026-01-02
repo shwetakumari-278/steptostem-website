@@ -14,19 +14,30 @@ import {
   CheckCircle,
 } from "lucide-react";
 import BookDemoButton from "@/components/BookDemoButton";
-
-export default function AIMLCoursePage() {
+import Header from "@/components/Header";
+import CourseOfferBar from "@/components/CourseOfferBar";
+export default function AICoursePage() {
   return (
+    <>
+      <Header />
+
+      <CourseOfferBar
+        course="AI & Machine Learning"
+        gradient="from-purple-600 to-pink-600"
+      />
     <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+        
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-10">
           {/* BREADCRUMB */}
           <p className="text-sm text-gray-500">
             Courses &gt; AI & Machine Learning
           </p>
+          
 
           {/* HERO */}
+          
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               AI & Machine Learning for Kids & Teens
@@ -49,32 +60,77 @@ export default function AIMLCoursePage() {
             </p>
           </div>
 
-          {/* FEATURE ROW – PROFESSIONAL */}
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
-            <FeatureCard
-              icon={<Users size={22} />}
-              title="Student-Focused"
-              subtitle="Built for kids & teens"
-            />
-            <FeatureCard
-              icon={<Award size={22} />}
-              title="Certified"
-              subtitle="Completion certificate"
-            />
-            <FeatureCard
-              icon={<Clock size={22} />}
-              title="12-Week Program"
-              subtitle="Structured & guided"
-            />
-            <FeatureCard
-              icon={<ShieldCheck size={22} />}
-              title="Safe Learning"
-              subtitle="Age-appropriate content"
-            />
+          {/* FEATURE ROW – ORANGE THEME STYLE */}
+          <div className="mt-8 rounded-xl bg-white border px-6 py-5">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm text-gray-800">
+              <div className="flex items-start gap-3">
+                <BarChart className="text-orange-500 mt-1" size={20} />
+                <div>
+                  <p className="font-semibold">Suitable for</p>
+                  <p className="text-xs text-gray-600">Grade 3–12</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Video className="text-orange-500 mt-1" size={20} />
+                <div>
+                  <p className="font-semibold">Program Delivery</p>
+                  <p className="text-xs text-gray-600">Online</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Award className="text-orange-500 mt-1" size={20} />
+                <div>
+                  <p className="font-semibold">Certification by</p>
+                  <p className="text-xs text-gray-600">STEM.org</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Clock className="text-orange-500 mt-1" size={20} />
+                <div>
+                  <p className="font-semibold">Duration</p>
+                  <p className="text-xs text-gray-600">3–6 Months</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Layers className="text-orange-500 mt-1" size={20} />
+                <div>
+                  <p className="font-semibold">Program</p>
+                  <p className="text-xs text-gray-600">
+                    50+ activities & projects
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* TRUST STRIP – CODINGAL STYLE (CLICKABLE & HONEST) */}
-          <div className="mt-10 flex flex-wrap items-center gap-10 text-sm text-gray-700">
+          <div className="mt-10 flex items-center gap-12 text-sm text-gray-700 overflow-x-auto">
+            {/* STUDENTS */}
+            <div className="flex items-center gap-3 min-w-max">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-50 text-purple-600">
+                <Users size={18} />
+              </div>
+              <div>
+                <p className="font-semibold leading-none">1000+</p>
+                <p className="text-xs text-gray-500">Students</p>
+              </div>
+            </div>
+
+            {/* COUNTRIES */}
+            <div className="flex items-center gap-3 min-w-max">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-50 text-purple-600">
+                <Layers size={18} />
+              </div>
+              <div>
+                <p className="font-semibold leading-none">4+</p>
+                <p className="text-xs text-gray-500">Countries</p>
+              </div>
+            </div>
+
             {/* GOOGLE */}
             <a
               href="https://www.google.com/search?q=StepToSTEM+reviews"
@@ -363,7 +419,7 @@ export default function AIMLCoursePage() {
         </div>
 
         {/* RIGHT SIDEBAR */}
-        <div className="lg:sticky lg:top-24 h-fit">
+        <div className="lg:sticky lg:top- h-fit">
           <div className="bg-white rounded-2xl shadow-xl p-6 space-y-5">
             <BookDemoButton course="AI & Machine Learning" variant="inline" />
 
@@ -407,6 +463,7 @@ export default function AIMLCoursePage() {
 
       <BookDemoButton course="AI & Machine Learning" />
     </div>
+    </>
   );
 }
 

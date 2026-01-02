@@ -39,15 +39,9 @@ export default function BookDemoButton({
       {/* FLOATING BUTTON */}
       {variant === "floating" && (
         <button
+          data-book-demo="true"
           onClick={() => setOpen(true)}
-          className="fixed bottom-6 right-24 z-40
-            bg-white/90 backdrop-blur-md
-            border border-purple-300
-            text-purple-700 px-5 py-3 rounded-full
-            shadow-lg shadow-purple-200/50
-            font-semibold text-sm
-            hover:scale-105 hover:shadow-purple-300/70
-            transition-all duration-300 animate-pulse-slow"
+          className="fixed bottom-6 right-24 z-40 ..."
         >
           <div className="text-left">
             <div className="font-semibold">🎓 Book 10 Free Demo Classes</div>

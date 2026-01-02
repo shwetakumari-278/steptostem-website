@@ -12,226 +12,241 @@ import {
   BarChart,
   CalendarCheck,
 } from "lucide-react";
+import Header from "@/components/Header";
+import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
 
 export default function GameDesignCoursePage() {
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-green-50 to-emerald-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
-        {/* LEFT CONTENT */}
-        <div className="lg:col-span-2 space-y-10">
-          {/* BREADCRUMB */}
-          <p className="text-sm text-gray-500">Courses &gt; Game Design</p>
+    <>
+      <Header />
 
-          {/* HERO */}
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Game Design for Kids & Teens
-            </h1>
+      <CourseOfferBar
+        course="Game Design"
+        gradient="from-green-600 to-emerald-600"
+      />
+      <div className="bg-gradient-to-br from-slate-50 via-green-50 to-emerald-50 min-h-screen">
+        <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+          {/* LEFT CONTENT */}
+          <div className="lg:col-span-2 space-y-10">
+            {/* BREADCRUMB */}
+            <p className="text-sm text-gray-500">Courses &gt; Game Design</p>
 
-            <p className="text-sm text-gray-500 mb-4 tracking-wide">
-              Create games students love to play
-            </p>
+            {/* HERO */}
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                Game Design for Kids & Teens
+              </h1>
 
-            <p className="text-gray-700 text-lg leading-relaxed">
-              This course introduces students to the exciting world of game
-              design and development. Learners build real games while
-              understanding characters, mechanics, logic, and gameplay.
-            </p>
+              <p className="text-sm text-gray-500 mb-4 tracking-wide">
+                Create games students love to play
+              </p>
 
-            <p className="text-sm text-gray-500 mt-2">
-              Designed to build creativity, logic, and problem-solving skills.
-            </p>
-          </div>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                This course introduces students to the exciting world of game
+                design and development. Learners build real games while
+                understanding characters, mechanics, logic, and gameplay.
+              </p>
 
-          {/* FEATURE ROW */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <FeatureCard
-              icon={<Users size={22} />}
-              title="Student-Focused"
-              subtitle="For kids & teens"
-            />
-            <FeatureCard
-              icon={<Award size={22} />}
-              title="Certified"
-              subtitle="Completion certificate"
-            />
-            <FeatureCard
-              icon={<Clock size={22} />}
-              title="12-Week Program"
-              subtitle="Structured learning"
-            />
-            <FeatureCard
-              icon={<ShieldCheck size={22} />}
-              title="Safe Learning"
-              subtitle="Age-appropriate"
-            />
-          </div>
+              <p className="text-sm text-gray-500 mt-2">
+                Designed to build creativity, logic, and problem-solving skills.
+              </p>
+            </div>
 
-          {/* TRUST STRIP */}
-          <div className="flex flex-wrap items-center gap-10 text-sm text-gray-700">
-            <a
-              href="https://www.google.com/search?q=StepToSTEM+reviews"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-80"
-            >
-              <span className="font-semibold">Google</span>{" "}
-              <span className="text-gray-500">Reviews coming soon</span>
-            </a>
-
-            <a
-              href="https://www.trustpilot.com/review/steptostem.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-80"
-            >
-              <span className="font-semibold">
-                <span className="text-green-600">★</span> Trustpilot
-              </span>{" "}
-              <span className="text-gray-500">Reviews coming soon</span>
-            </a>
-          </div>
-
-          {/* WHAT IS GAME DESIGN */}
-          <section>
-            <h2 className="text-2xl font-bold mb-3">
-              What does Game Design mean for students?
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Game Design teaches students how games are created — from ideas
-              and rules to visuals and interactivity. Students learn by building
-              real games using modern tools, without complex theory.
-            </p>
-          </section>
-
-          {/* LEARNING OUTCOMES */}
-          <section>
-            <h2 className="text-2xl font-bold mb-4">
-              After completing this course, your child can:
-            </h2>
-
-            <ul className="space-y-3">
-              {[
-                "Design and build playable games",
-                "Understand game mechanics and logic",
-                "Create characters, levels, and scoring systems",
-                "Apply programming concepts through games",
-                "Showcase games to friends and family",
-              ].map((item, i) => (
-                <li key={i} className="flex gap-3">
-                  <CheckCircle className="text-green-600 mt-1" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          {/* CURRICULUM */}
-          <section>
-            <h2 className="text-2xl font-bold mb-4">Course curriculum</h2>
-
-            <div className="space-y-4">
-              <Curriculum
-                title="Module 1"
-                text="Introduction to Games & Design"
+            {/* FEATURE ROW */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <FeatureCard
+                icon={<Users size={22} />}
+                title="Student-Focused"
+                subtitle="For kids & teens"
               />
-              <Curriculum
-                title="Module 2"
-                text="Game Rules, Mechanics & Logic"
+              <FeatureCard
+                icon={<Award size={22} />}
+                title="Certified"
+                subtitle="Completion certificate"
               />
-              <Curriculum
-                title="Module 3"
-                text="Characters, Levels & Scoring"
+              <FeatureCard
+                icon={<Clock size={22} />}
+                title="12-Week Program"
+                subtitle="Structured learning"
               />
-              <Curriculum title="Module 4" text="Game Programming Basics" />
-              <Curriculum title="Module 5" text="Animations & Interactivity" />
-              <Curriculum
-                title="Module 6"
-                text="Final Game Project & Showcase"
+              <FeatureCard
+                icon={<ShieldCheck size={22} />}
+                title="Safe Learning"
+                subtitle="Age-appropriate"
               />
             </div>
-          </section>
 
-          {/* PROJECTS */}
-          <section>
-            <h2 className="text-2xl font-bold mb-4">Projects students build</h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>2D arcade game</li>
-              <li>Obstacle & scoring game</li>
-              <li>Final custom game project</li>
-            </ul>
-          </section>
+            {/* TRUST STRIP */}
+            <div className="flex flex-wrap items-center gap-10 text-sm text-gray-700">
+              <a
+                href="https://www.google.com/search?q=StepToSTEM+reviews"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <span className="font-semibold">Google</span>{" "}
+                <span className="text-gray-500">Reviews coming soon</span>
+              </a>
 
-          {/* STEPTOSTEM LEARNING PATH */}
-          <section>
-            <h2 className="text-2xl font-bold mb-4">
-              The StepToSTEM Learning Path
-            </h2>
-
-            <p className="text-gray-700 mb-8 max-w-3xl">
-              At StepToSTEM, students go beyond just playing games — they learn
-              to design, build, and think like creators through a structured
-              growth journey.
-            </p>
-
-            <div className="grid md:grid-cols-4 gap-6">
-              <Stage
-                title="Stage 1: Explorer"
-                color="border-green-500"
-                desc="Students explore how games work through fun, guided activities."
-                points={[
-                  "Understanding games & rules",
-                  "Basic logic & sequencing",
-                  "Creativity-driven learning",
-                ]}
-              />
-
-              <Stage
-                title="Stage 2: Builder"
-                color="border-emerald-500"
-                desc="Students start building their own playable games step by step."
-                points={[
-                  "Game mechanics",
-                  "Player controls & scoring",
-                  "Hands-on game projects",
-                ]}
-              />
-
-              <Stage
-                title="Stage 3: Innovator"
-                color="border-teal-500"
-                desc="Students design creative and advanced games using logic and design."
-                points={[
-                  "Levels & challenges",
-                  "Animations & interactions",
-                  "Portfolio-ready games",
-                ]}
-              />
-
-              <Stage
-                title="Stage 4: Leader"
-                color="border-lime-500"
-                desc="Students gain confidence to showcase their games and guide others."
-                points={[
-                  "Game showcases",
-                  "Explaining game logic",
-                  "Future-ready mindset",
-                ]}
-              />
+              <a
+                href="https://www.trustpilot.com/review/steptostem.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80"
+              >
+                <span className="font-semibold">
+                  <span className="text-green-600">★</span> Trustpilot
+                </span>{" "}
+                <span className="text-gray-500">Reviews coming soon</span>
+              </a>
             </div>
-          </section>
 
-          {/* PRICING – SAME AS OTHER COURSES */}
-          <PricingSection />
+            {/* WHAT IS GAME DESIGN */}
+            <section>
+              <h2 className="text-2xl font-bold mb-3">
+                What does Game Design mean for students?
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Game Design teaches students how games are created — from ideas
+                and rules to visuals and interactivity. Students learn by
+                building real games using modern tools, without complex theory.
+              </p>
+            </section>
+
+            {/* LEARNING OUTCOMES */}
+            <section>
+              <h2 className="text-2xl font-bold mb-4">
+                After completing this course, your child can:
+              </h2>
+
+              <ul className="space-y-3">
+                {[
+                  "Design and build playable games",
+                  "Understand game mechanics and logic",
+                  "Create characters, levels, and scoring systems",
+                  "Apply programming concepts through games",
+                  "Showcase games to friends and family",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3">
+                    <CheckCircle className="text-green-600 mt-1" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            {/* CURRICULUM */}
+            <section>
+              <h2 className="text-2xl font-bold mb-4">Course curriculum</h2>
+
+              <div className="space-y-4">
+                <Curriculum
+                  title="Module 1"
+                  text="Introduction to Games & Design"
+                />
+                <Curriculum
+                  title="Module 2"
+                  text="Game Rules, Mechanics & Logic"
+                />
+                <Curriculum
+                  title="Module 3"
+                  text="Characters, Levels & Scoring"
+                />
+                <Curriculum title="Module 4" text="Game Programming Basics" />
+                <Curriculum
+                  title="Module 5"
+                  text="Animations & Interactivity"
+                />
+                <Curriculum
+                  title="Module 6"
+                  text="Final Game Project & Showcase"
+                />
+              </div>
+            </section>
+
+            {/* PROJECTS */}
+            <section>
+              <h2 className="text-2xl font-bold mb-4">
+                Projects students build
+              </h2>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                <li>2D arcade game</li>
+                <li>Obstacle & scoring game</li>
+                <li>Final custom game project</li>
+              </ul>
+            </section>
+
+            {/* STEPTOSTEM LEARNING PATH */}
+            <section>
+              <h2 className="text-2xl font-bold mb-4">
+                The StepToSTEM Learning Path
+              </h2>
+
+              <p className="text-gray-700 mb-8 max-w-3xl">
+                At StepToSTEM, students go beyond just playing games — they
+                learn to design, build, and think like creators through a
+                structured growth journey.
+              </p>
+
+              <div className="grid md:grid-cols-4 gap-6">
+                <Stage
+                  title="Stage 1: Explorer"
+                  color="border-green-500"
+                  desc="Students explore how games work through fun, guided activities."
+                  points={[
+                    "Understanding games & rules",
+                    "Basic logic & sequencing",
+                    "Creativity-driven learning",
+                  ]}
+                />
+
+                <Stage
+                  title="Stage 2: Builder"
+                  color="border-emerald-500"
+                  desc="Students start building their own playable games step by step."
+                  points={[
+                    "Game mechanics",
+                    "Player controls & scoring",
+                    "Hands-on game projects",
+                  ]}
+                />
+
+                <Stage
+                  title="Stage 3: Innovator"
+                  color="border-teal-500"
+                  desc="Students design creative and advanced games using logic and design."
+                  points={[
+                    "Levels & challenges",
+                    "Animations & interactions",
+                    "Portfolio-ready games",
+                  ]}
+                />
+
+                <Stage
+                  title="Stage 4: Leader"
+                  color="border-lime-500"
+                  desc="Students gain confidence to showcase their games and guide others."
+                  points={[
+                    "Game showcases",
+                    "Explaining game logic",
+                    "Future-ready mindset",
+                  ]}
+                />
+              </div>
+            </section>
+
+            {/* PRICING – SAME AS OTHER COURSES */}
+            <PricingSection />
+          </div>
+
+          {/* RIGHT SIDEBAR */}
+          <RightSidebar />
         </div>
 
-        {/* RIGHT SIDEBAR */}
-        <RightSidebar />
+        <BookDemoButton course="Game Design" />
       </div>
-
-      <BookDemoButton course="Game Design" />
-    </div>
+    </>
   );
 }
 
@@ -373,7 +388,7 @@ function PriceCard({
 
 function RightSidebar() {
   return (
-    <div className="lg:sticky lg:top-24 h-fit">
+    <div className="lg:sticky lg:top-40 h-fit">
       <div className="bg-white rounded-2xl shadow-xl p-6 space-y-5">
         <BookDemoButton course="Game Design" variant="inline" />
 
