@@ -14,6 +14,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import CourseFeatureRow from "@/components/CourseFeatureRow";
+import CourseTestimonials from "@/components/CourseTestimonials";
 
 import BookDemoButton from "@/components/BookDemoButton";
 import Header from "@/components/Header";
@@ -374,6 +375,7 @@ export default function AICoursePage() {
                 </div>
               </div>
             </section>
+            <CourseTestimonials />
           </div>
 
           {/* RIGHT SIDEBAR */}

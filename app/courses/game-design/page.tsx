@@ -13,6 +13,8 @@ import {
   CalendarCheck,
 } from "lucide-react";
 import Header from "@/components/Header";
+import CourseTestimonials from "@/components/CourseTestimonials";
+
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
 
@@ -300,6 +302,7 @@ export default function GameDesignCoursePage() {
 
             {/* PRICING – SAME AS OTHER COURSES */}
             <PricingSection />
+            <CourseTestimonials />
           </div>
 
           {/* RIGHT SIDEBAR */}

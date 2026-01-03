@@ -13,6 +13,8 @@ import {
   CalendarCheck,
 } from "lucide-react";
 import Header from "@/components/Header";
+import CourseTestimonials from "@/components/CourseTestimonials";
+
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
 
@@ -288,6 +290,8 @@ export default function AppDevCoursePage() {
 
             {/* PRICING */}
             <PricingSection />
+            <CourseTestimonials />
+
           </div>
 
           {/* RIGHT SIDEBAR */}
