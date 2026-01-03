@@ -29,21 +29,26 @@ export default function CourseTestimonials() {
         {courseTestimonials.testimonials.map((t, i) => (
           <div
             key={i}
-            className="bg-white border rounded-2xl p-6 shadow-sm"
+            className="relative bg-white border rounded-2xl pt-16 px-6 pb-6 shadow-sm"
           >
-            <div className="flex items-center gap-4 mb-4">
-              <Image
-                src={t.image}
-                alt={t.name}
-                width={48}
-                height={48}
-                className="rounded-full object-cover"
-              />
-
-              <div>
-                <p className="font-semibold">{t.name}</p>
-                <p className="text-xs text-gray-500">{t.role}</p>
+            {/* AVATAR – POPPING OUT */}
+            <div className="absolute -top-10 left-6">
+              <div className="h-20 w-20 rounded-full bg-yellow-100 flex items-center justify-center">
+                <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center shadow-md">
+                  <Image
+                    src={t.image}
+                    alt={t.name}
+                    width={56}
+                    height={56}
+                    className="rounded-full object-cover"
+                  />
+                </div>
               </div>
+            </div>
+
+            <div className="mb-3">
+              <p className="font-semibold text-lg">{t.name}</p>
+              <p className="text-sm text-gray-500">{t.role}</p>
             </div>
 
             {/* RATING */}
@@ -58,9 +63,7 @@ export default function CourseTestimonials() {
               </span>
             </div>
 
-            <p className="text-gray-700 text-sm leading-relaxed">
-              {t.text}
-            </p>
+            <p className="text-gray-700 text-sm leading-relaxed">{t.text}</p>
           </div>
         ))}
       </div>

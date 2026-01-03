@@ -12,7 +12,7 @@ export default function CourseFeatureRow({ course }: { course: any }) {
     FEATURE_ICON_COLOR[course?.id ?? ""] || "text-blue-500";
 
   return (
-    <div className="mt-8 rounded-xl bg-white border px-6 py-5">
+    <div className="mt-8">
       <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm text-gray-800">
         <Feature
           icon={<BarChart className={featureIconColor} />}

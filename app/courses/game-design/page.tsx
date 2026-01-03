@@ -54,8 +54,8 @@ export default function GameDesignCoursePage() {
                 Designed to build creativity, logic, and problem-solving skills.
               </p>
             </div>
-            {/* FEATURE ROW – SAME AS AI-ML */}
-            <div className="mt-8 rounded-xl bg-white border px-6 py-5">
+            {/* FEATURE ROW – FLAT (NO BOX) */}
+            <div className="mt-8">
               <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm text-gray-800">
                 <div className="flex items-start gap-3">
                   <BarChart className="text-blue-500 mt-1" size={20} />
@@ -101,10 +101,9 @@ export default function GameDesignCoursePage() {
               </div>
             </div>
 
-            {/* TRUST STRIP – SAME AS AI-ML */}
-            <div className="mt-10 flex items-center gap-12 text-sm text-gray-700 overflow-x-auto">
+            <div className="mt-10 flex items-center justify-between gap-6 text-sm text-gray-700">
               {/* STUDENTS */}
-              <div className="flex items-center gap-3 min-w-max">
+              <div className="flex items-center gap-3 shrink-0">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
                   <Users size={18} />
                 </div>
@@ -115,7 +114,7 @@ export default function GameDesignCoursePage() {
               </div>
 
               {/* COUNTRIES */}
-              <div className="flex items-center gap-3 min-w-max">
+              <div className="flex items-center gap-3 shrink-0">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
                   <Layers size={18} />
                 </div>
@@ -130,13 +129,15 @@ export default function GameDesignCoursePage() {
                 href="https://www.google.com/search?q=StepToSTEM+reviews"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:opacity-80 transition"
+                className="flex flex-col leading-tight hover:opacity-80 transition"
               >
                 <span className="text-lg font-semibold">Google</span>
-                <div className="flex items-center gap-1 text-yellow-400">
-                  ★ ★ ★ ★ ★
-                </div>
-                <span className="text-gray-500">Reviews coming soon</span>
+                <span className="flex items-center gap-0.5 text-yellow-400 text-sm leading-none">
+                  ★★★★★
+                </span>
+                <span className="text-gray-500 text-xs">
+                  Reviews coming soon
+                </span>
               </a>
 
               {/* TRUSTPILOT */}
@@ -144,14 +145,13 @@ export default function GameDesignCoursePage() {
                 href="https://www.trustpilot.com/review/steptostem.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:opacity-80 transition"
+                className="flex flex-col leading-tight hover:opacity-80 transition"
               >
                 <span className="flex items-center gap-1 font-semibold">
                   <span className="text-green-600">★</span>
                   Trustpilot
                 </span>
-
-                <div className="flex gap-1">
+                <div className="flex gap-1 mt-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <span
                       key={i}
@@ -161,8 +161,9 @@ export default function GameDesignCoursePage() {
                     </span>
                   ))}
                 </div>
-
-                <span className="text-gray-500">Reviews coming soon</span>
+                <span className="text-gray-500 text-xs">
+                  Reviews coming soon
+                </span>
               </a>
             </div>
 
