@@ -29,7 +29,7 @@ export default function CourseOfferBar({
             }
             className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
-            Let’s Enroll
+            🎓 Book 10 Free Demo Classes
           </button>
         </div>
       </div>

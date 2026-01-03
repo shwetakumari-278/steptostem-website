@@ -35,17 +35,9 @@ export default function CountryPage({ params }: Props) {
         ]}
       />
 
-      <nav className="container mx-auto px-6 pt-6 text-sm text-gray-500">
-        <span className="hover:underline cursor-pointer">Home</span>
-        <span className="mx-2">/</span>
-        <span className="hover:underline cursor-pointer">Locations</span>
-        <span className="mx-2">/</span>
-        <span className="text-gray-700 font-medium">{country.name}</span>
-      </nav>
-
-      <section className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 py-20">
+      <section className="bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 py-12">
         <div className="container mx-auto px-6">
-          <section className="py-20 text-center">
+          <section className="py-10 text-center">
             <p className="text-sm uppercase tracking-widest text-gray-500 mb-3">
               Step 2 of 3
             </p>
@@ -59,9 +51,6 @@ export default function CountryPage({ params }: Props) {
             </p>
           </section>
 
-          <p className="text-center text-gray-600 mb-12">
-            Choose your state to explore cities and courses
-          </p>
           <section className="py-24 bg-white/60 backdrop-blur-sm">
             <div className="container mx-auto px-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

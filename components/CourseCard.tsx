@@ -38,7 +38,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         transition={{ duration: 0.6 }}
         className={`relative z-10 w-16 h-16 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center mb-6 shadow-lg`}
       >
-        <IconComponent className="w-8 h-8 text-white" />
+        <IconComponent className="w-8 h-8 text-gray-900" />
       </motion.div>
 
       {/* Course Image */}

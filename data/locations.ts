@@ -16,7 +16,13 @@ export const locations = {
       },
       punjab: {
         name: "Punjab",
-        cities: ["Ludhiana", "Amritsar", "Jalandhar"],
+        stateslug: "punjab",
+        cities: ["Ludhiana", "Amritsar", "Jalandhar", "Mohali", "Chandigarh"],
+      },
+      haryana: {
+        name: "Haryana",
+        stateslug: "haryana",
+        cities: ["Gurugram", "Faridabad", "Panchkula"],
       },
     },
   },

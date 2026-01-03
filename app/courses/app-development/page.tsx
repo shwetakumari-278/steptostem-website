@@ -55,51 +55,114 @@ export default function AppDevCoursePage() {
               </p>
             </div>
 
-            {/* FEATURE ROW */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <FeatureCard
-                icon={<Users size={22} />}
-                title="Student-Focused"
-                subtitle="For kids & teens"
-              />
-              <FeatureCard
-                icon={<Award size={22} />}
-                title="Certified"
-                subtitle="Completion certificate"
-              />
-              <FeatureCard
-                icon={<Clock size={22} />}
-                title="12-Week Program"
-                subtitle="Structured learning"
-              />
-              <FeatureCard
-                icon={<ShieldCheck size={22} />}
-                title="Safe Learning"
-                subtitle="Age-appropriate"
-              />
+            {/* FEATURE ROW – SAME AS AI-ML */}
+            <div className="mt-8 rounded-xl bg-white border px-6 py-5">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm text-gray-800">
+                <div className="flex items-start gap-3">
+                  <BarChart className="text-blue-500 mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Suitable for</p>
+                    <p className="text-xs text-gray-600">Grade 3–12</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Video className="text-blue-500 mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Program Delivery</p>
+                    <p className="text-xs text-gray-600">Online</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Award className="text-blue-500 mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Certification by</p>
+                    <p className="text-xs text-gray-600">STEM.org</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Clock className="text-blue-500 mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Duration</p>
+                    <p className="text-xs text-gray-600">3–6 Months</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Layers className="text-blue-500 mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Program</p>
+                    <p className="text-xs text-gray-600">
+                      50+ activities & projects
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* TRUST STRIP */}
-            <div className="flex flex-wrap items-center gap-10 text-sm text-gray-700">
+            {/* TRUST STRIP – SAME AS AI-ML */}
+            <div className="mt-10 flex items-center gap-12 text-sm text-gray-700 overflow-x-auto">
+              {/* STUDENTS */}
+              <div className="flex items-center gap-3 min-w-max">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+                  <Users size={18} />
+                </div>
+                <div>
+                  <p className="font-semibold leading-none">1000+</p>
+                  <p className="text-xs text-gray-500">Students</p>
+                </div>
+              </div>
+
+              {/* COUNTRIES */}
+              <div className="flex items-center gap-3 min-w-max">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+                  <Layers size={18} />
+                </div>
+                <div>
+                  <p className="font-semibold leading-none">4+</p>
+                  <p className="text-xs text-gray-500">Countries</p>
+                </div>
+              </div>
+
+              {/* GOOGLE */}
               <a
                 href="https://www.google.com/search?q=StepToSTEM+reviews"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-80"
+                className="flex items-center gap-3 hover:opacity-80 transition"
               >
-                <span className="font-semibold">Google</span>{" "}
+                <span className="text-lg font-semibold">Google</span>
+                <div className="flex items-center gap-1 text-yellow-400">
+                  ★ ★ ★ ★ ★
+                </div>
                 <span className="text-gray-500">Reviews coming soon</span>
               </a>
 
+              {/* TRUSTPILOT */}
               <a
                 href="https://www.trustpilot.com/review/steptostem.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-80"
+                className="flex items-center gap-3 hover:opacity-80 transition"
               >
-                <span className="font-semibold">
-                  <span className="text-green-600">★</span> Trustpilot
-                </span>{" "}
+                <span className="flex items-center gap-1 font-semibold">
+                  <span className="text-green-600">★</span>
+                  Trustpilot
+                </span>
+
+                <div className="flex gap-1">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span
+                      key={i}
+                      className="inline-flex h-4 w-4 items-center justify-center rounded-sm border border-green-500 text-green-600 text-xs"
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
+
                 <span className="text-gray-500">Reviews coming soon</span>
               </a>
             </div>

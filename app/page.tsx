@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import appDevImg from "@/asset/app-development.jpeg";
 
 import {
   Brain,
@@ -98,7 +97,7 @@ export default function Home() {
       icon: Smartphone,
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-50",
-      image: appDevImg,
+      image: "/asset/app-development.jpeg",
       features: [
         "App UI & User Interaction",
         "App Logic & Navigation",
