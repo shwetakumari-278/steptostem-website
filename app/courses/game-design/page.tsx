@@ -303,7 +303,7 @@ export default function GameDesignCoursePage() {
 
             {/* PRICING – SAME AS OTHER COURSES */}
             <PricingSection />
-            <CourseTestimonials />
+            <CourseTestimonials courseId="game-design" />
           </div>
 
           {/* RIGHT SIDEBAR */}

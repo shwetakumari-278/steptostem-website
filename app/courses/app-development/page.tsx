@@ -291,7 +291,7 @@ export default function AppDevCoursePage() {
 
             {/* PRICING */}
             <PricingSection />
-            <CourseTestimonials />
+            <CourseTestimonials courseId="app-development" />
           </div>
 
           {/* RIGHT SIDEBAR */}

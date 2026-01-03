@@ -416,7 +416,7 @@ export default function AICoursePage() {
               </div>
             </section>
 
-            <CourseTestimonials />
+            <CourseTestimonials courseId="ai-ml" />
           </div>
 
           {/* RIGHT SIDEBAR */}

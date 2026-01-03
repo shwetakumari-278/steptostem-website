@@ -264,7 +264,7 @@ export default function Home() {
       </section>
 
       {/* Courses Section */}
-      <section className="py-20 bg-white/50 backdrop-blur-sm">
+      <section id="courses" className="py-20 bg-white/50 backdrop-blur-sm">
         {/* Background Theme Image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -1014,7 +1014,7 @@ export default function Home() {
       <ContactBlock />
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer id="contact" className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
@@ -1054,7 +1054,7 @@ export default function Home() {
                 <li>AI & Machine Learning</li>
                 <li>Web Development</li>
                 <li>Game Design</li>
-                <li>Arduino & IoT</li>
+                <li>App-Development</li>
               </ul>
             </div>
 
@@ -1063,7 +1063,6 @@ export default function Home() {
               <ul className="space-y-2 text-gray-300">
                 <li>ekjotnanda9@gmail.com</li>
                 <li>+91 82890 04978</li>
-                <li>Mon-Fri: 9AM-6PM</li>
               </ul>
             </div>
           </div>

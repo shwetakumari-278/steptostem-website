@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -19,13 +19,15 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // ✅ CLEAN NAVIGATION (NO FEATURES)
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Locations", href: "/locations" },
-    { name: "Courses", href: "#courses" },
-    { name: "Features", href: "#features" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Courses", href: "/#courses" }, // 👈 always home → courses
+    { name: "About", href: "/#about" },
+    { name: "Contact", href: "/#contact" }, // 👈 always footer
+    { name: "Blog", href: "/blog" },
+
   ];
 
   return (
@@ -41,7 +43,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* LOGO */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3"
@@ -63,7 +65,7 @@ export default function Header() {
             </span>
           </motion.div>
 
-          {/* Desktop Navigation */}
+          {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <motion.a
@@ -89,7 +91,7 @@ export default function Header() {
             </motion.button>
           </nav>
 
-          {/* Mobile menu button */}
+          {/* MOBILE MENU BUTTON */}
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(!isOpen)}
@@ -102,7 +104,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* MOBILE NAV */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -124,6 +126,7 @@ export default function Header() {
                     {item.name}
                   </a>
                 ))}
+
                 <button className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-full text-sm font-medium hover:from-primary-700 hover:to-primary-800 transition-all duration-200 mt-4">
                   Get Started
                 </button>

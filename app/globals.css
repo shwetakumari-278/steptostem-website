@@ -99,3 +99,91 @@
 .animate-pulse-slow {
   animation: pulseSlow 3s infinite;
 }
+/* BLOG ARTICLE TYPOGRAPHY FIX */
+
+.prose {
+  line-height: 1.75;
+}
+
+.prose p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+}
+
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.prose ul {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.prose li {
+  margin-top: 0.5rem;
+}
+
+.prose blockquote {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #e5e7eb;
+  color: #374151;
+}
+
+.prose hr {
+  margin: 3rem 0;
+}
+/*/* BLOG TABLE STYLING – STEPTOSTEM THEME */
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Gradient header: purple → pink → blue */
+.prose thead {
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    /* purple */ #ec4899,
+    /* pink */ #3b82f6 /* blue */
+  );
+  color: white;
+}
+
+.prose th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Table body */
+.prose td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Soft themed row colors */
+.prose tbody tr:nth-child(even) {
+  background-color: #f5f3ff; /* light purple */
+}
+
+.prose tbody tr:hover {
+  background-color: #ede9fe;
+  transition: background-color 0.2s ease;
+}
