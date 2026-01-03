@@ -188,11 +188,15 @@ export default function Home() {
             className="max-w-4xl mx-auto"
           >
             <div className="mb-8">
-              <img
-                src="/asset/steptostem_com_logo.jpeg"
-                alt="StepToSTEM Logo"
-                className="w-32 h-32 mx-auto mb-6 rounded-full shadow-2xl object-cover"
-              />
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white overflow-hidden relative">
+                <img
+                  src="/asset/logo.webp"
+                  alt="StepToSTEM Logo"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                {/* Mask bottom text */}
+                <div className="absolute bottom-0 left-0 w-full h-6 bg-white" />
+              </div>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display">
@@ -211,9 +215,8 @@ export default function Home() {
               , and
               <span className="font-semibold text-orange-600">
                 {" "}
-                Arduino
-              </span>{" "}
-              programming
+                App Development
+              </span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -229,7 +232,7 @@ export default function Home() {
 
             <div className="text-gray-600">
               <p className="text-lg mb-4">
-                Trusted by 500+ students nationwide
+                Trusted by 1000+ students nationwide
               </p>
               <div className="flex justify-center items-center space-x-8">
                 <div className="text-center">
@@ -1015,11 +1018,18 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <img
-                src="/asset/steptostem_com_logo.jpeg"
-                alt="StepToSTEM Logo"
-                className="w-20 h-20 rounded-full mb-4 object-cover"
-              />
+              <div className="w-20 h-20 rounded-full mb-4 overflow-hidden bg-white flex items-center justify-center">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white overflow-hidden relative">
+                  <img
+                    src="/asset/logo.webp"
+                    alt="StepToSTEM Logo"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  {/* Mask bottom text */}
+                  <div className="absolute bottom-0 left-0 w-full h-6 bg-white" />
+                </div>
+              </div>
+
               <h3 className="text-2xl font-bold mb-4">StepToSTEM</h3>
               <p className="text-gray-300 mb-4">
                 Empowering the next generation of tech innovators through

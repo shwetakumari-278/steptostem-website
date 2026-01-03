@@ -26,6 +26,23 @@ export const locations = {
       },
     },
   },
+  australia: {
+    name: "Australia",
+    states: {
+      "new-south-wales": {
+        name: "New South Wales",
+        cities: ["Sydney", "Newcastle", "Wollongong"],
+      },
+      victoria: {
+        name: "Victoria",
+        cities: ["Melbourne", "Geelong", "Ballarat"],
+      },
+      queensland: {
+        name: "Queensland",
+        cities: ["Brisbane", "Gold Coast", "Sunshine Coast"],
+      },
+    },
+  },
 
   usa: {
     name: "United States",

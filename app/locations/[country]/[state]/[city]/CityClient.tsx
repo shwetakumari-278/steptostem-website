@@ -37,9 +37,9 @@ export default function CityClient({ cityName }: Props) {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {courses.map((course) => (
+            {Object.values(courses).map((course) => (
               <Link key={course.id} href={`/courses/${course.id}`}>
-                <div className="cursor-pointer">
+                <div className="cursor-pointer h-full">
                   <CourseCard course={course} />
                 </div>
               </Link>

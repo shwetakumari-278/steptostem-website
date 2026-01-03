@@ -17,9 +17,13 @@ interface Course {
 
 interface CourseCardProps {
   course: Course;
+  showPlay?: boolean;
 }
 
-export default function CourseCard({ course }: CourseCardProps) {
+export default function CourseCard({
+  course,
+  showPlay = false,
+}: CourseCardProps) {
   const IconComponent = course.icon;
 
   return (
@@ -36,9 +40,14 @@ export default function CourseCard({ course }: CourseCardProps) {
       <motion.div
         whileHover={{ rotate: 360, scale: 1.1 }}
         transition={{ duration: 0.6 }}
-        className={`relative z-10 w-16 h-16 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center mb-6 shadow-lg`}
+        className={`relative z-10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg
+  ${
+    course.id === "app-development"
+      ? "bg-gradient-to-br from-green-600 to-emerald-600"
+      : `bg-gradient-to-br ${course.color}`
+  }`}
       >
-        <IconComponent className="w-8 h-8 text-gray-900" />
+        <IconComponent className="w-8 h-8 text-white stroke-[2.5]" />
       </motion.div>
 
       {/* Course Image */}
@@ -57,12 +66,14 @@ export default function CourseCard({ course }: CourseCardProps) {
           }}
         />
         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          className="absolute top-3 right-3 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center shadow-lg"
-        >
-          <Play className="w-5 h-5 text-gray-700" />
-        </motion.div>
+        {showPlay && (
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="absolute top-3 right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg"
+          >
+            <Play className="w-5 h-5 text-gray-700" />
+          </motion.div>
+        )}
       </div>
 
       {/* Course Content */}
@@ -113,7 +124,16 @@ export default function CourseCard({ course }: CourseCardProps) {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className={`w-full bg-gradient-to-r ${course.color} text-white py-3 px-4 rounded-xl font-semibold flex items-center justify-center space-x-2 group-hover:shadow-lg transition-all duration-300`}
+          className={`
+    w-full py-3 px-4 rounded-xl font-semibold
+    flex items-center justify-center space-x-2
+    text-white shadow-lg
+    ${
+      course.id === "app-development"
+        ? "bg-gradient-to-r from-green-600 to-emerald-600"
+        : `bg-gradient-to-r ${course.color}`
+    }
+  `}
         >
           <span>Learn More</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -121,11 +141,6 @@ export default function CourseCard({ course }: CourseCardProps) {
       </div>
 
       {/* Hover Effect Overlay */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileHover={{ opacity: 1 }}
-        className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      />
     </motion.div>
   );
 }

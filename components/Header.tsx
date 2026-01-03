@@ -21,7 +21,7 @@ export default function Header() {
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Locations", href: "/locations" }, 
+    { name: "Locations", href: "/locations" },
     { name: "Courses", href: "#courses" },
     { name: "Features", href: "#features" },
     { name: "About", href: "#about" },
@@ -46,11 +46,14 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3"
           >
-            <img
-              src="/asset/steptostem_com_logo.jpeg"
-              alt="StepToSTEM Logo"
-              className="w-12 h-12 rounded-full object-cover"
-            />
+            <div className="w-8 h-8 rounded-full overflow-hidden bg-white flex items-center justify-center">
+              <img
+                src="/asset/logo.webp"
+                alt="StepToSTEM Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             <span
               className={`text-2xl font-bold font-display ${
                 isHome && !isScrolled ? "text-white" : "text-gray-900"
