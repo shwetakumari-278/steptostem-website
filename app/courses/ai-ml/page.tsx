@@ -245,7 +245,6 @@ export default function AICoursePage() {
                 </div>
               </div>
             </section>
-
             {/* PRICING PLANS */}
             <section className="mt-16">
               <h2 className="text-3xl font-bold mb-4 text-center">
@@ -253,35 +252,33 @@ export default function AICoursePage() {
               </h2>
 
               <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Flexible learning options designed to match your child’s pace,
-                learning style, and goals.
+                Simple, transparent pricing designed for UAE & international
+                students. One-hour live sessions. 48 sessions per course.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 {/* STARTER PLAN */}
-                <div className="rounded-2xl border border-red-300 bg-red-50 overflow-hidden">
-                  <div className="bg-red-500 text-white text-center py-4 text-xl font-semibold">
+                <div className="rounded-2xl border border-purple-300 bg-purple-50 overflow-hidden shadow-xl">
+                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-4 text-xl font-semibold">
                     Starter
                   </div>
 
                   <div className="p-6 text-center">
                     <p className="text-3xl font-bold">
-                      ₹ 1,120{" "}
+                      AED 37{" "}
                       <span className="text-sm font-medium">/ session</span>
                     </p>
 
-                    <p className="text-gray-500 line-through mt-1">₹ 1,600</p>
-
-                    <span className="inline-block mt-2 px-4 py-1 rounded-full bg-white text-red-600 text-sm font-medium">
-                      30% off
-                    </span>
-
-                    <p className="text-sm text-gray-600 mt-4">
-                      ₹ 8,960 / month
+                    <p className="text-sm text-gray-600 mt-2">
+                      (≈ 10 USD per hour)
                     </p>
 
-                    <p className="text-xs text-gray-500">
-                      (total discounted course fee: ₹ 53,760)
+                    <p className="text-lg font-semibold mt-4">
+                      48 Live Sessions
+                    </p>
+
+                    <p className="text-sm text-gray-600 mt-1">
+                      Total Course Fee: <strong>AED 1,776</strong>
                     </p>
 
                     <div className="mt-6">
@@ -300,30 +297,28 @@ export default function AICoursePage() {
                           className="text-green-600 mt-0.5"
                           size={16}
                         />
-                        <span>1:1 live personalized AI & ML sessions</span>
+                        <span>1:1 live instructor-led sessions</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle
                           className="text-green-600 mt-0.5"
                           size={16}
                         />
-                        <span>Dedicated mentor for individual attention</span>
+                        <span>Dedicated personal mentor</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle
                           className="text-green-600 mt-0.5"
                           size={16}
                         />
-                        <span>Flexible class scheduling</span>
+                        <span>Flexible scheduling</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle
                           className="text-green-600 mt-0.5"
                           size={16}
                         />
-                        <span>
-                          Focused learning pace tailored to your child
-                        </span>
+                        <span>Custom learning pace</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle
@@ -337,29 +332,27 @@ export default function AICoursePage() {
                 </div>
 
                 {/* GROWTH PLAN */}
-                <div className="rounded-2xl border border-purple-300 bg-purple-50 overflow-hidden">
-                  <div className="bg-purple-500 text-white text-center py-4 text-xl font-semibold">
+                <div className="rounded-2xl border border-blue-300 bg-blue-50 overflow-hidden shadow-xl">
+                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center py-4 text-xl font-semibold">
                     Growth
                   </div>
 
                   <div className="p-6 text-center">
                     <p className="text-3xl font-bold">
-                      ₹ 900{" "}
+                      AED 30{" "}
                       <span className="text-sm font-medium">/ session</span>
                     </p>
 
-                    <p className="text-gray-500 line-through mt-1">₹ 1,200</p>
-
-                    <span className="inline-block mt-2 px-4 py-1 rounded-full bg-white text-purple-600 text-sm font-medium">
-                      25% off
-                    </span>
-
-                    <p className="text-sm text-gray-600 mt-4">
-                      ₹ 7,200 / month
+                    <p className="text-sm text-gray-600 mt-2">
+                      (Small group learning)
                     </p>
 
-                    <p className="text-xs text-gray-500">
-                      (total discounted course fee: ₹ 43,200)
+                    <p className="text-lg font-semibold mt-4">
+                      48 Live Sessions
+                    </p>
+
+                    <p className="text-sm text-gray-600 mt-1">
+                      Total Course Fee: <strong>AED 1,440</strong>
                     </p>
 
                     <div className="mt-6">
@@ -385,7 +378,7 @@ export default function AICoursePage() {
                           className="text-green-600 mt-0.5"
                           size={16}
                         />
-                        <span>Peer learning with guided mentor support</span>
+                        <span>Peer learning & collaboration</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle
@@ -399,16 +392,14 @@ export default function AICoursePage() {
                           className="text-green-600 mt-0.5"
                           size={16}
                         />
-                        <span>
-                          Engaging discussions & collaborative projects
-                        </span>
+                        <span>Mentor-guided sessions</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle
                           className="text-green-600 mt-0.5"
                           size={16}
                         />
-                        <span>Budget-friendly learning option</span>
+                        <span>More affordable option</span>
                       </li>
                     </ul>
                   </div>

@@ -361,44 +361,51 @@ function PricingSection() {
         Choose the Right Learning Plan
       </h2>
 
+      <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+        One-hour live sessions • 48 sessions per course • UAE-friendly pricing
+      </p>
+
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {/* STARTER */}
         <PriceCard
           title="Starter"
-          price="₹ 1,120"
-          oldPrice="₹ 1,600"
-          discount="30% off"
-          monthly="₹ 8,960 / month"
-          course="Game Design"
+          price="AED 37 / session"
+          oldPrice="AED 50"
+          discount="1:1 Personalized"
+          monthly="Total: AED 1,776 (48 sessions)"
+          course="App Development"
           points={[
-            "1:1 live personalized game design sessions",
-            "Dedicated mentor",
+            "1:1 live personalized sessions",
+            "Dedicated personal mentor",
             "Flexible scheduling",
-            "Focused individual attention",
-            "Best for beginners",
+            "Custom learning pace",
+            "Best for beginners & fast learners",
           ]}
-          color="green"
+          color="orange"
         />
 
+        {/* GROWTH */}
         <PriceCard
           title="Growth"
-          price="₹ 900"
-          oldPrice="₹ 1,200"
-          discount="25% off"
-          monthly="₹ 7,200 / month"
-          course="Game Design"
+          price="AED 30 / session"
+          oldPrice="AED 40"
+          discount="Small Group (2–3 students)"
+          monthly="Total: AED 1,440 (48 sessions)"
+          course="App Development"
           points={[
-            "Small group live game classes",
+            "Live small group classes",
             "Peer learning & collaboration",
             "Structured weekly schedule",
             "Mentor-guided sessions",
             "More affordable option",
           ]}
-          color="emerald"
+          color="purple"
         />
       </div>
     </section>
   );
 }
+
 
 function PriceCard({
   title,

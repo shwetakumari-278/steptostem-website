@@ -38,18 +38,54 @@ export default function BookDemoButton({
     <>
       {/* FLOATING BUTTON */}
       {variant === "floating" && (
-        <button
-          data-book-demo="true"
+        <motion.button
           onClick={() => setOpen(true)}
-          className="fixed bottom-6 right-24 z-40 ..."
+          initial={{ scale: 1 }}
+          animate={{
+            scale: [1, 1.04, 1],
+            boxShadow: [
+              "0 0 0px rgba(168,85,247,0.0)",
+              "0 0 25px rgba(168,85,247,0.35)",
+              "0 0 0px rgba(168,85,247,0.0)",
+            ],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="
+      fixed bottom-6 right-6 z-50
+      flex items-center gap-4
+      px-5 py-4
+      rounded-2xl
+      bg-white/90 backdrop-blur-md
+      border border-purple-200
+      shadow-xl
+      hover:shadow-2xl
+      hover:scale-[1.02]
+      transition-all
+    "
         >
+          {/* TEXT */}
           <div className="text-left">
-            <div className="font-semibold">🎓 Book 10 Free Demo Classes</div>
-            <div className="text-xs text-purple-500">
+            <p className="font-semibold text-gray-900">
+              🎓 Book 10 Free Demo Classes
+            </p>
+            <p className="text-sm text-purple-600">
               No payment • Try before enrolling
-            </div>
+            </p>
           </div>
-        </button>
+
+          {/* CHATBOT IMAGE AS LOGO */}
+          <div className="relative w-12 h-12 rounded-full overflow-hidden border">
+            <img
+              src="/asset/chatbot.jpg"
+              alt="StepToSTEM Demo"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.button>
       )}
 
       {/* INLINE / SIDEBAR BUTTON */}

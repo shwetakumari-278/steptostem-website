@@ -25,7 +25,7 @@ import CourseCard from "@/components/CourseCard";
 import FeatureCard from "@/components/FeatureCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import BookDemoButton from "@/components/BookDemoButton";
-import ChatButton from "@/components/ChatButton";
+
 import BackgroundAnimation from "@/components/BackgroundAnimation";
 import ContactBlock from "@/components/components/ContactBlock";
 import Link from "next/link";
@@ -1087,7 +1087,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <ChatButton />
+    
       <BookDemoButton course="General Enquiry" />
     </div>
   );
