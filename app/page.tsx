@@ -220,14 +220,25 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <button className="button-primary text-lg px-8 py-4">
+              <button
+                onClick={() =>
+                  document.getElementById("courses")?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+                className="button-primary text-lg px-8 py-4"
+              >
                 <Play className="w-5 h-5 mr-2 inline" />
                 Start Learning
               </button>
-              <button className="button-secondary text-lg px-8 py-4">
-                <Trophy className="w-5 h-5 mr-2 inline" />
+
+              <a
+                href="/hackathons"
+                className="button-secondary text-lg px-8 py-4 inline-flex items-center"
+              >
+                <Trophy className="w-5 h-5 mr-2" />
                 Join Hackathons
-              </button>
+              </a>
             </div>
 
             <div className="text-gray-600">

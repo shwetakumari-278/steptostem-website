@@ -7,31 +7,48 @@ export default function BlogPage() {
     <>
       <Header />
 
-      <section className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-4xl font-bold mb-10">Blog</h1>
+      <section className="relative overflow-hidden py-24">
+        {/* BACKGROUND LAYER */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/asset/theme5.jpg"
+            alt="Blog background"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-purple-50/60 to-blue-50/70" />
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* CONTENT */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-14 font-display">
+            Blog
+          </h1>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {blogs.map((blog) => (
               <Link
                 key={blog.slug}
                 href={`/blog/${blog.slug}`}
-                className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden"
+                className="group bg-white/85 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100/50"
               >
-                <img
-                  src={blog.image}
-                  alt={blog.title}
-                  className="h-48 w-full object-cover"
-                />
+                <div className="relative overflow-hidden">
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
 
                 <div className="p-6">
                   <h2 className="text-xl font-semibold group-hover:text-purple-600 transition">
                     {blog.title}
                   </h2>
 
-                  <p className="text-gray-600 mt-2 text-sm">{blog.excerpt}</p>
+                  <p className="text-gray-600 mt-3 text-sm leading-relaxed">
+                    {blog.excerpt}
+                  </p>
 
-                  <p className="mt-4 text-xs text-gray-500">
+                  <p className="mt-5 text-xs text-gray-500">
                     {blog.author} • {blog.date}
                   </p>
                 </div>

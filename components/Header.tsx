@@ -23,11 +23,9 @@ export default function Header() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Locations", href: "/locations" },
-    { name: "Courses", href: "/#courses" }, // 👈 always home → courses
-    { name: "About", href: "/#about" },
+    { name: "Courses", href: "/#courses" }, // 👈
     { name: "Contact", href: "/#contact" }, // 👈 always footer
     { name: "Blog", href: "/blog" },
-
   ];
 
   return (
@@ -50,7 +48,7 @@ export default function Header() {
           >
             <div className="w-8 h-8 rounded-full overflow-hidden bg-white flex items-center justify-center">
               <img
-                src="/asset/logo.webp"
+                src="/asset/Picture4.png"
                 alt="StepToSTEM Logo"
                 className="w-full h-full object-cover"
               />
@@ -82,13 +80,14 @@ export default function Header() {
               </motion.a>
             ))}
 
-            <motion.button
+            <motion.a
+              href="/#courses"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-2 rounded-full text-sm font-medium hover:from-primary-700 hover:to-primary-800 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Get Started
-            </motion.button>
+            </motion.a>
           </nav>
 
           {/* MOBILE MENU BUTTON */}
@@ -127,9 +126,13 @@ export default function Header() {
                   </a>
                 ))}
 
-                <button className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-full text-sm font-medium hover:from-primary-700 hover:to-primary-800 transition-all duration-200 mt-4">
+                <a
+                  href="/#courses"
+                  onClick={() => setIsOpen(false)}
+                  className="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-full text-sm font-medium hover:from-primary-700 hover:to-primary-800 transition-all duration-200 mt-4 text-center"
+                >
                   Get Started
-                </button>
+                </a>
               </nav>
             </div>
           </motion.div>

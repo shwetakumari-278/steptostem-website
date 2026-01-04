@@ -303,7 +303,7 @@ export default function WebDevCoursePage() {
 
             {/* PRICING */}
             <PricingSection />
-            <CourseTestimonials courseId="app-development" />
+            <CourseTestimonials courseId="web-development" />
           </div>
 
           {/* RIGHT SIDEBAR */}
