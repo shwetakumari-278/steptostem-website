@@ -369,7 +369,7 @@ function PricingSection() {
         {/* STARTER */}
         <PriceCard
           title="Starter"
-          price="AED 37 / session"
+          price="AED 37 "
           oldPrice="AED 50"
           discount="1:1 Personalized"
           monthly="Total: AED 1,776 (48 sessions)"
@@ -387,17 +387,17 @@ function PricingSection() {
         {/* GROWTH */}
         <PriceCard
           title="Growth"
-          price="AED 30 / session"
+          price="AED 27"
           oldPrice="AED 40"
           discount="Small Group (2–3 students)"
-          monthly="Total: AED 1,440 (48 sessions)"
+          monthly="Total: AED 1,296 (48 sessions)"
           course="App Development"
           points={[
-            "Live small group classes",
+            "Live small group classes (2–3 students)",
             "Peer learning & collaboration",
             "Structured weekly schedule",
             "Mentor-guided sessions",
-            "More affordable option",
+            "Best value learning option",
           ]}
           color="purple"
         />
@@ -405,7 +405,6 @@ function PricingSection() {
     </section>
   );
 }
-
 
 function PriceCard({
   title,
