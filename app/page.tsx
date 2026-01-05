@@ -1078,12 +1078,23 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>
-              &copy; 2025 StepToSTEM. All rights reserved. Empowering students,
-              building futures.
-            </p>
-          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 space-y-3">
+  <p>
+    &copy; 2025 StepToSTEM. All rights reserved. Empowering students,
+    building futures.
+  </p>
+
+  {/* Legal Links */}
+  <div className="flex justify-center gap-6 text-sm">
+    <Link
+      href="/privacy-policy"
+      className="hover:text-white transition-colors"
+    >
+      Privacy Policy
+    </Link>
+  </div>
+</div>
+
         </div>
       </footer>
 
