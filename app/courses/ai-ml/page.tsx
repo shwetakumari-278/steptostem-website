@@ -89,20 +89,18 @@ export default function AICoursePage() {
             </div>
 
             {/* TRUST STRIP */}
-            <div className="mt-10 flex items-center justify-between gap-6 text-sm text-gray-700">
+            <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-700">
               <TrustStat
                 icon={<Users size={18} />}
                 title="1000+"
                 label="Students"
               />
+
               <TrustStat
                 icon={<Layers size={18} />}
                 title="4+"
                 label="Countries"
               />
-
-              <ReviewBlock title="Google" starsColor="text-yellow-400" />
-              <ReviewBlock title="Trustpilot" starsColor="text-green-600" />
             </div>
 
             {/* WHAT IS AI */}
@@ -292,41 +290,21 @@ export default function AICoursePage() {
                     </h4>
 
                     <ul className="space-y-3 text-sm text-gray-700">
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>1:1 live instructor-led sessions</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Dedicated personal mentor</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Flexible scheduling</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Custom learning pace</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Best for beginners & fast learners</span>
-                      </li>
+                      {[
+                        "1:1 live instructor-led sessions",
+                        "Dedicated personal mentor",
+                        "Flexible scheduling",
+                        "Custom learning pace",
+                        "Best for beginners & fast learners",
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <CheckCircle
+                            className="text-green-600 mt-0.5"
+                            size={16}
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -339,7 +317,7 @@ export default function AICoursePage() {
 
                   <div className="p-6 text-center">
                     <p className="text-3xl font-bold">
-                      AED 30{" "}
+                      AED 27{" "}
                       <span className="text-sm font-medium">/ session</span>
                     </p>
 
@@ -352,7 +330,7 @@ export default function AICoursePage() {
                     </p>
 
                     <p className="text-sm text-gray-600 mt-1">
-                      Total Course Fee: <strong>AED 1,440</strong>
+                      Total Course Fee: <strong>AED 1,296</strong>
                     </p>
 
                     <div className="mt-6">
@@ -366,41 +344,21 @@ export default function AICoursePage() {
                     </h4>
 
                     <ul className="space-y-3 text-sm text-gray-700">
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Live interactive group classes</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Peer learning & collaboration</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Structured weekly schedule</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>Mentor-guided sessions</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle
-                          className="text-green-600 mt-0.5"
-                          size={16}
-                        />
-                        <span>More affordable option</span>
-                      </li>
+                      {[
+                        "Live interactive group classes",
+                        "Peer learning & collaboration",
+                        "Structured weekly schedule",
+                        "Mentor-guided sessions",
+                        "More affordable option",
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <CheckCircle
+                            className="text-green-600 mt-0.5"
+                            size={16}
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
