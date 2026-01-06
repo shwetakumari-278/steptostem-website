@@ -56,6 +56,7 @@ export default function Home() {
         "Natural Language Processing",
         "Deep Learning",
       ],
+       rating: 4.7,
     },
     {
       id: "web-dev",
@@ -72,6 +73,7 @@ export default function Home() {
         "Backend Development",
         "Full-Stack Projects",
       ],
+       rating: 4.8,
     },
     {
       id: "game-design",
@@ -88,6 +90,7 @@ export default function Home() {
         "3D Modeling",
         "Game Programming",
       ],
+       rating: 4.6,
     },
     {
       id: "app-development",
@@ -103,6 +106,7 @@ export default function Home() {
         "App Logic & Navigation",
         "Mini Mobile App Projects",
       ],
+       rating: 4.9,
     },
   ];
   const features = [

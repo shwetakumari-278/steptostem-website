@@ -13,6 +13,7 @@ interface Course {
   bgColor: string;
   image: string | StaticImageData;
   features: string[];
+  rating: number;
 }
 
 interface CourseCardProps {
@@ -116,7 +117,7 @@ export default function CourseCard({
           </div>
           <div className="flex items-center space-x-1">
             <Star className="w-4 h-4 text-yellow-500 fill-current" />
-            <span>4.9</span>
+            <span>{course.rating}</span>
           </div>
         </div>
 
