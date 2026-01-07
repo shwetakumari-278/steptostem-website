@@ -13,12 +13,16 @@ import {
   CalendarCheck,
 } from "lucide-react";
 import Header from "@/components/Header";
+import { curriculum } from "@/data/curriculum";
+import CurriculumAccordion from "@/components/CurriculumAccordion";
 import CourseTestimonials from "@/components/CourseTestimonials";
 
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
 
 export default function GameDesignCoursePage() {
+  const courseKey = "game-design";
+
   return (
     <>
       <Header />
@@ -85,7 +89,7 @@ export default function GameDesignCoursePage() {
                   <Clock className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Duration</p>
-                    <p className="text-xs text-gray-600">3–6 Months</p>
+                    <p className="text-xs text-gray-600">5–6 Months</p>
                   </div>
                 </div>
 
@@ -164,27 +168,9 @@ export default function GameDesignCoursePage() {
               <h2 className="text-2xl font-bold mb-4">Course curriculum</h2>
 
               <div className="space-y-4">
-                <Curriculum
-                  title="Module 1"
-                  text="Introduction to Games & Design"
-                />
-                <Curriculum
-                  title="Module 2"
-                  text="Game Rules, Mechanics & Logic"
-                />
-                <Curriculum
-                  title="Module 3"
-                  text="Characters, Levels & Scoring"
-                />
-                <Curriculum title="Module 4" text="Game Programming Basics" />
-                <Curriculum
-                  title="Module 5"
-                  text="Animations & Interactivity"
-                />
-                <Curriculum
-                  title="Module 6"
-                  text="Final Game Project & Showcase"
-                />
+                {curriculum[courseKey].modules.map((mod) => (
+                  <CurriculumAccordion key={mod.module} module={mod} />
+                ))}
               </div>
             </section>
 
@@ -427,28 +413,40 @@ function RightSidebar() {
         <ul className="space-y-4 text-sm text-gray-700">
           <SidebarRow
             icon={<Video size={16} />}
-            text="Live instructor-led classes"
+            text="Live game design & development classes"
           />
           <SidebarRow
             icon={<Users size={16} />}
-            text="1:1 or small group learning"
+            text="1:1 or small group mentoring"
           />
           <SidebarRow
             icon={<BookOpen size={16} />}
-            text="Structured curriculum"
+            text="Game mechanics, logic & level design"
           />
           <SidebarRow
             icon={<Layers size={16} />}
-            text="Hands-on game projects"
+            text="Hands-on game projects & playable levels"
           />
           <SidebarRow
             icon={<Award size={16} />}
-            text="Certificate on completion"
+            text="Game development certificate"
           />
-          <SidebarRow icon={<BarChart size={16} />} text="Progress tracking" />
+          <SidebarRow
+            icon={<BarChart size={16} />}
+            text="Progress reports & skill assessments"
+          />
+          <SidebarRow
+            icon={<ShieldCheck size={16} />}
+            text="100% money-back guarantee for assured satisfaction"
+          />
+
           <SidebarRow
             icon={<CalendarCheck size={16} />}
-            text="Flexible scheduling"
+            text="Flexible class scheduling"
+          />
+          <SidebarRow
+            icon={<Video size={16} />}
+            text="Unlimited 1:1 live doubt sessions"
           />
         </ul>
       </div>

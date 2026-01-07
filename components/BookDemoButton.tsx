@@ -6,9 +6,11 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function BookDemoButton({
   course,
   variant = "floating",
+  label,
 }: {
   course: string;
   variant?: "floating" | "inline";
+  label?: string;
 }) {
   console.log("COURSE PROP =", course);
 
@@ -70,8 +72,9 @@ export default function BookDemoButton({
           {/* TEXT */}
           <div className="text-left">
             <p className="font-semibold text-gray-900">
-              🎓 Book 10 Free Demo Classes
+              {label ?? "🎓 Book 10 Free Demo Classes"}
             </p>
+
             <p className="text-sm text-purple-600">
               No payment • Try before enrolling
             </p>
@@ -92,20 +95,25 @@ export default function BookDemoButton({
       {variant === "inline" && (
         <button
           onClick={() => setOpen(true)}
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-600
-          hover:from-purple-700 hover:to-blue-700
-          text-white py-3 rounded-lg font-semibold
-          shadow-md shadow-purple-300/40
-          hover:shadow-purple-400/60
-          transition-all duration-300"
+          className="
+      w-full
+      px-6 py-4
+      rounded-2xl
+      bg-gradient-to-r from-purple-600 to-blue-600
+      hover:from-purple-700 hover:to-blue-700
+      text-white
+      shadow-lg shadow-purple-400/40
+      hover:shadow-purple-500/60
+      transition-all duration-300
+      text-center
+    "
         >
-          <div className="text-center">
-            <div className="font-semibold text-lg">
-              🎓 Book 10 Free Demo Classes
-            </div>
-            <div className="text-xs opacity-90 mt-1">
-              No payment • Try before enrolling
-            </div>
+          <div className="text-lg font-semibold leading-snug">
+            {label ?? "Schedule 10 Free Demo Classes"}
+          </div>
+
+          <div className="text-sm opacity-90 mt-1">
+            No payment • Try before enrolling
           </div>
         </button>
       )}

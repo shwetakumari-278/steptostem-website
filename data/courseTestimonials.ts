@@ -1,7 +1,7 @@
 export const courseTestimonials = {
   "web-development": {
     averageRating: 4.8,
-    totalReviews: "1200+ reviews",
+    totalReviews: "1100+ reviews",
     testimonials: [
       {
         name: "Riya Sharma",
@@ -35,8 +35,8 @@ export const courseTestimonials = {
   },
 
   "ai-ml": {
-    averageRating: 4.7,
-    totalReviews: "900+ reviews",
+    averageRating: 4.9,
+    totalReviews: "1000+ reviews",
     testimonials: [
       {
         name: "Lily Zane",
@@ -70,8 +70,8 @@ export const courseTestimonials = {
   },
 
   "game-design": {
-    averageRating: 4.6,
-    totalReviews: "750+ reviews",
+    averageRating: 4.9,
+    totalReviews: "1000+ reviews",
     testimonials: [
       {
         name: "Ishan Malhotra",
@@ -105,7 +105,7 @@ export const courseTestimonials = {
   },
 
   "app-development": {
-    averageRating: 4.9,
+    averageRating: 4.85,
     totalReviews: "1100+ reviews",
     testimonials: [
       {

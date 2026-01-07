@@ -9,14 +9,20 @@ import {
   BookOpen,
   Layers,
   BarChart,
+  ShieldCheck,
   CalendarCheck,
 } from "lucide-react";
+import { curriculum } from "@/data/curriculum";
+import CurriculumAccordion from "@/components/CurriculumAccordion";
+
 import Header from "@/components/Header";
 import CourseTestimonials from "@/components/CourseTestimonials";
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
 
 export default function AICoursePage() {
+  const courseKey = "ai-ml";
+
   return (
     <>
       <Header />
@@ -63,7 +69,7 @@ export default function AICoursePage() {
                 <Feature
                   icon={<BarChart size={20} />}
                   title="Suitable for"
-                  value="Grade 5–12"
+                  value="Grade 3–12"
                 />
                 <Feature
                   icon={<Video size={20} />}
@@ -78,7 +84,7 @@ export default function AICoursePage() {
                 <Feature
                   icon={<Clock size={20} />}
                   title="Duration"
-                  value="4–6 Months"
+                  value="5–6 Months"
                 />
                 <Feature
                   icon={<Layers size={20} />}
@@ -139,25 +145,11 @@ export default function AICoursePage() {
             {/* CURRICULUM */}
             <section>
               <h2 className="text-2xl font-bold mb-4">Course curriculum</h2>
+
               <div className="space-y-4">
-                <Curriculum
-                  title="Module 1"
-                  text="What is AI & Human Intelligence"
-                />
-                <Curriculum title="Module 2" text="Data, Patterns & Learning" />
-                <Curriculum title="Module 3" text="Machine Learning Basics" />
-                <Curriculum
-                  title="Module 4"
-                  text="Computer Vision & Image AI"
-                />
-                <Curriculum
-                  title="Module 5"
-                  text="Chatbots & Language Models"
-                />
-                <Curriculum
-                  title="Module 6"
-                  text="Final AI Project & Showcase"
-                />
+                {curriculum[courseKey].modules.map((mod) => (
+                  <CurriculumAccordion key={mod.module} module={mod} />
+                ))}
               </div>
             </section>
 
@@ -459,25 +451,46 @@ function RightSidebar() {
         <ul className="space-y-4 text-sm text-gray-700">
           <SidebarRow
             icon={<Video size={16} />}
-            text="Live instructor-led classes"
+            text="48 live 1-on-1 instructor-led classes (45 mins)"
           />
+
           <SidebarRow
             icon={<Users size={16} />}
-            text="1:1 or small group learning"
+            text="1:1 or small group personalized learning"
           />
+
           <SidebarRow
             icon={<BookOpen size={16} />}
-            text="Structured curriculum"
+            text="Structured curriculum with 8 detailed modules"
           />
-          <SidebarRow icon={<Layers size={16} />} text="Hands-on AI projects" />
+
+          <SidebarRow
+            icon={<Layers size={16} />}
+            text="50+ hands-on AI activities & projects"
+          />
+
           <SidebarRow
             icon={<Award size={16} />}
-            text="Certificate on completion"
+            text="Globally recognized certificate on completion"
           />
-          <SidebarRow icon={<BarChart size={16} />} text="Progress tracking" />
+
+          <SidebarRow
+            icon={<BarChart size={16} />}
+            text="Monthly progress reports & skill tracking"
+          />
+          <SidebarRow
+            icon={<ShieldCheck size={16} />}
+            text="100% money-back guarantee for assured satisfaction"
+          />
+
           <SidebarRow
             icon={<CalendarCheck size={16} />}
-            text="Flexible scheduling"
+            text="Flexible scheduling + lifetime course access"
+          />
+
+          <SidebarRow
+            icon={<Video size={16} />}
+            text="Unlimited 1:1 live doubt-solving sessions"
           />
         </ul>
       </div>

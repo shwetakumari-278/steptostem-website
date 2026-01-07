@@ -13,12 +13,16 @@ import {
   CalendarCheck,
 } from "lucide-react";
 import BookDemoButton from "@/components/BookDemoButton";
+import { curriculum } from "@/data/curriculum";
+import CurriculumAccordion from "@/components/CurriculumAccordion";
 import CourseTestimonials from "@/components/CourseTestimonials";
 
 import Header from "@/components/Header";
 import CourseOfferBar from "@/components/CourseOfferBar";
 
 export default function WebDevCoursePage() {
+  const courseKey = "web-dev";
+
   return (
     <>
       {/* MAIN HEADER */}
@@ -91,7 +95,7 @@ export default function WebDevCoursePage() {
                   <Clock className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Duration</p>
-                    <p className="text-xs text-gray-600">3–6 Months</p>
+                    <p className="text-xs text-gray-600">5–6 Months</p>
                   </div>
                 </div>
 
@@ -107,7 +111,6 @@ export default function WebDevCoursePage() {
               </div>
             </div>
 
-            
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-700">
               {/* STUDENTS */}
               <div className="flex items-center gap-3">
@@ -172,21 +175,9 @@ export default function WebDevCoursePage() {
               <h2 className="text-2xl font-bold mb-4">Course curriculum</h2>
 
               <div className="space-y-4">
-                <Curriculum
-                  title="Module 1"
-                  text="Introduction to the Web & Internet"
-                />
-                <Curriculum title="Module 2" text="HTML – Website Structure" />
-                <Curriculum title="Module 3" text="CSS – Styling & Layouts" />
-                <Curriculum
-                  title="Module 4"
-                  text="JavaScript – Interactivity"
-                />
-                <Curriculum title="Module 5" text="Responsive Web Design" />
-                <Curriculum
-                  title="Module 6"
-                  text="Final Personal Website Project"
-                />
+                {curriculum[courseKey].modules.map((mod) => (
+                  <CurriculumAccordion key={mod.module} module={mod} />
+                ))}
               </div>
             </section>
 
@@ -428,28 +419,40 @@ function RightSidebar() {
         <ul className="space-y-4 text-sm text-gray-700">
           <SidebarRow
             icon={<Video size={16} />}
-            text="Live instructor-led classes"
+            text="Live instructor-led coding classes"
           />
           <SidebarRow
             icon={<Users size={16} />}
-            text="1:1 or small group learning"
+            text="1:1 or small group personalized learning"
           />
           <SidebarRow
             icon={<BookOpen size={16} />}
-            text="Structured curriculum"
+            text="HTML, CSS, JavaScript & React curriculum"
           />
           <SidebarRow
             icon={<Layers size={16} />}
-            text="Hands-on web projects"
+            text="Real-world websites & portfolio projects"
           />
           <SidebarRow
             icon={<Award size={16} />}
             text="Certificate on completion"
           />
-          <SidebarRow icon={<BarChart size={16} />} text="Progress tracking" />
+          <SidebarRow
+            icon={<BarChart size={16} />}
+            text="Progress tracking & feedback"
+          />
+          <SidebarRow
+            icon={<ShieldCheck size={16} />}
+            text="100% money-back guarantee for assured satisfaction"
+          />
+
           <SidebarRow
             icon={<CalendarCheck size={16} />}
-            text="Flexible scheduling"
+            text="Flexible scheduling + lifetime access"
+          />
+          <SidebarRow
+            icon={<Video size={16} />}
+            text="Unlimited live doubt-solving sessions"
           />
         </ul>
       </div>

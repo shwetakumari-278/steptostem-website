@@ -56,7 +56,7 @@ export default function Home() {
         "Natural Language Processing",
         "Deep Learning",
       ],
-       rating: 4.7,
+      rating: 4.9,
     },
     {
       id: "web-dev",
@@ -73,7 +73,7 @@ export default function Home() {
         "Backend Development",
         "Full-Stack Projects",
       ],
-       rating: 4.8,
+      rating: 4.8,
     },
     {
       id: "game-design",
@@ -90,7 +90,7 @@ export default function Home() {
         "3D Modeling",
         "Game Programming",
       ],
-       rating: 4.6,
+      rating: 4.9,
     },
     {
       id: "app-development",
@@ -106,7 +106,7 @@ export default function Home() {
         "App Logic & Navigation",
         "Mini Mobile App Projects",
       ],
-       rating: 4.9,
+      rating: 4.85,
     },
   ];
   const features = [
@@ -247,7 +247,7 @@ export default function Home() {
 
             <div className="text-gray-600">
               <p className="text-lg mb-4">
-                Trusted by 1000+ students nationwide
+                Trusted by 10000+ students worldwide
               </p>
               <div className="flex justify-center items-center space-x-8">
                 <div className="text-center">
@@ -256,12 +256,12 @@ export default function Home() {
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-secondary-600">
-                    100+
+                    50000+
                   </div>
                   <div className="text-sm">Projects Built</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">95%</div>
+                  <div className="text-2xl font-bold text-green-600">98%</div>
                   <div className="text-sm">Success Rate</div>
                 </div>
               </div>
@@ -1014,13 +1014,13 @@ export default function Home() {
               with StepToSTEM
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="button-primary text-lg px-8 py-4">
-                Get Started Today
-                <ArrowRight className="w-5 h-5 ml-2 inline" />
-              </button>
-              <button className="button-secondary text-lg px-8 py-4">
-                Schedule a Demo
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <BookDemoButton
+                  course="AI & Machine Learning"
+                  variant="inline"
+                  label="Schedule 10 Free Demo Classes"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
@@ -1083,26 +1083,24 @@ export default function Home() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 space-y-3">
-  <p>
-    &copy; 2025 StepToSTEM. All rights reserved. Empowering students,
-    building futures.
-  </p>
+            <p>
+              &copy; 2025 StepToSTEM. All rights reserved. Empowering students,
+              building futures.
+            </p>
 
-  {/* Legal Links */}
-  <div className="flex justify-center gap-6 text-sm">
-    <Link
-      href="/privacy-policy"
-      className="hover:text-white transition-colors"
-    >
-      Privacy Policy
-    </Link>
-  </div>
-</div>
-
+            {/* Legal Links */}
+            <div className="flex justify-center gap-6 text-sm">
+              <Link
+                href="/privacy-policy"
+                className="hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
 
-    
       <BookDemoButton course="General Enquiry" />
     </div>
   );

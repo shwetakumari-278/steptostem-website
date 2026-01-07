@@ -17,8 +17,10 @@ import CourseTestimonials from "@/components/CourseTestimonials";
 
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
-
+import CurriculumAccordion from "@/components/CurriculumAccordion";
+import { curriculum } from "@/data/curriculum";
 export default function AppDevCoursePage() {
+  const courseKey = "app-development";
   return (
     <>
       <Header />
@@ -88,7 +90,7 @@ export default function AppDevCoursePage() {
                   <Clock className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Duration</p>
-                    <p className="text-xs text-gray-600">3–6 Months</p>
+                    <p className="text-xs text-gray-600">5–6 Months</p>
                   </div>
                 </div>
 
@@ -160,21 +162,17 @@ export default function AppDevCoursePage() {
               </ul>
             </section>
 
-            {/* CURRICULUM */}
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Course curriculum</h2>
-              <div className="space-y-4">
-                <Curriculum
-                  title="Module 1"
-                  text="Introduction to Mobile Apps"
-                />
-                <Curriculum title="Module 2" text="UI Design & Screens" />
-                <Curriculum title="Module 3" text="Navigation & Interaction" />
-                <Curriculum title="Module 4" text="App Logic & Features" />
-                <Curriculum title="Module 5" text="Testing & Improvements" />
-                <Curriculum title="Module 6" text="Final App Project" />
-              </div>
-            </section>
+          <section>
+  <h2 className="text-2xl font-bold mb-6">
+    {curriculum[courseKey].title}
+  </h2>
+
+  <div className="space-y-4">
+    {curriculum[courseKey].modules.map((module) => (
+      <CurriculumAccordion key={module.module} module={module} />
+    ))}
+  </div>
+</section>
 
             {/* PROJECTS */}
             <section>
@@ -414,7 +412,7 @@ function RightSidebar() {
         <ul className="space-y-4 text-sm text-gray-700">
           <SidebarRow
             icon={<Video size={16} />}
-            text="Live instructor-led classes"
+            text="Live mobile app development classes"
           />
           <SidebarRow
             icon={<Users size={16} />}
@@ -422,20 +420,27 @@ function RightSidebar() {
           />
           <SidebarRow
             icon={<BookOpen size={16} />}
-            text="Structured curriculum"
+            text="App UI design & navigation logic"
           />
           <SidebarRow
             icon={<Layers size={16} />}
-            text="Hands-on app projects"
+            text="Mini mobile app projects"
           />
           <SidebarRow
             icon={<Award size={16} />}
             text="Certificate on completion"
           />
-          <SidebarRow icon={<BarChart size={16} />} text="Progress tracking" />
+          <SidebarRow
+            icon={<BarChart size={16} />}
+            text="Progress tracking & mentor feedback"
+          />
           <SidebarRow
             icon={<CalendarCheck size={16} />}
-            text="Flexible scheduling"
+            text="Flexible scheduling + lifetime access"
+          />
+          <SidebarRow
+            icon={<Video size={16} />}
+            text="Unlimited live doubt-solving sessions"
           />
         </ul>
       </div>
