@@ -22,9 +22,7 @@ export default function CourseOfferBar({
         {/* Uses SAME demo modal */}
         <div className="shrink-0">
           <button
-            onClick={() =>window.dispatchEvent(new Event("open-demo"))
-              
-            }
+            onClick={() => window.dispatchEvent(new Event("open-demo"))}
             className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
             🎓 Book 10 Free Demo Classes

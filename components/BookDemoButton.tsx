@@ -1,9 +1,7 @@
 "use client";
 
-
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-
 
 export default function BookDemoButton({
   course,
@@ -27,11 +25,11 @@ export default function BookDemoButton({
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-  const openHandler = () => setOpen(true);
+    const openHandler = () => setOpen(true);
 
-  window.addEventListener("open-demo", openHandler);
-  return () => window.removeEventListener("open-demo", openHandler);
-}, []);
+    window.addEventListener("open-demo", openHandler);
+    return () => window.removeEventListener("open-demo", openHandler);
+  }, []);
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;

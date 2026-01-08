@@ -157,18 +157,17 @@ export default function AICoursePage() {
             </section>
 
             {/* PROJECTS */}
-           <section>
-  <h2 className="text-2xl font-bold mb-6">
-    Projects students build
-  </h2>
+            <section>
+              <h2 className="text-2xl font-bold mb-6">
+                Projects students build
+              </h2>
 
-  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {projectsByCourse["ai-ml"].map((project, index) => (
-      <ProjectCard key={index} {...project} />
-    ))}
-  </div>
-</section>
-
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {projectsByCourse["ai-ml"].map((project, index) => (
+                  <ProjectCard key={index} {...project} />
+                ))}
+              </div>
+            </section>
 
             {/* STEPTOSTEM LEARNING PATH */}
             <section>
@@ -276,9 +275,7 @@ export default function AICoursePage() {
                       Total Course Fee: <strong>AED 1,776</strong>
                     </p>
 
-                    <div className="mt-6">
-                      
-                    </div>
+                    <div className="mt-6"></div>
                   </div>
 
                   <div className="border-t p-6">
@@ -330,9 +327,7 @@ export default function AICoursePage() {
                       Total Course Fee: <strong>AED 1,296</strong>
                     </p>
 
-                    <div className="mt-6">
-                     
-                    </div>
+                    <div className="mt-6"></div>
                   </div>
 
                   <div className="border-t p-6">

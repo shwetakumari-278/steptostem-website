@@ -57,10 +57,7 @@ export default function CurriculumAccordion({ module }: any) {
             <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
               {outcomes.map((item: string, i: number) => (
                 <li key={i} className="flex gap-2 items-start">
-                  <CheckCircle
-                    size={14}
-                    className="text-green-500 mt-0.5"
-                  />
+                  <CheckCircle size={14} className="text-green-500 mt-0.5" />
                   <span className="text-gray-800">{item}</span>
                 </li>
               ))}

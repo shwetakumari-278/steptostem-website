@@ -14,15 +14,12 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 
-
 import Link from "next/link";
 
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
 
 export default function GameDesignCoursePage() {
-  
-
   return (
     <>
       <Header />
@@ -163,8 +160,6 @@ export default function GameDesignCoursePage() {
               </ul>
             </section>
 
-           
-
             {/* STEPTOSTEM LEARNING PATH */}
             <section>
               <h2 className="text-2xl font-bold mb-4">
@@ -223,45 +218,43 @@ export default function GameDesignCoursePage() {
                 />
               </div>
             </section>
-{/* GAME DEV COURSE PATHS */}
-<section className="mt-16">
-  <h2 className="text-3xl font-bold mb-4 text-center">
-    Choose Your Game Development Path
-  </h2>
+            {/* GAME DEV COURSE PATHS */}
+            <section className="mt-16">
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                Choose Your Game Development Path
+              </h2>
 
-  <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-    Students start their game development journey based on age, experience,
-    and learning style.
-  </p>
+              <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                Students start their game development journey based on age,
+                experience, and learning style.
+              </p>
 
-  <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-    {/* SCRATCH CARD */}
-    <GameCourseCard
-      title="Scratch Programming"
-      subtitle="Game Development for Kids"
-      age="Ages 6–10"
-      description="Kids learn game logic, creativity, and problem-solving by building fun 2D games using block-based coding."
-      image="/asset/scratch-game-dev.jpg"
-      href="/courses/game-design/scratch"
-      badge="Beginner Friendly"
-      color="from-orange-400 to-pink-500"
-    />
+              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                {/* SCRATCH CARD */}
+                <GameCourseCard
+                  title="Scratch Programming"
+                  subtitle="Game Development for Kids"
+                  age="Ages 6–10"
+                  description="Kids learn game logic, creativity, and problem-solving by building fun 2D games using block-based coding."
+                  image="/asset/scratch-game-dev.jpg"
+                  href="/courses/game-design/scratch"
+                  badge="Beginner Friendly"
+                  color="from-orange-400 to-pink-500"
+                />
 
-    {/* ROBLOX CARD */}
-    <GameCourseCard
-      title="Roblox Champions"
-      subtitle="Game Development (Basic → Advanced)"
-      age="Ages 9–18"
-      description="Students build immersive 3D games, learn Lua scripting, and publish their own Roblox experiences."
-      image="/asset/roblox-game-dev.webp"
-      href="/courses/game-design/roblox"
-      badge="Most Popular"
-      color="from-emerald-500 to-teal-600"
-    />
-  </div>
-</section>
-
-            
+                {/* ROBLOX CARD */}
+                <GameCourseCard
+                  title="Roblox Champions"
+                  subtitle="Game Development (Basic → Advanced)"
+                  age="Ages 9–18"
+                  description="Students build immersive 3D games, learn Lua scripting, and publish their own Roblox experiences."
+                  image="/asset/roblox-game-dev.webp"
+                  href="/courses/game-design/roblox"
+                  badge="Most Popular"
+                  color="from-emerald-500 to-teal-600"
+                />
+              </div>
+            </section>
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -505,9 +498,7 @@ function GameCourseCard({
         <h3 className="text-xl font-bold">{title}</h3>
         <p className="text-sm text-gray-500">{subtitle}</p>
 
-        <p className="text-sm text-gray-700 leading-relaxed">
-          {description}
-        </p>
+        <p className="text-sm text-gray-700 leading-relaxed">{description}</p>
 
         <div className="flex items-center justify-between pt-4">
           <span className="text-xs font-medium text-gray-500">{age}</span>
@@ -518,6 +509,5 @@ function GameCourseCard({
         </div>
       </div>
     </Link>
-    
   );
 }

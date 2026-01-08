@@ -174,27 +174,26 @@ export default function AppDevCoursePage() {
               </div>
             </section>
 
-           {/* PROJECTS */}
-<section>
-  <h2 className="text-2xl font-bold mb-6">
-    Projects Students Build
-  </h2>
+            {/* PROJECTS */}
+            <section>
+              <h2 className="text-2xl font-bold mb-6">
+                Projects Students Build
+              </h2>
 
-  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {APP_DEV_PROJECTS.map((p, i) => (
-      <div key={i} className="bg-white rounded-xl shadow p-4">
-        <img
-          src={p.image}
-          alt={p.title}
-          className="h-36 w-full object-cover rounded-lg mb-3"
-        />
-        <h3 className="font-semibold">{p.title}</h3>
-        <p className="text-sm text-gray-600">{p.desc}</p>
-      </div>
-    ))}
-  </div>
-</section>
-
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {APP_DEV_PROJECTS.map((p, i) => (
+                  <div key={i} className="bg-white rounded-xl shadow p-4">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      className="h-36 w-full object-cover rounded-lg mb-3"
+                    />
+                    <h3 className="font-semibold">{p.title}</h3>
+                    <p className="text-sm text-gray-600">{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
 
             {/* STEPTOSTEM LEARNING PATH */}
             <section>
@@ -479,4 +478,3 @@ const APP_DEV_PROJECTS = [
     image: "/asset/app-final-project.jpg",
   },
 ];
-
