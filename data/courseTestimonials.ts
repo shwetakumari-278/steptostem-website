@@ -1,0 +1,141 @@
+export const courseTestimonials = {
+  "web-development": {
+    averageRating: 4.8,
+    totalReviews: "1100+ reviews",
+    testimonials: [
+      {
+        name: "Riya Sharma",
+        role: "Grade 10 Student",
+        image: "/testimonials/riya.jpg",
+        rating: 4.9,
+        text: "Initially I felt lost, but once I built my first webpage, things started clicking. Seeing my work live on screen boosted my confidence a lot.",
+      },
+      {
+        name: "Kabir Verma",
+        role: "Grade 8 Student",
+        image: "/testimonials/kabir.jpg",
+        rating: 4.6,
+        text: "Nobody rushed me. I liked fixing small mistakes and improving my website little by little.",
+      },
+      {
+        name: "Amit Khanna",
+        role: "Parent",
+        image: "/testimonials/amit.jpg",
+        rating: 4.7,
+        text: "What surprised me most was how clearly my child started explaining concepts. That confidence didn’t exist before.",
+      },
+      {
+        name: "Sneha Jain",
+        role: "Grade 9 Student",
+        image: "/testimonials/sneha.jpg",
+        rating: 4.8,
+        text: "Typing code and instantly seeing changes made learning exciting. It never felt boring or forced.",
+      },
+    ],
+  },
+
+  "ai-ml": {
+    averageRating: 4.9,
+    totalReviews: "1000+ reviews",
+    testimonials: [
+      {
+        name: "Lily Zane",
+        role: "Grade 9 Student",
+        image: "/testimonials/lily.jpg",
+        rating: 4.8,
+        text: "AI sounded scary at first, but once examples were explained, I understood how machines actually learn.",
+      },
+      {
+        name: "Arjun Patel",
+        role: "Grade 11 Student",
+        image: "/testimonials/arjun.jpg",
+        rating: 4.6,
+        text: "Training my own model and seeing correct predictions was a proud moment for me.",
+      },
+      {
+        name: "Rohini Das",
+        role: "Parent",
+        image: "/testimonials/rohini.jpg",
+        rating: 4.5,
+        text: "Even though I don’t understand AI, I can see my child thinking more logically now.",
+      },
+      {
+        name: "Mehul Shah",
+        role: "Grade 10 Student",
+        image: "/testimonials/mehul.jpg",
+        rating: 4.7,
+        text: "Breaking data into steps helped me understand complex ideas easily. It felt practical, not theoretical.",
+      },
+    ],
+  },
+
+  "game-design": {
+    averageRating: 4.9,
+    totalReviews: "1000+ reviews",
+    testimonials: [
+      {
+        name: "Ishan Malhotra",
+        role: "Grade 7 Student",
+        image: "/testimonials/ishan.jpg",
+        rating: 4.5,
+        text: "Playing games is fun, but making one felt amazing. I loved seeing my character move.",
+      },
+      {
+        name: "Maxwell Roy",
+        role: "Grade 6 Student",
+        image: "/testimonials/maxwell.jpg",
+        rating: 4.7,
+        text: "When my game broke, fixing it was challenging but fun. I liked adding levels and scores.",
+      },
+      {
+        name: "Mathias George",
+        role: "Parent",
+        image: "/testimonials/mathias.jpg",
+        rating: 4.6,
+        text: "My child now talks about logic and ideas instead of just playing games all day.",
+      },
+      {
+        name: "Aditya Singh",
+        role: "Grade 8 Student",
+        image: "/testimonials/aditya.jpg",
+        rating: 4.4,
+        text: "Designing characters was my favourite part. It felt creative, not like a normal class.",
+      },
+    ],
+  },
+
+  "app-development": {
+    averageRating: 4.85,
+    totalReviews: "1100+ reviews",
+    testimonials: [
+      {
+        name: "Thiago Fernandez",
+        role: "Grade 11 Student",
+        image: "/testimonials/thiago.jpg",
+        rating: 4.9,
+        text: "Opening my own app on my phone was unbelievable. I never thought I could build something like that.",
+      },
+      {
+        name: "Rahul Mehta",
+        role: "Parent",
+        image: "/testimonials/rahul.jpg",
+        rating: 4.8,
+        text: "This course made my child more confident and independent in solving problems.",
+      },
+      {
+        name: "Rohit Singh",
+        role: "Grade 9 Student",
+        image: "/testimonials/rohit.jpg",
+        rating: 4.8,
+        text: "Once the full app came together, everything finally made sense to me.",
+      },
+      {
+        name: "Ananya Rao",
+        role: "Grade 10 Student",
+        image: "/testimonials/ananya.jpg",
+        rating: 4.7,
+        text: "I liked testing my app and improving it. It felt like working on something real.",
+      },
+    ],
+  },
+};

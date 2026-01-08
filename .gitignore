@@ -1,0 +1,93 @@
+# Node
+node_modules/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Production
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+.pnp/
+.pnp.js
+
+# Optional npm cache directory
+.npm
+
+# Testing
+coverage/
+.nyc_output/
+
+# Local env files
+.env
+.env.*.local
+.env.local
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Parcel cache
+.parcel-cache/
+
+# Next.js cache
+.next/cache/
+
+# Misc
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Optional: local debug files
+*.log
+
+# ESLint cache
+.eslintcache
+
+# Yarn v2/v3
+.yarn/*
+.yarnrc.yml
+
+# TypeScript
+*.tsbuildinfo
+
+# Storybook
+/storybook-static/
+
+# Vercel
+.vercel/
+.vercel
+
+node_modules
+
+# Local Netlify folder
+.netlify
