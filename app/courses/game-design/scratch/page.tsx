@@ -134,7 +134,7 @@ export default function ScratchGameDevPage() {
 
             <PricingSection course="Scratch Game Development" />
 
-            <CourseTestimonials courseId="game-design" />
+            <CourseTestimonials courseId="scratch" />
           </div>
 
           {/* RIGHT SIDEBAR */}

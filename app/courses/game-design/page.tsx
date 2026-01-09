@@ -15,7 +15,7 @@ import {
 import Header from "@/components/Header";
 
 import Link from "next/link";
-
+import CourseTestimonials from "@/components/CourseTestimonials";
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
 
@@ -255,6 +255,7 @@ export default function GameDesignCoursePage() {
                 />
               </div>
             </section>
+             <CourseTestimonials courseId="game-design" />
           </div>
 
           {/* RIGHT SIDEBAR */}

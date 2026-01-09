@@ -124,7 +124,7 @@ export default function RobloxGameDevPage() {
 
             <PricingSection course="Roblox Game Development" />
 
-            <CourseTestimonials courseId="game-design" />
+            <CourseTestimonials courseId="roblox" />
           </div>
 
           {/* RIGHT SIDEBAR */}

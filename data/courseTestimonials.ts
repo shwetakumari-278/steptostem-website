@@ -138,4 +138,73 @@ export const courseTestimonials = {
       },
     ],
   },
+  "scratch": {
+  averageRating: 4.8,
+  totalReviews: "1000+ reviews",
+  testimonials: [
+    {
+      name: "Lucas Pereira",
+      role: "Grade 5 Student • Brazil",
+      image: "/testimonials/lucas.jpg",
+      rating: 4.6,
+      text: "I made my first game in Scratch and shared it with my friends. Dragging blocks was easy and fun."
+    },
+    {
+      name: "Emily Carter",
+      role: "Grade 6 Student • USA",
+      image: "/testimonials/emily.jpg",
+      rating: 4.7,
+      text: "I liked how my character talked and moved. It felt like telling a story through a game."
+    },
+    {
+      name: "Arjun Shukla",
+      role: "Parent • India",
+      image: "/testimonials/arjun1.jpg",
+      rating: 4.5,
+      text: "Scratch helped my child understand logic and sequencing without feeling like studying."
+    },
+    {
+      name: "Oliver Thompson",
+      role: "Grade 5 Student • UK",
+      image: "/testimonials/oliver.jpg",
+      rating: 4.6,
+      text: "When my game didn’t work, fixing it made me feel smart. I want to make more games now."
+    }
+  ]
+},
+"roblox": {
+  averageRating: 4.9,
+  totalReviews: "1100+ reviews",
+  testimonials: [
+    {
+      name: "Noah Williams",
+      role: "Grade 8 Student • Canada",
+      image: "/testimonials/noah.jpg",
+      rating: 4.8,
+      text: "I built my own Roblox world and added obstacles. Seeing others play my game was awesome."
+    },
+    {
+      name: "Ayaan Khan",
+      role: "Grade 7 Student • USA",
+      image: "/testimonials/ayaan.jpg",
+      rating: 4.7,
+      text: "Using Roblox Studio felt professional. I learned how games actually work behind the scenes."
+    },
+    {
+      name: "Sophia Müller",
+      role: "Parent • Germany",
+      image: "/testimonials/sophia.jpg",
+      rating: 4.6,
+      text: "My child now talks about game logic, design, and teamwork instead of just playing games."
+    },
+    {
+      name: "Ethan Chen",
+      role: "Grade 8 Student • Singapore",
+      image: "/testimonials/ethan.jpg",
+      rating: 4.8,
+      text: "Adding scores and levels was challenging but exciting. It felt like being a real game developer."
+    }
+  ]
+}
+
 };
