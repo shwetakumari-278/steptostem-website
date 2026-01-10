@@ -75,7 +75,7 @@ export default function ScratchGameDevPage() {
                 <Feature
                   icon={<Clock size={20} />}
                   title="Duration"
-                  value="5-6 Months"
+                  value="4 Months"
                 />
                 <Feature
                   icon={<Layers size={20} />}

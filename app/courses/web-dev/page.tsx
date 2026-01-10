@@ -73,7 +73,7 @@ export default function WebDevCoursePage() {
                   <BarChart className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Suitable for</p>
-                    <p className="text-xs text-gray-600">Grade 3–12</p>
+                    <p className="text-xs text-gray-600">Grade 6–12</p>
                   </div>
                 </div>
 
@@ -93,13 +93,7 @@ export default function WebDevCoursePage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <Clock className="text-blue-500 mt-1" size={20} />
-                  <div>
-                    <p className="font-semibold">Duration</p>
-                    <p className="text-xs text-gray-600">5–6 Months</p>
-                  </div>
-                </div>
+                
 
                 <div className="flex items-start gap-3">
                   <Layers className="text-blue-500 mt-1" size={20} />

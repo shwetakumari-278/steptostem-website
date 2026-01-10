@@ -70,7 +70,7 @@ export default function RobloxGameDevPage() {
                 <Feature
                   icon={<Clock size={20} />}
                   title="Duration"
-                  value="5–6 Months"
+                  value="4–5 Months"
                 />
                 <Feature
                   icon={<Layers size={20} />}
@@ -113,7 +113,7 @@ export default function RobloxGameDevPage() {
                     <img
                       src={p.image}
                       alt={p.title}
-                      className="h-36 w-full object-cover rounded-lg mb-3"
+                      className="h-48 w-full object-cover rounded-lg mb-3"
                     />
                     <h3 className="font-semibold">{p.title}</h3>
                     <p className="text-sm text-gray-600">{p.desc}</p>

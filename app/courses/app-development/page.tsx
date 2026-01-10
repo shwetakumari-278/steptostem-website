@@ -11,6 +11,7 @@ import {
   Layers,
   BarChart,
   CalendarCheck,
+  User,
 } from "lucide-react";
 import Header from "@/components/Header";
 import CourseTestimonials from "@/components/CourseTestimonials";
@@ -66,7 +67,7 @@ export default function AppDevCoursePage() {
                   <BarChart className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Suitable for</p>
-                    <p className="text-xs text-gray-600">Grade 3–12</p>
+                    <p className="text-xs text-gray-600">Grade 3–8</p>
                   </div>
                 </div>
 
@@ -90,7 +91,7 @@ export default function AppDevCoursePage() {
                   <Clock className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Duration</p>
-                    <p className="text-xs text-gray-600">5–6 Months</p>
+                    <p className="text-xs text-gray-600">4–5 Months</p>
                   </div>
                 </div>
 
@@ -415,6 +416,9 @@ function RightSidebar() {
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 
         <ul className="space-y-4 text-sm text-gray-700">
+            <SidebarRow
+            icon={<Users size={16} />}
+             text="36 live private 1-on-1 sessions (45 mins)" />
           <SidebarRow
             icon={<Video size={16} />}
             text="Live mobile app development classes"

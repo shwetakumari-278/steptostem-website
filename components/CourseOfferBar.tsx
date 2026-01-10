@@ -16,7 +16,7 @@ export default function CourseOfferBar({
       <div className="max-w-7xl mx-auto px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
         <p className="text-sm md:text-base font-medium text-center md:text-left">
           🎉 <b>New Year Special:</b> First <b>100 enrollments</b> get{" "}
-          <b>50% scholarship</b> on {course}. Limited seats available!
+          <b>40% scholarship</b> on {course}. Limited seats available!
         </p>
 
         {/* Uses SAME demo modal */}
@@ -25,7 +25,7 @@ export default function CourseOfferBar({
             onClick={() => window.dispatchEvent(new Event("open-demo"))}
             className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
-            🎓 Book 10 Free Demo Classes
+            🎓 Book 5 Free Demo Classes
           </button>
         </div>
       </div>

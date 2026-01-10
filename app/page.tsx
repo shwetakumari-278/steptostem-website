@@ -66,7 +66,7 @@ export default function Home() {
       icon: Globe,
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-50",
-      image: "/asset/Picture4.webp",
+      image: "/asset/Picture4.jpg",
       features: [
         "HTML/CSS/JavaScript",
         "React & Next.js",

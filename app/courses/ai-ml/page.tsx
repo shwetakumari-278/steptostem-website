@@ -12,7 +12,8 @@ import {
   ShieldCheck,
   CalendarCheck,
 } from "lucide-react";
-import { curriculum } from "@/data/curriculum";
+
+import Link from "next/link";
 
 import { projectsByCourse } from "@/data/projects";
 
@@ -145,17 +146,6 @@ export default function AICoursePage() {
               </ul>
             </section>
 
-            {/* CURRICULUM */}
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Course curriculum</h2>
-
-              <div className="space-y-4">
-                {curriculum[courseKey].modules.map((mod) => (
-                  <CurriculumAccordion key={mod.module} module={mod} />
-                ))}
-              </div>
-            </section>
-
             {/* PROJECTS */}
             <section>
               <h2 className="text-2xl font-bold mb-6">
@@ -239,124 +229,43 @@ export default function AICoursePage() {
                 </div>
               </div>
             </section>
-            {/* PRICING PLANS */}
+            {/* AI & ML COURSE PATHS */}
             <section className="mt-16">
               <h2 className="text-3xl font-bold mb-4 text-center">
-                Choose the Right Learning Plan
+                Choose Your AI Learning Path
               </h2>
 
-              <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Simple, transparent pricing designed for UAE & international
-                students. One-hour live sessions. 48 sessions per course.
+              <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                Students progress in AI based on age, experience, and learning
+                depth.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                {/* STARTER PLAN */}
-                <div className="rounded-2xl border border-purple-300 bg-purple-50 overflow-hidden shadow-xl">
-                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-4 text-xl font-semibold">
-                    Starter
-                  </div>
+                <GameCourseCard
+                  title="AI Genius"
+                  subtitle="AI-Powered Apps & Games"
+                  age="Grades 3–7"
+                  description="Students learn AI concepts through games, image recognition, chatbots, and fun hands-on projects without heavy coding."
+                  image="/asset/ai-genius.png"
+                  href="/courses/ai-ml/beginner"
+                  badge="Beginner Friendly"
+                  color="from-purple-500 to-pink-500"
+                />
 
-                  <div className="p-6 text-center">
-                    <p className="text-3xl font-bold">
-                      AED 37{" "}
-                      <span className="text-sm font-medium">/ session</span>
-                    </p>
-
-                    <p className="text-sm text-gray-600 mt-2">
-                      (≈ 10 USD per hour)
-                    </p>
-
-                    <p className="text-lg font-semibold mt-4">
-                      48 Live Sessions
-                    </p>
-
-                    <p className="text-sm text-gray-600 mt-1">
-                      Total Course Fee: <strong>AED 1,776</strong>
-                    </p>
-
-                    <div className="mt-6"></div>
-                  </div>
-
-                  <div className="border-t p-6">
-                    <h4 className="font-semibold mb-4">
-                      1:1 Personalized Learning
-                    </h4>
-
-                    <ul className="space-y-3 text-sm text-gray-700">
-                      {[
-                        "1:1 live instructor-led sessions",
-                        "Dedicated personal mentor",
-                        "Flexible scheduling",
-                        "Custom learning pace",
-                        "Best for beginners & fast learners",
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle
-                            className="text-green-600 mt-0.5"
-                            size={16}
-                          />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* GROWTH PLAN */}
-                <div className="rounded-2xl border border-blue-300 bg-blue-50 overflow-hidden shadow-xl">
-                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center py-4 text-xl font-semibold">
-                    Growth
-                  </div>
-
-                  <div className="p-6 text-center">
-                    <p className="text-3xl font-bold">
-                      AED 27{" "}
-                      <span className="text-sm font-medium">/ session</span>
-                    </p>
-
-                    <p className="text-sm text-gray-600 mt-2">
-                      (Small group learning)
-                    </p>
-
-                    <p className="text-lg font-semibold mt-4">
-                      48 Live Sessions
-                    </p>
-
-                    <p className="text-sm text-gray-600 mt-1">
-                      Total Course Fee: <strong>AED 1,296</strong>
-                    </p>
-
-                    <div className="mt-6"></div>
-                  </div>
-
-                  <div className="border-t p-6">
-                    <h4 className="font-semibold mb-4">
-                      Small Group Learning (2–3 students)
-                    </h4>
-
-                    <ul className="space-y-3 text-sm text-gray-700">
-                      {[
-                        "Live interactive group classes",
-                        "Peer learning & collaboration",
-                        "Structured weekly schedule",
-                        "Mentor-guided sessions",
-                        "More affordable option",
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle
-                            className="text-green-600 mt-0.5"
-                            size={16}
-                          />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                <GameCourseCard
+                  title="AI Expert"
+                  subtitle="Hands-On AI, ML & Python"
+                  age="Grades 8–12"
+                  description="Students build real AI models using Python, APIs, NLP, and computer vision while solving real-world problems."
+                  image="/asset/ai-expert.jpg"
+                  href="/courses/ai-ml/advanced"
+                  badge="Advanced Track"
+                  color="from-blue-600 to-cyan-600"
+                />
               </div>
             </section>
 
+            
             <CourseTestimonials courseId="ai-ml" />
           </div>
 
@@ -406,14 +315,6 @@ function ReviewBlock({ title, starsColor }: any) {
   );
 }
 
-function Curriculum({ title, text }: any) {
-  return (
-    <div className="bg-white p-4 rounded-lg shadow">
-      <strong>{title}:</strong> {text}
-    </div>
-  );
-}
-
 function Stage({ title, color }: any) {
   return (
     <div className={`bg-white p-6 rounded-2xl shadow border-t-4 ${color}`}>
@@ -425,18 +326,7 @@ function Stage({ title, color }: any) {
   );
 }
 
-function PricingSection() {
-  return (
-    <section className="mt-16">
-      <h2 className="text-3xl font-bold mb-4 text-center">
-        Choose the Right Learning Plan
-      </h2>
-      <p className="text-gray-600 text-center mb-10">
-        Flexible options based on your child’s learning style.
-      </p>
-    </section>
-  );
-}
+
 
 function RightSidebar() {
   return (
@@ -502,5 +392,51 @@ function SidebarRow({ icon, text }: any) {
       <span className="text-green-600 mt-0.5">{icon}</span>
       <span>{text}</span>
     </li>
+  );
+}
+function GameCourseCard({
+  title,
+  subtitle,
+  description,
+  image,
+  href,
+  age,
+  badge,
+  color,
+}: any) {
+  return (
+    <Link
+      href={href}
+      className="group bg-white rounded-2xl overflow-hidden shadow-lg border hover:shadow-2xl transition"
+    >
+      <div className="relative">
+        <img
+          src={image}
+          alt={title}
+          className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+
+        <span
+          className={`absolute top-4 left-4 text-xs font-semibold text-white px-3 py-1 rounded-full bg-gradient-to-r ${color}`}
+        >
+          {badge}
+        </span>
+      </div>
+
+      <div className="p-6 space-y-3">
+        <h3 className="text-xl font-bold">{title}</h3>
+        <p className="text-sm text-gray-500">{subtitle}</p>
+
+        <p className="text-sm text-gray-700 leading-relaxed">{description}</p>
+
+        <div className="flex items-center justify-between pt-4">
+          <span className="text-xs font-medium text-gray-500">{age}</span>
+
+          <span className="text-purple-600 font-semibold group-hover:underline">
+            View Course →
+          </span>
+        </div>
+      </div>
+    </Link>
   );
 }

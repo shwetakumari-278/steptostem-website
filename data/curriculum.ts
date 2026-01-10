@@ -131,6 +131,154 @@ export const curriculum = {
       },
     ],
   },
+   "ai-ml-advanced": {
+    modules: [
+      {
+        module: "Module 1",
+        title: "Introduction to AI",
+        description:
+          "Master fundamentals and explore key AI topics such as machine learning, deep learning, neural networks, and natural language processing through hands-on projects.",
+        outcomes: [
+          "Learn fundamentals of AI",
+          "Understand key AI concepts",
+          "Explore real-world AI uses",
+          "Set up your development environment",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub, Google Colab",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+      {
+        module: "Module 2",
+        title: "Visionary AI: Computer Vision with OpenCV",
+        description:
+          "Explore how AI sees and understands images. Use OpenCV to create projects where AI can recognize, analyze, and manipulate visual data.",
+        outcomes: [
+          "Learn image processing with OpenCV",
+          "Create AI-powered visual projects",
+          "Use basic computer vision methods",
+          "Analyze and modify visual data",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+      {
+        module: "Module 3",
+        title: "Getting Started with Image Classification",
+        description:
+          "Build image classification systems using OpenCV and machine learning concepts, including facial recognition.",
+        outcomes: [
+          "Build and train AI image classifiers",
+          "Discover feature extraction in AI",
+          "Use ML to sort images",
+          "Improve classification accuracy",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub, Hugging Face",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+      {
+        module: "Module 4",
+        title: "NLP with Hugging Face API",
+        description:
+          "Explore natural language processing by creating chatbots, story generators, and translators using Hugging Face.",
+        outcomes: [
+          "Use Hugging Face for text analysis",
+          "Create smart chatbots with GPT",
+          "Apply text translation & generation",
+          "Learn large language models",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub, Hugging Face",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+      {
+        module: "Module 5",
+        title: "Creative Fusion: AI Meets Art & Words",
+        description:
+          "Transform text into images, build narratives, and explore AI creativity using generative models.",
+        outcomes: [
+          "Turn text into AI-generated images",
+          "Generate image-based narratives",
+          "Use AI for interactive storytelling",
+          "Explore creativity with technology",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub, Hugging Face",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+      {
+        module: "Module 6",
+        title: "Speech Symphony: Talk & Listen with AI",
+        description:
+          "Create AI systems that understand and generate speech using speech-to-text and text-to-speech models.",
+        outcomes: [
+          "Implement speech-to-text",
+          "Implement text-to-speech",
+          "Develop interactive voice assistants",
+          "Enhance AI communication skills",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub, Hugging Face",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+      {
+        module: "Module 7",
+        title: "Prompt Playground: Mastering AI with Gemini",
+        description:
+          "Learn prompt engineering using Gemini API to optimize AI responses and build intelligent applications.",
+        outcomes: [
+          "Learn basic prompt engineering",
+          "Craft effective AI prompts",
+          "Use Gemini API for projects",
+          "Apply prompt engineering in apps",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub, Google AI Studio",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+      {
+        module: "Module 8",
+        title: "AI Showcase: Your Capstone Project",
+        description:
+          "Build and publish your own AI-powered application by integrating tools and techniques from all modules.",
+        outcomes: [
+          "Develop your own AI application",
+          "Integrate AI tools & techniques",
+          "Showcase creativity and skills",
+          "Publish your AI project",
+        ],
+        meta: {
+          language: "Python",
+          platform: "GitHub, Google AI Studio",
+          tools: "Visual Studio Code, Git",
+          lessons: "6 Lessons & 6+ Projects",
+        },
+      },
+    ],
+  },
    "app-development": {
     title: "Mobile App Development Curriculum",
     modules: [
