@@ -251,392 +251,234 @@ not as competitors, but as stages of the same journey.
   image: "/blog/what-schools-dont-teach-technology.jpg",
   content: `
 <h2>What Schools Don’t Teach About Technology (But Every Student Needs to Learn)</h2>
-
-<p>
-Technology is everywhere. Children use smartphones before they can spell,
-attend online classes, play games powered by complex algorithms,
-and interact with artificial intelligence daily.
-</p>
-
-<p>
-Yet, despite living in a digital-first world,
-most schools still treat technology as a <strong>tool to use</strong>,
-not a <strong>system to understand</strong>.
-</p>
-
-<p>
-Students learn how to type documents, create presentations,
-and search the internet — but rarely learn how technology actually works,
-how it influences decisions, or how to build with it.
-</p>
-
-<p>
-This gap is not intentional.
-It exists because traditional education systems were designed
-for a different era — one where technology played a supporting role,
-not a central one.
-</p>
-
-<p>
-In this article, we explore the most important things
-<strong>schools don’t teach about technology</strong>,
-why they matter, and how parents can help bridge the gap.
-</p>
-
-<hr />
-
-<h2>1. Using Technology Is Not the Same as Understanding It</h2>
-
-<p>
-Most students are excellent <em>technology users</em>.
-They know how to install apps, navigate devices,
-and consume digital content effortlessly.
-</p>
-
-<p>
-But using technology is very different from understanding it.
-</p>
-
-<p>
-Schools often assume that because children are comfortable with devices,
-they are “tech-savvy.”
-In reality, many students don’t know:
-</p>
-
-<ul>
-  <li>How apps are built</li>
-  <li>Why software behaves the way it does</li>
-  <li>How data is processed or stored</li>
-  <li>What happens behind a button click</li>
-</ul>
-
-<p>
-This creates a generation of passive users
-instead of confident creators.
-</p>
-
-<p>
-True technology education starts when students ask:
-<strong>“How does this work?”</strong> — not just
-<strong>“How do I use it?”</strong>
-</p>
-
-<hr />
-
-<h2>2. Technology Is About Problem-Solving, Not Just Screens</h2>
-
-<p>
-In many classrooms, technology is limited to screens —
-smart boards, tablets, and laptops.
-</p>
-
-<p>
-But technology is fundamentally about
-<strong>solving problems efficiently</strong>.
-</p>
-
-<p>
-Behind every app, website, or game lies a series of decisions:
-</p>
-
-<ul>
-  <li>What problem are we trying to solve?</li>
-  <li>What steps should happen first?</li>
-  <li>What should happen if something goes wrong?</li>
-</ul>
-
-<p>
-These are not device skills.
-They are <strong>thinking skills</strong>.
-</p>
-
-<p>
-Schools rarely teach students how to break large problems into smaller steps,
-test solutions, or improve systems iteratively —
-even though these skills are at the heart of technology.
-</p>
-
-<hr />
-
-<h2>3. Mistakes Are a Feature, Not a Failure</h2>
-
-<p>
-Traditional education often treats mistakes as something to avoid.
-Wrong answers are penalized.
-Errors lower grades.
-</p>
-
-<p>
-In technology, mistakes are expected.
-</p>
-
-<p>
-Programs break.
-Code fails.
-Systems behave unexpectedly.
-</p>
-
-<p>
-What matters is not avoiding mistakes,
-but learning how to <strong>debug, analyze, and improve</strong>.
-</p>
-
-<p>
-This mindset is rarely taught in schools.
-As a result, many students:
-</p>
-
-<ul>
-  <li>Fear trying something new</li>
-  <li>Give up quickly when things don’t work</li>
-  <li>Believe they are “bad at tech”</li>
-</ul>
-
-<p>
-Technology education teaches a different lesson:
-mistakes are information.
-They show you where to look next.
-</p>
-
-<hr />
-
-<h2>4. Technology Is Created by People — Not Magic</h2>
-
-<p>
-To many students, technology feels like magic.
-Apps “just work.”
-AI “just knows.”
-</p>
-
-<p>
-What schools rarely emphasize is that
-<strong>every system is designed by humans</strong>.
-</p>
-
-<p>
-This matters because:
-</p>
-
-<ul>
-  <li>Technology reflects human choices</li>
-  <li>Algorithms can be biased</li>
-  <li>Design decisions affect behavior</li>
-</ul>
-
-<p>
-Without this understanding,
-students may assume technology is always neutral or correct.
-</p>
-
-<p>
-Teaching how technology is built helps students:
-</p>
-
-<ul>
-  <li>Question digital systems</li>
-  <li>Think critically about AI</li>
-  <li>Understand responsibility in creation</li>
-</ul>
-
-<hr />
-
-<h2>5. Creativity Is a Core Technology Skill</h2>
-
-<p>
-Technology is often portrayed as rigid or technical.
-In reality, it is deeply creative.
-</p>
-
-<p>
-Designing a game, building a website,
-or creating an app requires:
-</p>
-
-<ul>
-  <li>Imagination</li>
-  <li>Storytelling</li>
-  <li>Visual thinking</li>
-  <li>User empathy</li>
-</ul>
-
-<p>
-Schools frequently separate “creative subjects”
-from “technical subjects.”
-</p>
-
-<p>
-Technology education shows students
-that creativity and logic work together —
-and that both are equally important.
-</p>
-
-<hr />
-
-<h2>6. Technology Skills Are Transferable Life Skills</h2>
-
-<p>
-Many parents worry:
-</p>
-
-<blockquote>
-  <strong>
-    “What if my child doesn’t become an engineer?”
-  </strong>
-</blockquote>
-
-<p>
-This misses the bigger picture.
-</p>
-
-<p>
-Technology education builds skills that apply everywhere:
-</p>
-
-<ul>
-  <li>Logical thinking</li>
-  <li>Clear communication</li>
-  <li>Planning and organization</li>
-  <li>Adaptability</li>
-</ul>
-
-<p>
-Even careers outside technology now rely on:
-</p>
-
-<ul>
-  <li>Digital tools</li>
-  <li>Data interpretation</li>
-  <li>Automation</li>
-  <li>Online collaboration</li>
-</ul>
-
-<p>
-Schools often focus on subject knowledge,
-but technology education builds
-<strong>how students think</strong>.
-</p>
-
-<hr />
-
-<h2>7. Learning Technology Is a Journey, Not a Shortcut</h2>
-
-<p>
-Another missing lesson:
-there is no instant mastery in technology.
-</p>
-
-<p>
-Social media often shows:
-</p>
-
-<ul>
-  <li>Young prodigies</li>
-  <li>Overnight success stories</li>
-  <li>“Learn to code in 7 days” promises</li>
-</ul>
-
-<p>
-Real learning looks different.
-It is gradual.
-Messy.
-Iterative.
-</p>
-
-<p>
-Schools rarely prepare students
-for this long-term learning mindset.
-</p>
-
-<p>
-Technology teaches patience —
-and the confidence to keep learning
-even when answers aren’t immediate.
-</p>
-
-<hr />
-
-<h2>8. Ethical Responsibility Comes with Technical Power</h2>
-
-<p>
-Technology shapes society.
-From social media algorithms
-to AI decision systems,
-technical choices have real consequences.
-</p>
-
-<p>
-Yet ethics is often missing from technology discussions in schools.
-</p>
-
-<p>
-Students should be encouraged to ask:
-</p>
-
-<ul>
-  <li>Should this be built?</li>
-  <li>Who might this affect?</li>
-  <li>What are the unintended consequences?</li>
-</ul>
-
-<p>
-Understanding technology without ethics
-creates skilled users —
-but not responsible creators.
-</p>
-
-<hr />
-
-<h2>How Parents Can Bridge the Gap</h2>
-
-<p>
-Parents don’t need to be technology experts
-to support meaningful learning.
-</p>
-
-<p>
-Simple steps make a big difference:
-</p>
-
-<ul>
-  <li>Encourage curiosity, not just results</li>
-  <li>Ask children to explain how things work</li>
-  <li>Value effort and experimentation</li>
-  <li>Support project-based learning</li>
-</ul>
-
-<p>
-The goal is not to push children toward a career,
-but to help them understand the world they live in.
-</p>
-
-<hr />
-
-<h2>Conclusion</h2>
-
-<p>
-Schools do many things well.
-But technology education requires a shift
-from memorization to understanding,
-from consumption to creation.
-</p>
-
-<p>
-When students learn how technology works —
-not just how to use it —
-they gain confidence, clarity, and control.
-</p>
-
-<p>
-In a world shaped by digital systems,
-understanding technology is no longer optional.
-It is a form of literacy.
-</p>
-
-<p>
-And the earlier students begin building that literacy,
-the stronger and more adaptable they become —
-not just as learners, but as thinkers.
-</p>
+ 
+  <p><strong>Technology is everywhere.</strong> That part is obvious.</p>
+
+  <p>
+    Kids learn how to swipe a screen before they learn how to write their names properly.
+    Online classes, games, apps, AI tools — all of it feels normal now.
+    Almost boring, actually.
+  </p>
+
+  <p>
+    But the strange part is this: even though we’re surrounded by technology all the time,
+    very few students are ever taught how it actually works.
+  </p>
+
+  <p>
+    In school, technology usually means typing assignments, making PPTs, or googling answers.
+    We’re told how to use things, but not why they work the way they do.
+    And definitely not how to build them ourselves.
+  </p>
+
+  <div class="blog-image">
+  <img src="/blog/classroom-technology.png" alt="Students using technology in a classroom">
+  <p class="image-caption">
+    Students grow up surrounded by technology, but rarely taught how it actually works.
+  </p>
+</div>
+
+
+  <p>
+    I don’t think schools do this on purpose.
+    Most of the education system was created when technology was just an extra tool,
+    not something shaping how we think, communicate, or make decisions every day.
+    But the gap is becoming harder to ignore.
+  </p>
+
+  <p>
+    Most students today are great users of technology.
+    They know which app does what, how to install updates,
+    how to navigate new platforms quickly.
+    That often gets labeled as being “tech-savvy.”
+  </p>
+
+  <p><strong>But using technology and understanding it are two very different things.</strong></p>
+
+  <p>
+    A lot of students have no idea how an app is made,
+    why software crashes sometimes,
+    or what actually happens after you click a button.
+    It all feels like a black box.
+    Things either work or they don’t —
+    and when they don’t, frustration kicks in.
+  </p>
+
+  <p>
+    That’s how we slowly become passive users instead of confident creators.
+  </p>
+
+ <div class="blog-image">
+  <img src="/blog/student-learning-coding.png" alt="Student thinking and learning how technology works">
+  <p class="image-caption">
+    Understanding technology is what turns passive users into confident creators.
+  </p>
+</div>
+
+
+  <p>
+    Another thing schools rarely talk about is that technology isn’t really about screens.
+    It’s about thinking.
+  </p>
+
+  <p>
+    Behind every app, website, or game,
+    someone had to sit down and ask questions.
+    What problem are we solving?
+    What should happen first?
+    What if something goes wrong?
+    None of this has anything to do with tablets or smart boards.
+    It’s about breaking things down, testing ideas, and fixing what doesn’t work.
+  </p>
+
+  <p>
+    Ironically, these thinking skills are useful in almost every part of life,
+    but they’re rarely taught directly.
+  </p>
+
+  <p><strong>And then there’s the fear of mistakes.</strong></p>
+
+  <p>
+    In school, mistakes usually mean marks lost.
+    You’re trained to avoid them.
+    But in technology, mistakes are unavoidable.
+    Code breaks.
+    Designs fail.
+    Systems behave in ways you didn’t expect.
+  </p>
+
+  <p>
+    The first time something doesn’t work,
+    many students assume they’re “bad at tech.”
+    Not because they are —
+    but because they were never taught that failure is part of the process.
+    In tech, mistakes aren’t embarrassing.
+    They’re clues.
+  </p>
+
+  <div class="blog-image">
+  <img src="/blog/debugging-learning.png" alt="Debugging and learning from mistakes">
+  <p class="image-caption">
+    In technology, mistakes aren’t failures — they’re part of how real learning happens.
+  </p>
+</div>
+
+
+  <p>
+    Another thing that gets overlooked is how human technology actually is.
+  </p>
+
+  <p>
+    Apps don’t just appear.
+    AI doesn’t magically know things.
+    Real people make choices —
+    what to include, what to ignore, what to prioritize.
+    Those choices matter.
+    They affect behavior, opinions, and sometimes entire communities.
+  </p>
+
+  <p>
+    When students don’t learn this,
+    it’s easy to assume technology is always correct or neutral.
+    And that’s a risky assumption to grow up with.
+  </p>
+
+  <p>
+    There’s also this idea that technology is purely logical and technical.
+    No creativity involved.
+  </p>
+
+  <p>
+    That couldn’t be further from the truth.
+    Building a game, designing a website,
+    or even creating a simple app requires imagination.
+    You have to think about how someone else will feel while using it.
+    What will confuse them?
+    What will make them stay?
+    That’s not just coding — that’s storytelling.
+  </p>
+
+  <p>
+    Schools often separate creative subjects and technical subjects,
+    but technology lives somewhere in between.
+  </p>
+
+  <p>
+    A lot of parents worry that technology education only makes sense
+    if a child wants to become an engineer.
+    But honestly, that’s not the point.
+  </p>
+
+  <p>
+    Learning technology teaches you how to think clearly,
+    plan better,
+    adapt faster,
+    and explain ideas properly.
+    These skills don’t disappear just because you choose a different career.
+    Almost every field today relies on digital systems in some way.
+  </p>
+
+  <p>
+    Another uncomfortable truth is that learning technology takes time.
+    Social media makes it look fast and flashy —
+    like mastery happens overnight.
+    In reality, it doesn’t.
+    Learning tech is slow, confusing, and sometimes boring.
+  </p>
+
+  <p>
+    Schools rarely prepare students for that kind of learning journey.
+    But once you go through it,
+    you build patience and confidence that stays with you.
+  </p>
+
+  <p><strong>And finally, there’s responsibility.</strong></p>
+
+  <p>
+    Technology shapes real lives.
+    Algorithms decide what we see.
+    AI influences decisions.
+    That kind of power comes with consequences,
+    but ethics is rarely part of the conversation in classrooms.
+  </p>
+
+  <p>
+    Students should be encouraged to ask uncomfortable questions.
+    Should this be built?
+    Who benefits?
+    Who might be harmed?
+    Understanding technology without thinking about its impact is dangerous.
+  </p>
+
+  <p>
+    Parents don’t need to be experts to help here.
+    Just encouraging curiosity,
+    asking kids to explain how something works,
+    and valuing effort over perfect results can change a lot.
+  </p>
+
+  <p>
+    The goal isn’t to force children into a career path.
+    It’s to help them understand the world they’re growing up in.
+  </p>
+
+  <p>
+    Schools do many things right.
+    But when it comes to technology,
+    understanding matters more than memorizing.
+    Creation matters more than consumption.
+  </p>
+
+  <p>
+    In a world shaped by digital systems,
+    knowing how technology works isn’t optional anymore.
+    It’s a basic form of literacy.
+  </p>
+
+  <p>
+    And the earlier students start building it,
+    the more confident — and thoughtful — they become.
+  </p>
 `,
 },
 
@@ -1455,7 +1297,7 @@ to <strong>building them</strong>, AI is the perfect place to start.
       "Not all screen time is bad. Learn how parents can turn everyday screen usage into real skill-building for kids.",
     date: "November 5, 2025",
     author: "StepToSTEM",
-    image: "/blog/smart-screen-time.jpeg",
+    image: "/blog/smart-screen-time.png",
     content: `
   <h2>Screen Time That Actually Teaches Skills: A Parent’s Guide</h2>
 
