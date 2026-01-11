@@ -163,10 +163,10 @@ function PricingSection({ course }: any) {
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         <PriceCard
           title="Starter"
-          price="AED 37"
-          oldPrice="AED 50"
+          price="₹900"
+          oldPrice="₹1,200"
           discount="1:1 Personalized"
-          monthly="Total: AED 1,332 (36 sessions)"
+          monthly="Total: ₹43,200 (36 sessions)"
           course={course}
           points={[
             "36 live 1:1 sessions",
@@ -180,10 +180,10 @@ function PricingSection({ course }: any) {
 
         <PriceCard
           title="Growth"
-          price="AED 27"
-          oldPrice="AED 40"
+          price="₹660"
+          oldPrice="₹1,000"
           discount="Small Group (2–3 students)"
-          monthly="Total: AED 972 (36 sessions)"
+          monthly="Total: ₹31,680 (36 sessions)"
           course={course}
           points={[
             "Small group live classes",

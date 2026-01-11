@@ -156,20 +156,16 @@ export default function AIBeginnerCoursePage() {
 
                   <div className="p-6 text-center">
                     <p className="text-3xl font-bold">
-                      AED 37{" "}
+                      ₹900{" "}
                       <span className="text-sm font-medium">/ session</span>
                     </p>
-
-                    <p className="text-sm text-gray-600 mt-2">
-                      (≈ 10 USD per hour)
-                    </p>
-
+                  
                     <p className="text-lg font-semibold mt-4">
                       48 Live Sessions
                     </p>
 
                     <p className="text-sm text-gray-600 mt-1">
-                      Total Course Fee: <strong>AED 1,776</strong>
+                      Total Course Fee: <strong> ₹43,200</strong>
                     </p>
 
                     <div className="mt-6"></div>
@@ -208,20 +204,18 @@ export default function AIBeginnerCoursePage() {
 
                   <div className="p-6 text-center">
                     <p className="text-3xl font-bold">
-                      AED 27{" "}
+                     ₹660{" "}
                       <span className="text-sm font-medium">/ session</span>
                     </p>
 
-                    <p className="text-sm text-gray-600 mt-2">
-                      (Small group learning)
-                    </p>
+                    
 
                     <p className="text-lg font-semibold mt-4">
                       48 Live Sessions
                     </p>
 
                     <p className="text-sm text-gray-600 mt-1">
-                      Total Course Fee: <strong>AED 1,296</strong>
+                      Total Course Fee: <strong>₹31,680 </strong>
                     </p>
 
                     <div className="mt-6"></div>
@@ -255,7 +249,7 @@ export default function AIBeginnerCoursePage() {
             </section>
 
             {/* TESTIMONIALS */}
-            <CourseTestimonials courseId="ai-ml" />
+            <CourseTestimonials courseId="ai-genius" />
           </div>
 
           {/* RIGHT SIDEBAR */}

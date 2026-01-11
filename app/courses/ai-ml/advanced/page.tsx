@@ -155,8 +155,8 @@ export default function AIAdvancedCoursePage() {
                 {/* STARTER */}
                 <PriceCard
                   title="Starter"
-                  price="AED 37"
-                  total="AED 1,776"
+                  price="₹900"
+                  total="₹43,200"
                   points={[
                     "1:1 expert-led sessions",
                     "Advanced AI mentorship",
@@ -169,8 +169,8 @@ export default function AIAdvancedCoursePage() {
                 {/* GROWTH */}
                 <PriceCard
                   title="Growth"
-                  price="AED 27"
-                  total="AED 1,296"
+                  price="₹660"
+                  total="₹31,680"
                   points={[
                     "Small group AI classes",
                     "Peer collaboration",
@@ -183,7 +183,7 @@ export default function AIAdvancedCoursePage() {
             </section>
 
             {/* TESTIMONIALS */}
-            <CourseTestimonials courseId="ai-ml" />
+            <CourseTestimonials courseId="ai-advance" />
           </div>
 
           {/* RIGHT SIDEBAR */}

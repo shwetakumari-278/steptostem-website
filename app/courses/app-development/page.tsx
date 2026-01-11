@@ -320,10 +320,10 @@ function PricingSection() {
         {/* STARTER */}
         <PriceCard
           title="Starter"
-          price="AED 37 "
-          oldPrice="AED 50"
+          price="₹900"
+          oldPrice="₹1,200"
           discount="1:1 Personalized"
-          monthly="Total: AED 1,776 (48 sessions)"
+          monthly="Total: ₹43,200 (48 sessions)"
           course="App Development"
           points={[
             "1:1 live personalized sessions",
@@ -338,10 +338,10 @@ function PricingSection() {
         {/* GROWTH */}
         <PriceCard
           title="Growth"
-          price="AED 27"
-          oldPrice="AED 40"
+          price="₹660"
+          oldPrice="₹1,000"
           discount="Small Group (2–3 students)"
-          monthly="Total: AED 1,296 (48 sessions)"
+          monthly="Total: ₹31,680(48 sessions)"
           course="App Development"
           points={[
             "Live small group classes (2–3 students)",

@@ -98,8 +98,8 @@ export default function Home() {
       description:
         "Design and build interactive mobile apps while learning how real apps work from idea to launch.",
       icon: Smartphone,
-      color: "from-green-500 to-emerald-500",
-      bgColor: "bg-green-50",
+        color: "from-orange-500 to-amber-500",
+  bgColor: "bg-orange-50",
       image: "/asset/app-development.jpeg",
       features: [
         "App UI & User Interaction",
@@ -307,7 +307,8 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+
             {courses.map((course, index) => (
               <motion.div
                 key={course.id}
@@ -358,7 +359,8 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}

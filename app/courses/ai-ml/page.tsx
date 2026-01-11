@@ -145,6 +145,41 @@ export default function AICoursePage() {
                 ))}
               </ul>
             </section>
+             {/* AI & ML COURSE PATHS */}
+            <section className="mt-16">
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                Choose Your AI Learning Path
+              </h2>
+
+              <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                Students progress in AI based on age, experience, and learning
+                depth.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <GameCourseCard
+                  title="AI Genius"
+                  subtitle="AI-Powered Apps & Games"
+                  age="Grades 3–7"
+                  description="Students learn AI concepts through games, image recognition, chatbots, and fun hands-on projects without heavy coding."
+                  image="/asset/ai-genius.png"
+                  href="/courses/ai-ml/beginner"
+                  badge="Beginner Friendly"
+                  color="from-purple-500 to-pink-500"
+                />
+
+                <GameCourseCard
+                  title="AI Expert"
+                  subtitle="Hands-On AI, ML & Python"
+                  age="Grades 8–12"
+                  description="Students build real AI models using Python, APIs, NLP, and computer vision while solving real-world problems."
+                  image="/asset/ai-expert.jpg"
+                  href="/courses/ai-ml/advanced"
+                  badge="Advanced Track"
+                  color="from-blue-600 to-cyan-600"
+                />
+              </div>
+            </section>
 
             {/* PROJECTS */}
             <section>
@@ -229,41 +264,7 @@ export default function AICoursePage() {
                 </div>
               </div>
             </section>
-            {/* AI & ML COURSE PATHS */}
-            <section className="mt-16">
-              <h2 className="text-3xl font-bold mb-4 text-center">
-                Choose Your AI Learning Path
-              </h2>
-
-              <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-                Students progress in AI based on age, experience, and learning
-                depth.
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <GameCourseCard
-                  title="AI Genius"
-                  subtitle="AI-Powered Apps & Games"
-                  age="Grades 3–7"
-                  description="Students learn AI concepts through games, image recognition, chatbots, and fun hands-on projects without heavy coding."
-                  image="/asset/ai-genius.png"
-                  href="/courses/ai-ml/beginner"
-                  badge="Beginner Friendly"
-                  color="from-purple-500 to-pink-500"
-                />
-
-                <GameCourseCard
-                  title="AI Expert"
-                  subtitle="Hands-On AI, ML & Python"
-                  age="Grades 8–12"
-                  description="Students build real AI models using Python, APIs, NLP, and computer vision while solving real-world problems."
-                  image="/asset/ai-expert.jpg"
-                  href="/courses/ai-ml/advanced"
-                  badge="Advanced Track"
-                  color="from-blue-600 to-cyan-600"
-                />
-              </div>
-            </section>
+           
 
             
             <CourseTestimonials courseId="ai-ml" />

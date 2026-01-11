@@ -30,7 +30,10 @@ export default function CourseCard({
   return (
     <motion.div
       whileHover={{ y: -10 }}
-      className={`relative group cursor-pointer ${course.bgColor} rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden`}
+      className={`relative group cursor-pointer ${course.bgColor}
+  rounded-2xl p-6 shadow-lg hover:shadow-2xl
+  transition-all duration-500 overflow-hidden
+  flex flex-col h-full`}
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -44,7 +47,7 @@ export default function CourseCard({
         className={`relative z-10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg
   ${
     course.id === "app-development"
-      ? "bg-gradient-to-br from-green-600 to-emerald-600"
+      ? "bg-gradient-to-br from-orange-600 to-amber-600"
       : `bg-gradient-to-br ${course.color}`
   }`}
       >
@@ -78,12 +81,12 @@ export default function CourseCard({
       </div>
 
       {/* Course Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-1">
         <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors duration-300">
           {course.title}
         </h3>
 
-        <p className="text-gray-600 mb-4 leading-relaxed">
+        <p className="text-gray-600 mb-4 leading-relaxed line-clamp-3">
           {course.description}
         </p>
 
@@ -128,10 +131,10 @@ export default function CourseCard({
           className={`
     w-full py-3 px-4 rounded-xl font-semibold
     flex items-center justify-center space-x-2
-    text-white shadow-lg
+    text-white shadow-lg  mt-auto
     ${
       course.id === "app-development"
-        ? "bg-gradient-to-r from-green-600 to-emerald-600"
+        ? "bg-gradient-to-r from-orange-600 to-amber-600 hover:shadow-orange-300/50"
         : `bg-gradient-to-r ${course.color}`
     }
   `}

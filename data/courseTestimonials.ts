@@ -68,6 +68,75 @@ export const courseTestimonials = {
       },
     ],
   },
+  "ai-genius": {
+  averageRating: 4.9,
+  totalReviews: "850+ reviews",
+  testimonials: [
+    {
+      name: "Ananya Gupta",
+      role: "Grade 7 Student",
+      image: "/testimonials/ananya1.jpg",
+      rating: 4.9,
+      text: "I didn’t know AI could be this simple. Making my first chatbot made me feel like I created something real, not just learned theory.",
+    },
+    {
+      name: "Rohan Mehta",
+      role: "Grade 6 Student",
+      image: "/testimonials/rohan.jpg",
+      rating: 4.8,
+      text: "The classes were fun and easy to understand. I liked how we used AI in games and small projects instead of just listening.",
+    },
+    {
+      name: "Neha Singh",
+      role: "Parent",
+      image: "/testimonials/neha.jpg",
+      rating: 4.9,
+      text: "My child started talking confidently about AI and how it works. It was amazing to see curiosity turn into understanding.",
+    },
+    {
+      name: "Arjun Patel",
+      role: "Grade 8 Student",
+      image: "/testimonials/arjun2.jpg",
+      rating: 4.8,
+      text: "I liked that mistakes were okay. We learned by trying again, and that made AI feel less scary and more interesting.",
+    },
+  ],
+},
+"ai-advance": {
+  averageRating: 4.8,
+  totalReviews: "620+ reviews",
+  testimonials: [
+    {
+      name: "Kunal Verma",
+      role: "Grade 10 Student",
+      image: "/testimonials/kunal.jpg",
+      rating: 4.9,
+      text: "Building machine learning models and seeing predictions actually work was the best part. It felt like real-world AI.",
+    },
+    {
+      name: "Isha Malhotra",
+      role: "Grade 9 Student",
+      image: "/testimonials/isha.jpg",
+      rating: 4.8,
+      text: "I finally understood how data affects AI decisions. The projects made complex ideas much easier to grasp.",
+    },
+    {
+      name: "Rajesh Malhotra",
+      role: "Parent",
+      image: "/testimonials/rajesh.jpg",
+      rating: 4.7,
+      text: "This course helped my child move beyond basics. The logical thinking and problem-solving skills improved noticeably.",
+    },
+    {
+      name: "Simran Kaur",
+      role: "Grade 11 Student",
+      image: "/testimonials/simran.jpg",
+      rating: 4.8,
+      text: "Training models, testing accuracy, and improving results made me feel prepared for higher-level AI studies.",
+    },
+  ],
+},
+
 
   "game-design": {
     averageRating: 4.9,
