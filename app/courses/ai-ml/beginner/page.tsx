@@ -8,7 +8,7 @@ import {
   BarChart,
   CheckCircle,
 } from "lucide-react";
-
+import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
@@ -164,9 +164,7 @@ export default function AIBeginnerCoursePage() {
                       48 Live Sessions
                     </p>
 
-                    <p className="text-sm text-gray-600 mt-1">
-                      Total Course Fee: <strong> ₹43,200</strong>
-                    </p>
+                    
 
                     <div className="mt-6"></div>
                   </div>
@@ -214,10 +212,7 @@ export default function AIBeginnerCoursePage() {
                       48 Live Sessions
                     </p>
 
-                    <p className="text-sm text-gray-600 mt-1">
-                      Total Course Fee: <strong>₹31,680 </strong>
-                    </p>
-
+                    
                     <div className="mt-6"></div>
                   </div>
 
@@ -250,6 +245,7 @@ export default function AIBeginnerCoursePage() {
 
             {/* TESTIMONIALS */}
             <CourseTestimonials courseId="ai-genius" />
+             <CourseFAQ courseKey="aiGenius" />
           </div>
 
           {/* RIGHT SIDEBAR */}

@@ -12,7 +12,7 @@ import {
   ShieldCheck,
   CalendarCheck,
 } from "lucide-react";
-
+import CourseFAQ from "@/components/CourseFAQ";
 import Link from "next/link";
 
 import { projectsByCourse } from "@/data/projects";
@@ -268,6 +268,8 @@ export default function AICoursePage() {
 
             
             <CourseTestimonials courseId="ai-ml" />
+            <CourseFAQ courseKey="aiMl" />
+
           </div>
 
           {/* RIGHT SIDEBAR */}

@@ -13,6 +13,7 @@ import {
   CalendarCheck,
 } from "lucide-react";
 import BookDemoButton from "@/components/BookDemoButton";
+import CourseFAQ from "@/components/CourseFAQ";
 import { curriculum } from "@/data/curriculum";
 import CurriculumAccordion from "@/components/CurriculumAccordion";
 import CourseTestimonials from "@/components/CourseTestimonials";
@@ -251,6 +252,7 @@ export default function WebDevCoursePage() {
             {/* PRICING */}
             <PricingSection />
             <CourseTestimonials courseId="web-development" />
+            <CourseFAQ courseKey="webDevelopment" />
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -307,7 +309,7 @@ function PricingSection() {
       </h2>
 
       <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-        One-hour live sessions • 48 sessions per course • UAE-friendly pricing
+        One-hour live sessions • 90 sessions per course • UAE-friendly pricing
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -317,7 +319,7 @@ function PricingSection() {
           price="₹900"
           oldPrice="₹1,200"
           discount="1:1 Personalized"
-          monthly="Total:  ₹43,200 (48 sessions)"
+         
           course="App Development"
           points={[
             "1:1 live personalized sessions",
@@ -335,7 +337,7 @@ function PricingSection() {
           price="₹660"
           oldPrice="₹1,000"
           discount="Small Group (2–3 students)"
-          monthly="Total: ₹31,680 (48 sessions)"
+         
           course="App Development"
           points={[
             "Live small group classes (2–3 students)",

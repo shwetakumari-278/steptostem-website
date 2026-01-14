@@ -13,6 +13,7 @@ import {
   Trophy,
   UserCheck,
 } from "lucide-react";
+import CourseFAQ from "@/components/CourseFAQ";
 import { Infinity as InfinityIcon } from "lucide-react";
 
 import Header from "@/components/Header";
@@ -125,6 +126,8 @@ export default function RobloxGameDevPage() {
             <PricingSection course="Roblox Game Development" />
 
             <CourseTestimonials courseId="roblox" />
+            <CourseFAQ courseKey="robloxGameDev" />
+
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -166,7 +169,7 @@ function PricingSection({ course }: any) {
           price="₹900"
           oldPrice="₹1,200"
           discount="1:1 Personalized"
-          monthly="Total: ₹43,200 (36 sessions)"
+         
           course={course}
           points={[
             "36 live 1:1 sessions",
@@ -183,7 +186,7 @@ function PricingSection({ course }: any) {
           price="₹660"
           oldPrice="₹1,000"
           discount="Small Group (2–3 students)"
-          monthly="Total: ₹31,680 (36 sessions)"
+        
           course={course}
           points={[
             "Small group live classes",

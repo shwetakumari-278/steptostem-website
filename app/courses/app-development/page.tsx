@@ -13,6 +13,7 @@ import {
   CalendarCheck,
   User,
 } from "lucide-react";
+import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
 import CourseTestimonials from "@/components/CourseTestimonials";
 
@@ -258,6 +259,8 @@ export default function AppDevCoursePage() {
             {/* PRICING */}
             <PricingSection />
             <CourseTestimonials courseId="app-development" />
+            <CourseFAQ courseKey="appDevelopment" />
+
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -323,7 +326,7 @@ function PricingSection() {
           price="₹900"
           oldPrice="₹1,200"
           discount="1:1 Personalized"
-          monthly="Total: ₹43,200 (48 sessions)"
+          
           course="App Development"
           points={[
             "1:1 live personalized sessions",
@@ -341,7 +344,7 @@ function PricingSection() {
           price="₹660"
           oldPrice="₹1,000"
           discount="Small Group (2–3 students)"
-          monthly="Total: ₹31,680(48 sessions)"
+         
           course="App Development"
           points={[
             "Live small group classes (2–3 students)",

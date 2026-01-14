@@ -13,7 +13,7 @@ import {
   CalendarCheck,
 } from "lucide-react";
 import Header from "@/components/Header";
-
+import CourseFAQ from "@/components/CourseFAQ";
 import Link from "next/link";
 import CourseTestimonials from "@/components/CourseTestimonials";
 import CourseOfferBar from "@/components/CourseOfferBar";
@@ -257,6 +257,8 @@ export default function GameDesignCoursePage() {
             </section>
 
             <CourseTestimonials courseId="game-design" />
+            <CourseFAQ courseKey="gameDevelopment" />
+
           </div>
 
           {/* RIGHT SIDEBAR */}

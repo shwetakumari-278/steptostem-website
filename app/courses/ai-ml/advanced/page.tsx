@@ -8,7 +8,7 @@ import {
   BarChart,
   CheckCircle,
 } from "lucide-react";
-
+import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
@@ -184,6 +184,7 @@ export default function AIAdvancedCoursePage() {
 
             {/* TESTIMONIALS */}
             <CourseTestimonials courseId="ai-advance" />
+             <CourseFAQ courseKey="aiExpert" />
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -240,7 +241,7 @@ function RightSidebar() {
   );
 }
 
-function PriceCard({ title, price, total, points, gradient }: any) {
+function PriceCard({ title, price, points, gradient }: any) {
   return (
     <div className="rounded-2xl border overflow-hidden shadow-xl">
       <div
@@ -252,9 +253,6 @@ function PriceCard({ title, price, total, points, gradient }: any) {
       <div className="p-6 text-center">
         <p className="text-3xl font-bold">
           {price} <span className="text-sm">/ session</span>
-        </p>
-        <p className="text-sm text-gray-600 mt-2">
-          Total Course Fee: <strong>{total}</strong>
         </p>
       </div>
 
@@ -271,3 +269,4 @@ function PriceCard({ title, price, total, points, gradient }: any) {
     </div>
   );
 }
+

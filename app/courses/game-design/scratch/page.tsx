@@ -16,7 +16,7 @@ import {
   UserCheck,
 } from "lucide-react";
 import { Infinity as InfinityIcon } from "lucide-react";
-
+import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
@@ -135,6 +135,8 @@ export default function ScratchGameDevPage() {
             <PricingSection course="Scratch Game Development" />
 
             <CourseTestimonials courseId="scratch" />
+            <CourseFAQ courseKey="scratchGameDev" />
+
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -173,10 +175,10 @@ function PricingSection({ course = "Scratch Game Development" }) {
         {/* STARTER */}
         <PriceCard
           title="Starter"
-          price="AED 37"
-          oldPrice="AED 50"
+          price="₹900"
+          oldPrice="₹1200"
           discount="1:1 Personalized"
-          monthly="Total: AED 1,332 (36 sessions)"
+          
           course={course}
           points={[
             "36 live 1:1 private sessions",
@@ -191,10 +193,10 @@ function PricingSection({ course = "Scratch Game Development" }) {
         {/* GROWTH */}
         <PriceCard
           title="Growth"
-          price="AED 27"
-          oldPrice="AED 40"
+          price="₹660"
+          oldPrice="₹1000"
           discount="Small Group (2–3 students)"
-          monthly="Total: AED 972 (36 sessions)"
+        
           course={course}
           points={[
             "Live small group Scratch classes",
