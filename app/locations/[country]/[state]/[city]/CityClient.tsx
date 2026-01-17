@@ -19,12 +19,12 @@ export default function CityClient({ cityName }: Props) {
       {/* Hero */}
       <section className="py-20 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          StepToSTEM in <span className="gradient-text">{cityName}</span>
+          STEMxLearning in <span className="gradient-text">{cityName}</span>
         </h1>
 
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Empowering students in {cityName} with world-class learning in AI, Web
-          Development, Game Design, and App Development.
+          Empowering students in {cityName} with world-class learning in Python
+          & Machine learning, Web Development, Game Design, and App Development.
         </p>
       </section>
 

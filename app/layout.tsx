@@ -9,12 +9,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "StepToSTEM - Empowering Students in Tech & Innovation",
+  title: "STEMxLearning - Empowering Students in Tech & Innovation",
   description:
-    "Join StepToSTEM to learn AI/ML, Web Development, Game Design, and Arduino programming. Compete in hackathons and stay ahead of tech trends!",
+    "Join STEMxLearning to learn AI/ML, Web Development, Game Design, and Arduino programming. Compete in hackathons and stay ahead of tech trends!",
   keywords:
     "edtech, STEM, AI/ML, web development, game design, arduino, hackathons, coding, programming, students",
-  authors: [{ name: "StepToSTEM Team" }],
+  authors: [{ name: "STEMxLearning Team" }],
 };
 
 export const viewport: Viewport = {
@@ -29,9 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -19,7 +19,7 @@ import { curriculum } from "@/data/curriculum";
 import StaticProjectCard from "@/components/StaticProjectCard";
 import { courseProjects } from "@/data/courseProjects";
 export default function AIAdvancedCoursePage() {
-  const modules = curriculum["ai-ml-advanced"].modules;
+  const modules = curriculum["python-advanced"].modules;
 
   return (
     <>
@@ -28,8 +28,8 @@ export default function AIAdvancedCoursePage() {
 
       {/* OFFER BAR */}
       <CourseOfferBar
-        course="AI & Machine Learning (Advanced)"
-        gradient="from-blue-600 to-cyan-600"
+        course="Python Programming (Advanced)"
+        gradient="from-blue-600 to-indigo-600"
       />
 
       {/* MAIN */}
@@ -41,26 +41,28 @@ export default function AIAdvancedCoursePage() {
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <h1 className="text-4xl md:text-5xl font-bold">
-                  AI & Machine Learning for Teens
+                  Python Programming (Advanced)
                 </h1>
+
                 <span className="px-3 py-1 text-sm font-semibold rounded-full bg-blue-100 text-blue-700">
                   Advanced
                 </span>
               </div>
 
               <p className="text-sm text-gray-500 mb-4 tracking-wide">
-                Build real-world AI models using Python, ML & modern tools
+                Build real-world applications using advanced Python concepts
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">
-                This advanced AI course is designed for students ready to go
-                beyond basics. Learners work with Python, Computer Vision, NLP,
-                Generative AI, and real-world datasets to build production-level
-                AI applications.
+                This advanced Python course is designed for students who already
+                know Python basics and want to build professional-level
+                programs. Students work with data structures, file handling,
+                OOP, Data Visualization and GUI programming to create real-world
+                applications.
               </p>
 
               <p className="text-sm text-gray-500 mt-2">
-                Prior coding experience recommended.
+                Prior knowledge of Python basics is required.
               </p>
             </div>
 
@@ -79,8 +81,8 @@ export default function AIAdvancedCoursePage() {
                 />
                 <Feature
                   icon={<Award size={20} />}
-                  title="Certification by"
-                  value="STEM.org"
+                  title="Certification "
+                  value="Provided on Completion"
                 />
                 <Feature
                   icon={<Clock size={20} />}
@@ -90,7 +92,7 @@ export default function AIAdvancedCoursePage() {
                 <Feature
                   icon={<Layers size={20} />}
                   title="Program"
-                  value="50+ advanced AI projects"
+                  value="50+ advanced Python projects"
                 />
               </div>
             </div>
@@ -103,11 +105,14 @@ export default function AIAdvancedCoursePage() {
 
               <ul className="space-y-3">
                 {[
-                  "Build AI models using Python",
-                  "Work with Computer Vision & OpenCV",
-                  "Create NLP & chatbot systems",
-                  "Develop Generative AI applications",
-                  "Design a real-world AI capstone project",
+                  "Master advanced Python programming concepts",
+                  "Build applications using OOP and data structures",
+                  "Solve real-world problems using algorithms",
+                  "Analyze datasets using NumPy and Pandas",
+                  "Clean and prepare real-world data",
+                  "Visualize insights using Matplotlib and Seaborn",
+                  "Develop complete end-to-end applications",
+                  "Build a professional project portfolio",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3">
                     <CheckCircle className="text-green-600 mt-1" size={18} />
@@ -120,7 +125,7 @@ export default function AIAdvancedCoursePage() {
             {/* CURRICULUM */}
             <section>
               <h2 className="text-2xl font-bold mb-6">
-                Advanced AI & Machine Learning Curriculum
+                Python Advanced Programming Curriculum
               </h2>
 
               <div className="space-y-4">
@@ -131,11 +136,11 @@ export default function AIAdvancedCoursePage() {
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-6">
-                Advanced AI Projects You’ll Build
+                Advanced Python Projects You’ll Build
               </h2>
 
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {courseProjects["ai-ml-advanced"].map((project, i) => (
+                {courseProjects["python-advanced"].map((project, i) => (
                   <StaticProjectCard key={i} {...project} />
                 ))}
               </div>
@@ -147,7 +152,7 @@ export default function AIAdvancedCoursePage() {
               </h2>
 
               <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Advanced AI learning with expert instructors and real-world
+                Professional Python training with real-world systems and data
                 projects.
               </p>
 
@@ -155,7 +160,7 @@ export default function AIAdvancedCoursePage() {
                 {/* STARTER */}
                 <PriceCard
                   title="Starter"
-                  price="₹900"
+                  price="₹799"
                   total="₹43,200"
                   points={[
                     "1:1 expert-led sessions",
@@ -169,7 +174,7 @@ export default function AIAdvancedCoursePage() {
                 {/* GROWTH */}
                 <PriceCard
                   title="Growth"
-                  price="₹660"
+                  price="₹649"
                   total="₹31,680"
                   points={[
                     "Small group AI classes",
@@ -183,8 +188,8 @@ export default function AIAdvancedCoursePage() {
             </section>
 
             {/* TESTIMONIALS */}
-            <CourseTestimonials courseId="ai-advance" />
-             <CourseFAQ courseKey="aiExpert" />
+            <CourseTestimonials courseId="python-advance" />
+            <CourseFAQ courseKey="pyhtonAdvanced" />
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -219,12 +224,11 @@ function RightSidebar() {
 
         <ul className="space-y-4 text-sm text-gray-700">
           {[
-            "48 live private 1-on-1 sessions (45 mins)",
-            "Expert AI & ML instructors",
+            "32 live private 1-on-1 sessions (60 mins)",
+            "Learn live with an industry professionals",
             "8 advanced AI modules",
-            "50+ real-world AI projects",
-            "STEM.org accredited certificate",
-            "AI Expert Certification",
+            "50+ real-world Python projects",
+
             "Lifetime course access",
             "Unlimited 1:1 doubt sessions",
             "Class recordings",
@@ -269,4 +273,3 @@ function PriceCard({ title, price, points, gradient }: any) {
     </div>
   );
 }
-

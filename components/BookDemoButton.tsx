@@ -79,7 +79,7 @@ export default function BookDemoButton({
           {/* TEXT */}
           <div className="text-left">
             <p className="font-semibold text-gray-900">
-              {label ?? "🎓 Book 5 Free Demo Classes"}
+              {label ?? "🎓 Book  Free Demo Classes"}
             </p>
 
             <p className="text-sm text-purple-600">
@@ -116,7 +116,7 @@ export default function BookDemoButton({
     "
         >
           <div className="text-lg font-semibold leading-snug">
-            {label ?? "Schedule 5 Free Demo Classes"}
+            {label ?? "Schedule Free Demo Classes"}
           </div>
 
           <div className="text-sm opacity-90 mt-1">

@@ -18,8 +18,15 @@ import Link from "next/link";
 import CourseTestimonials from "@/components/CourseTestimonials";
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
+import ComingSoonCard from "@/components/ComingSoonCard";
 
 export default function GameDesignCoursePage() {
+  const COMING_SOON = true;
+
+  if (COMING_SOON) {
+    return <ComingSoonCard title="Game Design Courses" />;
+  }
+
   return (
     <>
       <Header />
@@ -197,14 +204,14 @@ export default function GameDesignCoursePage() {
               </div>
             </section>
 
-            {/* STEPTOSTEM LEARNING PATH */}
+            {/* STEMxLearning LEARNING PATH */}
             <section>
               <h2 className="text-2xl font-bold mb-4">
-                The StepToSTEM Learning Path
+                The STEMxLearning Learning Path
               </h2>
 
               <p className="text-gray-700 mb-8 max-w-3xl">
-                At StepToSTEM, students go beyond just playing games — they
+                At STEMxLearning, students go beyond just playing games — they
                 learn to design, build, and think like creators through a
                 structured growth journey.
               </p>
@@ -258,7 +265,6 @@ export default function GameDesignCoursePage() {
 
             <CourseTestimonials courseId="game-design" />
             <CourseFAQ courseKey="gameDevelopment" />
-
           </div>
 
           {/* RIGHT SIDEBAR */}

@@ -13,6 +13,8 @@ import {
   Trophy,
   UserCheck,
 } from "lucide-react";
+import ComingSoonCard from "@/components/ComingSoonCard";
+
 import CourseFAQ from "@/components/CourseFAQ";
 import { Infinity as InfinityIcon } from "lucide-react";
 
@@ -25,6 +27,12 @@ import CourseTestimonials from "@/components/CourseTestimonials";
 /* ===================== PAGE ===================== */
 
 export default function RobloxGameDevPage() {
+  const COMING_SOON = true;
+
+if (COMING_SOON) {
+  return <ComingSoonCard title="Roblox Game Development" />;
+}
+
   return (
     <>
       <Header />

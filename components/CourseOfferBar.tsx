@@ -25,7 +25,7 @@ export default function CourseOfferBar({
             onClick={() => window.dispatchEvent(new Event("open-demo"))}
             className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
-            🎓 Book 5 Free Demo Classes
+            🎓 Book Free Demo Classes
           </button>
         </div>
       </div>

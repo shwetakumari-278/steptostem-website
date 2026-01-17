@@ -22,9 +22,15 @@ import { projectsByCourse } from "@/data/projects";
 
 import Header from "@/components/Header";
 import CourseOfferBar from "@/components/CourseOfferBar";
+import ComingSoonCard from "@/components/ComingSoonCard";
 
 export default function WebDevCoursePage() {
   const courseKey = "web-dev";
+  const COMING_SOON = true;
+
+  if (COMING_SOON) {
+    return <ComingSoonCard title="Web Development Course" />;
+  }
 
   return (
     <>
@@ -93,8 +99,6 @@ export default function WebDevCoursePage() {
                     <p className="text-xs text-gray-600">STEM.org</p>
                   </div>
                 </div>
-
-                
 
                 <div className="flex items-start gap-3">
                   <Layers className="text-blue-500 mt-1" size={20} />
@@ -191,10 +195,10 @@ export default function WebDevCoursePage() {
               </div>
             </section>
 
-            {/* STEPTOSTEM LEARNING PATH */}
+            {/* STEMxLearning LEARNING PATH */}
             <section>
               <h2 className="text-2xl font-bold mb-4">
-                The StepToSTEM Learning Path
+                The STEMxLearning Learning Path
               </h2>
 
               <p className="text-gray-700 mb-8 max-w-3xl">
@@ -319,7 +323,6 @@ function PricingSection() {
           price="₹900"
           oldPrice="₹1,200"
           discount="1:1 Personalized"
-         
           course="App Development"
           points={[
             "1:1 live personalized sessions",
@@ -337,7 +340,6 @@ function PricingSection() {
           price="₹660"
           oldPrice="₹1,000"
           discount="Small Group (2–3 students)"
-         
           course="App Development"
           points={[
             "Live small group classes (2–3 students)",

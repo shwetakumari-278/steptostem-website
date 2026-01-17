@@ -32,7 +32,7 @@ export default function AICoursePage() {
       <Header />
 
       <CourseOfferBar
-        course="AI & Machine Learning"
+        course="Python & Machine Learning"
         gradient="from-purple-600 to-pink-600"
       />
 
@@ -48,22 +48,24 @@ export default function AICoursePage() {
             {/* HERO */}
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                AI & Machine Learning for Kids & Teens
+                Python Programming & Machine Learning for Kids & Teens
               </h1>
 
               <p className="text-sm text-gray-500 mb-4 tracking-wide">
-                Build intelligent systems that think and learn
+                Learn to code with Python and build intelligent systems using
+                data
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">
-                This course introduces students to Artificial Intelligence and
-                Machine Learning through hands-on projects. Students learn how
-                smart systems like chatbots, image recognition, and
-                recommendation engines actually work.
+                This program teaches students Python programming from scratch
+                and then guides them into Machine Learning using real datasets
+                and projects. Students learn how to write clean code, analyze
+                data, and build smart systems step by step.
               </p>
 
               <p className="text-sm text-gray-500 mt-2">
-                Beginner-friendly, practical, and focused on real AI creation.
+                Beginner-friendly, structured, and focused on real programming &
+                data skills.
               </p>
             </div>
 
@@ -82,8 +84,8 @@ export default function AICoursePage() {
                 />
                 <Feature
                   icon={<Award size={20} />}
-                  title="Certification by"
-                  value="STEM.org"
+                  title="Certificati"
+                  value="Provided on completion"
                 />
                 <Feature
                   icon={<Clock size={20} />}
@@ -93,7 +95,7 @@ export default function AICoursePage() {
                 <Feature
                   icon={<Layers size={20} />}
                   title="Program"
-                  value="50+ AI activities & projects"
+                  value="50+ Python/Ml activities & projects"
                 />
               </div>
             </div>
@@ -116,27 +118,32 @@ export default function AICoursePage() {
             {/* WHAT IS AI */}
             <section>
               <h2 className="text-2xl font-bold mb-3">
-                What does AI & Machine Learning mean for students?
+                What does Python & Machine Learning mean for students?
               </h2>
+
               <p className="text-gray-700 leading-relaxed">
-                AI helps machines learn from data and make smart decisions.
-                Students explore AI concepts through visuals and hands-on
-                projects — without complex math or theory.
+                Python teaches students how to think logically and write
+                programs. Machine Learning teaches them how to use data to make
+                predictions and decisions. Together, students learn how modern
+                apps, websites, and intelligent systems actually work.
               </p>
             </section>
 
             {/* LEARNING OUTCOMES */}
             <section>
               <h2 className="text-2xl font-bold mb-4">
-                After completing this course, your child can:
+                After completing this program, your child will be able to:
               </h2>
+
               <ul className="space-y-3">
                 {[
-                  "Build AI-powered games and apps",
-                  "Create chatbots and smart assistants",
-                  "Understand how machines learn from data",
-                  "Explore computer vision and language AI",
-                  "Confidently present AI projects",
+                  "Write programs confidently using Python",
+                  "Solve problems using loops, functions, and logic",
+                  "Work with real datasets and clean data",
+                  "Visualize data using charts and graphs",
+                  "Build simple Machine Learning models",
+                  "Understand how predictions and patterns work",
+                  "Create real-world projects and present them confidently",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3">
                     <CheckCircle className="text-green-600 mt-1" />
@@ -145,38 +152,52 @@ export default function AICoursePage() {
                 ))}
               </ul>
             </section>
-             {/* AI & ML COURSE PATHS */}
+            {/* AI & ML COURSE PATHS */}
             <section className="mt-16">
               <h2 className="text-3xl font-bold mb-4 text-center">
-                Choose Your AI Learning Path
+                Choose Your Python & Machine Learning Learning Path
               </h2>
 
               <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-                Students progress in AI based on age, experience, and learning
-                depth.
+                Students begin with Python fundamentals, progress to advanced
+                programming, and then move into Machine Learning based on their
+                age and experience.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {/* PYTHON BEGINNER */}
                 <GameCourseCard
-                  title="AI Genius"
-                  subtitle="AI-Powered Apps & Games"
-                  age="Grades 3–7"
-                  description="Students learn AI concepts through games, image recognition, chatbots, and fun hands-on projects without heavy coding."
-                  image="/asset/ai-genius.png"
+                  title="Python Beginner"
+                  subtitle="Programming Fundamentals"
+                  description="Students learn Python basics, logic, variables, loops, and conditions through fun games  and mini
+                  projects."
+                  image="/asset/python-beginner.png"
                   href="/courses/ai-ml/beginner"
                   badge="Beginner Friendly"
-                  color="from-purple-500 to-pink-500"
+                  color="from-green-500 to-emerald-500"
                 />
 
+                {/* PYTHON ADVANCED */}
                 <GameCourseCard
-                  title="AI Expert"
-                  subtitle="Hands-On AI, ML & Python"
-                  age="Grades 8–12"
-                  description="Students build real AI models using Python, APIs, NLP, and computer vision while solving real-world problems."
-                  image="/asset/ai-expert.jpg"
+                  title="Python Advanced"
+                  subtitle="DSA, Automation & Real Projects"
+                  description="Students master Python with data structures, automation, APIs, and real-world projects."
+                  image="/asset/python-advanced.png"
                   href="/courses/ai-ml/advanced"
                   badge="Advanced Track"
-                  color="from-blue-600 to-cyan-600"
+                  color="from-blue-600 to-indigo-600"
+                />
+
+                {/* MACHINE LEARNING */}
+                <GameCourseCard
+                  title="Machine Learning"
+                  subtitle="Real ML Models & AI Systems"
+                  description="Students learn to build machine learning models using Python, real datasets, and AI tools."
+                  image="/asset/ml-course.jpg"
+                  href="/courses/ai-ml/ml"
+                  badge="Coming Soon
+                  "
+                  color="from-orange-500 to-red-500"
                 />
               </div>
             </section>
@@ -194,14 +215,14 @@ export default function AICoursePage() {
               </div>
             </section>
 
-            {/* STEPTOSTEM LEARNING PATH */}
+            {/* STEMxLearning LEARNING PATH */}
             <section>
               <h2 className="text-2xl font-bold mb-4">
-                The StepToSTEM Learning Path
+                The STEMxLearning Learning Path
               </h2>
 
               <p className="text-gray-700 mb-8 max-w-3xl">
-                At StepToSTEM, we don’t just teach a single course. We guide
+                At STEMxLearning, we don’t just teach a single course. We guide
                 students through a structured growth journey — helping them
                 build skills, confidence, and leadership over time.
               </p>
@@ -209,67 +230,72 @@ export default function AICoursePage() {
               <div className="grid md:grid-cols-4 gap-6">
                 {/* Stage 1 */}
                 <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-purple-500">
-                  <h3 className="font-bold text-lg mb-2">Stage 1: Explorer</h3>
+                  <h3 className="font-bold text-lg mb-2">
+                    Stage 1: Python Explorer
+                  </h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    Students begin their journey by understanding core AI
-                    concepts through fun, interactive learning.
+                    Students learn Python basics and build confidence with
+                    programming.
                   </p>
                   <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>AI fundamentals</li>
+                    <li>Variables, loops, conditions</li>
                     <li>Logical thinking</li>
-                    <li>Curiosity-driven learning</li>
+                    <li>Mini Python projects</li>
                   </ul>
                 </div>
 
                 {/* Stage 2 */}
                 <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-blue-500">
-                  <h3 className="font-bold text-lg mb-2">Stage 2: Builder</h3>
+                  <h3 className="font-bold text-lg mb-2">
+                    Stage 2: Python Builder
+                  </h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    Students start building real AI projects and applying
-                    concepts independently.
+                    Students create real applications using advanced Python
+                    concepts.
                   </p>
                   <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>AI mini-projects</li>
-                    <li>Chatbots & tools</li>
-                    <li>Problem-solving skills</li>
+                    <li>Functions & data structures</li>
+                    <li>File handling</li>
+                    <li>Real-world Python projects</li>
                   </ul>
                 </div>
 
                 {/* Stage 3 */}
                 <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-green-500">
-                  <h3 className="font-bold text-lg mb-2">Stage 3: Innovator</h3>
+                  <h3 className="font-bold text-lg mb-2">
+                    Stage 3: Data & ML Analyst
+                  </h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    Students learn to think creatively and apply AI to
-                    real-world challenges.
+                    Students learn to work with data and build Machine Learning
+                    models.
                   </p>
                   <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>Advanced AI projects</li>
-                    <li>Hackathon preparation</li>
-                    <li>Portfolio building</li>
+                    <li>Data cleaning & visualization</li>
+                    <li>Basic ML models</li>
+                    <li>Real datasets & analysis</li>
                   </ul>
                 </div>
 
                 {/* Stage 4 */}
                 <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-orange-500">
-                  <h3 className="font-bold text-lg mb-2">Stage 4: Leader</h3>
+                  <h3 className="font-bold text-lg mb-2">
+                    Stage 4: ML Innovator
+                  </h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    Students gain confidence to lead, mentor, and showcase their
-                    work.
+                    Students combine Python and Machine Learning to solve real
+                    problems.
                   </p>
                   <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>Competitions & showcases</li>
-                    <li>Mentoring juniors</li>
-                    <li>Future-ready mindset</li>
+                    <li>End-to-end projects</li>
+                    <li>Portfolio building</li>
+                    <li>Hackathon-ready skills</li>
                   </ul>
                 </div>
               </div>
             </section>
-           
 
-            
-            <CourseTestimonials courseId="ai-ml" />
+            <CourseTestimonials courseId="python-ml" />
             <CourseFAQ courseKey="aiMl" />
-
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -329,8 +355,6 @@ function Stage({ title, color }: any) {
   );
 }
 
-
-
 function RightSidebar() {
   return (
     <div className="lg:sticky lg:top-40 h-fit">
@@ -342,7 +366,7 @@ function RightSidebar() {
         <ul className="space-y-4 text-sm text-gray-700">
           <SidebarRow
             icon={<Video size={16} />}
-            text="48 live 1-on-1 instructor-led classes (45 mins)"
+            text="32 live 1-on-1 instructor-led classes (60 mins)"
           />
 
           <SidebarRow
@@ -357,7 +381,7 @@ function RightSidebar() {
 
           <SidebarRow
             icon={<Layers size={16} />}
-            text="50+ hands-on AI activities & projects"
+            text="50+ hands-on Python/ML activities & projects"
           />
 
           <SidebarRow
@@ -416,7 +440,7 @@ function GameCourseCard({
         <img
           src={image}
           alt={title}
-          className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
 
         <span

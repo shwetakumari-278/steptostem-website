@@ -3,22 +3,23 @@ import { Brain, Globe, Gamepad2, Smartphone } from "lucide-react";
 export const courses = {
   "ai-ml": {
     id: "ai-ml",
-    title: "AI & Machine Learning",
-    description:
-      "Learn the future of technology with hands-on AI projects and ML algorithms.",
-    icon: Brain,
-    color: "from-purple-500 to-pink-500",
-    bgColor: "bg-purple-50",
-    image: "/asset/theme_halo.png",
-    duration: "12 weeks",
-    rating: 4.9,
-    students: "500+",
-    features: [
-      "Neural Networks",
-      "Computer Vision",
-      "Natural Language Processing",
-      "Deep Learning",
-    ],
+ title: "Python & Machine Learning",
+  description:
+    "Build strong programming skills with Python and explore Machine Learning through real projects",
+  icon: Brain,
+  color: "from-purple-500 to-pink-500",
+  bgColor: "bg-purple-50",
+  image: "/asset/theme_halo.png",
+  features: [
+    "Python Programming",
+    "Data Analysis & Visualization",
+    "Machine Learning Basics",
+    "Real-World Projects",
+  ],
+  rating: 4.9,
+
+  students: "70+",
+    
   },
 
   "web-dev": {

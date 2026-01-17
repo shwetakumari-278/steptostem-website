@@ -9,6 +9,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const isLocationPage = pathname.startsWith("/locations");
+
   const isHome = pathname === "/";
 
   useEffect(() => {
@@ -22,9 +24,12 @@ export default function Header() {
   // ✅ CLEAN NAVIGATION (NO FEATURES)
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Locations", href: "/locations" },
-    { name: "Courses", href: "/#courses" }, // 👈
-    { name: "Contact", href: "/#contact" }, // 👈 always footer
+
+    // 👇 only add Locations if user is already on location pages
+    ...(isLocationPage ? [{ name: "Locations", href: "/locations" }] : []),
+
+    { name: "Courses", href: "/#courses" },
+    { name: "Contact", href: "/#contact" },
     { name: "Blog", href: "/blog" },
   ];
 
@@ -59,7 +64,7 @@ export default function Header() {
                 isHome && !isScrolled ? "text-white" : "text-gray-900"
               }`}
             >
-              StepToSTEM
+              STEMxLearning
             </span>
           </motion.div>
 

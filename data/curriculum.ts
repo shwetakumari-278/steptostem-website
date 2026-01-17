@@ -1,285 +1,216 @@
 export const curriculum = {
-  "ai-ml": {
-    title: "AI & Machine Learning Curriculum",
+  "python-beginner": {
+    title: "Python Beginner Curriculum",
     modules: [
       {
         module: 1,
-        title: "AI Fun with Machine Learning for Kids",
+        title: "Programming Fundamentals with Python",
         description:
-          "Explore AI basics by building simple models for text and sound recognition through fun, hands-on activities.",
+          "Students are introduced to programming concepts and learn how Python works through simple examples.",
         outcomes: [
-          "Learn AI fundamentals",
-          "Build activities and games",
-          "Use text recognition",
-          "Explore sound recognition",
-          "Create interactive projects",
+          "Understand what programming is",
+          "Write and run first Python program",
+          "Use variables and data types",
+          "Take user input and display output",
+          "Follow correct syntax and indentation",
         ],
-        language: "Visual Block-Based Programming",
-        platform: "Machine Learning for Kids (Scratch)",
-        lessons: "6 Lessons & 10+ Projects",
       },
       {
         module: 2,
-        title: "AI Creativity with PictoBlox",
+        title: "Logic Building & Decision Making",
         description:
-          "Create AI-generated art, music composers, and AI-powered comics using visual creativity.",
+          "Students learn how to make programs think using conditions and logical operators.",
         outcomes: [
-          "Create AI-generated art",
-          "Develop music projects",
-          "Build creative outputs",
-          "Classify doodles accurately",
-          "Enhance visual creativity",
+          "Use if, elif, and else statements",
+          "Work with comparison and logical operators",
+          "Build real-life decision programs",
+          "Create small interactive programs",
         ],
-        language: "Visual Block-Based Programming",
-        platform: "PictoBlox",
-        lessons: "6 Lessons & 10+ Projects",
       },
       {
         module: 3,
-        title: "AI Concepts with mBlock",
+        title: "Data Handling with Lists & Tuples",
         description:
-          "Learn object, gesture, and emotion recognition to build interactive AI systems.",
+          "Students learn to store and manage multiple values using Python collections.",
         outcomes: [
-          "Learn object recognition",
-          "Explore emotion detection",
-          "Build gesture-controlled projects",
-          "Use voice commands",
-          "Create interactive systems",
+          "Create and modify lists",
+          "Use list methods effectively",
+          "Understand indexing and slicing",
+          "Work with tuples and immutability",
+          "Solve problems using collections",
         ],
-        language: "mBlock Visual Programming",
-        platform: "mBlock",
-        lessons: "6 Lessons & 10+ Projects",
       },
       {
         module: 4,
-        title: "Scratch + AI Code 101",
+        title: "Loops & Problem Solving",
         description:
-          "Train AI models for text and image recognition and integrate them into Scratch projects.",
+          "Students learn to automate repetitive tasks and solve logical problems using loops.",
         outcomes: [
-          "Train image models",
-          "Develop text models",
-          "Integrate sound recognition",
-          "Build chatbot projects",
-          "Combine multiple AI models",
+          "Use for and while loops",
+          "Build pattern-based programs",
+          "Work with nested loops",
+          "Apply break, continue, and pass",
+          "Strengthen logical thinking",
         ],
-        language: "Visual Block-Based Programming",
-        platform: "AI Code 101 (Scratch)",
-        lessons: "6 Lessons & 10+ Projects",
       },
       {
         module: 5,
-        title: "AI with Scratch & Teachable Machine",
+        title: "Functions & Modular Programming",
         description:
-          "Use Google Teachable Machine to build image, sound, and pose recognition projects.",
+          "Students learn to organize code using functions and reusable logic blocks.",
         outcomes: [
-          "Train AI models",
-          "Create interactive games",
-          "Use sound recognition",
-          "Enhance storytelling",
-          "Develop creative projects",
+          "Create and use functions",
+          "Understand parameters and return values",
+          "Use local and global variables",
+          "Write reusable programs",
+          "Solve problems using functions",
         ],
-        language: "Visual Block-Based Programming",
-        platform: "Scratch + Teachable Machine",
-        lessons: "6 Lessons & 10+ Projects",
       },
       {
         module: 6,
-        title: "AI App Development with Thunkable",
+        title: "Files, Errors & Program Safety",
         description:
-          "Build real-world AI-powered apps like translators and image scanners.",
+          "Students learn how to handle files and make programs safe from errors.",
         outcomes: [
-          "Build AI-powered apps",
-          "Create translators",
-          "Use voice recognition",
-          "Develop image-based apps",
-          "Integrate AI models",
+          "Read and write files",
+          "Understand file modes",
+          "Handle errors using try-except",
+          "Debug common mistakes",
+          "Write stable programs",
         ],
-        language: "Blockly + JavaScript AI Integration",
-        platform: "Thunkable",
-        lessons: "6 Lessons & 10+ Projects",
       },
       {
         module: 7,
-        title: "Real-World AI Apps with MIT App Inventor",
+        title: "Object-Oriented Programming Basics",
         description:
-          "Create finance and productivity AI apps like budgeting assistants.",
+          "Students are introduced to OOP concepts used in real-world software.",
         outcomes: [
-          "Build financial literacy apps",
-          "Create budgeting tools",
-          "Develop money assistants",
-          "Solve real-world problems",
+          "Understand classes and objects",
+          "Create attributes and methods",
+          "Structure programs professionally",
+          "Use OOP in mini projects",
         ],
-        language: "Visual Block-Based Programming",
-        platform: "MIT App Inventor",
-        lessons: "6 Lessons & 10+ Projects",
       },
       {
         module: 8,
-        title: "Python AI Projects for Kids",
+        title: "GUI Apps & Final Projects",
         description:
-          "Learn Python basics and build chatbots, quizzes, and translation tools.",
+          "Students build real desktop applications and complete their final projects.",
         outcomes: [
-          "Learn Python basics",
-          "Build AI chatbots",
-          "Create AI greetings",
-          "Develop quizzes",
-          "Use Google APIs",
+          "Create GUI apps using Tkinter",
+          "Work with buttons, inputs, and dialogs",
+          "Build canvas-based apps",
+          "Complete final project",
+          "Present and explain their work",
         ],
-        language: "Block-Based Python Programming",
-        platform: "EduBlocks",
-        lessons: "6 Lessons & 10+ Projects",
       },
     ],
   },
-   "ai-ml-advanced": {
-    modules: [
-      {
-        module: "Module 1",
-        title: "Introduction to AI",
-        description:
-          "Master fundamentals and explore key AI topics such as machine learning, deep learning, neural networks, and natural language processing through hands-on projects.",
-        outcomes: [
-          "Learn fundamentals of AI",
-          "Understand key AI concepts",
-          "Explore real-world AI uses",
-          "Set up your development environment",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub, Google Colab",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-      {
-        module: "Module 2",
-        title: "Visionary AI: Computer Vision with OpenCV",
-        description:
-          "Explore how AI sees and understands images. Use OpenCV to create projects where AI can recognize, analyze, and manipulate visual data.",
-        outcomes: [
-          "Learn image processing with OpenCV",
-          "Create AI-powered visual projects",
-          "Use basic computer vision methods",
-          "Analyze and modify visual data",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-      {
-        module: "Module 3",
-        title: "Getting Started with Image Classification",
-        description:
-          "Build image classification systems using OpenCV and machine learning concepts, including facial recognition.",
-        outcomes: [
-          "Build and train AI image classifiers",
-          "Discover feature extraction in AI",
-          "Use ML to sort images",
-          "Improve classification accuracy",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub, Hugging Face",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-      {
-        module: "Module 4",
-        title: "NLP with Hugging Face API",
-        description:
-          "Explore natural language processing by creating chatbots, story generators, and translators using Hugging Face.",
-        outcomes: [
-          "Use Hugging Face for text analysis",
-          "Create smart chatbots with GPT",
-          "Apply text translation & generation",
-          "Learn large language models",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub, Hugging Face",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-      {
-        module: "Module 5",
-        title: "Creative Fusion: AI Meets Art & Words",
-        description:
-          "Transform text into images, build narratives, and explore AI creativity using generative models.",
-        outcomes: [
-          "Turn text into AI-generated images",
-          "Generate image-based narratives",
-          "Use AI for interactive storytelling",
-          "Explore creativity with technology",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub, Hugging Face",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-      {
-        module: "Module 6",
-        title: "Speech Symphony: Talk & Listen with AI",
-        description:
-          "Create AI systems that understand and generate speech using speech-to-text and text-to-speech models.",
-        outcomes: [
-          "Implement speech-to-text",
-          "Implement text-to-speech",
-          "Develop interactive voice assistants",
-          "Enhance AI communication skills",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub, Hugging Face",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-      {
-        module: "Module 7",
-        title: "Prompt Playground: Mastering AI with Gemini",
-        description:
-          "Learn prompt engineering using Gemini API to optimize AI responses and build intelligent applications.",
-        outcomes: [
-          "Learn basic prompt engineering",
-          "Craft effective AI prompts",
-          "Use Gemini API for projects",
-          "Apply prompt engineering in apps",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub, Google AI Studio",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-      {
-        module: "Module 8",
-        title: "AI Showcase: Your Capstone Project",
-        description:
-          "Build and publish your own AI-powered application by integrating tools and techniques from all modules.",
-        outcomes: [
-          "Develop your own AI application",
-          "Integrate AI tools & techniques",
-          "Showcase creativity and skills",
-          "Publish your AI project",
-        ],
-        meta: {
-          language: "Python",
-          platform: "GitHub, Google AI Studio",
-          tools: "Visual Studio Code, Git",
-          lessons: "6 Lessons & 6+ Projects",
-        },
-      },
-    ],
-  },
-   "app-development": {
+
+ "python-advanced": {
+  title: "Python Advanced Curriculum",
+  modules: [
+    {
+      module: 1,
+      title: "Advanced Python Foundations",
+      description:
+        "Strengthen Python fundamentals and master advanced function concepts for professional programming.",
+      outcomes: [
+        "Revise core Python concepts",
+        "Write advanced functions and recursion",
+        "Understand scope, arguments, and return values",
+        "Solve real-world logic problems",
+      ],
+    },
+    {
+      module: 2,
+      title: "Object-Oriented Programming Mastery",
+      description:
+        "Learn professional software design using advanced OOP concepts and reusable code structures.",
+      outcomes: [
+        "Create classes and objects",
+        "Apply inheritance and polymorphism",
+        "Use encapsulation effectively",
+        "Build OOP-based applications",
+      ],
+    },
+    {
+      module: 3,
+      title: "Algorithms & Data Structures",
+      description:
+        "Develop strong problem-solving skills using searching, sorting, and core data structures.",
+      outcomes: [
+        "Implement searching algorithms",
+        "Use sorting techniques efficiently",
+        "Work with stacks and queues",
+        "Solve problems using linked lists",
+      ],
+    },
+    {
+      module: 4,
+      title: "Problem Solving & System Projects",
+      description:
+        "Apply Python concepts to build real-world systems and logic-based applications.",
+      outcomes: [
+        "Build management systems",
+        "Apply DSA in real projects",
+        "Strengthen logical thinking",
+        "Develop structured programs",
+      ],
+    },
+    {
+      module: 5,
+      title: "Data Analysis with Python",
+      description:
+        "Analyze real-world datasets using NumPy and Pandas for insights and decision-making.",
+      outcomes: [
+        "Work with NumPy arrays",
+        "Create and manipulate Pandas DataFrames",
+        "Extract data from CSV files",
+        "Understand data analysis workflow",
+      ],
+    },
+    {
+      module: 6,
+      title: "Data Cleaning & Exploratory Analysis",
+      description:
+        "Prepare data for analysis by cleaning, handling missing values, and exploring patterns.",
+      outcomes: [
+        "Handle missing and duplicate data",
+        "Detect and treat outliers",
+        "Apply EDA techniques",
+        "Prepare datasets for visualization",
+      ],
+    },
+    {
+      module: 7,
+      title: "Data Visualization & Storytelling",
+      description:
+        "Visualize data using charts and plots to communicate insights effectively.",
+      outcomes: [
+        "Create plots using Matplotlib",
+        "Build bar, line, histogram, and scatter charts",
+        "Use Seaborn for advanced visualizations",
+        "Choose the right chart for the data",
+      ],
+    },
+    {
+      module: 8,
+      title: "Capstone Project & Application Development",
+      description:
+        "Build a complete end-to-end application using Python concepts learned throughout the course.",
+      outcomes: [
+        "Build a complete application with Tkinter GUI",
+        "Integrate data, logic, and UI",
+        "Apply file handling and error handling",
+        "Present and showcase final project",
+      ],
+    },
+  ],
+},
+
+
+  "app-development": {
     title: "Mobile App Development Curriculum",
     modules: [
       {
@@ -380,7 +311,7 @@ export const curriculum = {
       },
     ],
   },
-"game-design": {
+  "game-design": {
     title: "Game Development Curriculum",
     modules: [
       {

@@ -11,11 +11,11 @@ export default function LocationsPage() {
       {/* Brand Intro */}
       <section className="py-20 text-center">
         <h1 className="text-5xl font-bold mb-4">
-          StepToSTEM <span className="gradient-text">Worldwide</span>
+          STEMxLearning <span className="gradient-text">Worldwide</span>
         </h1>
 
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          StepToSTEM offers live online coding and AI programs for students
+          STEMxLearning offers live online coding and AI programs for students
           across multiple countries. Choose your location to explore programs
           near you.
         </p>

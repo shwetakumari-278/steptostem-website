@@ -34,105 +34,107 @@ export const courseTestimonials = {
     ],
   },
 
-  "ai-ml": {
-    averageRating: 4.9,
-    totalReviews: "1000+ reviews",
-    testimonials: [
-      {
-        name: "Lily Zane",
-        role: "Grade 9 Student",
-        image: "/testimonials/lily.jpg",
-        rating: 4.8,
-        text: "AI sounded scary at first, but once examples were explained, I understood how machines actually learn.",
-      },
-      {
-        name: "Arjun Patel",
-        role: "Grade 11 Student",
-        image: "/testimonials/arjun.jpg",
-        rating: 4.6,
-        text: "Training my own model and seeing correct predictions was a proud moment for me.",
-      },
-      {
-        name: "Rohini Das",
-        role: "Parent",
-        image: "/testimonials/rohini.jpg",
-        rating: 4.5,
-        text: "Even though I don’t understand AI, I can see my child thinking more logically now.",
-      },
-      {
-        name: "Mehul Shah",
-        role: "Grade 10 Student",
-        image: "/testimonials/mehul.jpg",
-        rating: 4.7,
-        text: "Breaking data into steps helped me understand complex ideas easily. It felt practical, not theoretical.",
-      },
-    ],
-  },
-  "ai-genius": {
+  "python-ml": {
   averageRating: 4.9,
-  totalReviews: "850+ reviews",
+  totalReviews: "100+ reviews",
+  testimonials: [
+    {
+      name: "Lily Zane",
+      role: "Grade 9 Student",
+      image: "/testimonials/lily.jpg",
+      rating: 4.8,
+      text: "Python was so easy to understand, and building my first program made me feel confident. I never thought coding could be this fun.",
+    },
+    {
+      name: "Arjun Patel",
+      role: "Grade 11 Student",
+      image: "/testimonials/arjun.jpg",
+      rating: 4.7,
+      text: "Using Python to analyze data and then applying Machine Learning felt like real-world tech. Seeing my model give correct results was amazing.",
+    },
+    {
+      name: "Rohini Das",
+      role: "Parent",
+      image: "/testimonials/rohini.jpg",
+      rating: 4.6,
+      text: "My child moved from simple Python programs to working with real datasets. I can clearly see improvement in problem-solving and confidence.",
+    },
+    {
+      name: "Mehul Shah",
+      role: "Grade 10 Student",
+      image: "/testimonials/mehul.jpg",
+      rating: 4.8,
+      text: "Learning step by step—from Python basics to Machine Learning—made everything clear. It felt practical, not confusing.",
+    },
+  ],
+},
+
+"python-beginner": {
+  averageRating: 4.9,
+  totalReviews: "70+ reviews",
   testimonials: [
     {
       name: "Ananya Gupta",
       role: "Grade 7 Student",
       image: "/testimonials/ananya1.jpg",
       rating: 4.9,
-      text: "I didn’t know AI could be this simple. Making my first chatbot made me feel like I created something real, not just learned theory.",
+      text: "Python made coding so easy to understand. Writing my first program and seeing it work made me feel really confident.",
     },
     {
       name: "Rohan Mehta",
       role: "Grade 6 Student",
       image: "/testimonials/rohan.jpg",
       rating: 4.8,
-      text: "The classes were fun and easy to understand. I liked how we used AI in games and small projects instead of just listening.",
+      text: "I loved making small programs and games in Python. The classes were fun and I could understand everything step by step.",
     },
     {
       name: "Neha Singh",
       role: "Parent",
       image: "/testimonials/neha.jpg",
       rating: 4.9,
-      text: "My child started talking confidently about AI and how it works. It was amazing to see curiosity turn into understanding.",
+      text: "My child now understands programming logic and can explain how their code works. It’s been great to see such confidence grow.",
     },
     {
       name: "Arjun Patel",
       role: "Grade 8 Student",
       image: "/testimonials/arjun2.jpg",
       rating: 4.8,
-      text: "I liked that mistakes were okay. We learned by trying again, and that made AI feel less scary and more interesting.",
+      text: "I learned how to solve problems using Python instead of guessing. Fixing errors and improving my code felt really exciting.",
     },
   ],
 },
-"ai-advance": {
+
+"python-advance": {
   averageRating: 4.8,
-  totalReviews: "620+ reviews",
+  totalReviews: "70+ reviews",
   testimonials: [
     {
       name: "Kunal Verma",
       role: "Grade 10 Student",
       image: "/testimonials/kunal.jpg",
       rating: 4.9,
-      text: "Building machine learning models and seeing predictions actually work was the best part. It felt like real-world AI.",
+      text: "Building complete Python applications with data structures and projects made me feel like a real developer, not just a student.",
     },
     {
       name: "Isha Malhotra",
       role: "Grade 9 Student",
       image: "/testimonials/isha.jpg",
       rating: 4.8,
-      text: "I finally understood how data affects AI decisions. The projects made complex ideas much easier to grasp.",
+      text: "I learned how to clean data, analyze it, and visualize results using Python. The projects made everything easy to understand.",
     },
     {
       name: "Rajesh Malhotra",
       role: "Parent",
       image: "/testimonials/rajesh.jpg",
       rating: 4.7,
-      text: "This course helped my child move beyond basics. The logical thinking and problem-solving skills improved noticeably.",
+      text: "This course helped my child build strong problem-solving skills and confidence in advanced Python programming.",
     },
     {
       name: "Simran Kaur",
       role: "Grade 11 Student",
       image: "/testimonials/simran.jpg",
       rating: 4.8,
-      text: "Training models, testing accuracy, and improving results made me feel prepared for higher-level AI studies.",
+      text: "Working on data analysis, algorithms, and full projects prepared me for higher-level computer science studies.",
     },
   ],
 },

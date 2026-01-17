@@ -16,6 +16,7 @@ import {
 import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
 import CourseTestimonials from "@/components/CourseTestimonials";
+import ComingSoonCard from "@/components/ComingSoonCard";
 
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
@@ -23,6 +24,12 @@ import CurriculumAccordion from "@/components/CurriculumAccordion";
 import { curriculum } from "@/data/curriculum";
 export default function AppDevCoursePage() {
   const courseKey = "app-development";
+  const COMING_SOON = true;
+
+  if (COMING_SOON) {
+    return <ComingSoonCard title="App Development Course" />;
+  }
+
   return (
     <>
       <Header />
@@ -197,14 +204,14 @@ export default function AppDevCoursePage() {
               </div>
             </section>
 
-            {/* STEPTOSTEM LEARNING PATH */}
+            {/* STEMxLearning LEARNING PATH */}
             <section>
               <h2 className="text-2xl font-bold mb-4">
-                The StepToSTEM Learning Path
+                The STEMxLearning Learning Path
               </h2>
 
               <p className="text-gray-700 mb-8 max-w-3xl">
-                At StepToSTEM, students grow from beginners to confident app
+                At STEMxLearning, students grow from beginners to confident app
                 creators through guided, hands-on learning and real-world
                 projects.
               </p>
@@ -260,7 +267,6 @@ export default function AppDevCoursePage() {
             <PricingSection />
             <CourseTestimonials courseId="app-development" />
             <CourseFAQ courseKey="appDevelopment" />
-
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -326,7 +332,6 @@ function PricingSection() {
           price="₹900"
           oldPrice="₹1,200"
           discount="1:1 Personalized"
-          
           course="App Development"
           points={[
             "1:1 live personalized sessions",
@@ -344,7 +349,6 @@ function PricingSection() {
           price="₹660"
           oldPrice="₹1,000"
           discount="Small Group (2–3 students)"
-         
           course="App Development"
           points={[
             "Live small group classes (2–3 students)",
@@ -419,9 +423,10 @@ function RightSidebar() {
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 
         <ul className="space-y-4 text-sm text-gray-700">
-            <SidebarRow
+          <SidebarRow
             icon={<Users size={16} />}
-             text="36 live private 1-on-1 sessions (45 mins)" />
+            text="36 live private 1-on-1 sessions (45 mins)"
+          />
           <SidebarRow
             icon={<Video size={16} />}
             text="Live mobile app development classes"

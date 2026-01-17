@@ -6,7 +6,7 @@ export const blogs = [
     excerpt:
       "Should children start coding with visual blocks like Scratch or jump straight into typing real code like Python? This guide helps parents understand the strengths, limits, and ideal learning path of both approaches.",
     date: "January 5, 2026",
-    author: "StepToSTEM",
+    author: "STEMxLearning",
     image: "/blog/drag-drop-vs-typing-code.png",
     content: `
 <h2>Drag-and-Drop vs. Typing Code: Which Coding Path Is Right for Your Child?</h2>
@@ -242,14 +242,15 @@ not as competitors, but as stages of the same journey.
 `,
   },
   {
-  slug: "what-schools-dont-teach-about-technology",
-  title: "What Schools Don’t Teach About Technology (But Every Student Needs to Learn)",
-  excerpt:
-    "Schools teach children how to use technology, but rarely explain how it actually works, how it shapes thinking, or how to create with it. This article explores the most important technology lessons missing from traditional education.",
-  date: "January 2, 2026",
-  author: "StepToSTEM",
-  image: "/blog/what-schools-dont-teach-technology.jpg",
-  content: `
+    slug: "what-schools-dont-teach-about-technology",
+    title:
+      "What Schools Don’t Teach About Technology (But Every Student Needs to Learn)",
+    excerpt:
+      "Schools teach children how to use technology, but rarely explain how it actually works, how it shapes thinking, or how to create with it. This article explores the most important technology lessons missing from traditional education.",
+    date: "January 2, 2026",
+    author: "STEMxLearning",
+    image: "/blog/what-schools-dont-teach-technology.jpg",
+    content: `
 <h2>What Schools Don’t Teach About Technology (But Every Student Needs to Learn)</h2>
  
   <p><strong>Technology is everywhere.</strong> That part is obvious.</p>
@@ -480,8 +481,7 @@ not as competitors, but as stages of the same journey.
     the more confident — and thoughtful — they become.
   </p>
 `,
-},
-
+  },
 
   {
     slug: "chatgpt-for-students-smart-study-buddy-or-shortcut",
@@ -489,7 +489,7 @@ not as competitors, but as stages of the same journey.
     excerpt:
       "Many students are secretly using ChatGPT for homework and exams. Learn how to use AI tools the right way — to understand better, not just finish faster.",
     date: "December 7, 2025",
-    author: "StepToSTEM",
+    author: "STEMxLearning",
     image: "/blog/chatgpt-for-students.png",
     content: `
 <h2>ChatGPT for Students: Smart Study Buddy or Shortcut?</h2>
@@ -881,7 +881,7 @@ The goal for today’s students should be:
 
 <p>
 When guided properly by parents, teachers, and platforms like
-<strong>StepToSTEM</strong>, AI becomes a
+<strong>STEMxLearning</strong>, AI becomes a
 <strong>smart study buddy</strong> that makes children more confident,
 curious, and future-ready — not a shortcut that reduces their potential.
 </p>
@@ -900,7 +900,7 @@ With the right mindset, it can be
     excerpt:
       "Kids use AI every day in games, apps, and even homework — often without knowing it. Learn how AI works in simple words and how children can learn to build it, not just use it.",
     date: "November 18, 2025",
-    author: "StepToSTEM",
+    author: "STEMxLearning",
     image: "/blog/ai-for-kids.png",
     content: `
 <h2>AI for Kids: How Children Are Already Using Artificial Intelligence Without Realising It</h2>
@@ -1190,7 +1190,7 @@ With the right mindset, it can be
     excerpt:
       "Not all screen time is bad. Learn how parents can turn everyday screen usage into real skill-building for kids.",
     date: "November 5, 2025",
-    author: "StepToSTEM",
+    author: "STEMxLearning",
     image: "/blog/smart-screen-time.png",
     content: `
   <h2>Screen Time That Actually Teaches Skills: A Parent’s Guide</h2>
@@ -1496,14 +1496,14 @@ one of the most powerful learning tools your child ever uses.
   `,
   },
   {
-  slug: "is-roblox-just-a-game-or-a-learning-tool-for-kids",
-  title: "Is Roblox Just a Game or a Learning Tool for Kids?",
-  excerpt:
-    "Roblox is more than just a game. Discover how it helps kids learn coding, problem-solving, and creativity.",
-  date: "October 28, 2025",
-  author: "StepToSTEM",
-  image: "/blog/roblox-learning.jpg",
-  content: `
+    slug: "is-roblox-just-a-game-or-a-learning-tool-for-kids",
+    title: "Is Roblox Just a Game or a Learning Tool for Kids?",
+    excerpt:
+      "Roblox is more than just a game. Discover how it helps kids learn coding, problem-solving, and creativity.",
+    date: "October 28, 2025",
+    author: "STEMxLearning",
+    image: "/blog/roblox-learning.jpg",
+    content: `
 <h2>Is Roblox Just a Game — or Is Roblox Good for Kids as a Learning Tool?</h2>
 
 <p>
@@ -1768,6 +1768,5 @@ Roblox can be an excellent starting point.
 </p>
 
 `,
-}
-
+  },
 ];

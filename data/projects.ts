@@ -38,6 +38,7 @@ export const projectsByCourse = {"ai-ml": [
       "Students develop a dashboard-based portal with separate logins for students and teachers.\nFeatures include attendance tracking, announcements, and structured data management.",
   },
 
-],
+]
+
 
 };

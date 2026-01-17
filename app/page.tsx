@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Brain,
   Globe,
+  Code,
   Gamepad2,
   Cpu,
   Trophy,
@@ -43,18 +44,18 @@ export default function Home() {
   const courses = [
     {
       id: "ai-ml",
-      title: "AI & Machine Learning",
+      title: "Python & Machine Learning",
       description:
-        "Learn the future of technology with hands-on AI projects and ML algorithms",
+        "Build strong programming skills with Python and explore Machine Learning through real projects",
       icon: Brain,
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-50",
       image: "/asset/theme_halo.png",
       features: [
-        "Neural Networks",
-        "Computer Vision",
-        "Natural Language Processing",
-        "Deep Learning",
+        "Python Programming",
+        "Data Analysis & Visualization",
+        "Machine Learning Basics",
+        "Real-World Projects",
       ],
       rating: 4.9,
     },
@@ -98,8 +99,8 @@ export default function Home() {
       description:
         "Design and build interactive mobile apps while learning how real apps work from idea to launch.",
       icon: Smartphone,
-        color: "from-orange-500 to-amber-500",
-  bgColor: "bg-orange-50",
+      color: "from-orange-500 to-amber-500",
+      bgColor: "bg-orange-50",
       image: "/asset/app-development.jpeg",
       features: [
         "App UI & User Interaction",
@@ -143,9 +144,9 @@ export default function Home() {
     {
       name: "Priya Sharma",
       age: 16,
-      course: "AI/ML",
+      course: "Python/ML",
       content:
-        "StepToSTEM helped me build my first AI chatbot! The mentors are amazing.",
+        "STEMxLearning helped me build my first  chatbot! using python concepts. The mentors are amazing.",
       rating: 5,
     },
     {
@@ -204,12 +205,13 @@ export default function Home() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 font-display">
-              <span className="gradient-text">StepToSTEM</span>
+              <span className="gradient-text">STEMxLearning</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
               Empowering students aged 7-18 to become tech innovators through
-              <span className="font-semibold text-primary-600"> AI/ML</span>,
+              <span className="font-semibold text-primary-600"> Python/ML</span>
+              ,
               <span className="font-semibold text-secondary-600">
                 {" "}
                 Web Development
@@ -247,16 +249,12 @@ export default function Home() {
 
             <div className="text-gray-600">
               <p className="text-lg mb-4">
-                Trusted by 10000+ students worldwide
+                Trusted by 100+ students Nationwide
               </p>
               <div className="flex justify-center items-center space-x-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary-600">30+</div>
-                  <div className="text-sm">Hackathon Wins</div>
-                </div>
-                <div className="text-center">
                   <div className="text-2xl font-bold text-secondary-600">
-                    50000+
+                    1000+
                   </div>
                   <div className="text-sm">Projects Built</div>
                 </div>
@@ -308,7 +306,6 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
-
             {courses.map((course, index) => (
               <motion.div
                 key={course.id}
@@ -351,7 +348,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-              Why Choose <span className="gradient-text">StepToSTEM</span>
+              Why Choose <span className="gradient-text">STEMxLearning</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're not just teaching coding - we're building the next
@@ -360,7 +357,6 @@ export default function Home() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
-
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -616,8 +612,8 @@ export default function Home() {
               What Your Child Will <span className="gradient-text">Learn</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A comprehensive journey from understanding intelligence to
-              building smart AI-powered projects
+              A structured journey from Python programming fundamentals to
+              real-world Machine Learning projects
             </p>
           </motion.div>
 
@@ -651,15 +647,16 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Brain className="w-6 h-6 text-white" />
+                    <Code className="w-6 h-6 text-white" />
                   </div>
+
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      AI Fundamentals
+                      Python Programming Fundamentals
                     </h3>
                     <p className="text-gray-600">
-                      Understand how machines think, learn, and make decisions
-                      using simple, real-life examples.
+                      Learn variables, loops, conditions, functions, and logic
+                      to build strong programming foundations.
                     </p>
                   </div>
                 </div>
@@ -1013,7 +1010,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-gray-600 mb-8">
               Join thousands of students who are already building the future
-              with StepToSTEM
+              with STEMxLearning
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -1047,7 +1044,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4">StepToSTEM</h3>
+              <h3 className="text-2xl font-bold mb-4">STEMxLearning</h3>
               <p className="text-gray-300 mb-4">
                 Empowering the next generation of tech innovators through
                 comprehensive STEM education.
@@ -1068,7 +1065,7 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Courses</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>AI & Machine Learning</li>
+                <li>Python & Machine Learning</li>
                 <li>Web Development</li>
                 <li>Game Design</li>
                 <li>App-Development</li>
@@ -1086,8 +1083,8 @@ export default function Home() {
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 space-y-3">
             <p>
-              &copy; 2025 StepToSTEM. All rights reserved. Empowering students,
-              building futures.
+              &copy; 2025 STEMxLearning. All rights reserved. Empowering
+              students, building futures.
             </p>
 
             {/* Legal Links */}

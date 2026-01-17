@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-16">
           {/* Page Title */}
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            Privacy Policy – StepToSTEM
+            Privacy Policy – STEMxLearning
           </h1>
           <p className="text-sm text-gray-500 mb-10">
             Last updated: January 2026
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
           {/* Content */}
           <div className="space-y-8 text-gray-700 leading-relaxed text-base">
             <p>
-              StepToSTEM (“we”, “our”, “us”) respects your privacy and is
+              STEMxLearning (“we”, “our”, “us”) respects your privacy and is
               committed to protecting the personal information you share with
               us. This Privacy Policy explains how we collect, use, and
               safeguard your information when you interact with our website,
@@ -147,15 +147,17 @@ export default function PrivacyPolicyPage() {
               </h2>
               <p>
                 Email:{" "}
-                <span className="font-medium">steptostem.global@gmail.com</span>
+                <span className="font-medium">
+                  STEMxLearning.global@gmail.com
+                </span>
               </p>
               <p>
                 Website:{" "}
                 <a
-                  href="https://steptostem.netlify.app"
+                  href="https://StepToSTEM.netlify.app"
                   className="text-blue-600 hover:underline"
                 >
-                  https://steptostem.netlify.app
+                  https://StepToSTEM.netlify.app
                 </a>
               </p>
             </div>

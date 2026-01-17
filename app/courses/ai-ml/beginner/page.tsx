@@ -20,7 +20,7 @@ import StaticProjectCard from "@/components/StaticProjectCard";
 import { courseProjects } from "@/data/courseProjects";
 
 export default function AIBeginnerCoursePage() {
-  const modules = curriculum["ai-ml"].modules;
+  const modules = curriculum["python-beginner"].modules;
 
   return (
     <>
@@ -29,8 +29,8 @@ export default function AIBeginnerCoursePage() {
 
       {/* OFFER BAR */}
       <CourseOfferBar
-        course="AI & Machine Learning (Beginner)"
-        gradient="from-purple-600 to-pink-600"
+        course="Python Programming (Beginner)"
+        gradient="from-green-600 to-emerald-600"
       />
 
       <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen pt-28">
@@ -40,23 +40,23 @@ export default function AIBeginnerCoursePage() {
             {/* HERO */}
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                AI & Machine Learning for Kids (Beginner)
+                Python Programming for Kids (Beginner)
               </h1>
 
               <p className="text-sm text-gray-500 mb-4 tracking-wide">
-                Learn Artificial Intelligence through games, visuals & fun
-                projects
+                Learn programming logic, problem-solving, and coding with Python
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">
-                This beginner AI course introduces children to Artificial
-                Intelligence using block-based programming and hands-on
-                activities. Students explore how machines recognize images,
-                text, sounds, and patterns.
+                This beginner Python course introduces students to programming
+                using simple, clear syntax and hands-on projects. Children learn
+                how to write real code, build programs, and develop logical
+                thinking skills through fun, guided activities.
               </p>
 
               <p className="text-sm text-gray-500 mt-2">
-                No prior coding experience required.
+                Perfect for absolute beginners. No prior coding experience
+                required.
               </p>
             </div>
 
@@ -66,7 +66,7 @@ export default function AIBeginnerCoursePage() {
                 <Feature
                   icon={<BarChart size={20} />}
                   title="Suitable for"
-                  value="Grades 3–7"
+                  value="Grades 4–10"
                 />
                 <Feature
                   icon={<Video size={20} />}
@@ -75,8 +75,8 @@ export default function AIBeginnerCoursePage() {
                 />
                 <Feature
                   icon={<Award size={20} />}
-                  title="Certification by"
-                  value="STEM.org"
+                  title="Certification "
+                  value="Provided on completion"
                 />
                 <Feature
                   icon={<Clock size={20} />}
@@ -86,7 +86,7 @@ export default function AIBeginnerCoursePage() {
                 <Feature
                   icon={<Layers size={20} />}
                   title="Program"
-                  value="50+ activities & projects"
+                  value="50+ activities & Python projects"
                 />
               </div>
             </div>
@@ -99,11 +99,14 @@ export default function AIBeginnerCoursePage() {
 
               <ul className="space-y-3">
                 {[
-                  "Understand AI fundamentals using visuals",
-                  "Build AI-powered games and activities",
-                  "Work with image, text, and sound recognition",
-                  "Create interactive AI projects",
-                  "Develop logical and creative thinking skills",
+                  "Write real Python programs from scratch",
+                  "Build logic using conditions and loops",
+                  "Create games, tools, and interactive apps",
+                  "Work with lists, functions, and files",
+                  "Understand how real software is structured",
+                  "Design GUI-based desktop applications",
+                  "Solve problems with confidence",
+                  "Build and present complete projects",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3">
                     <CheckCircle className="text-green-600 mt-1" size={18} />
@@ -116,7 +119,7 @@ export default function AIBeginnerCoursePage() {
             {/* CURRICULUM */}
             <section>
               <h2 className="text-2xl font-bold mb-6">
-                Our AI & Machine Learning Curriculum
+                Our Python Beginner Curriculum
               </h2>
 
               <div className="space-y-4">
@@ -127,11 +130,11 @@ export default function AIBeginnerCoursePage() {
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-6">
-                Projects students build (Beginner)
+                Projects students build
               </h2>
 
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {courseProjects["ai-ml-beginner"].map((project, i) => (
+                {courseProjects["python-beginner"].map((project, i) => (
                   <StaticProjectCard key={i} {...project} />
                 ))}
               </div>
@@ -143,8 +146,8 @@ export default function AIBeginnerCoursePage() {
               </h2>
 
               <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Simple, transparent pricing designed for UAE & international
-                students. One-hour live sessions. 48 sessions per course.
+                Simple and Transparent pricing . One-hour live sessions. 32
+                sessions per course.
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -156,15 +159,13 @@ export default function AIBeginnerCoursePage() {
 
                   <div className="p-6 text-center">
                     <p className="text-3xl font-bold">
-                      ₹900{" "}
+                      ₹799{" "}
                       <span className="text-sm font-medium">/ session</span>
                     </p>
-                  
-                    <p className="text-lg font-semibold mt-4">
-                      48 Live Sessions
-                    </p>
 
-                    
+                    <p className="text-lg font-semibold mt-4">
+                      32 Live Sessions
+                    </p>
 
                     <div className="mt-6"></div>
                   </div>
@@ -202,17 +203,14 @@ export default function AIBeginnerCoursePage() {
 
                   <div className="p-6 text-center">
                     <p className="text-3xl font-bold">
-                     ₹660{" "}
+                      ₹649{" "}
                       <span className="text-sm font-medium">/ session</span>
                     </p>
 
-                    
-
                     <p className="text-lg font-semibold mt-4">
-                      48 Live Sessions
+                      32Live Sessions
                     </p>
 
-                    
                     <div className="mt-6"></div>
                   </div>
 
@@ -244,8 +242,8 @@ export default function AIBeginnerCoursePage() {
             </section>
 
             {/* TESTIMONIALS */}
-            <CourseTestimonials courseId="ai-genius" />
-             <CourseFAQ courseKey="aiGenius" />
+            <CourseTestimonials courseId="python-beginner" />
+            <CourseFAQ courseKey="pythonBeginner" />
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -279,12 +277,11 @@ function RightSidebar() {
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 
         <ul className="space-y-4 text-sm text-gray-700">
-          <SidebarRow text="48 live private 1-on-1 sessions (45 mins)" />
-          <SidebarRow text="Learn live with expert Computer Science teacher" />
+          <SidebarRow text="32 live private 1-on-1 sessions (60 mins)" />
+          <SidebarRow text="Learn live with industry proffessional" />
           <SidebarRow text="8 detailed modules" />
           <SidebarRow text="50+ activities & projects" />
-          <SidebarRow text="STEM.org accredited certificate" />
-          <SidebarRow text="AI & ML expert certificates" />
+
           <SidebarRow text="Lifetime access to course content" />
           <SidebarRow text="Unlimited 1:1 live doubt sessions" />
           <SidebarRow text="Live 1:1 class recordings" />

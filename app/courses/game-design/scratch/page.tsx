@@ -20,12 +20,20 @@ import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
 import CourseOfferBar from "@/components/CourseOfferBar";
 import BookDemoButton from "@/components/BookDemoButton";
+import ComingSoonCard from "@/components/ComingSoonCard";
+
 import CurriculumAccordion from "@/components/CurriculumAccordion";
 import CourseTestimonials from "@/components/CourseTestimonials";
 
 /* ===================== PAGE ===================== */
 
 export default function ScratchGameDevPage() {
+  const COMING_SOON = true;
+
+if (COMING_SOON) {
+  return <ComingSoonCard title="Scratch Game Development" />;
+}
+
   return (
     <>
       <Header />

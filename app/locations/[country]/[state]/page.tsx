@@ -76,7 +76,9 @@ export default function StatePage({ params }: Props) {
                 >
                   <div className="cursor-pointer bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all text-center border hover:scale-[1.03]">
                     <h2 className="text-2xl font-bold mb-2">{city}</h2>
-                    <p className="text-gray-600">Explore StepToSTEM programs</p>
+                    <p className="text-gray-600">
+                      Explore STEMxLearning programs
+                    </p>
                   </div>
                 </Link>
               );

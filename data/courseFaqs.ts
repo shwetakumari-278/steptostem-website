@@ -176,135 +176,153 @@ scratchGameDev: [
 
   aiMl: [
   {
-    question: "What is AI and Machine Learning for kids?",
+    question: "What is the Python programming course for kids?",
     answer:
-      "AI and Machine Learning for kids explain how computers can think, learn, and make decisions. Children learn how AI works behind voice assistants, games, and recommendation systems. The course teaches these ideas using simple examples and fun activities."
+      "The Python course teaches students how to write programs, solve problems, and think logically. Kids learn Python step by step, starting from basics like variables and conditions to building real applications and games. It is designed for complete beginners."
   },
   {
-    question: "How can kids and teens learn artificial intelligence?",
+    question: "What is the Machine Learning course for kids and teens?",
     answer:
-      "Kids and teens can learn artificial intelligence through beginner-friendly online courses and hands-on projects. These courses use visual tools, real-life examples, and guided lessons. Learning AI step by step makes complex concepts easy to understand."
+      "The Machine Learning course teaches how computers learn from data and make predictions. Students work with real datasets, charts, and simple models to understand how ML is used in apps like Netflix and Google. The focus is on understanding concepts through projects."
   },
   {
-    question: "Are there online AI and Machine Learning classes for kids?",
+    question: "Do students learn Python before Machine Learning?",
     answer:
-      "Yes, there are many online AI and Machine Learning classes designed specifically for kids. These classes are interactive and focus on practical learning rather than theory. Students learn from home with live sessions and projects."
+      "Yes, students first learn Python programming because it is the foundation for Machine Learning. Once they are comfortable with Python, they move on to data analysis and ML concepts. This makes learning easier and more structured."
   },
   {
-    question: "Is AI and Machine Learning hard to learn for kids?",
+    question: "Are Python and Machine Learning taught together or separately?",
     answer:
-      "AI and Machine Learning are not hard to learn when taught the right way. Courses for kids focus on understanding ideas instead of complex math. With proper guidance, children can easily grasp AI concepts."
+      "Python and Machine Learning are taught as two connected learning paths. Python builds programming skills, while Machine Learning uses those skills to work with data and intelligent systems. Together, they form a complete future-ready course."
   },
   {
-    question: "What age is best to start learning AI and Machine Learning?",
+    question: "Is Python difficult for beginners?",
     answer:
-      "Kids can start learning AI and Machine Learning from around 10 years of age. At this age, they can understand patterns, data, and logic. Courses are adapted based on age and learning level."
+      "No, Python is one of the easiest programming languages for beginners. Its simple syntax helps students focus on logic instead of memorizing rules. Kids learn by building small programs and projects from day one."
   },
   {
-    question: "How long does it take to complete an AI and Machine Learning course?",
+    question: "Is Machine Learning hard for students?",
     answer:
-      "The duration of an AI and Machine Learning course depends on the learning level and depth. Beginner courses usually take a few weeks to a few months. Students progress gradually through projects and concepts."
+      "Machine Learning is taught using simple explanations, visuals, and real-life examples. Students are guided step by step without heavy mathematics. This makes even advanced ideas easy to understand."
   },
   {
-    question: "Do kids need coding experience to learn AI and Machine Learning?",
+    question: "What projects do students build in Python?",
     answer:
-      "No prior coding experience is required to start learning AI and Machine Learning. Beginner courses introduce coding basics along with AI concepts. This makes learning smooth and stress-free for kids."
+      "Students build real projects such as calculators, games, management systems, and small applications using Python. These projects help them practice logic, loops, functions, and problem-solving skills."
   },
   {
-    question: "What will kids learn in an AI and Machine Learning course?",
+    question: "What projects do students build in Machine Learning?",
     answer:
-      "Kids learn how machines recognize images, understand data, and make predictions. They also work on simple AI projects like chatbots or smart apps. These projects help kids apply what they learn."
+      "In Machine Learning, students work on data analysis projects, prediction models, and visualization tasks. They learn to analyze datasets and understand how machines learn patterns from data."
   },
   {
-    question: "Are AI and Machine Learning certifications useful for kids?",
+    question: "What age group is suitable for Python and Machine Learning?",
     answer:
-      "AI and Machine Learning certifications help showcase a child’s skills and learning progress. They add value to academic portfolios and build confidence. Certifications also motivate kids to continue learning advanced technology topics."
+      "The course is suitable for students aged 10 years and above. Content is adapted based on age and experience level. Beginners and advanced learners both get a structured learning path."
+  },
+  {
+    question: "Do students need prior coding experience?",
+    answer:
+      "No prior coding experience is required. The course starts from absolute basics and gradually moves to advanced topics. This makes it perfect for beginners as well as curious learners."
+  },
+  {
+    question: "How long does the Python and Machine Learning program take?",
+    answer:
+      "The complete program usually takes a few months to complete. Python is covered first, followed by Machine Learning and data projects. Students progress at a comfortable pace with guidance."
+  },
+  {
+    question: "How does this course help in the future?",
+    answer:
+      "Python and Machine Learning skills are used in almost every modern technology field. Students develop logical thinking, data skills, and problem-solving abilities. These skills help in school, competitions, and future careers."
   }
 ],
-aiGenius: [
+
+pythonBeginner: [
   {
-    question: "What is AI Genius course for kids?",
+    question: "What is the Python Beginner course for kids?",
     answer:
-      "AI Genius is a beginner-level artificial intelligence course for kids. It introduces how AI works using simple examples and visuals. The course focuses on understanding concepts rather than complex coding."
+      "Python Beginner is an introductory programming course designed for kids. It teaches students how to write real code using simple and easy-to-read Python syntax. The course focuses on building logic and confidence from the start."
   },
   {
-    question: "What will kids learn in the AI Genius course?",
+    question: "What will kids learn in the Python Beginner course?",
     answer:
-      "Kids learn how AI is used in daily life such as voice assistants and smart apps. They explore topics like patterns, data, and decision-making. Learning is done through fun activities and projects."
+      "Kids learn how to write Python programs, use variables, conditions, and loops, and solve problems step by step. They also build small apps, games, and practical projects while learning how programs work."
   },
   {
-    question: "Is AI Genius suitable for beginners?",
+    question: "Is the Python Beginner course suitable for absolute beginners?",
     answer:
-      "Yes, AI Genius is designed especially for beginners with no prior experience. Concepts are explained in a simple and friendly way. Kids learn at a comfortable pace without pressure."
+      "Yes, this course is perfect for students with no prior coding experience. Concepts are explained in a simple, friendly way and taught through hands-on practice. Students learn at a comfortable pace."
   },
   {
-    question: "What age group is AI Genius best for?",
+    question: "What age group is Python Beginner best for?",
     answer:
-      "AI Genius is best suited for kids aged 9 to 12 years. At this stage, children are curious and ready to understand how technology works. The course matches their learning level."
+      "The Python Beginner course is best suited for students aged 9 to 13 years. It is designed to match their learning ability and gradually build strong programming foundations."
   },
   {
-    question: "Do kids need coding knowledge for AI Genius?",
+    question: "Do kids need any coding knowledge before starting Python Beginner?",
     answer:
-      "No coding knowledge is required for AI Genius. The course focuses more on understanding ideas and logic. Basic coding concepts are introduced slowly when needed."
+      "No prior coding knowledge is required. The course starts from the basics and guides students step by step. Everything is taught from scratch using clear examples."
   },
   {
-    question: "Is AI Genius a good introduction to artificial intelligence?",
+    question: "Is Python Beginner a good foundation for advanced programming?",
     answer:
-      "Yes, AI Genius is a great introduction to artificial intelligence for kids. It builds curiosity and confidence in learning advanced technologies. It also prepares students for higher-level AI courses."
+      "Yes, Python Beginner builds strong fundamentals in logic, problem-solving, and coding structure. It prepares students for advanced Python, game development, AI, and other programming courses."
   },
   {
-    question: "How long does the AI Genius course take?",
+    question: "How long does the Python Beginner course take to complete?",
     answer:
-      "The AI Genius course usually takes a few weeks to complete. The exact duration depends on the learning pace. Each lesson builds on previous concepts gradually."
+      "The course runs for 32 structured live sessions. Students learn gradually with practice and projects in each module. The pace is designed to be comfortable and effective."
   },
   {
-    question: "What skills do kids gain from AI Genius?",
+    question: "What skills do kids gain from the Python Beginner course?",
     answer:
-      "Kids develop logical thinking, curiosity, and problem-solving skills. They also gain awareness of how AI affects the world. These skills help in academics and future learning."
+      "Students develop logical thinking, problem-solving skills, and confidence in writing code. They also learn how to break problems into steps and create real programs independently."
   }
 ],
-aiExpert: [
+
+pyhtonAdvanced: [
   {
-    question: "What is the AI Expert course for kids?",
+    question: "What is the Python Advanced course for kids and teens?",
     answer:
-      "AI Expert is an advanced artificial intelligence course for kids and teens. It focuses on deeper AI and Machine Learning concepts. Students work on real-world inspired projects and applications."
+      "Python Advanced is a professional-level programming course for students who already know Python basics. It focuses on building real-world applications, solving complex problems, and working with data using Python."
   },
   {
-    question: "Who should enroll in the AI Expert course?",
+    question: "Who should enroll in the Python Advanced course?",
     answer:
-      "The AI Expert course is ideal for kids who already understand basic AI concepts. It is suitable for learners who have completed beginner AI courses. Curious and motivated students benefit the most."
+      "This course is ideal for students who have completed a Python Beginner course or have basic Python knowledge. Curious learners who want to build applications and strengthen problem-solving skills will benefit the most."
   },
   {
-    question: "What will students learn in the AI Expert course?",
+    question: "What will students learn in the Python Advanced course?",
     answer:
-      "Students learn about Machine Learning models, data analysis, and AI decision-making. They also work on advanced projects like chatbots and prediction systems. Learning is project-based and practical."
+      "Students learn advanced Python concepts such as OOP, data structures, algorithms, data analysis, and visualization. They also build full projects including management systems and data-driven applications."
   },
   {
-    question: "Is the AI Expert course difficult?",
+    question: "Is the Python Advanced course difficult?",
     answer:
-      "The AI Expert course is more advanced but not difficult when guided properly. Concepts are explained step by step with examples. Students gain confidence through hands-on learning."
+      "The course is advanced but taught in a guided, step-by-step manner. Concepts are broken down with examples and practice. Students gain confidence through projects and problem-solving sessions."
   },
   {
-    question: "Do students need coding experience for AI Expert?",
+    question: "Do students need coding experience for Python Advanced?",
     answer:
-      "Basic coding knowledge is recommended for the AI Expert course. However, necessary concepts are revised at the beginning. This ensures students are comfortable throughout the course."
+      "Yes, basic Python knowledge is required. Core concepts are revised at the beginning to ensure all students are comfortable before moving into advanced topics."
   },
   {
-    question: "What age group is suitable for AI Expert?",
+    question: "What age group is suitable for Python Advanced?",
     answer:
-      "AI Expert is best for kids and teens aged 12 years and above. At this age, students can understand data, logic, and algorithms. The course is designed to match their learning ability."
+      "Python Advanced is best for students aged 12 years and above. At this age, learners can understand logic, algorithms, and structured programming concepts more deeply."
   },
   {
-    question: "How long does it take to complete the AI Expert course?",
+    question: "How long does it take to complete the Python Advanced course?",
     answer:
-      "The AI Expert course usually takes a few months to complete. Duration depends on project complexity and learning pace. Students move from concepts to advanced applications."
+      "The course runs for 32 structured live sessions with projects and assessments. Students progress from advanced concepts to complete application development."
   },
   {
-    question: "Is AI Expert useful for future careers?",
+    question: "Is Python Advanced useful for future studies and careers?",
     answer:
-      "Yes, AI Expert builds strong foundations for future technology careers. It helps students understand real-world AI applications. The skills learned are valuable for higher education and beyond."
+      "Yes, Python Advanced builds strong foundations in programming, data handling, and problem-solving. It prepares students for higher-level computer science, AI, data science, and software development paths."
   }
 ]
+
 
 
 
