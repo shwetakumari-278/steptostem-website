@@ -23,14 +23,16 @@ import ComingSoonCard from "@/components/ComingSoonCard";
 export default function GameDesignCoursePage() {
   const COMING_SOON = true;
 
-  if (COMING_SOON) {
-    return <ComingSoonCard title="Game Design Courses" />;
-  }
+
 
   return (
     <>
-      <Header />
+       <Header />
 
+    {COMING_SOON ? (
+      <ComingSoonCard title="Game Design Course" />
+    ) : (
+      <>
       <CourseOfferBar
         course="Game Design"
         gradient="from-green-600 to-emerald-600"
@@ -272,6 +274,8 @@ export default function GameDesignCoursePage() {
         </div>
       </div>
     </>
+    )}
+  </>
   );
 }
 

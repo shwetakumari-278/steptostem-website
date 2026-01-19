@@ -12,6 +12,7 @@ export default function Header() {
   const isLocationPage = pathname.startsWith("/locations");
 
   const isHome = pathname === "/";
+  const forceSolidHeader = !isHome;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +40,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isHome && !isScrolled
+        !forceSolidHeader && !isScrolled
           ? "bg-transparent"
           : "bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-200/20"
       }`}
@@ -61,7 +62,9 @@ export default function Header() {
 
             <span
               className={`text-2xl font-bold font-display ${
-                isHome && !isScrolled ? "text-white" : "text-gray-900"
+                !forceSolidHeader && !isScrolled
+                  ? "text-white"
+                  : "text-gray-900"
               }`}
             >
               STEMxLearning
@@ -76,9 +79,9 @@ export default function Header() {
                 href={item.href}
                 whileHover={{ y: -2 }}
                 className={`text-sm font-medium transition-colors duration-200 ${
-                  isScrolled
-                    ? "text-gray-700 hover:text-primary-600"
-                    : "text-white/90 hover:text-white"
+                  !forceSolidHeader && !isScrolled
+                    ? "text-white/90 hover:text-white"
+                    : "text-gray-700 hover:text-primary-600"
                 }`}
               >
                 {item.name}
@@ -100,7 +103,7 @@ export default function Header() {
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-2 rounded-lg ${
-              isScrolled ? "text-gray-700" : "text-white"
+              !forceSolidHeader && !isScrolled ? "text-white" : "text-gray-700"
             }`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}

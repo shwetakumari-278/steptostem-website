@@ -66,7 +66,7 @@ export default function AIBeginnerCoursePage() {
                 <Feature
                   icon={<BarChart size={20} />}
                   title="Suitable for"
-                  value="Grades 4–10"
+                  value="Grades 4–12"
                 />
                 <Feature
                   icon={<Video size={20} />}
@@ -81,7 +81,7 @@ export default function AIBeginnerCoursePage() {
                 <Feature
                   icon={<Clock size={20} />}
                   title="Duration"
-                  value="5–6 Months"
+                  value="2–3 Months"
                 />
                 <Feature
                   icon={<Layers size={20} />}
@@ -164,7 +164,7 @@ export default function AIBeginnerCoursePage() {
                     </p>
 
                     <p className="text-lg font-semibold mt-4">
-                      32 Live Sessions
+                      32 Live Sessions + 3 Bonus Sessions
                     </p>
 
                     <div className="mt-6"></div>
@@ -208,7 +208,7 @@ export default function AIBeginnerCoursePage() {
                     </p>
 
                     <p className="text-lg font-semibold mt-4">
-                      32Live Sessions
+                      32 Live Sessions + 3 Bonus Sessions
                     </p>
 
                     <div className="mt-6"></div>
@@ -277,7 +277,7 @@ function RightSidebar() {
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 
         <ul className="space-y-4 text-sm text-gray-700">
-          <SidebarRow text="32 live private 1-on-1 sessions (60 mins)" />
+          <SidebarRow text="32 live 1-on-1 instructor-led classes (60 mins each) including 3 bonus sessions" />
           <SidebarRow text="Learn live with industry proffessional" />
           <SidebarRow text="8 detailed modules" />
           <SidebarRow text="50+ activities & projects" />
@@ -295,11 +295,15 @@ function RightSidebar() {
 function SidebarRow({ text }: any) {
   return (
     <li className="flex gap-3">
-      <CheckCircle size={16} className="text-green-600 mt-0.5" />
+      <CheckCircle
+        size={16}
+        className="text-green-600 mt-0.5 shrink-0"
+      />
       <span>{text}</span>
     </li>
   );
 }
+
 function PricingSection() {
   return (
     <section className="mt-16">

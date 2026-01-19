@@ -31,10 +31,10 @@ export default function ContactBlock() {
         <div className="flex items-center gap-3">
           <Mail className="text-purple-500" />
           <a
-            href="mailto:ekjotnanda9@gmail.com"
+            href="mailto:info@stemxlearning.com"
             className="font-medium hover:underline"
           >
-            ekjotnanda9@gmail.com
+            info@stemxlearning.com
           </a>
         </div>
       </div>

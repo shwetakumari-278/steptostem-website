@@ -75,7 +75,7 @@ export default function AICoursePage() {
                 <Feature
                   icon={<BarChart size={20} />}
                   title="Suitable for"
-                  value="Grade 3–12"
+                  value="Grade 4–12"
                 />
                 <Feature
                   icon={<Video size={20} />}
@@ -90,7 +90,7 @@ export default function AICoursePage() {
                 <Feature
                   icon={<Clock size={20} />}
                   title="Duration"
-                  value="5–6 Months"
+                  value="5-6 Months"
                 />
                 <Feature
                   icon={<Layers size={20} />}
@@ -104,7 +104,7 @@ export default function AICoursePage() {
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-700">
               <TrustStat
                 icon={<Users size={18} />}
-                title="1000+"
+                title="100+"
                 label="Students"
               />
 
@@ -366,7 +366,8 @@ function RightSidebar() {
         <ul className="space-y-4 text-sm text-gray-700">
           <SidebarRow
             icon={<Video size={16} />}
-            text="32 live 1-on-1 instructor-led classes (60 mins)"
+            text="32 live 1-on-1 instructor-led classes (60 mins each) including 3 bonus sessions
+"
           />
 
           <SidebarRow

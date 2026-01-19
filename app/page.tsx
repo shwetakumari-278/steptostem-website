@@ -1017,7 +1017,7 @@ export default function Home() {
                 <BookDemoButton
                   course="AI & Machine Learning"
                   variant="inline"
-                  label="Schedule 10 Free Demo Classes"
+                  label="schedule  Free Demo Classes"
                 />
               </div>
             </div>
@@ -1075,7 +1075,7 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>ekjotnanda9@gmail.com</li>
+                <li>info@stemxlearning.com</li>
                 <li>+91 82890 04978</li>
               </ul>
             </div>

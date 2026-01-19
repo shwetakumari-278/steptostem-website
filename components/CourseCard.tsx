@@ -111,10 +111,11 @@ export default function CourseCard({
         {/* Course Stats – ONLY for Python & ML */}
         {course.id === "ai-ml" && (
           <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
-            <div className="flex items-center space-x-1">
+            <div className="flex flex-col items-center">
               <Users className="w-4 h-4" />
               <span>70+ students</span>
             </div>
+
             <div className="flex items-center space-x-1">
               <Clock className="w-4 h-4" />
               <span>6 Months</span>

@@ -168,7 +168,7 @@ export default function BookDemoButton({
                     {
                       method: "POST",
                       body: formData, // 👈 NO headers
-                    }
+                    },
                   )
                     .then((res) => res.text())
                     .then((text) => {
@@ -206,22 +206,55 @@ export default function BookDemoButton({
                   className="w-full p-3 border rounded-lg"
                 />
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 w-full">
                   <select
                     name="countryCode"
                     value={form.countryCode}
                     onChange={handleChange}
-                    className="p-3 border rounded-lg bg-white"
+                    className="w-32 p-3 border rounded-lg bg-white shrink-0"
                   >
-                    <option value="+91">🇮🇳 India (+91)</option>
-                    <option value="+1">🇺🇸 USA (+1)</option>
-                    <option value="+44">🇬🇧 UK (+44)</option>
-                    <option value="+61">🇦🇺 Australia (+61)</option>
-                    <option value="+971">🇦🇪 UAE (+971)</option>
-                    <option value="+65">🇸🇬 Singapore (+65)</option>
-                    <option value="+92">🇵🇰 Pakistan (+92)</option>
-                    <option value="+880">🇧🇩 Bangladesh (+880)</option>
-                    <option value="+94">🇱🇰 Sri Lanka (+94)</option>
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="+971">🇦🇪 +971</option>
+                    <option value="+65">🇸🇬 +65</option>
+                    <option value="+1">🇨🇦 +1</option>
+
+                    <option value="+49">🇩🇪 +49</option>
+                    <option value="+33">🇫🇷 +33</option>
+                    <option value="+39">🇮🇹 +39</option>
+                    <option value="+34">🇪🇸 +34</option>
+                    <option value="+31">🇳🇱 +31</option>
+                    <option value="+41">🇨🇭 +41</option>
+                    <option value="+46">🇸🇪 +46</option>
+                    <option value="+47">🇳🇴 +47</option>
+
+                    <option value="+966">🇸🇦 +966</option>
+                    <option value="+974">🇶🇦 +974</option>
+                    <option value="+968">🇴🇲 +968</option>
+                    <option value="+973">🇧🇭 +973</option>
+                    <option value="+965">🇰🇼 +965</option>
+
+                    <option value="+81">🇯🇵 +81</option>
+                    <option value="+82">🇰🇷 +82</option>
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+60">🇲🇾 +60</option>
+                    <option value="+66">🇹🇭 +66</option>
+                    <option value="+62">🇮🇩 +62</option>
+
+                    <option value="+92">🇵🇰 +92</option>
+                    <option value="+880">🇧🇩 +880</option>
+                    <option value="+94">🇱🇰 +94</option>
+                    <option value="+977">🇳🇵 +977</option>
+
+                    <option value="+27">🇿🇦 +27</option>
+                    <option value="+234">🇳🇬 +234</option>
+                    <option value="+254">🇰🇪 +254</option>
+
+                    <option value="+55">🇧🇷 +55</option>
+                    <option value="+52">🇲🇽 +52</option>
+                    <option value="+54">🇦🇷 +54</option>
                   </select>
 
                   <input

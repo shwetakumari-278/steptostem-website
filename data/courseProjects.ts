@@ -58,7 +58,7 @@ export const courseProjects = {
     title: "Amusement Park Ride Management System",
     description:
       "Students developed a simulation-based ride management system using queues, stacks, linked lists, and OOP concepts.\nThis project highlights strong data structures and logical thinking.",
-    image: "/projects/amusement-park.jpg",
+    image: "/projects/amusement-park.png",
     tag: "Data Structures",
   },
   {

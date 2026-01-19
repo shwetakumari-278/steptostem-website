@@ -16,7 +16,7 @@ export default function CourseOfferBar({
       <div className="max-w-7xl mx-auto px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
         <p className="text-sm md:text-base font-medium text-center md:text-left">
           🎉 <b>New Year Special:</b> First <b>100 enrollments</b> get{" "}
-          <b>40% scholarship</b> on {course}. Limited seats available!
+          <b>15% scholarship</b> on {course}. Limited seats available!
         </p>
 
         {/* Uses SAME demo modal */}

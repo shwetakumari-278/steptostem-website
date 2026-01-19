@@ -28,14 +28,16 @@ export default function WebDevCoursePage() {
   const courseKey = "web-dev";
   const COMING_SOON = true;
 
-  if (COMING_SOON) {
-    return <ComingSoonCard title="Web Development Course" />;
-  }
+  
 
   return (
     <>
-      {/* MAIN HEADER */}
       <Header />
+
+    {COMING_SOON ? (
+      <ComingSoonCard title="Web Development Course" />
+    ) : (
+      <>
 
       {/* OFFER BAR */}
       <CourseOfferBar
@@ -264,6 +266,8 @@ export default function WebDevCoursePage() {
         </div>
       </div>
     </>
+    )}
+  </>
   );
 }
 

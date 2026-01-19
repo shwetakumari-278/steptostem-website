@@ -87,7 +87,7 @@ export default function AIAdvancedCoursePage() {
                 <Feature
                   icon={<Clock size={20} />}
                   title="Duration"
-                  value="5–6 Months"
+                  value="2–3 Months"
                 />
                 <Feature
                   icon={<Layers size={20} />}
@@ -145,45 +145,104 @@ export default function AIAdvancedCoursePage() {
                 ))}
               </div>
             </section>
-            {/* PRICING */}
+            {/* PRICING PLANS */}
             <section className="mt-16">
               <h2 className="text-3xl font-bold mb-4 text-center">
                 Choose the Right Learning Plan
               </h2>
 
               <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Professional Python training with real-world systems and data
-                projects.
+                Simple and Transparent pricing . One-hour live sessions. 
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                {/* STARTER */}
-                <PriceCard
-                  title="Starter"
-                  price="₹799"
-                  total="₹43,200"
-                  points={[
-                    "1:1 expert-led sessions",
-                    "Advanced AI mentorship",
-                    "Flexible scheduling",
-                    "Portfolio-focused learning",
-                  ]}
-                  gradient="from-blue-600 to-cyan-600"
-                />
+                {/* STARTER PLAN */}
+                <div className="rounded-2xl border border-purple-300 bg-purple-50 overflow-hidden shadow-xl">
+                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-4 text-xl font-semibold">
+                    Starter
+                  </div>
 
-                {/* GROWTH */}
-                <PriceCard
-                  title="Growth"
-                  price="₹649"
-                  total="₹31,680"
-                  points={[
-                    "Small group AI classes",
-                    "Peer collaboration",
-                    "Weekly structured roadmap",
-                    "Affordable advanced learning",
-                  ]}
-                  gradient="from-cyan-600 to-teal-600"
-                />
+                  <div className="p-6 text-center">
+                    <p className="text-3xl font-bold">
+                      ₹799{" "}
+                      <span className="text-sm font-medium">/ session</span>
+                    </p>
+
+                    <p className="text-lg font-semibold mt-4">
+                      32 Live Sessions + 3 Bonus Sessions
+                    </p>
+
+                    <div className="mt-6"></div>
+                  </div>
+
+                  <div className="border-t p-6">
+                    <h4 className="font-semibold mb-4">
+                      1:1 Personalized Learning
+                    </h4>
+
+                    <ul className="space-y-3 text-sm text-gray-700">
+                      {[
+                        "1:1 live instructor-led sessions",
+                        "Dedicated personal mentor",
+                        "Flexible scheduling",
+                        "Custom learning pace",
+                        "Best for beginners & fast learners",
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <CheckCircle
+                            className="text-green-600 mt-0.5"
+                            size={16}
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* GROWTH PLAN */}
+                <div className="rounded-2xl border border-blue-300 bg-blue-50 overflow-hidden shadow-xl">
+                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center py-4 text-xl font-semibold">
+                    Growth
+                  </div>
+
+                  <div className="p-6 text-center">
+                    <p className="text-3xl font-bold">
+                      ₹649{" "}
+                      <span className="text-sm font-medium">/ session</span>
+                    </p>
+
+                    <p className="text-lg font-semibold mt-4">
+                      32 Live Sessions + 3 Bonus Sessions
+                    </p>
+
+                    <div className="mt-6"></div>
+                  </div>
+
+                  <div className="border-t p-6">
+                    <h4 className="font-semibold mb-4">
+                      Small Group Learning (2–3 students)
+                    </h4>
+
+                    <ul className="space-y-3 text-sm text-gray-700">
+                      {[
+                        "Live interactive group classes",
+                        "Peer learning & collaboration",
+                        "Structured weekly schedule",
+                        "Mentor-guided sessions",
+                        "More affordable option",
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <CheckCircle
+                            className="text-green-600 mt-0.5"
+                            size={16}
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -224,18 +283,18 @@ function RightSidebar() {
 
         <ul className="space-y-4 text-sm text-gray-700">
           {[
-            "32 live private 1-on-1 sessions (60 mins)",
+            "32 live 1-on-1 instructor-led classes (60 mins each) including 3 bonus sessions",
             "Learn live with an industry professionals",
             "8 advanced AI modules",
             "50+ real-world Python projects",
 
             "Lifetime course access",
             "Unlimited 1:1 doubt sessions",
-            "Class recordings",
+            "live 1:1 Class recordings",
             "Monthly progress reports",
           ].map((item, i) => (
-            <li key={i} className="flex gap-3">
-              <CheckCircle size={16} className="text-green-600 mt-0.5" />
+            <li key={i} className="flex gap-3 items-start">
+              <CheckCircle size={16} className="text-green-600 mt-0.5 shrink-0" />
               <span>{item}</span>
             </li>
           ))}
