@@ -4,211 +4,222 @@ export const curriculum = {
     modules: [
       {
         module: 1,
-        title: "Programming Fundamentals with Python",
+        title: "Python Foundations & First Programs",
         description:
-          "Students are introduced to programming concepts and learn how Python works through simple examples.",
+          "Students begin their coding journey by understanding what programming is and how Python works. They set up their environment and write their first programs with confidence.",
         outcomes: [
-          "Understand what programming is",
-          "Write and run first Python program",
-          "Use variables and data types",
+          "Understand programming and real-world use of Python",
+          "Write and run first Python programs",
+          "Use variables, data types, and literals",
           "Take user input and display output",
-          "Follow correct syntax and indentation",
+          "Follow syntax rules and indentation",
         ],
       },
       {
         module: 2,
-        title: "Logic Building & Decision Making",
+        title: "Expressions, Strings & Core Operations",
         description:
-          "Students learn how to make programs think using conditions and logical operators.",
+          "Students learn how Python processes data using operators and strings, building the foundation for real program logic.",
         outcomes: [
-          "Use if, elif, and else statements",
-          "Work with comparison and logical operators",
-          "Build real-life decision programs",
-          "Create small interactive programs",
+          "Use arithmetic, relational, and logical operators",
+          "Build expressions with multiple operators",
+          "Work with strings (indexing, slicing, formatting)",
+          "Apply built-in string functions",
+          "Understand immutability and clean coding practices",
         ],
       },
       {
         module: 3,
-        title: "Data Handling with Lists & Tuples",
+        title: "Decision Making & Logic Building",
         description:
-          "Students learn to store and manage multiple values using Python collections.",
+          "Students learn how to make programs think using conditions and logical flows through real-life examples and guided practice.",
         outcomes: [
-          "Create and modify lists",
-          "Use list methods effectively",
-          "Understand indexing and slicing",
-          "Work with tuples and immutability",
-          "Solve problems using collections",
-        ],
-      },
-      {
-        module: 4,
-        title: "Loops & Problem Solving",
-        description:
-          "Students learn to automate repetitive tasks and solve logical problems using loops.",
-        outcomes: [
-          "Use for and while loops",
-          "Build pattern-based programs",
-          "Work with nested loops",
-          "Apply break, continue, and pass",
+          "Use if, elif, and else statements",
+          "Write nested conditional programs",
+          "Solve real-life logical problems",
+          "Build interactive programs",
           "Strengthen logical thinking",
         ],
       },
       {
-        module: 5,
-        title: "Functions & Modular Programming",
+        module: 4,
+        title: "Collections & Iteration",
         description:
-          "Students learn to organize code using functions and reusable logic blocks.",
+          "Students learn how to store, organize, and process multiple values using Python collections and loops.",
         outcomes: [
-          "Create and use functions",
-          "Understand parameters and return values",
-          "Use local and global variables",
-          "Write reusable programs",
-          "Solve problems using functions",
+          "Work with lists, tuples, sets, and dictionaries",
+          "Use list methods and nested lists",
+          "Apply for and while loops",
+          "Use nested loops for pattern problems",
+          "Solve collection-based logic problems",
+        ],
+      },
+      {
+        module: 5,
+        title: "Functions, Recursion & Modular Code",
+        description:
+          "Students learn to write reusable and structured code using functions, recursion, and modular programming concepts.",
+        outcomes: [
+          "Define and use functions",
+          "Pass parameters and return values",
+          "Understand scope and lambda functions",
+          "Solve problems using recursion",
+          "Import and create modules",
         ],
       },
       {
         module: 6,
-        title: "Files, Errors & Program Safety",
+        title: "Files, Errors & OOP Foundations",
         description:
-          "Students learn how to handle files and make programs safe from errors.",
+          "Students learn how real programs store data, handle errors, and use Object-Oriented Programming for better structure.",
         outcomes: [
-          "Read and write files",
-          "Understand file modes",
-          "Handle errors using try-except",
-          "Debug common mistakes",
-          "Write stable programs",
+          "Read and write files using file handling",
+          "Handle errors and exceptions safely",
+          "Understand classes and objects",
+          "Use attributes and methods",
+          "Build structured programs using OOP",
         ],
       },
       {
         module: 7,
-        title: "Object-Oriented Programming Basics",
+        title: "GUI Programming with Tkinter",
         description:
-          "Students are introduced to OOP concepts used in real-world software.",
+          "Students move from console programs to real applications by building graphical interfaces using Tkinter.",
         outcomes: [
-          "Understand classes and objects",
-          "Create attributes and methods",
-          "Structure programs professionally",
-          "Use OOP in mini projects",
+          "Create GUI windows using Tkinter",
+          "Use widgets like Button, Label, and Entry",
+          "Handle button click events",
+          "Use dialog boxes and canvas",
+          "Build interactive GUI-based programs",
         ],
       },
       {
         module: 8,
-        title: "GUI Apps & Final Projects",
+        title: "Projects, Practice & Mastery",
         description:
-          "Students build real desktop applications and complete their final projects.",
+          "Students apply everything they’ve learned by building complete projects, enhancing them, and preparing for real-world coding.",
         outcomes: [
-          "Create GUI apps using Tkinter",
-          "Work with buttons, inputs, and dialogs",
-          "Build canvas-based apps",
-          "Complete final project",
-          "Present and explain their work",
+          "Build mini and major Python projects",
+          "Apply logic, functions, and OOP in projects",
+          "Create full GUI-based applications",
+          "Improve code structure and optimization",
+          "Revise concepts and clear doubts",
         ],
       },
     ],
   },
 
- "python-advanced": {
-  title: "Python Advanced Curriculum",
-  modules: [
-    {
-      module: 1,
-      title: "Advanced Python Foundations",
-      description:
-        "Strengthen Python fundamentals and master advanced function concepts for professional programming.",
-      outcomes: [
-        "Revise core Python concepts",
-        "Write advanced functions and recursion",
-        "Understand scope, arguments, and return values",
-        "Solve real-world logic problems",
-      ],
-    },
-    {
-      module: 2,
-      title: "Object-Oriented Programming Mastery",
-      description:
-        "Learn professional software design using advanced OOP concepts and reusable code structures.",
-      outcomes: [
-        "Create classes and objects",
-        "Apply inheritance and polymorphism",
-        "Use encapsulation effectively",
-        "Build OOP-based applications",
-      ],
-    },
-    {
-      module: 3,
-      title: "Algorithms & Data Structures",
-      description:
-        "Develop strong problem-solving skills using searching, sorting, and core data structures.",
-      outcomes: [
-        "Implement searching algorithms",
-        "Use sorting techniques efficiently",
-        "Work with stacks and queues",
-        "Solve problems using linked lists",
-      ],
-    },
-    {
-      module: 4,
-      title: "Problem Solving & System Projects",
-      description:
-        "Apply Python concepts to build real-world systems and logic-based applications.",
-      outcomes: [
-        "Build management systems",
-        "Apply DSA in real projects",
-        "Strengthen logical thinking",
-        "Develop structured programs",
-      ],
-    },
-    {
-      module: 5,
-      title: "Data Analysis with Python",
-      description:
-        "Analyze real-world datasets using NumPy and Pandas for insights and decision-making.",
-      outcomes: [
-        "Work with NumPy arrays",
-        "Create and manipulate Pandas DataFrames",
-        "Extract data from CSV files",
-        "Understand data analysis workflow",
-      ],
-    },
-    {
-      module: 6,
-      title: "Data Cleaning & Exploratory Analysis",
-      description:
-        "Prepare data for analysis by cleaning, handling missing values, and exploring patterns.",
-      outcomes: [
-        "Handle missing and duplicate data",
-        "Detect and treat outliers",
-        "Apply EDA techniques",
-        "Prepare datasets for visualization",
-      ],
-    },
-    {
-      module: 7,
-      title: "Data Visualization & Storytelling",
-      description:
-        "Visualize data using charts and plots to communicate insights effectively.",
-      outcomes: [
-        "Create plots using Matplotlib",
-        "Build bar, line, histogram, and scatter charts",
-        "Use Seaborn for advanced visualizations",
-        "Choose the right chart for the data",
-      ],
-    },
-    {
-      module: 8,
-      title: "Capstone Project & Application Development",
-      description:
-        "Build a complete end-to-end application using Python concepts learned throughout the course.",
-      outcomes: [
-        "Build a complete application with Tkinter GUI",
-        "Integrate data, logic, and UI",
-        "Apply file handling and error handling",
-        "Present and showcase final project",
-      ],
-    },
-  ],
-},
-
+  "python-advanced": {
+    title: "Python Advanced Curriculum",
+    modules: [
+      {
+        module: 1,
+        title: "Python Core Mastery & Code Structuring",
+        description:
+          "This module strengthens students’ Python foundations by revising core concepts and focusing on writing clean, readable, and well-structured code. Students practice functions, recursion, and modular logic to build confidence before moving to advanced problem-solving.",
+        outcomes: [
+          "Revise core Python data types and collections",
+          "Write clean, readable, and structured code",
+          "Use functions, recursion, and scope effectively",
+          "Strengthen foundational coding confidence",
+        ],
+      },
+      {
+        module: 2,
+        title: "Object-Oriented Programming for Structured Systems",
+        description:
+          "Students learn how to design structured programs using object-oriented programming. They understand how real software is organized by breaking problems into classes, objects, and reusable components, and by applying OOP concepts to model real-world systems.",
+        outcomes: [
+          "Design programs using classes and objects",
+          "Use constructors, attributes, and methods effectively",
+          "Apply encapsulation to control data access",
+          "Reuse code using inheritance",
+          "Understand how polymorphism helps in flexible program design",
+          "Build structured programs that are easier to maintain and expand",
+        ],
+      },
+      {
+        module: 3,
+        title: "Algorithmic Thinking & Efficiency",
+        description:
+          "Students learn how to approach problems step by step and compare different solutions. They understand how searching and sorting work, practice dry runs, and get introduced to efficiency concepts so they can recognize faster and slower solutions.",
+        outcomes: [
+          "Understand how algorithms solve problems step by step",
+          "Implement and compare different searching approaches",
+          "Learn common sorting techniques through dry runs",
+          "Develop an intuitive understanding of time complexity",
+          "Compare solutions based on efficiency and logic",
+          "Improve problem-solving speed and accuracy",
+        ],
+      },
+      {
+        module: 4,
+        title: "Data Structures & Logical Problem Solving",
+        description:
+          "Students learn how to store, organize, and process data efficiently using structured data collections. They work with different data structures and apply them to solve logical problems and build simulations based on real-life scenarios.",
+        outcomes: [
+          "Understand how structured data is stored and accessed",
+          "Work with stack- and queue-based problem scenarios",
+          "Implement and use linked data structures",
+          "Solve multi-step problems using data structures",
+          "Apply data structures to simulation-style problems",
+        ],
+      },
+      {
+        module: 5,
+        title: "Working with Real-World Data",
+        description:
+          "Students learn how to work with real datasets by understanding different types of data, basic statistics, and common data issues. They practice preparing raw data so it can be used for analysis and meaningful interpretation.",
+        outcomes: [
+          "Understand numerical and categorical data",
+          "Learn basic statistical concepts for data understanding",
+          "Identify missing, duplicate, and incorrect data",
+          "Clean and organize datasets for further use",
+          "Prepare data for analysis and visualization",
+        ],
+      },
+      {
+        module: 6,
+        title: "Data Analysis with NumPy & Pandas",
+        description:
+          "Students learn how to work with real datasets using NumPy and Pandas. They understand data types, perform calculations, organize data into tables, and prepare datasets for deeper analysis.",
+        outcomes: [
+          "Work with arrays and structured data using NumPy",
+          "Create and manipulate data tables using Pandas",
+          "Extract, filter, and organize data from datasets",
+          "Perform basic statistical analysis on data",
+          "Prepare cleaned data for further analysis and visualization",
+        ],
+      },
+      {
+        module: 7,
+        title: "Data Visualization with Matplotlib & Seaborn",
+        description:
+          "Students learn how to visualize data using Matplotlib and Seaborn to understand trends, comparisons, and patterns. They practice selecting the right charts and presenting data clearly.",
+        outcomes: [
+          "Create line, bar, histogram, and scatter plots",
+          "Visualize distributions and comparisons",
+          "Use Seaborn for univariate and bivariate analysis",
+          "Improve clarity and readability of charts",
+          "Communicate insights using visuals",
+        ],
+      },
+      {
+        module: 8,
+        title: "Advanced Projects & Mastery",
+        description:
+          "Students bring together all their learning by building advanced, real-world projects that combine structured programming, data structures, algorithmic logic, data analysis, and visualization. This module focuses on designing complete solutions, refining code, and demonstrating deep understanding through projects.",
+        outcomes: [
+          "Design and build complete projects that combine logic, data structures, and algorithms",
+          "Analyze real-world datasets and extract meaningful insights through projects",
+          "Create data-driven projects with clear visual interpretation of results",
+          "Structure large programs using clean, modular, and reusable code",
+          "Explain project logic, data flow, and results with confidence",
+          "Build a portfolio of advanced projects that demonstrate real problem-solving skills",
+        ],
+      },
+    ],
+  },
 
   "app-development": {
     title: "Mobile App Development Curriculum",

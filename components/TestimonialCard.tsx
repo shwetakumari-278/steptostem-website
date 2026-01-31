@@ -9,7 +9,9 @@ interface Testimonial {
   course: string
   content: string
   rating: number
+  image: string
 }
+
 
 interface TestimonialCardProps {
   testimonial: Testimonial
@@ -17,15 +19,42 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
+  return Array.from({ length: 5 }, (_, i) => {
+    const starValue = i + 1
+
+    // full star
+    if (rating >= starValue) {
+      return (
+        <Star
+          key={i}
+          className="w-5 h-5 text-yellow-500 fill-current"
+        />
+      )
+    }
+
+    // half star
+    if (rating >= starValue - 0.5) {
+      return (
+        <div key={i} className="relative w-5 h-5">
+          <Star className="absolute w-5 h-5 text-gray-300" />
+          <Star
+            className="absolute w-5 h-5 text-yellow-500 fill-current"
+            style={{ clipPath: "inset(0 50% 0 0)" }}
+          />
+        </div>
+      )
+    }
+
+    // empty star
+    return (
       <Star
         key={i}
-        className={`w-5 h-5 ${
-          i < rating ? 'text-yellow-500 fill-current' : 'text-gray-300'
-        }`}
+        className="w-5 h-5 text-gray-300"
       />
-    ))
-  }
+    )
+  })
+}
+
 
   return (
     <motion.div
@@ -45,7 +74,10 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
       {/* Rating */}
       <div className="flex items-center mb-4">
         {renderStars(testimonial.rating)}
-        <span className="ml-2 text-sm text-gray-500">({testimonial.rating}.0)</span>
+        <span className="ml-2 text-sm text-gray-500">
+  ({testimonial.rating.toFixed(1)})
+</span>
+
       </div>
 
       {/* Content */}
@@ -61,15 +93,16 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
 
       {/* Student Info */}
       <div className="flex items-center space-x-4">
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold text-lg shadow-lg"
-        >
-          {testimonial.name.charAt(0)}
-        </motion.div>
+       <motion.img
+  initial={{ opacity: 0, scale: 0 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, delay: 0.3 }}
+  viewport={{ once: true }}
+  src={testimonial.image}
+  alt={testimonial.name}
+  className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-lg"
+/>
+
         
         <div>
           <motion.h4

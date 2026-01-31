@@ -54,7 +54,7 @@ export default function Header() {
           >
             <div className="w-8 h-8 rounded-full overflow-hidden bg-white flex items-center justify-center">
               <img
-                src="/asset/Picture4.png"
+                src="/asset/logo_final.png"
                 alt="StepToSTEM Logo"
                 className="w-full h-full object-cover"
               />

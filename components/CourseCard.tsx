@@ -117,8 +117,8 @@ export default function CourseCard({
             </div>
 
             <div className="flex items-center space-x-1">
-              <Clock className="w-4 h-4" />
-              <span>6 Months</span>
+              
+             
             </div>
             <div className="flex items-center space-x-1">
               <Star className="w-4 h-4 text-yellow-500 fill-current" />

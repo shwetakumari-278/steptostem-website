@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
-import CourseOfferBar from "@/components/CourseOfferBar";
+
 import BookDemoButton from "@/components/BookDemoButton";
 import CourseTestimonials from "@/components/CourseTestimonials";
 import CurriculumAccordion from "@/components/CurriculumAccordion";
@@ -27,11 +27,7 @@ export default function AIBeginnerCoursePage() {
       {/* HEADER */}
       <Header />
 
-      {/* OFFER BAR */}
-      <CourseOfferBar
-        course="Python Programming (Beginner)"
-        gradient="from-green-600 to-emerald-600"
-      />
+      
 
       <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen pt-28">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -44,7 +40,7 @@ export default function AIBeginnerCoursePage() {
               </h1>
 
               <p className="text-sm text-gray-500 mb-4 tracking-wide">
-                Learn programming logic, problem-solving, and coding with Python
+                Strengthen your logic, improve problem-solving, and turn ideas into code with Python
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -98,21 +94,22 @@ export default function AIBeginnerCoursePage() {
               </h2>
 
               <ul className="space-y-3">
-                {[
-                  "Write real Python programs from scratch",
-                  "Build logic using conditions and loops",
-                  "Create games, tools, and interactive apps",
-                  "Work with lists, functions, and files",
-                  "Understand how real software is structured",
-                  "Design GUI-based desktop applications",
-                  "Solve problems with confidence",
-                  "Build and present complete projects",
-                ].map((item, i) => (
-                  <li key={i} className="flex gap-3">
-                    <CheckCircle className="text-green-600 mt-1" size={18} />
-                    <span>{item}</span>
-                  </li>
-                ))}
+               {[
+  "Write complete Python programs independently with confidence",
+  "Break down real-world problems and solve them logically",
+  "Build structured programs using conditions, loops, and functions",
+  "Work with data, files, and collections like a real programmer",
+  "Design and build interactive desktop applications",
+  "Understand how real software projects are structured and developed",
+  "Debug errors and improve code on their own",
+  "Create and present fully working Python projects"
+].map((item, i) => (
+  <li key={i} className="flex gap-3">
+    <CheckCircle className="text-green-600 mt-1" size={18} />
+    <span>{item}</span>
+  </li>
+))}
+
               </ul>
             </section>
 
@@ -140,106 +137,62 @@ export default function AIBeginnerCoursePage() {
               </div>
             </section>
             {/* PRICING PLANS */}
-            <section className="mt-16">
-              <h2 className="text-3xl font-bold mb-4 text-center">
-                Choose the Right Learning Plan
-              </h2>
+<section className="mt-16">
+  <h2 className="text-3xl font-bold mb-4 text-center">
+    Choose the Right Learning Plan
+  </h2>
 
-              <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Simple and Transparent pricing . One-hour live sessions. 32
-                sessions per course.
-              </p>
+  <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+    Simple and transparent pricing. One-hour live sessions.
+  </p>
 
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                {/* STARTER PLAN */}
-                <div className="rounded-2xl border border-purple-300 bg-purple-50 overflow-hidden shadow-xl">
-                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-4 text-xl font-semibold">
-                    Starter
-                  </div>
+  <div className="flex justify-center">
+    <div className="w-full max-w-2xl rounded-2xl border border-purple-300 bg-purple-50 shadow-xl overflow-hidden">
+      
+      {/* Header */}
+      <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-3 text-xl font-semibold">
+        Starter Plan
+      </div>
 
-                  <div className="p-6 text-center">
-                    <p className="text-3xl font-bold">
-                      ₹799{" "}
-                      <span className="text-sm font-medium">/ session</span>
-                    </p>
+      {/* Body */}
+      <div className="p-6 text-center">
+        <p className="text-4xl font-bold text-gray-900">
+          ₹799 <span className="text-sm font-medium text-gray-700">/ session</span>
+        </p>
 
-                    <p className="text-lg font-semibold mt-4">
-                      32 Live Sessions + 3 Bonus Sessions
-                    </p>
+        <p className="text-md font-semibold mt-2">
+          32 Live Sessions + 3 Bonus Sessions
+        </p>
 
-                    <div className="mt-6"></div>
-                  </div>
+        
+      </div>
 
-                  <div className="border-t p-6">
-                    <h4 className="font-semibold mb-4">
-                      1:1 Personalized Learning
-                    </h4>
+      {/* Features */}
+      <div className="border-t px-6 py-5">
+        <h4 className="font-semibold mb-4 text-left">
+          1:1 Personalized Learning
+        </h4>
 
-                    <ul className="space-y-3 text-sm text-gray-700">
-                      {[
-                        "1:1 live instructor-led sessions",
-                        "Dedicated personal mentor",
-                        "Flexible scheduling",
-                        "Custom learning pace",
-                        "Best for beginners & fast learners",
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle
-                            className="text-green-600 mt-0.5"
-                            size={16}
-                          />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+        <ul className="space-y-2 text-sm text-gray-700">
+          {[
+            "1:1 live instructor-led learning",
+  "Personal mentor focused on mastery",
+  "Sessions tailored to your learning pace",
+  "Flexible scheduling for students",
+  "Best for beginners and fast learners",
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <CheckCircle className="text-green-600 mt-0.5" size={16} />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-                {/* GROWTH PLAN */}
-                <div className="rounded-2xl border border-blue-300 bg-blue-50 overflow-hidden shadow-xl">
-                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center py-4 text-xl font-semibold">
-                    Growth
-                  </div>
 
-                  <div className="p-6 text-center">
-                    <p className="text-3xl font-bold">
-                      ₹649{" "}
-                      <span className="text-sm font-medium">/ session</span>
-                    </p>
-
-                    <p className="text-lg font-semibold mt-4">
-                      32 Live Sessions + 3 Bonus Sessions
-                    </p>
-
-                    <div className="mt-6"></div>
-                  </div>
-
-                  <div className="border-t p-6">
-                    <h4 className="font-semibold mb-4">
-                      Small Group Learning (2–3 students)
-                    </h4>
-
-                    <ul className="space-y-3 text-sm text-gray-700">
-                      {[
-                        "Live interactive group classes",
-                        "Peer learning & collaboration",
-                        "Structured weekly schedule",
-                        "Mentor-guided sessions",
-                        "More affordable option",
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle
-                            className="text-green-600 mt-0.5"
-                            size={16}
-                          />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
 
             {/* TESTIMONIALS */}
             <CourseTestimonials courseId="python-beginner" />
@@ -277,15 +230,15 @@ function RightSidebar() {
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 
         <ul className="space-y-4 text-sm text-gray-700">
-          <SidebarRow text="32 live 1-on-1 instructor-led classes (60 mins each) including 3 bonus sessions" />
-          <SidebarRow text="Learn live with industry proffessional" />
+          <SidebarRow text="32 live 1-on-1 instructor-led classes (60 mins each) + 3 bonus sessions (total 35 sessions)" />
+          <SidebarRow text="Learn live with experienced mentors" />
           <SidebarRow text="8 detailed modules" />
           <SidebarRow text="50+ activities & projects" />
 
           <SidebarRow text="Lifetime access to course content" />
           <SidebarRow text="Unlimited 1:1 live doubt sessions" />
           <SidebarRow text="Live 1:1 class recordings" />
-          <SidebarRow text="Monthly progress reports" />
+          <SidebarRow text="Regular Parent-Teacher Meetings (PTMs) after every 8 sessions" />
         </ul>
       </div>
     </div>
@@ -306,13 +259,16 @@ function SidebarRow({ text }: any) {
 
 function PricingSection() {
   return (
-    <section className="mt-16">
-      <h2 className="text-3xl font-bold mb-4 text-center">
-        Choose the Right Learning Plan
-      </h2>
-      <p className="text-gray-600 text-center mb-10">
-        Flexible options based on your child’s learning style.
-      </p>
+    <section className="mt-20 px-4">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Choose the Right Learning Plan
+        </h2>
+
+        <p className="text-gray-600 text-lg">
+          Flexible options based on your child’s learning style.
+        </p>
+      </div>
     </section>
   );
 }

@@ -21,7 +21,7 @@ import CurriculumAccordion from "@/components/CurriculumAccordion";
 import ProjectCard from "@/components/ProjectCard";
 import Header from "@/components/Header";
 import CourseTestimonials from "@/components/CourseTestimonials";
-import CourseOfferBar from "@/components/CourseOfferBar";
+
 import BookDemoButton from "@/components/BookDemoButton";
 
 export default function AICoursePage() {
@@ -31,10 +31,7 @@ export default function AICoursePage() {
     <>
       <Header />
 
-      <CourseOfferBar
-        course="Python & Machine Learning"
-        gradient="from-purple-600 to-pink-600"
-      />
+      
 
       <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -84,14 +81,10 @@ export default function AICoursePage() {
                 />
                 <Feature
                   icon={<Award size={20} />}
-                  title="Certificati"
+                  title="Certificates"
                   value="Provided on completion"
                 />
-                <Feature
-                  icon={<Clock size={20} />}
-                  title="Duration"
-                  value="5-6 Months"
-                />
+               
                 <Feature
                   icon={<Layers size={20} />}
                   title="Program"
@@ -104,7 +97,7 @@ export default function AICoursePage() {
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-700">
               <TrustStat
                 icon={<Users size={18} />}
-                title="100+"
+                title="70+"
                 label="Students"
               />
 
@@ -180,8 +173,10 @@ export default function AICoursePage() {
                 {/* PYTHON ADVANCED */}
                 <GameCourseCard
                   title="Python Advanced"
-                  subtitle="DSA, Automation & Real Projects"
-                  description="Students master Python with data structures, automation, APIs, and real-world projects."
+                  subtitle="DSA • OOP • Data Analysis • Real Projects
+"
+                  description="Master Python through DSA, OOP, data analysis, and real-world projects. Build logic, solve problems, analyze data, and create complete applications with confidence.
+"
                   image="/asset/python-advanced.png"
                   href="/courses/ai-ml/advanced"
                   badge="Advanced Track"
@@ -364,22 +359,14 @@ function RightSidebar() {
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 
         <ul className="space-y-4 text-sm text-gray-700">
-          <SidebarRow
-            icon={<Video size={16} />}
-            text="32 live 1-on-1 instructor-led classes (60 mins each) including 3 bonus sessions
-"
-          />
+          
 
           <SidebarRow
             icon={<Users size={16} />}
-            text="1:1 or small group personalized learning"
+            text="1:1 Personalized Learning"
           />
 
-          <SidebarRow
-            icon={<BookOpen size={16} />}
-            text="Structured curriculum with 8 detailed modules"
-          />
-
+        
           <SidebarRow
             icon={<Layers size={16} />}
             text="50+ hands-on Python/ML activities & projects"
@@ -392,7 +379,7 @@ function RightSidebar() {
 
           <SidebarRow
             icon={<BarChart size={16} />}
-            text="Monthly progress reports & skill tracking"
+            text="Regular Parent-Teacher Meetings (PTMs) after every 8 sessions"
           />
           <SidebarRow
             icon={<ShieldCheck size={16} />}

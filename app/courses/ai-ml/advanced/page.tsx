@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import CourseFAQ from "@/components/CourseFAQ";
 import Header from "@/components/Header";
-import CourseOfferBar from "@/components/CourseOfferBar";
+
 import BookDemoButton from "@/components/BookDemoButton";
 import CourseTestimonials from "@/components/CourseTestimonials";
 import CurriculumAccordion from "@/components/CurriculumAccordion";
@@ -26,17 +26,13 @@ export default function AIAdvancedCoursePage() {
       {/* HEADER */}
       <Header />
 
-      {/* OFFER BAR */}
-      <CourseOfferBar
-        course="Python Programming (Advanced)"
-        gradient="from-blue-600 to-indigo-600"
-      />
-
       {/* MAIN */}
-      <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 min-h-screen pt-28">
+      <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 min-h-screen pt-20">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2 space-y-10">
+            <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+
             {/* HERO */}
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -50,15 +46,18 @@ export default function AIAdvancedCoursePage() {
               </div>
 
               <p className="text-sm text-gray-500 mb-4 tracking-wide">
-                Build real-world applications using advanced Python concepts
+                Build proffesional level applications using advanced Python
+                concepts
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">
-                This advanced Python course is designed for students who already
-                know Python basics and want to build professional-level
-                programs. Students work with data structures, file handling,
-                OOP, Data Visualization and GUI programming to create real-world
-                applications.
+                This advanced Python program is designed for students who
+                already know the basics and want to build real-world,
+                professional-level applications. Students strengthen
+                problem-solving and program design skills, learn to work with
+                structured data, analyze and present information, and build
+                complete applications through guided projects that reflect real
+                software systems.
               </p>
 
               <p className="text-sm text-gray-500 mt-2">
@@ -72,7 +71,7 @@ export default function AIAdvancedCoursePage() {
                 <Feature
                   icon={<BarChart size={20} />}
                   title="Suitable for"
-                  value="Grades 8–12"
+                  value="Grades 5–12"
                 />
                 <Feature
                   icon={<Video size={20} />}
@@ -105,14 +104,14 @@ export default function AIAdvancedCoursePage() {
 
               <ul className="space-y-3">
                 {[
-                  "Master advanced Python programming concepts",
-                  "Build applications using OOP and data structures",
-                  "Solve real-world problems using algorithms",
-                  "Analyze datasets using NumPy and Pandas",
-                  "Clean and prepare real-world data",
-                  "Visualize insights using Matplotlib and Seaborn",
-                  "Develop complete end-to-end applications",
-                  "Build a professional project portfolio",
+                  "Strengthen advanced programming logic and structured coding skills",
+                  "Design scalable applications using object-oriented principles",
+                  "Apply algorithmic thinking to solve complex problems",
+                  "Work with structured data for analysis and insights",
+                  "Prepare and organize real-world data for meaningful use",
+                  "Present information clearly using visual representations",
+                  "Develop complete end-to-end software applications",
+                  "Build a strong portfolio of real-world projects that demonstrate advanced skills",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3">
                     <CheckCircle className="text-green-600 mt-1" size={18} />
@@ -152,85 +151,43 @@ export default function AIAdvancedCoursePage() {
               </h2>
 
               <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Simple and Transparent pricing . One-hour live sessions. 
+                Simple and transparent pricing. One-hour live sessions.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                {/* STARTER PLAN */}
-                <div className="rounded-2xl border border-purple-300 bg-purple-50 overflow-hidden shadow-xl">
-                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-4 text-xl font-semibold">
-                    Starter
+              <div className="flex justify-center">
+                <div className="w-full max-w-2xl rounded-2xl border border-purple-300 bg-purple-50 shadow-xl overflow-hidden">
+                  {/* Header */}
+                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-3 text-xl font-semibold">
+                    Starter Plan
                   </div>
 
+                  {/* Body */}
                   <div className="p-6 text-center">
-                    <p className="text-3xl font-bold">
+                    <p className="text-4xl font-bold text-gray-900">
                       ₹799{" "}
-                      <span className="text-sm font-medium">/ session</span>
+                      <span className="text-sm font-medium text-gray-700">
+                        / session
+                      </span>
                     </p>
 
-                    <p className="text-lg font-semibold mt-4">
+                    <p className="text-md font-semibold mt-2">
                       32 Live Sessions + 3 Bonus Sessions
                     </p>
-
-                    <div className="mt-6"></div>
                   </div>
 
-                  <div className="border-t p-6">
-                    <h4 className="font-semibold mb-4">
+                  {/* Features */}
+                  <div className="border-t px-6 py-5">
+                    <h4 className="font-semibold mb-4 text-left">
                       1:1 Personalized Learning
                     </h4>
 
-                    <ul className="space-y-3 text-sm text-gray-700">
+                    <ul className="space-y-2 text-sm text-gray-700">
                       {[
-                        "1:1 live instructor-led sessions",
-                        "Dedicated personal mentor",
-                        "Flexible scheduling",
-                        "Custom learning pace",
-                        "Best for beginners & fast learners",
-                      ].map((item, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle
-                            className="text-green-600 mt-0.5"
-                            size={16}
-                          />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* GROWTH PLAN */}
-                <div className="rounded-2xl border border-blue-300 bg-blue-50 overflow-hidden shadow-xl">
-                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center py-4 text-xl font-semibold">
-                    Growth
-                  </div>
-
-                  <div className="p-6 text-center">
-                    <p className="text-3xl font-bold">
-                      ₹649{" "}
-                      <span className="text-sm font-medium">/ session</span>
-                    </p>
-
-                    <p className="text-lg font-semibold mt-4">
-                      32 Live Sessions + 3 Bonus Sessions
-                    </p>
-
-                    <div className="mt-6"></div>
-                  </div>
-
-                  <div className="border-t p-6">
-                    <h4 className="font-semibold mb-4">
-                      Small Group Learning (2–3 students)
-                    </h4>
-
-                    <ul className="space-y-3 text-sm text-gray-700">
-                      {[
-                        "Live interactive group classes",
-                        "Peer learning & collaboration",
-                        "Structured weekly schedule",
-                        "Mentor-guided sessions",
-                        "More affordable option",
+                        "1:1 live instructor-led learning",
+                        "Personal mentor focused on mastery",
+                        "Sessions tailored to your learning pace",
+                        "Flexible scheduling for students",
+                        "Best for students preparing for higher-level coding and data skills",
                       ].map((item, i) => (
                         <li key={i} className="flex items-start gap-3">
                           <CheckCircle
@@ -283,18 +240,21 @@ function RightSidebar() {
 
         <ul className="space-y-4 text-sm text-gray-700">
           {[
-            "32 live 1-on-1 instructor-led classes (60 mins each) including 3 bonus sessions",
-            "Learn live with an industry professionals",
+            "32 live 1-on-1 instructor-led classes (60 mins each) + 3 bonus sessions (total 35 sessions)",
+            "Learn live with an experienced mentors",
             "8 advanced AI modules",
             "50+ real-world Python projects",
 
             "Lifetime course access",
             "Unlimited 1:1 doubt sessions",
             "live 1:1 Class recordings",
-            "Monthly progress reports",
+            "Regular Parent-Teacher Meetings (PTMs) after every 8 sessions",
           ].map((item, i) => (
             <li key={i} className="flex gap-3 items-start">
-              <CheckCircle size={16} className="text-green-600 mt-0.5 shrink-0" />
+              <CheckCircle
+                size={16}
+                className="text-green-600 mt-0.5 shrink-0"
+              />
               <span>{item}</span>
             </li>
           ))}

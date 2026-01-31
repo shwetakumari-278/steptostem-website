@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import CourseFAQ from "@/components/CourseFAQ";
+import HomeBlogs from "@/components/HomeBlogs";
 
 import {
   Brain,
@@ -11,9 +13,12 @@ import {
   Cpu,
   Trophy,
   Users,
+  Hammer,
   Target,
   Sparkles,
   ChevronDown,
+  CheckCircle2,
+  User,
   Play,
   Star,
   ArrowRight,
@@ -50,7 +55,7 @@ export default function Home() {
       icon: Brain,
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-50",
-      image: "/asset/theme_halo.png",
+      image: "/asset/py-ml.png",
       features: [
         "Python Programming",
         "Data Analysis & Visualization",
@@ -63,16 +68,16 @@ export default function Home() {
       id: "web-dev",
       title: "Web Development",
       description:
-        "Build modern, responsive websites and web applications from scratch",
+        "Learn how websites are built from scratch using core web technologies",
       icon: Globe,
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-50",
       image: "/asset/Picture4.jpg",
       features: [
-        "HTML/CSS/JavaScript",
-        "React & Next.js",
+        "HTML – Structure of web pages",
+        "CSS – Styling and layouts",
         "Backend Development",
-        "Full-Stack Projects",
+        "JavaScript – Interactivity and logic",
       ],
       rating: 4.8,
     },
@@ -80,63 +85,63 @@ export default function Home() {
       id: "game-design",
       title: "Game Design",
       description:
-        "Create engaging games and interactive experiences with modern tools",
+        "Create fun and interactive games while learning the basics of logic and design",
       icon: Gamepad2,
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-50",
       image: "/asset/game_design.png",
       features: [
-        "Game Mechanics",
-        "Unity/Unreal Engine",
-        "3D Modeling",
-        "Game Programming",
+        "Scratch – Visual, block-based coding",
+        "Roblox – Game creation with scripting",
+        "Game logic & mechanics",
       ],
       rating: 4.9,
     },
     {
       id: "app-development",
       title: "App Development For Kids",
-      description:
-        "Design and build interactive mobile apps while learning how real apps work from idea to launch.",
+      description: "Design and build mobile apps using simple, visual tools.",
       icon: Smartphone,
       color: "from-orange-500 to-amber-500",
       bgColor: "bg-orange-50",
       image: "/asset/app-development.jpeg",
       features: [
-        "App UI & User Interaction",
-        "App Logic & Navigation",
-        "Mini Mobile App Projects",
+        "MIT App Inventor",
+        "App screens & navigation",
+        "Logic using blocks",
       ],
       rating: 4.85,
     },
   ];
+
   const features = [
     {
-      icon: Trophy,
-      title: "Hackathon Ready",
+      icon: User,
+      title: "1:1 Personalized Learning",
       description:
-        "Compete in national and international hackathons with confidence",
-      image: "/asset/hackathon.jpeg",
+        "Every student learns differently — we teach accordingly. Mentors adapt lessons to the student’s pace, level, and learning style.",
+      image: "/asset/personalized_learning.png",
+    },
+    {
+      icon: CheckCircle2,
+      title: "Mastery-Based Learning",
+      description:
+        "We move forward only when concepts are clear, ensuring strong fundamentals with no gaps in understanding.",
+      image: "/asset/mastery_learning.png",
+    },
+    {
+      icon: Hammer,
+      title: "Project-Based Understanding",
+      description:
+        "Learn by building, not memorizing. Students create real projects that reinforce concepts and build confidence.",
+      image: "/asset/project_based.png",
     },
     {
       icon: Users,
       title: "Expert Mentors",
       description:
-        "Learn from industry professionals and experienced educators",
-      image: "/asset/chatbot.jpg",
-    },
-    {
-      icon: Target,
-      title: "Project-Based Learning",
-      description: "Build real-world projects that showcase your skills",
-      image: "/asset/download.png",
-    },
-    {
-      icon: Sparkles,
-      title: "Latest Tech Trends",
-      description:
-        "Stay updated with cutting-edge technology and industry practices",
-      image: "/asset/game_design.png",
+        "Experienced mentors provide continuous feedback, clear explanations, and constant support throughout the journey.",
+      image: "/asset/expert_mentors.jpg",
     },
   ];
 
@@ -145,24 +150,54 @@ export default function Home() {
       name: "Priya Sharma",
       age: 16,
       course: "Python/ML",
+      image: "/asset/student1.jpg",
       content:
-        "STEMxLearning helped me build my first  chatbot! using python concepts. The mentors are amazing.",
+        "STEMxLearning helped me build my first chatbot using python concepts. The mentors are amazing.",
       rating: 5,
     },
     {
       name: "Arjun Patel",
       age: 14,
       course: "Web Development",
+      image: "/asset/student2.jpg",
       content:
         "I learned to code websites and even won a hackathon! Best learning experience ever.",
-      rating: 5,
+      rating: 4.7,
     },
     {
       name: "Zara Khan",
       age: 17,
       course: "Game Design",
+      image: "/asset/student3.jpg",
       content:
         "Creating games is so much fun! The instructors make complex concepts simple.",
+      rating: 4.9,
+    },
+    {
+      name: "Rohan Mehta",
+      age: 15,
+      course: "Python",
+      image: "/asset/student4.jpg",
+      content:
+        "Python concepts became so easy and fun to understand. I built my own mini projects.",
+      rating: 4.9,
+    },
+    {
+      name: "Ananya Verma",
+      age: 13,
+      course: "App Development",
+      image: "/asset/student5.jpg",
+      content:
+        "I made my own mobile app in just a few weeks. Learning here is super fun!",
+      rating: 4.8,
+    },
+    {
+      name: "Kabir Singh",
+      age: 16,
+      course: "Python",
+      image: "/asset/student6.jpg",
+      content:
+        "Best learning experience ever. Mentors explain everything very clearly.",
       rating: 5,
     },
   ];
@@ -178,7 +213,7 @@ export default function Home() {
         {/* Background Theme Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/asset/theme_halo.png"
+            src="/asset/theme_logo.png"
             alt="Hero Background Theme"
             className="w-full h-full object-cover opacity-50"
           />
@@ -193,14 +228,12 @@ export default function Home() {
             className="max-w-4xl mx-auto"
           >
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white overflow-hidden relative">
+              <div className="w-28 h-28 mx-auto mb-6 rounded-full bg-white flex items-center justify-center shadow-lg overflow-hidden">
                 <img
-                  src="/asset/logo.webp"
+                  src="/asset/logo_final1.png"
                   alt="StepToSTEM Logo"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="w-[96%] h-[96%] object-contain rounded-full"
                 />
-                {/* Mask bottom text */}
-                <div className="absolute bottom-0 left-0 w-full h-6 bg-white" />
               </div>
             </div>
 
@@ -208,21 +241,12 @@ export default function Home() {
               <span className="gradient-text">STEMxLearning</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Empowering students aged 7-18 to become tech innovators through
-              <span className="font-semibold text-primary-600"> Python/ML</span>
-              ,
-              <span className="font-semibold text-secondary-600">
-                {" "}
-                Web Development
-              </span>
-              ,
-              <span className="font-semibold text-green-600"> Game Design</span>
-              , and
-              <span className="font-semibold text-orange-600">
-                {" "}
-                App Development
-              </span>
+           <p
+  className="text-[1.7rem] md:text-[2.1rem] font-extrabold text-blue-500/90
+  mb-8 max-w-3xl mx-auto leading-relaxed tracking-wide"
+>
+
+              1:1 learning with mastery at its core
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -300,8 +324,8 @@ export default function Home() {
               Explore Our <span className="gradient-text">Courses</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose from our comprehensive courses designed to make you
-              hackathon-ready and future-proof
+              Choose from expertly designed courses where mastery comes before
+              speed.
             </p>
           </motion.div>
 
@@ -350,9 +374,9 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
               Why Choose <span className="gradient-text">STEMxLearning</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're not just teaching coding - we're building the next
-              generation of tech innovators
+            <p className="text-xl font-semibold text-gray-700 max-w-3xl mx-auto text-center mb-4">
+              We’re not just teaching coding — we’re building strong foundations
+              through personalized 1:1 learning.
             </p>
           </motion.div>
 
@@ -368,573 +392,6 @@ export default function Home() {
                 <FeatureCard feature={feature} />
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* AI Showcase Section */}
-      <section className="py-20 relative overflow-hidden">
-        {/* Background Theme Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/asset/theme3.jpg"
-            alt="AI Showcase Background Theme"
-            className="w-full h-full object-cover opacity-45"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-50/70 via-pink-50/65 to-purple-50/70" />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-              AI-Powered <span className="gradient-text">Innovation</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See how our students use cutting-edge AI tools to create amazing
-              projects
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* AI Image Generation */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100/50 overflow-hidden"
-            >
-              <div className="relative mb-6 overflow-hidden rounded-xl">
-                <motion.img
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.6 }}
-                  src="/asset/qwen-image-prompt-extend_make_for_the_robotic.png"
-                  alt="AI Generated Robotics Image"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-bold text-lg">AI Image Generation</h3>
-                  <p className="text-sm opacity-90">Using Qwen AI</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-center">
-                Students learn to generate creative images using advanced AI
-                models
-              </p>
-            </motion.div>
-
-            {/* GPT Integration */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100/50 overflow-hidden"
-            >
-              <div className="relative mb-6 overflow-hidden rounded-xl">
-                <motion.img
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.6 }}
-                  src="/asset/gpt-image-1_make_for_the_robotic.png"
-                  alt="GPT Generated Robotics Image"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-bold text-lg">GPT Integration</h3>
-                  <p className="text-sm opacity-90">Using GPT Models</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-center">
-                Build intelligent chatbots and AI assistants with GPT technology
-              </p>
-            </motion.div>
-            {/* AI Content & Creativity */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100/50 overflow-hidden"
-            >
-              <div className="relative mb-6 overflow-hidden rounded-xl">
-                <motion.img
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.6 }}
-                  src="/asset/ai_creativity_students.jpg"
-                  alt="AI Content & Creativity"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-bold text-lg">AI Content & Creativity</h3>
-                  <p className="text-sm opacity-90">
-                    Images • Posters • Stories
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-center">
-                Create images, posters, stories, and presentations using
-                powerful AI tools
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Game Design Showcase Section */}
-      <section className="py-20 relative overflow-hidden">
-        {/* Background Theme Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/asset/theme4.jpg"
-            alt="Game Design Background Theme"
-            className="w-full h-full object-cover opacity-45"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-green-50/75 via-emerald-50/70 to-green-50/75" />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-              Game Design <span className="gradient-text">Excellence</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From concept to creation - learn the art and science of game
-              development
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Main Game Design Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-2xl shadow-2xl"
-            >
-              <motion.img
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.6 }}
-                src="/asset/game_design.png"
-                alt="Game Design Showcase"
-                className="w-full h-96 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="font-bold text-2xl mb-2">Game Development</h3>
-                <p className="text-lg opacity-90">
-                  Create immersive gaming experiences
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Game Design Features */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Gamepad2 className="w-6 h-6 text-green-600 mr-3" />
-                  Game Mechanics & Design
-                </h3>
-                <p className="text-gray-600">
-                  Learn fundamental game design principles, level design, and
-                  player experience optimization
-                </p>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Cpu className="w-6 h-6 text-blue-600 mr-3" />
-                  Programming & Development
-                </h3>
-                <p className="text-gray-600">
-                  Master game programming with Unity, Unreal Engine, and modern
-                  development tools
-                </p>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Sparkles className="w-6 h-6 text-purple-600 mr-3" />
-                  3D Modeling & Animation
-                </h3>
-                <p className="text-gray-600">
-                  Create stunning 3D assets, characters, and environments for
-                  your games
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* What Your Child Will Learn Section */}
-      <section className="py-20 relative overflow-hidden">
-        {/* Background Theme Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/asset/theme.jpg"
-            alt="Learning Background Theme"
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/60 to-white/80" />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-              What Your Child Will <span className="gradient-text">Learn</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A structured journey from Python programming fundamentals to
-              real-world Machine Learning projects
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Children working on electronics */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-2xl shadow-2xl"
-            >
-              <motion.img
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.6 }}
-                src="/asset/Ai_children.png"
-                alt="Children learning artificial intelligence"
-                className="w-full h-96 object-cover"
-              />
-            </motion.div>
-
-            {/* Right: Learning modules */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              {/* AI Learning Modules */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code className="w-6 h-6 text-white" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Python Programming Fundamentals
-                    </h3>
-                    <p className="text-gray-600">
-                      Learn variables, loops, conditions, functions, and logic
-                      to build strong programming foundations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Target className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Machine Learning Basics
-                    </h3>
-                    <p className="text-gray-600">
-                      Learn how computers improve with data by training simple
-                      machine learning models.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Computer Vision & NLP
-                    </h3>
-                    <p className="text-gray-600">
-                      Explore how AI can see images, recognize faces, and
-                      understand human language.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100/50">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Trophy className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      AI Projects & Challenges
-                    </h3>
-                    <p className="text-gray-600">
-                      Build exciting AI projects like chatbots, smart
-                      recommendations, and mini AI games.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Our Robotics Course Section */}
-      <section className="py-20 relative overflow-hidden">
-        {/* Background Theme Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/asset/theme2.jpg"
-            alt="Robotics Course Background Theme"
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/60 to-white/80" />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-              Why Choose Our <span className="gradient-text">AI Course</span>?
-            </h2>
-
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We help young minds understand artificial intelligence through
-              guided exploration, creativity, and real-world problem solving.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-blue-50/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-100/50 text-center"
-            >
-              <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Award className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Project-Based Learning & Certification
-              </h3>
-              <p className="text-gray-600">
-                Every student builds real projects, creates a strong portfolio,
-                and receives certification after course completion — helping in
-                school projects, competitions, and future profiles.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-green-50/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-100/50 text-center"
-            >
-              <div className="w-16 h-16 bg-green-500 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Guided & Structured Learning
-              </h3>
-              <p className="text-gray-600">
-                Step-by-step guidance ensures students never feel lost while
-                gradually gaining confidence to solve problems independently.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="bg-purple-50/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-purple-100/50 text-center"
-            >
-              <div className="w-16 h-16 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <ShieldCheck className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Age-Appropriate & Safe AI Usage
-              </h3>
-              <p className="text-gray-600">
-                Students learn what AI should and should not be used for,
-                understand dangers like deepfakes and misinformation, and
-                practice using AI ethically and safely — becoming smart and
-                responsible digital citizens.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Amazing Projects Students Build Section */}
-      <section className="py-20 relative overflow-hidden">
-        {/* Background Theme Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/asset/theme3.jpg"
-            alt="Projects Background Theme"
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/60 to-white/80" />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-              Amazing Projects{" "}
-              <span className="gradient-text">Students Build</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real projects that students take home and show off to family and
-              friends
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-gray-100/50"
-            >
-              <div className="relative overflow-hidden">
-                <motion.img
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.6 }}
-                  src="/asset/ai_project.png"
-                  alt="AI Smart Assistant Project"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Smart AI Assistant
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Build an intelligent assistant that can recognize patterns,
-                  answer questions, and make smart decisions using basic AI
-                  concepts.
-                </p>
-                <div className="flex items-center text-blue-600 text-sm font-medium">
-                  <span className="mr-2">⏰</span>
-                  Week 2–3 Project
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-gray-100/50"
-            >
-              <div className="relative overflow-hidden">
-                <motion.img
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.6 }}
-                  src="/asset/web_project.png"
-                  alt="Student Built Website Project"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Personal Portfolio Website
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Design and build a responsive website using HTML, CSS, and
-                  JavaScript to showcase ideas, projects, and creativity.
-                </p>
-                <div className="flex items-center text-blue-600 text-sm font-medium">
-                  <span className="mr-2">⏰</span>
-                  Week 4–5 Project
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-gray-100/50"
-            >
-              <div className="relative overflow-hidden">
-                <motion.img
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.6 }}
-                  src="/asset/game_project.png"
-                  alt="Interactive Game Development Project"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Interactive Arcade Game
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Create a fun interactive game with scoring, animations, and
-                  player controls while learning core game design principles.
-                </p>
-                <div className="flex items-center text-blue-600 text-sm font-medium">
-                  <span className="mr-2">⏰</span>
-                  Week 6–7 Project
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -983,6 +440,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* FAQ Section */}
+      <section className="py-20 relative overflow-hidden">
+        {/* Background (same style as deleted AI section) */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/asset/theme3.jpg"
+            alt="FAQ Background"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/60 to-white/80" />
+        </div>
+
+        <div className="relative z-10">
+          <CourseFAQ courseKey="home" title="Frequently Asked Questions" />
+        </div>
+      </section>
+      <HomeBlogs />
 
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
@@ -1009,15 +483,15 @@ export default function Home() {
               Future?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Join thousands of students who are already building the future
-              with STEMxLearning
+              Join Hunderds of students who are already building the future with
+              STEMxLearning
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <BookDemoButton
                   course="AI & Machine Learning"
                   variant="inline"
-                  label="schedule  Free Demo Classes"
+                  label="Schedule  Free Demo Classes"
                 />
               </div>
             </div>
@@ -1032,22 +506,17 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <div className="w-20 h-20 rounded-full mb-4 overflow-hidden bg-white flex items-center justify-center">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white overflow-hidden relative">
-                  <img
-                    src="/asset/logo.webp"
-                    alt="StepToSTEM Logo"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  {/* Mask bottom text */}
-                  <div className="absolute bottom-0 left-0 w-full h-6 bg-white" />
-                </div>
+              <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg overflow-hidden">
+                <img
+                  src="/asset/logo_final.png"
+                  alt="StepToSTEM Logo"
+                  className="w-18 h-18 object-contain"
+                />
               </div>
 
               <h3 className="text-2xl font-bold mb-4">STEMxLearning</h3>
               <p className="text-gray-300 mb-4">
-                Empowering the next generation of tech innovators through
-                comprehensive STEM education.
+                1:1 learning with mastery at its core.
               </p>
               <div className="flex space-x-4">
                 <div className="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center">
@@ -1083,7 +552,7 @@ export default function Home() {
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 space-y-3">
             <p>
-              &copy; 2025 STEMxLearning. All rights reserved. Empowering
+              &copy; 2026 STEMxLearning. All rights reserved. Empowering
               students, building futures.
             </p>
 

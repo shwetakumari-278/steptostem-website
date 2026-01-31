@@ -245,8 +245,9 @@ pythonBeginner: [
   },
   {
     question: "What will kids learn in the Python Beginner course?",
-    answer:
-      "Kids learn how to write Python programs, use variables, conditions, and loops, and solve problems step by step. They also build small apps, games, and practical projects while learning how programs work."
+answer:
+  "Kids learn to think logically, write Python programs with confidence, and solve problems step by step. They build real projects, simple games, and interactive applications while understanding how programs are structured and how software works in the real world."
+
   },
   {
     question: "Is the Python Beginner course suitable for absolute beginners?",
@@ -256,7 +257,7 @@ pythonBeginner: [
   {
     question: "What age group is Python Beginner best for?",
     answer:
-      "The Python Beginner course is best suited for students aged 9 to 13 years. It is designed to match their learning ability and gradually build strong programming foundations."
+      "The Python Beginner course is best suited for students aged 8 years or above. It is designed to match their learning ability and gradually build strong programming foundations."
   },
   {
     question: "Do kids need any coding knowledge before starting Python Beginner?",
@@ -294,7 +295,7 @@ pyhtonAdvanced: [
   {
     question: "What will students learn in the Python Advanced course?",
     answer:
-      "Students learn advanced Python concepts such as OOP, data structures, algorithms, data analysis, and visualization. They also build full projects including management systems and data-driven applications."
+      "Students learn advanced Python concepts such as OOP, data structures, algorithms, data analysis, and visualization. They also build full projects including simulations, interactive software systems and data-driven applications."
   },
   {
     question: "Is the Python Advanced course difficult?",
@@ -309,12 +310,12 @@ pyhtonAdvanced: [
   {
     question: "What age group is suitable for Python Advanced?",
     answer:
-      "Python Advanced is best for students aged 12 years and above. At this age, learners can understand logic, algorithms, and structured programming concepts more deeply."
+      "Python Advanced is best for students aged 11 years and above. At this age, learners can understand logic, algorithms, and structured programming concepts more deeply."
   },
   {
     question: "How long does it take to complete the Python Advanced course?",
     answer:
-      "The course runs for 32 structured live sessions with projects and assessments. Students progress from advanced concepts to complete application development."
+      "The course runs for 32 live 1-on-1 instructor-led classes + 3 bonus sessions  with projects and assessments. Students progress from advanced concepts to complete application development."
   },
   {
     question: "Is Python Advanced useful for future studies and careers?",
@@ -322,11 +323,49 @@ pyhtonAdvanced: [
       "Yes, Python Advanced builds strong foundations in programming, data handling, and problem-solving. It prepares students for higher-level computer science, AI, data science, and software development paths."
   }
 ]
-
-
-
-
-
-
   
 };
+export const homeFaqs = [
+  {
+    question: "Why should kids and teens learn coding?",
+    answer:
+      "Learning coding helps children develop logical thinking, creativity, and problem-solving skills. It also prepares them for a technology-driven future.",
+  },
+  {
+    question: "My child is a beginner. Is previous experience required?",
+    answer:
+      "No prior experience is needed. Our learning journey starts from the basics and gradually builds confidence.",
+  },
+  {
+    question: "What is the recommended age to start coding?",
+    answer:
+      "Children can start learning coding from around 8 years of age, depending on interest and learning pace.",
+  },
+  {
+   question: "How are classes conducted?",
+answer:
+  "Classes are conducted live in online 1:1 sessions, where mentors guide each student step by step, adapt teaching to their pace, and help them practice concepts in real time.",
+
+  },
+  {
+    question: "What device does my child need?",
+    answer:
+      "A laptop or desktop with a stable internet connection is sufficient to start learning coding.",
+  },
+  {
+    question: "Is the schedule flexible?",
+    answer:
+      "Yes, we offer flexible class timings so learning fits easily into school routines.",
+  },
+  {
+    question: "Will my child work on real projects?",
+    answer:
+      "Yes, students build real projects like games, apps, and websites to apply what they learn practically.",
+  },
+  {
+    question: "How do parents track progress?",
+    answer:
+      "Parents receive regular feedback and project updates to stay informed about their child’s progress.",
+  },
+];
+

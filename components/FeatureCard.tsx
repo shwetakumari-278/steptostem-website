@@ -20,7 +20,8 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
   return (
     <motion.div
       whileHover={{ y: -8, scale: 1.02 }}
-      className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100/50 overflow-hidden"
+      className="group relative h-full flex flex-col bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100/50 overflow-hidden"
+
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -50,19 +51,21 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
             transition={{ duration: 0.6 }}
             src={feature.image}
             alt={feature.title}
-            className="w-full h-32 object-cover"
+            className="w-full h-40 object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </motion.div>
       )}
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-1">
+
         <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors duration-300">
           {feature.title}
         </h3>
         
-        <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+        <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 flex-1">
           {feature.description}
         </p>
       </div>

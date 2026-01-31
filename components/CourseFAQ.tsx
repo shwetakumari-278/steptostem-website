@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { courseFaqs } from "@/data/courseFaqs";
+import { courseFaqs, homeFaqs } from "@/data/courseFaqs";
+
 
 type Props = {
   courseKey: string;
@@ -13,7 +14,9 @@ export default function CourseFAQ({
   courseKey,
   title = "Frequently Asked Questions",
 }: Props) {
-  const faqs = courseFaqs[courseKey] || [];
+ const faqs =
+  courseKey === "home" ? homeFaqs : courseFaqs[courseKey] || [];
+
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
