@@ -5,55 +5,42 @@ publish = ".next"
 [[plugins]]
 package = "@netlify/plugin-nextjs"
 
-
 # =====================
 # REDIRECTS
 # =====================
 
 [[redirects]]
-from = "http://stemxlearing.in/*"
-to = "https://www.stemxlearning.com/:splat"
+from = "http://stemixlearning.in/*"
+to = "https://www.stemixlearning.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
-from = "http://www.stemxlearing.in/*"
-to = "https://www.stemxlearning.com/:splat"
+from = "https://stemixlearning.in/*"
+to = "https://www.stemixlearning.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
-from = "https://stemxlearing.in/*"
-to = "https://www.stemxlearning.com/:splat"
+from = "http://stemixlearning.com/*"
+to = "https://www.stemixlearning.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
-from = "https://www.stemxlearing.in/*"
-to = "https://www.stemxlearning.com/:splat"
+from = "https://stemixlearning.com/*"
+to = "https://www.stemixlearning.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
-from = "http://stemxlearing.com/*"
-to = "https://www.stemxlearning.com/:splat"
+from = "http://stemexlearning.com/*"
+to = "https://www.stemixlearning.com/:splat"
 status = 301
 force = true
 
 [[redirects]]
-from = "http://www.stemxlearing.com/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://stemxlearing.com/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://www.stemxlearing.com/*"
-to = "https://www.stemxlearning.com/:splat"
+from = "https://stemexlearning.com/*"
+to = "https://www.stemixlearning.com/:splat"
 status = 301
 force = true

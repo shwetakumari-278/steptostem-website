@@ -115,10 +115,7 @@ export default function AICoursePage() {
               </h2>
 
               <p className="text-gray-700 leading-relaxed">
-                Python teaches students how to think logically and write
-                programs. Machine Learning teaches them how to use data to make
-                predictions and decisions. Together, students learn how modern
-                apps, websites, and intelligent systems actually work.
+                Python helps students learn logical thinking and problem-solving by writing clear programs. Machine Learning helps them understand how data is analyzed to find patterns, make predictions, and support decisions. Together, they help students understand how modern technology works behind the scenes and prepare them for future studies and careers in tech and data-driven fields.
               </p>
             </section>
 
@@ -211,83 +208,76 @@ export default function AICoursePage() {
             </section>
 
             {/* STEMxLearning LEARNING PATH */}
-            <section>
-              <h2 className="text-2xl font-bold mb-4">
-                The STEMxLearning Learning Path
-              </h2>
+<section>
+  <h2 className="text-2xl font-bold mb-4">
+    The STEMxLearning Learning Path
+  </h2>
 
-              <p className="text-gray-700 mb-8 max-w-3xl">
-                At STEMxLearning, we don’t just teach a single course. We guide
-                students through a structured growth journey — helping them
-                build skills, confidence, and leadership over time.
-              </p>
+  <p className="text-gray-700 mb-8 max-w-3xl">
+    At STEMxLearning, we don’t teach everything at once. Students move through a
+    clear, stage-by-stage learning journey that builds strong fundamentals
+    first, then advanced skills, and finally real-world understanding.
+  </p>
 
-              <div className="grid md:grid-cols-4 gap-6">
-                {/* Stage 1 */}
-                <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-purple-500">
-                  <h3 className="font-bold text-lg mb-2">
-                    Stage 1: Python Explorer
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Students learn Python basics and build confidence with
-                    programming.
-                  </p>
-                  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>Variables, loops, conditions</li>
-                    <li>Logical thinking</li>
-                    <li>Mini Python projects</li>
-                  </ul>
-                </div>
+  <div className="grid md:grid-cols-3 gap-6">
+    {/* Stage 1 */}
+    <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-purple-500">
+      <h3 className="font-bold text-lg mb-2">
+        Stage 1: Python Beginner
+      </h3>
+      <p className="text-sm text-gray-600 mb-3">
+        Students start their coding journey by learning the basics of Python and
+        developing logical thinking.
+      </p>
+      <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
+        <li>Learn Python fundamentals and write first working programs</li>
+        <li>Build logical thinking using conditions, loops, and iterations</li>
+        <li>Work with collections like lists and strings to handle data</li>
+        <li>Understand functions and modular coding concepts</li>
+        <li>Create simple projects and gain confidence through practice</li>
+      </ul>
+    </div>
 
-                {/* Stage 2 */}
-                <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-blue-500">
-                  <h3 className="font-bold text-lg mb-2">
-                    Stage 2: Python Builder
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Students create real applications using advanced Python
-                    concepts.
-                  </p>
-                  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>Functions & data structures</li>
-                    <li>File handling</li>
-                    <li>Real-world Python projects</li>
-                  </ul>
-                </div>
+    {/* Stage 2 */}
+    <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-blue-500">
+      <h3 className="font-bold text-lg mb-2">
+        Stage 2: Python Advanced
+      </h3>
+      <p className="text-sm text-gray-600 mb-3">
+        Students strengthen their Python skills by learning advanced concepts
+        and structured programming.
+      </p>
+      <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
+        <li>Write well-structured and efficient Python code</li>
+        <li>Apply object-oriented programming for organized systems</li>
+        <li>Develop algorithmic thinking and problem-solving skills</li>
+        <li>Work with real-world data using Python tools</li>
+        <li>Analyze and visualize data to extract insights</li>
+      </ul>
+    </div>
 
-                {/* Stage 3 */}
-                <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-green-500">
-                  <h3 className="font-bold text-lg mb-2">
-                    Stage 3: Data & ML Analyst
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Students learn to work with data and build Machine Learning
-                    models.
-                  </p>
-                  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>Data cleaning & visualization</li>
-                    <li>Basic ML models</li>
-                    <li>Real datasets & analysis</li>
-                  </ul>
-                </div>
+   {/* Stage 3 */}
+<div className="bg-white p-6 rounded-2xl shadow border-t-4 border-green-500">
+  <h3 className="font-bold text-lg mb-2">
+    Stage 3: Machine Learning
+  </h3>
+  <p className="text-sm text-gray-600 mb-3">
+    Students learn how machines learn from data — starting with core concepts
+    and progressing toward building and evaluating Machine Learning models.
+  </p>
+  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
+    <li>What Machine Learning is and how it works</li>
+    <li>Types of Machine Learning: Supervised and Unsupervised</li>
+    <li>Understanding features, labels, and training data</li>
+    <li>Building regression and classification models</li>
+    <li>Model training, testing, and performance evaluation</li>
+    
+  </ul>
+</div>
 
-                {/* Stage 4 */}
-                <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-orange-500">
-                  <h3 className="font-bold text-lg mb-2">
-                    Stage 4: ML Innovator
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Students combine Python and Machine Learning to solve real
-                    problems.
-                  </p>
-                  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-                    <li>End-to-end projects</li>
-                    <li>Portfolio building</li>
-                    <li>Hackathon-ready skills</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+  </div>
+</section>
+
 
             <CourseTestimonials courseId="python-ml" />
             <CourseFAQ courseKey="aiMl" />
