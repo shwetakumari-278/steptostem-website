@@ -4,3 +4,16 @@ publish = ".next"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://www.stemxlearning.in*"
+  to = "https://www.stemxlearning.com"
+  status = 301
+  force = true
+
+# Redirect stemxlearning.in to Primary
+[[redirects]]
+  from = "https://stemxlearning.in*"
+  to = "https://www.stemxlearning.com"
+  status = 301
+  force = true
