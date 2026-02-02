@@ -4,35 +4,3 @@ publish = ".next"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
-
-
-# =====================
-# REDIRECTS
-# =====================
-
-[[redirects]]
-from = "http://stemxlearning.in/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "http://www.stemxlearning.in/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
-
-
-
-
-
-[[redirects]]
-from = "http://stemxlearning.com/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
-
-
-
-
-
