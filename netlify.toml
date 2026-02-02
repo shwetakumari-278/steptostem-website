@@ -22,17 +22,9 @@ to = "https://www.stemxlearning.com/:splat"
 status = 301
 force = true
 
-[[redirects]]
-from = "https://stemxlearning.in/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
 
-[[redirects]]
-from = "https://www.stemxlearning.in/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
+
+
 
 [[redirects]]
 from = "http://stemxlearning.com/*"
@@ -40,20 +32,7 @@ to = "https://www.stemxlearning.com/:splat"
 status = 301
 force = true
 
-[[redirects]]
-from = "http://www.stemxlearning.com/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
 
-[[redirects]]
-from = "https://stemxlearning.com/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
 
-[[redirects]]
-from = "https://www.stemxlearning.com/*"
-to = "https://www.stemxlearning.com/:splat"
-status = 301
-force = true
+
+
