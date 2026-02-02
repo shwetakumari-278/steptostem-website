@@ -1,15 +1,15 @@
 [[redirects]]
-  from = "https://www.stemxlearning.in*"
-  to = "https://www.stemxlearning.com"
-  status = 301
-  force = true
+from = "https://stemxlearning.in/*"
+to = "https://www.stemxlearning.com/:splat"
+status = 301
+force = true
 
-# Redirect stemxlearning.in to Primary
 [[redirects]]
-  from = "https://stemxlearning.in*"
-  to = "https://www.stemxlearning.com"
-  status = 301
-  force = true
+from = "https://www.stemxlearning.in/*"
+to = "https://www.stemxlearning.com/:splat"
+status = 301
+force = true
+
 
 [build]
 command = "npm run build"
