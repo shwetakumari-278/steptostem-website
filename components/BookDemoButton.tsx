@@ -164,7 +164,7 @@ export default function BookDemoButton({
                   formData.append("course", course);
 
                   fetch(
-                    "https://script.google.com/macros/s/AKfycbwki1W2xh37WHLI2sc2iRF-cURyeYg_gcC8S1eeYOmrFfumQ0Big0J87BWFn4SvyNaoDA/exec",
+                    "https://script.google.com/macros/s/AKfycbyIDIe1grYj6m43mPX1J6w4-JLBtamfOSZOnz90ewl07Ug4STGY_a_cSti3hCudAxqqXg/exec",
                     {
                       method: "POST",
                       body: formData, // 👈 NO headers

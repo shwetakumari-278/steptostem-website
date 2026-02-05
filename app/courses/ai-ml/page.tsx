@@ -31,8 +31,6 @@ export default function AICoursePage() {
     <>
       <Header />
 
-      
-
       <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* LEFT CONTENT */}
@@ -84,7 +82,7 @@ export default function AICoursePage() {
                   title="Certificates"
                   value="Provided on completion"
                 />
-               
+
                 <Feature
                   icon={<Layers size={20} />}
                   title="Program"
@@ -115,7 +113,13 @@ export default function AICoursePage() {
               </h2>
 
               <p className="text-gray-700 leading-relaxed">
-                Python helps students learn logical thinking and problem-solving by writing clear programs. Machine Learning helps them understand how data is analyzed to find patterns, make predictions, and support decisions. Together, they help students understand how modern technology works behind the scenes and prepare them for future studies and careers in tech and data-driven fields.
+                Python helps students learn logical thinking and problem-solving
+                by writing clear programs. Machine Learning helps them
+                understand how data is analyzed to find patterns, make
+                predictions, and support decisions. Together, they help students
+                understand how modern technology works behind the scenes and
+                prepare them for future studies and careers in tech and
+                data-driven fields.
               </p>
             </section>
 
@@ -208,76 +212,94 @@ export default function AICoursePage() {
             </section>
 
             {/* STEMxLearning LEARNING PATH */}
-<section>
-  <h2 className="text-2xl font-bold mb-4">
-    The STEMxLearning Learning Path
-  </h2>
+            <section>
+              <h2 className="text-2xl font-bold mb-4">
+                The STEMxLearning Learning Path
+              </h2>
 
-  <p className="text-gray-700 mb-8 max-w-3xl">
-    At STEMxLearning, we don’t teach everything at once. Students move through a
-    clear, stage-by-stage learning journey that builds strong fundamentals
-    first, then advanced skills, and finally real-world understanding.
-  </p>
+              <p className="text-gray-700 mb-8 max-w-3xl">
+                At STEMxLearning, we don’t teach everything at once. Students
+                move through a clear, stage-by-stage learning journey that
+                builds strong fundamentals first, then advanced skills, and
+                finally real-world understanding.
+              </p>
 
-  <div className="grid md:grid-cols-3 gap-6">
-    {/* Stage 1 */}
-    <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-purple-500">
-      <h3 className="font-bold text-lg mb-2">
-        Stage 1: Python Beginner
-      </h3>
-      <p className="text-sm text-gray-600 mb-3">
-        Students start their coding journey by learning the basics of Python and
-        developing logical thinking.
-      </p>
-      <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-        <li>Learn Python fundamentals and write first working programs</li>
-        <li>Build logical thinking using conditions, loops, and iterations</li>
-        <li>Work with collections like lists and strings to handle data</li>
-        <li>Understand functions and modular coding concepts</li>
-        <li>Create simple projects and gain confidence through practice</li>
-      </ul>
-    </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Stage 1 */}
+                <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-purple-500">
+                  <h3 className="font-bold text-lg mb-2">
+                    Stage 1: Python Beginner
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Students start their coding journey by learning the basics
+                    of Python and developing logical thinking.
+                  </p>
+                  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
+                    <li>
+                      Learn Python fundamentals and write first working programs
+                    </li>
+                    <li>
+                      Build logical thinking using conditions, loops, and
+                      iterations
+                    </li>
+                    <li>
+                      Work with collections like lists and strings to handle
+                      data
+                    </li>
+                    <li>Understand functions and modular coding concepts</li>
+                    <li>
+                      Create simple projects and gain confidence through
+                      practice
+                    </li>
+                  </ul>
+                </div>
 
-    {/* Stage 2 */}
-    <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-blue-500">
-      <h3 className="font-bold text-lg mb-2">
-        Stage 2: Python Advanced
-      </h3>
-      <p className="text-sm text-gray-600 mb-3">
-        Students strengthen their Python skills by learning advanced concepts
-        and structured programming.
-      </p>
-      <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-        <li>Write well-structured and efficient Python code</li>
-        <li>Apply object-oriented programming for organized systems</li>
-        <li>Develop algorithmic thinking and problem-solving skills</li>
-        <li>Work with real-world data using Python tools</li>
-        <li>Analyze and visualize data to extract insights</li>
-      </ul>
-    </div>
+                {/* Stage 2 */}
+                <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-blue-500">
+                  <h3 className="font-bold text-lg mb-2">
+                    Stage 2: Python Advanced
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Students strengthen their Python skills by learning advanced
+                    concepts and structured programming.
+                  </p>
+                  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
+                    <li>Write well-structured and efficient Python code</li>
+                    <li>
+                      Apply object-oriented programming for organized systems
+                    </li>
+                    <li>
+                      Strengthen algorithmic thinking through linear data
+                      structures such as stacks, queues, and linked lists
+                    </li>
 
-   {/* Stage 3 */}
-<div className="bg-white p-6 rounded-2xl shadow border-t-4 border-green-500">
-  <h3 className="font-bold text-lg mb-2">
-    Stage 3: Machine Learning
-  </h3>
-  <p className="text-sm text-gray-600 mb-3">
-    Students learn how machines learn from data — starting with core concepts
-    and progressing toward building and evaluating Machine Learning models.
-  </p>
-  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
-    <li>What Machine Learning is and how it works</li>
-    <li>Types of Machine Learning: Supervised and Unsupervised</li>
-    <li>Understanding features, labels, and training data</li>
-    <li>Building regression and classification models</li>
-    <li>Model training, testing, and performance evaluation</li>
-    
-  </ul>
-</div>
+                    <li>Work with real-world data using Python tools</li>
+                    <li>Analyze and visualize data to extract insights</li>
+                  </ul>
+                </div>
 
-  </div>
-</section>
-
+                {/* Stage 3 */}
+                <div className="bg-white p-6 rounded-2xl shadow border-t-4 border-green-500">
+                  <h3 className="font-bold text-lg mb-2">
+                    Stage 3: Machine Learning
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Students learn how machines learn from data — starting with
+                    core concepts and progressing toward building and evaluating
+                    Machine Learning models.
+                  </p>
+                  <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
+                    <li>What Machine Learning is and how it works</li>
+                    <li>
+                      Types of Machine Learning: Supervised and Unsupervised
+                    </li>
+                    <li>Understanding features, labels, and training data</li>
+                    <li>Building regression and classification models</li>
+                    <li>Model training, testing, and performance evaluation</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
 
             <CourseTestimonials courseId="python-ml" />
             <CourseFAQ courseKey="aiMl" />
@@ -349,14 +371,11 @@ function RightSidebar() {
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 
         <ul className="space-y-4 text-sm text-gray-700">
-          
-
           <SidebarRow
             icon={<Users size={16} />}
             text="1:1 Personalized Learning"
           />
 
-        
           <SidebarRow
             icon={<Layers size={16} />}
             text="50+ hands-on Python/ML activities & projects"
