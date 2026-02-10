@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function BookDemoButton({
   course,
@@ -13,6 +14,19 @@ export default function BookDemoButton({
   label?: string;
 }) {
   console.log("COURSE PROP =", course);
+  const pathname = usePathname();
+
+const courseMap: Record<string, string> = {
+  "/courses/ai-ml": "Python & Machine Learning",
+  "/courses/ai-ml/beginner": "Python Beginner",
+  "/courses/ai-ml/advanced": "Python Advanced",
+  "/courses/ml": "Machine Learning",
+};
+
+const finalCourse = courseMap[pathname] || course || "General Enquiry";
+
+console.log("FINAL COURSE =", finalCourse);
+
 
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState({
@@ -30,6 +44,8 @@ export default function BookDemoButton({
     window.addEventListener("open-demo", openHandler);
     return () => window.removeEventListener("open-demo", openHandler);
   }, []);
+  const [success, setSuccess] = useState(false);
+
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -161,7 +177,9 @@ export default function BookDemoButton({
                   formData.append("countryCode", form.countryCode);
                   formData.append("phone", form.phone);
                   formData.append("grade", form.grade);
-                  formData.append("course", course);
+                  formData.append("course", finalCourse);
+                  console.log("Submitting course:", course);
+
 
                   fetch(
                     "https://script.google.com/macros/s/AKfycbyIDIe1grYj6m43mPX1J6w4-JLBtamfOSZOnz90ewl07Ug4STGY_a_cSti3hCudAxqqXg/exec",
@@ -172,21 +190,23 @@ export default function BookDemoButton({
                   )
                     .then((res) => res.text())
                     .then((text) => {
-                      const data = JSON.parse(text);
+  const data = JSON.parse(text);
 
-                      if (!data.success) {
-                        throw new Error(data.error || "Backend error");
-                      }
+  if (!data.success) {
+    throw new Error(data.error || "Backend error");
+  }
 
-                      alert("Demo request submitted!");
-                      setForm({
-                        name: "",
-                        countryCode: "+91",
-                        phone: "",
-                        grade: "",
-                      });
-                      setOpen(false);
-                    })
+  setOpen(false);     // close form
+  setSuccess(true);  // open success popup
+
+  setForm({
+    name: "",
+    countryCode: "+91",
+    phone: "",
+    grade: "",
+  });
+})
+
                     .catch((err) => {
                       console.error(err);
                       setError("Something went wrong. Please try again.");
@@ -305,6 +325,43 @@ export default function BookDemoButton({
           </motion.div>
         )}
       </AnimatePresence>
+      <AnimatePresence>
+  {success && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center"
+    >
+      <motion.div
+        initial={{ scale: 0.85, y: 40 }}
+        animate={{ scale: 1, y: 0 }}
+        exit={{ scale: 0.85, y: 40 }}
+        transition={{ type: "spring", stiffness: 180 }}
+        className="bg-white rounded-2xl p-8 w-full max-w-sm text-center shadow-2xl"
+      >
+        <div className="text-5xl mb-4">🎉</div>
+
+        <h3 className="text-2xl font-bold text-gray-900">
+          Demo Request Submitted!
+        </h3>
+
+        <p className="text-gray-600 mt-2">
+          Our team will contact you shortly.
+        </p>
+
+        <button
+          onClick={() => setSuccess(false)}
+          className="mt-6 w-full py-3 rounded-lg font-semibold text-white
+          bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90"
+        >
+          OK
+        </button>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </>
   );
 }
