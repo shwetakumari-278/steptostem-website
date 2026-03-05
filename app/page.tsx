@@ -283,7 +283,7 @@ export default function Home() {
                   <div className="text-sm">Projects Built</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">98.5%</div>
+                  <div className="text-2xl font-bold text-green-600">98.4%</div>
                   <div className="text-sm">Success Rate</div>
                 </div>
               </div>
