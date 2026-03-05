@@ -9,12 +9,16 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "STEMxLearning - Empowering Students in Tech & Innovation",
+  title: "STEMxLearning",
   description:
-    "Join STEMxLearning to learn AI/ML, Web Development, Game Design, and Arduino programming. Compete in hackathons and stay ahead of tech trends!",
+    "STEMxLearning offers 1-on-1 live online classes in coding and AI for K-12 students.",
   keywords:
-    "edtech, STEM, AI/ML, web development, game design, arduino, hackathons, coding, programming, students",
+    "edtech, STEM, AI/ML, web development, coding",
   authors: [{ name: "STEMxLearning Team" }],
+
+  icons: {
+    icon: "/asset/logo_final1.png",
+  },
 };
 
 export const viewport: Viewport = {
