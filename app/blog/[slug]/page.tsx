@@ -6,6 +6,28 @@ export function generateStaticParams() {
     slug: blog.slug,
   }));
 }
+import type { Metadata } from "next";
+
+export async function generateMetadata(
+  { params }: { params: { slug: string } }
+): Promise<Metadata> {
+
+  const blog = blogs.find((b) => b.slug === params.slug);
+
+  if (!blog) {
+    return {
+      title: "Blog | STEMxLearning",
+    };
+  }
+
+  return {
+    title: `${blog.title} | STEMxLearning`,
+    description: blog.excerpt,
+    alternates: {
+      canonical: `https://www.stemxlearning.com/blog/${blog.slug}`,
+    },
+  };
+}
 
 export default function BlogSlugPage({ params }: { params: { slug: string } }) {
   const blog = blogs.find((b) => b.slug === params.slug);
