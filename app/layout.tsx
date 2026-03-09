@@ -9,14 +9,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.stemxlearning.com"),
+
   title: "STEMxLearning",
   description:
     "STEMxLearning offers 1-on-1 live online classes in coding and AI for K-12 students with a mastery-based learning approach to ensure deep understanding and real skill development.",
-  keywords:
-    "edtech, STEM, AI/ML, web development, coding",
+
+  keywords: "edtech, STEM, AI/ML, web development, coding",
   authors: [{ name: "STEMxLearning Team" }],
 
-  
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export const viewport: Viewport = {

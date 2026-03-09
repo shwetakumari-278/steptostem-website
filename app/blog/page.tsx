@@ -1,6 +1,13 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import { blogs } from "@/data/blogs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog | STEMxLearning",
+ description:
+  "Explore the STEMxLearning blog for insights on AI, coding, technology education, and digital skills for students. Discover practical guides, learning tips, and real-world tech concepts designed to help young learners build confidence, creativity, and mastery in the world of technology.",
+};
 
 export default function BlogPage() {
   return (
