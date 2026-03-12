@@ -1,22 +1,31 @@
 import Header from "@/components/Header";
 import { blogs } from "@/data/blogs";
 import BlogContent from "@/components/BlogContent";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 export function generateStaticParams() {
   return blogs.map((blog) => ({
     slug: blog.slug,
   }));
 }
-import type { Metadata } from "next";
 
-export async function generateMetadata(
-  { params }: { params: { slug: string } }
-): Promise<Metadata> {
+ // wherever your blogs data is stored
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
 
   const blog = blogs.find((b) => b.slug === params.slug);
 
   if (!blog) {
     return {
       title: "Blog | STEMxLearning",
+      description:
+        "Insights on coding, AI, and technology learning for students and parents.",
+      alternates: {
+        canonical: "https://www.stemxlearning.com/blog",
+      },
     };
   }
 
@@ -26,12 +35,28 @@ export async function generateMetadata(
     alternates: {
       canonical: `https://www.stemxlearning.com/blog/${blog.slug}`,
     },
+    openGraph: {
+      title: `${blog.title} | STEMxLearning`,
+      description: blog.excerpt,
+      url: `https://www.stemxlearning.com/blog/${blog.slug}`,
+      siteName: "STEMxLearning",
+      type: "article",
+      images: [
+        {
+          url: blog.image,
+          width: 1200,
+          height: 630,
+          alt: blog.title,
+        },
+      ],
+    },
   };
 }
 
 export default function BlogSlugPage({ params }: { params: { slug: string } }) {
   const blog = blogs.find((b) => b.slug === params.slug);
-  if (!blog) return null;
+
+  if (!blog) notFound();
 
   return (
     <>

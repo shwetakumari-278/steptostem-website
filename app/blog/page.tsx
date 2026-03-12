@@ -4,11 +4,13 @@ import { blogs } from "@/data/blogs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | STEMxLearning",
- description:
-  "Explore the STEMxLearning blog for insights on AI, coding, technology education, and digital skills for students. Discover practical guides, learning tips, and real-world tech concepts designed to help young learners build confidence, creativity, and mastery in the world of technology.",
+  title: "STEMxLearning Blog | Coding, AI & Technology Learning for Students",
+  description:
+    "Explore the STEMxLearning blog for insights on coding, AI, technology education, and digital skills for students. Practical guides and ideas to help young learners build real understanding and confidence with technology.",
+  alternates: {
+    canonical: "https://www.stemxlearning.com/blog",
+  },
 };
-
 export default function BlogPage() {
   return (
     <>
