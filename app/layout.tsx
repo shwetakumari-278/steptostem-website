@@ -22,10 +22,11 @@ export const metadata: Metadata = {
     canonical: "/",
   },
    icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "https://www.stemxlearning.com/favicon.png",
+    shortcut: "https://www.stemxlearning.com/favicon.png",
+    apple: "https://www.stemxlearning.com/favicon.png",
   },
+   
 };
 
 export const viewport: Viewport = {
