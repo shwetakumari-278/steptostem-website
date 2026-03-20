@@ -236,7 +236,105 @@ scratchGameDev: [
       "Python and Machine Learning skills are used in almost every modern technology field. Students develop logical thinking, data skills, and problem-solving abilities. These skills help in school, competitions, and future careers."
   }
 ],
-
+generativeAi: [
+  {
+    question: "What is the Generative AI course for kids and teens?",
+    answer:
+      "The Generative AI course teaches students how modern AI tools like ChatGPT and image generators work and how to build applications using them. Students learn to create AI-powered websites, tools, and automation systems through hands-on projects."
+  },
+  {
+    question: "What will students learn in the Generative AI course?",
+    answer:
+      "Students learn prompt engineering, how AI models generate responses, and how to build real applications using AI APIs. They work on projects like chatbots, AI websites, content generators, and automation tools while understanding how AI works behind the scenes."
+  },
+  {
+    question: "Is the Generative AI course suitable for beginners?",
+    answer:
+      "Yes, the course is beginner-friendly and starts from the basics. Students are guided step by step, making it easy to understand even without prior AI knowledge."
+  },
+  {
+    question: "Do students need coding experience before joining?",
+    answer:
+      "No prior coding experience is required. Everything is taught from scratch in a structured way."
+  },
+  {
+    question: "What tools and technologies will students use?",
+    answer:
+      "Students work with modern AI tools and platforms such as OpenAI APIs, Gemini, and other generative AI systems. They also learn how to integrate AI into websites, apps, and workflows."
+  },
+  {
+    question: "What kind of projects will students build?",
+    answer:
+      "Students build real-world AI projects such as chatbots, AI-powered websites, content generators, resume builders, and automation tools. These projects help them apply concepts and build a strong portfolio."
+  },
+  {
+    question: "What age group is suitable for this course?",
+    answer:
+      "The course is suitable for students from Grades 3 to 12. Content is adapted based on the student’s level and learning pace."
+  },
+  {
+    question: "How is this course different from Python & Machine Learning?",
+    answer:
+      "Python & Machine Learning focuses on building models from scratch and learning programming deeply. Generative AI focuses on using powerful existing AI models to build real applications quickly and creatively."
+  },
+  {
+    question: "How long does the Generative AI course take to complete?",
+    answer:
+      "The duration depends on the selected track, but most students complete the program in a few weeks to a few months."
+  },
+  {
+    question: "Will students receive a certificate after completion?",
+    answer:
+      "Yes, students receive a recognized certificate after completing the course."
+  }
+],
+genaiWebDev: [
+  {
+    question: "What will students build in the Gen AI for Web Development course?",
+    answer:
+      "Students build a complete professional e-commerce store with a homepage, product pages, and a working cart — then add a real AI chatbot powered by Ollama directly into the website. The finished project is deployed live on the internet.",
+  },
+  {
+    question: "What is prompt engineering and why do students learn it?",
+    answer:
+      "Prompt engineering is the skill of writing effective instructions for AI tools to get the best results. Students learn techniques like Prompt Chaining, Multimodal Prompting, and Chain-of-Thought Prompting — skills used by real developers every day.",
+  },
+  {
+    question: "What is Ollama and why is it used in this course?",
+    answer:
+      "Ollama is a tool that lets you run AI models locally on your own computer without needing an internet connection or paid API. Students install it, run a real AI model, and connect it to their website as a chatbot.",
+  },
+  {
+    question: "Do students need coding experience before joining?",
+    answer:
+      "No prior coding experience is required. The course starts from the very basics and guides students step by step from setting up tools to deploying a live website.",
+  },
+  {
+    question: "What tools will students use in this course?",
+    answer:
+      "Students use VS Code, Git, GitHub, Netlify, and Ollama — the same professional tools real developers use daily. AI tools are used throughout to assist with building and prompting.",
+  },
+  {
+    question: "Will the website students build actually be live on the internet?",
+    answer:
+      "Yes. Students deploy their website using GitHub and Netlify so it is fully live and accessible to anyone in the world — not just a local project on their computer.",
+  },
+  {
+    question: "What age group is this course suitable for?",
+    answer:
+      "The course is suitable for students from Grades 3 to 12. Content is adapted to the student's level and learning pace.",
+  },
+  {
+    question: "How many sessions does this course have?",
+    answer:
+      "The course consists of 5 live one-on-one sessions of 60 minutes each. Every session is hands-on with a real project outcome.",
+  },
+ {
+  question: "Will students have something real to show after completing this course?",
+  answer:
+    "Yes. Students finish the course with a fully live AI-powered e-commerce website deployed on the internet, a built-in chatbot powered by Ollama, and a recognized certificate of completion — all ready to showcase.",
+},
+],
 pythonBeginner: [
   {
     question: "What is the Python Beginner course for kids?",
@@ -367,5 +465,6 @@ answer:
     answer:
       "Parents receive regular feedback and project updates to stay informed about their child’s progress.",
   },
+  
 ];
 

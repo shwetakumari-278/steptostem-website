@@ -47,8 +47,10 @@ export default function CourseCard({
         className={`relative z-10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg
   ${
     course.id === "app-development"
-      ? "bg-gradient-to-br from-orange-600 to-amber-600"
-      : `bg-gradient-to-br ${course.color}`
+  ? "bg-gradient-to-br from-orange-600 to-amber-600"
+  : course.id === "generative-ai"
+  ? "bg-gradient-to-br from-pink-500 to-orange-400"
+  : `bg-gradient-to-br ${course.color}`
   }`}
       >
         <IconComponent className="w-8 h-8 text-white stroke-[2.5]" />
@@ -109,7 +111,7 @@ export default function CourseCard({
         </div>
 
         {/* Course Stats – ONLY for Python & ML */}
-        {course.id === "ai-ml" && (
+        {(course.id === "ai-ml" || course.id === "generative-ai") && (
           <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
             <div className="flex flex-col items-center">
               <Users className="w-4 h-4" />
@@ -137,8 +139,10 @@ export default function CourseCard({
     text-white shadow-lg  mt-auto
     ${
       course.id === "app-development"
-        ? "bg-gradient-to-r from-orange-600 to-amber-600 hover:shadow-orange-300/50"
-        : `bg-gradient-to-r ${course.color}`
+  ? "bg-gradient-to-r from-orange-600 to-amber-600 hover:shadow-orange-300/50"
+  : course.id === "generative-ai"
+  ? "bg-gradient-to-r from-pink-500 to-orange-400 hover:shadow-pink-300/50"
+  : `bg-gradient-to-r ${course.color}`
     }
   `}
         >

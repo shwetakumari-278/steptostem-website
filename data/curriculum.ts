@@ -220,7 +220,83 @@ export const curriculum = {
       },
     ],
   },
-
+"genai-web-dev": {
+  title: "Gen AI for Web Development Curriculum",
+  modules: [
+    {
+      module: 1,
+      label: "Session",
+      title: "The Developer Mindset",
+      description:
+        "Students step into the world of software development — setting up professional tools, understanding how developers work with AI, and taking their first steps as real builders.",
+      outcomes: [
+        "Understand what a Software Developer does",
+        "Explore what AI can create today",
+        "Install and set up VS Code",
+        "Install Git and connect to GitHub",
+        "Understand the basic Git workflow",
+        "Get introduced to AI tools developers use daily",
+      ],
+    },
+    {
+      module: 2,
+      label: "Session",
+      title: "Building a Simple Website",
+      description:
+        "Students learn what websites are made of and how to use AI prompts to build them — exploring professional prompting techniques used by real developers.",
+      outcomes: [
+        "Understand what a webpage and website is made of",
+        "Write your first AI prompt",
+        "Learn the Prompt Framework",
+        "Apply Multimodal Prompting and Adding Constraints",
+        "Use Prompt Chaining and Chain-of-Thought Prompting",
+        "Practice Rephrase and Use Negation techniques",
+      ],
+    },
+    {
+      module: 3,
+      label: "Session",
+      title: "Taking Your Website Live",
+      description:
+        "Students understand how the internet works and deploy their first real website for the world to see using professional developer tools.",
+      outcomes: [
+        "Understand what a server is and how it works",
+        "Learn essential GitHub commands",
+        "Push your project to GitHub",
+        "Deploy your website live using Netlify",
+        "Understand the full journey from code to live website",
+      ],
+    },
+    {
+      module: 4,
+      label: "Session",
+      title: "Let's Build a Real Online Shop! – I",
+      description:
+        "Students build a professional fashion e-commerce website from scratch — complete with a homepage, product pages, and a fully working cart system using AI.",
+      outcomes: [
+        "Build a professional homepage using AI",
+        "Create a product collection section",
+        "Design and build a product detail page",
+        "Implement a working cart system",
+        "Add add-to-cart functionality",
+      ],
+    },
+    {
+      module: 5,
+      label: "Session",
+      title: "Let's Build a Real Online Shop! – II",
+      description:
+        "Students supercharge their store by integrating a real local AI model using Ollama — building and embedding a working chatbot directly into their website.",
+      outcomes: [
+        "Install and set up Ollama locally",
+        "Understand how Ollama runs AI models",
+        "Create a working AI chatbot",
+        "Embed the chatbot as a widget on the website",
+        "Let users interact with AI directly on the site",
+      ],
+    },
+  ],
+},
   "app-development": {
     title: "Mobile App Development Curriculum",
     modules: [

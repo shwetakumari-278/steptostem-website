@@ -30,8 +30,8 @@ export default function CurriculumAccordion({ module }: any) {
           ) : (
             /* OLD FORMAT (OTHER COURSES) */
             <>
-              <strong>{`Module ${module.module}:`}</strong>{" "}
-              <span>{module.title}</span>
+              <strong>{`${module.label ?? "Module"} ${module.module}:`}</strong>{" "}
+<span>{module.title}</span>
             </>
           )}
         </div>

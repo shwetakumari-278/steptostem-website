@@ -1,4 +1,4 @@
-import { Brain, Globe, Gamepad2, Smartphone } from "lucide-react";
+import { Brain, Globe, Gamepad2, Smartphone, Sparkles  } from "lucide-react";
 
 export const courses = {
   "ai-ml": {
@@ -21,6 +21,25 @@ export const courses = {
   students: "70+",
     
   },
+  "generative-ai": {
+  id: "generative-ai",
+  title: "Generative AI",
+  description:
+    "Build real AI-powered apps using modern Gen AI tools, APIs, and large language models",
+  icon: Sparkles,
+  color: "from-pink-500 to-orange-400",
+  bgColor: "bg-pink-50",
+  image: "/asset/gen-ai.png",
+  duration: "12 weeks",
+  rating: 4.9,
+  students: "50+",
+  features: [
+    "Prompt Engineering",
+    "AI-Powered Web Apps",
+    "Gen AI APIs & Tools",
+    "Automation with AI",
+  ],
+},
 
   "web-dev": {
     id: "web-dev",

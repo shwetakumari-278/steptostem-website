@@ -64,6 +64,23 @@ export default function Home() {
       ],
       rating: 4.9,
     },
+    // After the ai-ml object, before web-dev:
+{
+  id: "generative-ai",
+  title: "Generative AI",
+  description: "Go beyond using AI tools — learn how they work and build your own AI-powered apps, websites, and automation systems",
+
+  icon: Sparkles,
+  color: "from-pink-500 to-orange-400",
+  bgColor: "bg-pink-50",
+  image: "/asset/gen-ai.webp",   // add your image here
+  features: [
+    "AI-Powered Web Projects",
+  "Real World AI Applications",
+  "Live Deployment with GitHub",
+  ],
+  rating: 4.85,
+},
     {
       id: "web-dev",
       title: "Web Development",
@@ -203,7 +220,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+    <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen pt-24">
       <BackgroundAnimation activeCourse={activeCourse} />
 
       <Header />
@@ -329,7 +346,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-5 gap-8 items-stretch">
             {courses.map((course, index) => (
               <motion.div
                 key={course.id}
@@ -535,6 +552,7 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-4">Courses</h4>
               <ul className="space-y-2 text-gray-300">
                 <li>Python & Machine Learning</li>
+                <li>Generative AI</li> 
                 <li>Web Development</li>
                 <li>Game Design</li>
                 <li>App-Development</li>

@@ -138,7 +138,74 @@ export const courseTestimonials = {
     },
   ],
 },
-
+"generative-ai": {
+  averageRating: 4.9,
+  totalReviews: "50+ reviews",
+  testimonials: [
+    {
+      name: "Prisha Nambiar",
+      role: "Grade 7 Student",
+      image: "/testimonials/prisha.jpg",
+      rating: 4.9,
+      text: "Building a chatbot that actually replied intelligently was something I never imagined I could do. Gen AI made it feel achievable.",
+    },
+    {
+      name: "Zayan Mirza",
+      role: "Grade 5 Student",
+      image: "/testimonials/zayan.jpg",
+      rating: 5.0,
+      text: "I learned how to connect AI APIs to a real website. Seeing my project respond with AI-generated answers felt like the future.",
+    },
+    {
+      name: "Deepa Krishnan",
+      role: "Parent",
+      image: "/testimonials/deepa.jpg",
+      rating: 4.9,
+      text: "My daughter went from just using AI tools to actually building with them. The shift in her thinking and confidence has been remarkable.",
+    },
+    {
+      name: "Tanvir Hussain",
+      role: "Grade 6 Student",
+      image: "/testimonials/tanvir.jpg",
+      rating: 4.8,
+      text: "Understanding how prompts work and why AI responds differently changed how I think about technology completely.",
+    },
+  ],
+},
+"genai-web-dev": {
+  averageRating: 4.9,
+  totalReviews: "50+ reviews",
+  testimonials: [
+    {
+      name: "Vivaan Kapoor",
+      role: "Grade 7 Student",
+      image: "/testimonials/vivaan.jpg",
+      rating: 4.9,
+      text: "I built and deployed a real online store with a chatbot in just 5 sessions. Seeing my website live on the internet was unbelievable.",
+    },
+    {
+      name: "Aisha Rathi",
+      role: "Grade 6 Student",
+      image: "/testimonials/aisha.jpg",
+      rating: 5.0,
+      text: "Learning prompt engineering changed how I think about AI completely. I now know how to actually use AI as a tool, not just chat with it.",
+    },
+    {
+      name: "Suresh Nair",
+      role: "Parent",
+      image: "/testimonials/suresh.jpg",
+      rating: 4.9,
+      text: "In just 5 sessions my child went from zero coding knowledge to having a live website with an AI chatbot. Absolutely worth it.",
+    },
+    {
+      name: "Mihir Joshi",
+      role: "Grade 8 Student",
+      image: "/testimonials/mihir.jpg",
+      rating: 4.8,
+      text: "Setting up Ollama and adding the chatbot to my shop was the coolest thing I have ever built. I showed everyone in my class.",
+    },
+  ],
+},
 
   "game-design": {
     averageRating: 4.9,
