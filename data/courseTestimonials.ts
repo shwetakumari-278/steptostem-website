@@ -206,7 +206,74 @@ export const courseTestimonials = {
     },
   ],
 },
-
+"genai-data-science": {
+  averageRating: 4.9,
+  totalReviews: "80+ reviews",
+  testimonials: [
+    {
+      name: "Vivaan Kapoor",
+      role: "Grade 7 Student",
+      image: "/testimonials/vivaan.jpg",
+      rating: 4.9,
+      text: "I learned how to clean real data and even built a model to predict results. It felt like solving real problems, not just learning theory.",
+    },
+    {
+      name: "Aisha Rathi",
+      role: "Grade 6 Student",
+      image: "/testimonials/aisha.jpg",
+      rating: 4.8,
+      text: "Making charts and understanding patterns was my favourite part. AI helped me understand data in a really simple way.",
+    },
+    {
+      name: "Suresh Nair",
+      role: "Parent",
+      image: "/testimonials/suresh.jpg",
+      rating: 5.0,
+      text: "My child now understands how data works and can even explain machine learning concepts clearly. The improvement in analytical thinking is amazing.",
+    },
+    {
+      name: "Mihir Joshi",
+      role: "Grade 8 Student",
+      image: "/testimonials/mihir.jpg",
+      rating: 4.8,
+      text: "Training my first model and seeing predictions actually work was the best part. It made me feel like I built something real with AI.",
+    },
+  ],
+},
+"genai-agentic-ai": {
+  averageRating: 4.9,
+  totalReviews: "60+ reviews",
+  testimonials: [
+    {
+      name: "Thiago Fernandez",
+      role: "Grade 11 Student",
+      image: "/testimonials/thiago.jpg",
+      rating: 4.9,
+      text: "Building an AI agent that could actually perform tasks step by step felt unreal. It wasn’t just coding — it felt like creating a real system.",
+    },
+    {
+      name: "Ananya Rao",
+      role: "Grade 10 Student",
+      image: "/testimonials/ananya.jpg",
+      rating: 4.8,
+      text: "I loved how different tools connected together. Watching my agent take actions automatically made everything feel practical and real.",
+    },
+    {
+      name: "Rahul Mehta",
+      role: "Parent",
+      image: "/testimonials/rahul.jpg",
+      rating: 4.9,
+      text: "This course helped my child understand how to think in steps and design systems. It’s a different level of learning compared to typical courses.",
+    },
+    {
+      name: "Noah Williams",
+      role: "Grade 8 Student • Canada",
+      image: "/testimonials/noah.jpg",
+      rating: 4.8,
+      text: "Making an AI that doesn’t just answer but actually does things was the best part. It felt like building something really powerful.",
+    },
+  ],
+},
   "game-design": {
     averageRating: 4.9,
     totalReviews: "1000+ reviews",

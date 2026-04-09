@@ -297,6 +297,184 @@ export const curriculum = {
     },
   ],
 },
+"genai-agentic-ai": {
+  title: "Gen AI for Agentic AI Curriculum",
+  modules: [
+    {
+      module: 1,
+      label: "Lesson",
+      title: "Foundation — What is an AI Agent?",
+      description:
+        "Students explore how AI is evolving from simple tools to autonomous agents. They understand how agents think, plan, and act using the ReAct loop, along with memory types and common failure cases.",
+      outcomes: [
+        "Understand what AI agents are and how they differ from traditional AI tools",
+        "Understand how AI agents think, plan, and take actions step-by-step",
+        "Understand different types of memory in AI systems",
+        "Learn why agents sometimes hallucinate or fail",
+        "Explore real-world use cases of AI agents",
+      ],
+    },
+    {
+      module: 2,
+      label: "Lesson",
+      title: "Foundation — Prompt Engineering for Agents",
+      description:
+        "Students learn how to design effective system prompts, define tools, and structure multi-step instructions so AI agents stay accurate, reliable, and goal-oriented.",
+      outcomes: [
+        "Write effective system prompts for AI agents",
+        "Understand how to define tools for agents",
+        "Structure multi-step instructions clearly",
+        "Learn prompt chaining and task flow design",
+        "Understand basics of tool calling",
+      ],
+    },
+    {
+      module: 3,
+      label: "Lesson",
+      title: "Build — Your First AI Agent (No-Code)",
+      description:
+        "Students build their first working AI agent using no-code tools like n8n or make.com. They create real workflows such as research → summarize → email using real integrations.",
+      outcomes: [
+        "Build a working AI agent using no-code tools",
+        "Create multi-step workflows (research → summarize → email)",
+        "Integrate tools like Gmail  Google Calendar, and Telegram to automate real tasks",
+        "Understand how agents execute tasks step-by-step",
+        "Test and refine agent workflows",
+      ],
+    },
+    {
+      module: 4,
+      label: "Lesson",
+      title: "Build — Browser & Computer-Use Agents",
+      description:
+        "Students explore agents that interact with browsers and systems to automate real-world tasks. They learn browser automation, scraping basics, and responsible usage.",
+      outcomes: [
+        "Understand browser automation concepts",
+        "Learn how agents interact with websites",
+        "Perform basic data extraction (scraping)",
+        "Automate real-world tasks using AI agents",
+        "Understand ethical considerations in automation",
+      ],
+    },
+    {
+      module: 5,
+      label: "Lesson",
+      title: "Build — RAG & Memory Systems",
+      description:
+        "Students enable agents to use their own data using Retrieval-Augmented Generation (RAG). They explore embeddings, vector databases, and how memory improves accuracy.",
+      outcomes: [
+        "Understand Retrieval-Augmented Generation (RAG)",
+        "Learn embeddings and vector databases conceptually",
+        "Enable agents to use external data sources",
+        "Understand how memory improves agent responses",
+        "Reduce hallucinations using memory systems",
+      ],
+    },
+    {
+      module: 6,
+      label: "Lesson",
+      title: "Deploy — Multi-Agent Systems",
+      description:
+        "Students build advanced systems where multiple agents work together. They learn orchestration, agent handoffs, parallel workflows, and human-in-the-loop control.",
+      outcomes: [
+        "Understand multi-agent system architecture",
+        "Learn agent orchestration and coordination",
+        "Implement agent handoffs between tasks",
+        "Explore parallel workflows and task distribution",
+        "Understand human-in-the-loop systems",
+      ],
+    },
+    {
+      module: 7,
+      label: "Lesson",
+      title: "Deploy — Capstone & AI Safety",
+      description:
+        "Students build and present their final AI agent project while learning about safety, monitoring, guardrails, and ethical deployment of AI systems.",
+      outcomes: [
+        "Build a complete agent-based project end-to-end",
+        "Understand AI safety and guardrails",
+        "Learn monitoring and cost control basics",
+        "Explore ethical considerations in AI deployment",
+        "Present and explain their final project confidently",
+      ],
+    },
+  ],
+},
+"genai-data-science": {
+  title: "Gen AI for Data Science Curriculum",
+  modules: [
+    {
+      module: 1,
+      title: "Data Science Foundations & Data Understanding",
+      description:
+        "Students begin their journey into data science by understanding how data works in the real world, how datasets are structured, and how AI can be used to explore and interpret data effectively.",
+      outcomes: [
+        "Understand what Data Science is and real-world applications",
+        "Differentiate between numerical and categorical data",
+        "Understand structured vs unstructured data",
+        "Learn dataset structure (rows, columns, features, labels)",
+        "Explore datasets using AI tools",
+        "Identify features and target variables in real data",
+      ],
+    },
+    {
+      module: 2,
+      title: "Exploratory Data Analysis & Visualization",
+      description:
+        "Students learn how to clean, analyze, and visualize data to discover patterns, relationships, and insights using both statistical methods and AI-powered tools.",
+      outcomes: [
+        "Understand what dirty data is and how to clean it",
+        "Handle missing values, duplicates, and inconsistencies",
+        "Calculate mean, median, mode, and standard deviation",
+        "Understand correlation and relationships between variables",
+        "Create charts like bar, line, pie, histogram, and scatter plots",
+        "Use AI to generate insights and visual explanations from data",
+      ],
+    },
+    {
+      module: 3,
+      title: "Machine Learning Fundamentals",
+      description:
+        "Students are introduced to machine learning concepts and learn how models make predictions using regression and classification techniques.",
+      outcomes: [
+        "Understand what Machine Learning is and how models learn",
+        "Differentiate supervised vs unsupervised learning",
+        "Understand regression and real-world prediction problems",
+        "Learn the concept of linear regression",
+        "Understand classification problems and logistic regression",
+        "Compare regression vs classification clearly",
+      ],
+    },
+    {
+      module: 4,
+      title: "Model Training & Evaluation",
+      description:
+        "Students train machine learning models, make predictions, and evaluate their performance using key metrics to understand how reliable their models are.",
+      outcomes: [
+        "Understand what model training means",
+        "Train a decision tree model on real data",
+        "Make predictions using trained models",
+        "Understand train-test split concept",
+        "Learn accuracy, precision, recall, and F1 score",
+        "Understand overfitting and underfitting in simple terms",
+      ],
+    },
+    {
+      module: 5,
+      title: "Advanced AI Applications",
+      description:
+        "Students explore advanced real-world AI applications including computer vision and speech recognition, and apply everything learned in a final end-to-end project.",
+      outcomes: [
+        "Understand how AI works with images (Computer Vision)",
+        "Learn image classification and object detection basics",
+        "Explore facial recognition concepts",
+        "Understand how speech-to-text systems work",
+        "Explore real-world AI use cases across industries",
+        "Build a complete end-to-end data science project using AI",
+      ],
+    },
+  ],
+},
   "app-development": {
     title: "Mobile App Development Curriculum",
     modules: [

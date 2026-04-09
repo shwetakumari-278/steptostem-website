@@ -3,11 +3,16 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import { locations } from "@/data/locations";
+import CourseOfferBar from "@/components/CourseOfferBar";
 
 export default function LocationsPage() {
   return (
     <>
       <Header />
+      <CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
       {/* Brand Intro */}
       <section className="py-20 text-center">
         <h1 className="text-5xl font-bold mb-4">

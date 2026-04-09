@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { blogs } from "@/data/blogs";
 import BlogContent from "@/components/BlogContent";
+
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 export function generateStaticParams() {

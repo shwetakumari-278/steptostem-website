@@ -16,7 +16,7 @@ import CourseFAQ from "@/components/CourseFAQ";
 import Link from "next/link";
 
 import { projectsByCourse } from "@/data/projects";
-
+import CourseOfferBar from "@/components/CourseOfferBar";
 import CurriculumAccordion from "@/components/CurriculumAccordion";
 import ProjectCard from "@/components/ProjectCard";
 import Header from "@/components/Header";
@@ -30,7 +30,10 @@ export default function AICoursePage() {
   return (
     <>
       <Header />
-
+<CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
       <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* LEFT CONTENT */}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import { locations } from "@/data/locations";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import CourseOfferBar from "@/components/CourseOfferBar";
 
 export function generateStaticParams() {
   return Object.keys(locations).map((country) => ({
@@ -27,6 +28,10 @@ export default function CountryPage({ params }: Props) {
   return (
     <>
       <Header />
+       <CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },

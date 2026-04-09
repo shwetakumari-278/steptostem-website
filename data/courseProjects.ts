@@ -105,4 +105,92 @@ export const courseProjects = {
     tag: "Prompt Engineering & Deployment",
   },
 ],
+"genai-data-science": [
+  {
+    title: "Student Performance Predictor",
+    description:
+      "Students clean and analyze a real dataset of student performance, then train a machine learning model to predict whether a student will pass or fail based on factors like marks, attendance, and homework.",
+    image: "/projects/student-performance.jpeg",
+    tag: "Machine Learning & Prediction",
+  },
+  {
+    title: "AI Data Cleaning Engine",
+    description:
+      "Students work with messy real-world datasets and use AI to identify missing values, remove duplicates, fix incorrect labels, and prepare clean data ready for analysis and modeling.",
+    image: "/projects/data-cleaning.jpg",
+    tag: "Data Cleaning & Preparation",
+  },
+  {
+    title: "Visual Insights Dashboard",
+    description:
+      "Students create powerful visualizations including bar charts, histograms, scatter plots, and heatmaps — then use AI to generate clear, human-readable insights from the data.",
+    image: "/projects/data-visualization.jpg",
+    tag: "Data Analysis & Visualization",
+  },
+  {
+    title: "House Price Prediction Model",
+    description:
+      "Students build a regression model to predict house prices using real-world data, understanding how features like location and size influence predictions.",
+    image: "/projects/house-price.jpg",
+    tag: "Regression & Modeling",
+  },
+  {
+  title: "Diabetic Retinopathy Detection",
+  description:
+    "Students build a computer vision model that analyzes retinal images to detect signs of Diabetic Retinopathy, understanding how AI is used in healthcare to identify eye diseases early.",
+  image: "/projects/dr-detection.jpg",
+  tag: "Healthcare AI",
+},
+  {
+    title: "Speech-to-Text Analyzer",
+    description:
+      "Students use AI to convert speech into text, analyze voice inputs, and explore how real-world systems like voice assistants and transcription tools work.",
+    image: "/projects/speech-recognition.jpg",
+    tag: "Speech Recognition",
+  },
+],
+"genai-agentic-ai": [
+  {
+    title: "AI Research Assistant Agent",
+    description:
+      "Students build an intelligent agent that researches any topic, filters useful information, and generates a clear, structured report automatically.",
+    image: "/projects/ai-research-agent.jpg",
+    tag: "Information Processing",
+  },
+  {
+    title: "Email Analyzer Agent",
+    description:
+      "Students create an AI agent that reads incoming emails, identifies important messages, summarizes content, and suggests or generates appropriate replies.",
+    image: "/projects/email-agent.jpg",
+    tag: "Communication Intelligence",
+  },
+  {
+    title: "Browser Task Agent",
+    description:
+      "Students build an agent that navigates websites, extracts relevant data, and completes tasks like searching, comparing, and collecting information.",
+    image: "/projects/browser-agent.jpg",
+    tag: "Web Interaction",
+  },
+  {
+    title: "AI Knowledge Assistant (RAG System)",
+    description:
+      "Students build an agent that answers questions using custom data sources, enabling more accurate and context-aware responses using RAG.",
+    image: "/projects/rag-agent.png",
+    tag: "Knowledge Systems",
+  },
+  {
+    title: "Content Creation Agent",
+    description:
+      "Students create an AI agent that generates structured content such as summaries, blogs, or reports based on given inputs and instructions.",
+    image: "/projects/content-agent.jpg",
+    tag: "Content Generation",
+  },
+  {
+    title: "AI Task Execution Agent",
+    description:
+      "Students build an agent that takes a goal, breaks it into steps, and executes actions like researching, organizing information, and delivering final outputs.",
+    image: "/projects/final-agent.png",
+    tag: "Autonomous Execution",
+  },
+],
 };

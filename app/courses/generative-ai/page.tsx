@@ -15,6 +15,7 @@ import ProjectCard from "@/components/ProjectCard";
 import CourseFAQ from "@/components/CourseFAQ";
 import Link from "next/link";
 import Header from "@/components/Header";
+import CourseOfferBar from "@/components/CourseOfferBar";
 import CourseTestimonials from "@/components/CourseTestimonials";
 import BookDemoButton from "@/components/BookDemoButton";
 
@@ -22,6 +23,10 @@ export default function GenerativeAICoursePage() {
   return (
     <>
       <Header />
+      <CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
 
       <div className="bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 min-h-screen pt-24">
   <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -133,15 +138,7 @@ export default function GenerativeAICoursePage() {
   color="from-pink-500 to-orange-400"
 />
 
-<GenAiCard
-  title="Gen AI for App Development"
-  subtitle="Mobile AI Apps"
-  description="Design and build intelligent mobile apps powered by Gen AI. Students create apps that understand user input, generate smart responses, and deliver real AI-driven experiences."
-  image="/asset/genai-appdev.jpg"
-  href="/courses/generative-ai/app-dev"
-  badge="Coming Soon"
-  color="from-orange-500 to-amber-400"
-/>
+
 
 <GenAiCard
   title="Gen AI for Data Science"
@@ -149,17 +146,17 @@ export default function GenerativeAICoursePage() {
   description="Use Generative AI to analyze real datasets, generate insights, and extract meaningful information. Students learn to train and build AI models, ask questions of data using natural language, and present findings visually."
   image="/asset/genai-datascience.jpg"
   href="/courses/generative-ai/data-science"
-  badge="Coming Soon"
+  badge="Available Now"
   color="from-purple-500 to-violet-500"
 />
 
 <GenAiCard
-  title="Gen AI for Automation"
+  title="Gen AI for Agentic AI"
   subtitle="Agents • Workflows"
   description="Build autonomous AI agents that think, plan, and act. Students create smart automation workflows that connect AI to real tools and complete complex tasks with minimal human input."
   image="/asset/genai-automation.jpg"
   href="/courses/generative-ai/automation"
-  badge="Coming Soon"
+  badge="Available Now"
   color="from-blue-500 to-cyan-500"
 />
 
@@ -176,6 +173,93 @@ export default function GenerativeAICoursePage() {
     {projectsByCourse["generative-ai"].map((project, index) => (
       <ProjectCard key={index} {...project} />
     ))}
+  </div>
+</section>
+{/* PRICING */}
+<section className="mt-16">
+  <h2 className="text-3xl font-bold mb-4 text-center">
+    Simple & Transparent Pricing
+  </h2>
+
+  <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+    One-hour live 1:1 sessions. No hidden fees.
+  </p>
+
+  {/* Bundle Banner */}
+  <div className="flex justify-center mb-6">
+    <div className="bg-purple-100 text-purple-700 text-sm font-semibold px-6 py-2 rounded-full border border-purple-300">
+      🎓 Complete Generative AI Bundle — Web Dev + Automation + Data Science
+    </div>
+  </div>
+
+  <div className="flex justify-center">
+    <div className="w-full max-w-2xl rounded-2xl border border-purple-300 bg-purple-50 shadow-xl overflow-hidden">
+
+      {/* Header */}
+      <div className="bg-gradient-to-r from-violet-600 to-pink-500 text-white text-center py-3 text-xl font-semibold">
+        Full Generative AI Plan
+      </div>
+
+      {/* Price */}
+      <div className="p-6 text-center">
+        <div className="flex items-center justify-center gap-3">
+          <p className="text-2xl font-semibold text-gray-300 line-through">
+            ₹1718
+          </p>
+          <p className="text-4xl font-bold text-gray-900">
+            ₹859{" "}
+            <span className="text-sm font-medium text-gray-700">/ session</span>
+          </p>
+        </div>
+        <p className="text-md font-semibold mt-2">
+          24 Live Sessions — Complete Bundle
+        </p>
+      </div>
+
+      {/* Module Breakdown */}
+      <div className="border-t px-6 py-4 bg-white">
+        <h4 className="font-semibold mb-3 text-sm text-gray-500 uppercase tracking-wide">
+          What's included
+        </h4>
+        <div className="grid grid-cols-3 gap-3 text-center text-sm">
+          {[
+            { name: "Gen AI for Web Dev", lessons: 5 },
+            { name: "Gen AI for Automation", lessons: 7 },
+            { name: "Gen AI for Data Science", lessons: 12 },
+          ].map((module, i) => (
+            <div key={i} className="bg-purple-50 rounded-xl p-3 border border-purple-200">
+              <p className="font-bold text-purple-700 text-lg">{module.lessons}</p>
+              <p className="text-xs text-gray-500">sessions</p>
+              <p className="text-xs font-medium text-gray-700 mt-1">{module.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Features */}
+      <div className="border-t px-6 py-5">
+        <h4 className="font-semibold mb-4 text-left">
+          1:1 Personalized Learning
+        </h4>
+        <ul className="space-y-2 text-sm text-gray-700">
+          {[
+            "1:1 live instructor-led learning",
+            "Personal mentor focused on mastery",
+            "Sessions tailored to your learning pace",
+            "Flexible scheduling for students",
+            "Build real projects across web, apps, data & automation",
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <CheckCircle
+                className="text-green-600 mt-0.5 shrink-0"
+                size={16}
+              />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 

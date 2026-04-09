@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import { blogs } from "@/data/blogs";
 import type { Metadata } from "next";
-
+import CourseOfferBar from "@/components/CourseOfferBar";
 export const metadata: Metadata = {
   title: "STEMxLearning Blog | Coding, AI & Technology Learning for Students",
   description:
@@ -15,7 +15,10 @@ export default function BlogPage() {
   return (
     <>
       <Header />
-
+<CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
       <section className="relative overflow-hidden py-24">
         {/* BACKGROUND LAYER */}
         <div className="absolute inset-0 z-0">

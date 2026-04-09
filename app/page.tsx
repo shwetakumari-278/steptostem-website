@@ -35,7 +35,7 @@ import BookDemoButton from "@/components/BookDemoButton";
 import BackgroundAnimation from "@/components/BackgroundAnimation";
 import ContactBlock from "@/components/components/ContactBlock";
 import Link from "next/link";
-
+import CourseOfferBar from "@/components/CourseOfferBar";
 export default function Home() {
   const [activeCourse, setActiveCourse] = useState<string | null>(null);
   const [scrollY, setScrollY] = useState(0);
@@ -224,6 +224,10 @@ export default function Home() {
       <BackgroundAnimation activeCourse={activeCourse} />
 
       <Header />
+      <CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

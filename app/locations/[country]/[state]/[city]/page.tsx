@@ -4,7 +4,7 @@ import CityClient from "./CityClient";
 
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Header from "@/components/Header";
-
+import CourseOfferBar from "@/components/CourseOfferBar";
 export function generateStaticParams() {
   const params: {
     country: string;
@@ -54,6 +54,10 @@ export default function CityPage({ params }: Props) {
   return (
     <>
       <Header />
+      <CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
 
       <Breadcrumbs
         items={[

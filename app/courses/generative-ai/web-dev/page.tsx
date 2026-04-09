@@ -16,7 +16,7 @@ import CourseTestimonials from "@/components/CourseTestimonials";
 import StaticProjectCard from "@/components/StaticProjectCard";
 import { courseProjects } from "@/data/courseProjects";
 import CurriculumAccordion from "@/components/CurriculumAccordion";
-
+import CourseOfferBar from "@/components/CourseOfferBar";
 
 export default function GenAIWebDevCoursePage() {
   const modules = curriculum["genai-web-dev"]?.modules ?? [];
@@ -24,6 +24,10 @@ export default function GenAIWebDevCoursePage() {
   return (
     <>
       <Header />
+      <CourseOfferBar
+      course="all our courses"
+      gradient="from-violet-600 to-pink-500"
+    />
 
       <div className="bg-gradient-to-br from-slate-50 via-pink-50 to-orange-50 min-h-screen pt-28">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -161,12 +165,15 @@ export default function GenAIWebDevCoursePage() {
 
                   {/* Body */}
                   <div className="p-6 text-center">
-                    <p className="text-4xl font-bold text-gray-900">
-                      ₹999{" "}
-                      <span className="text-sm font-medium text-gray-700">
-                        / session
-                      </span>
-                    </p>
+                    <div className="flex items-center justify-center gap-3">
+  <p className="text-2xl font-semibold text-gray-300 line-through">
+    ₹1999
+  </p>
+  <p className="text-4xl font-bold text-gray-900">
+    ₹999{" "}
+    <span className="text-sm font-medium text-gray-700">/ session</span>
+  </p>
+</div>
                     <p className="text-md font-semibold mt-2">
                       5 Live Sessions — Complete Course
                     </p>

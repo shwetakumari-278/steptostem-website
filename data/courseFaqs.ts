@@ -335,6 +335,85 @@ genaiWebDev: [
     "Yes. Students finish the course with a fully live AI-powered e-commerce website deployed on the internet, a built-in chatbot powered by Ollama, and a recognized certificate of completion — all ready to showcase.",
 },
 ],
+genaiDataScience: [
+  {
+    question: "What will students build in the Gen AI for Data Science course?",
+    answer:
+      "Students work on real-world datasets and build projects like data cleaning systems, visual dashboards, and machine learning models. By the end, they complete an end-to-end data science project where they analyze data, generate insights, and make predictions.",
+  },
+  {
+    question: "How is AI used in this course?",
+    answer:
+      "AI is used as a powerful assistant throughout the course. Students use AI to clean data, generate insights, create visualizations, and understand how machine learning models work. This helps them focus on thinking and problem-solving rather than just technical complexity.",
+  },
+  {
+    question: "Do students need coding or math experience before joining?",
+    answer:
+      "No prior coding or advanced math knowledge is required. The course is designed for beginners and introduces all concepts in a simple, intuitive way using real examples and AI-assisted learning.",
+  },
+  {
+    question: "What is the difference between data science and machine learning?",
+    answer:
+      "Data science focuses on understanding and analyzing data to find insights, while machine learning is a part of data science that involves building models to make predictions. In this course, students learn both — starting with data analysis and moving into machine learning step by step.",
+  },
+  {
+    question: "What kind of tools or platforms do students use?",
+    answer:
+      "Students use beginner-friendly tools along with AI-powered platforms to explore data, create visualizations, and understand models. The focus is on learning concepts and real-world application rather than complex setup.",
+  },
+  {
+    question: "What age group is this course suitable for?",
+    answer:
+      "The course is suitable for students from Grades 5 to 12. The teaching approach is adjusted based on the student's level so both beginners and slightly advanced learners can benefit.",
+  },
+  {
+    question: "Will students have something real to show after completing this course?",
+    answer:
+      "Yes. Students complete multiple real-world projects and a final end-to-end data science project where they clean data, analyze it, build a model, and present their findings — along with a certificate of completion.",
+  },
+],
+genaiAgenticAI: [
+  {
+    question: "What exactly is Agentic AI and how is it different from normal AI tools?",
+    answer:
+      "Agentic AI refers to systems that can think, plan, and take actions on their own instead of just giving responses. In this course, students learn how to build AI agents that can complete tasks, follow workflows, and interact with tools — not just chat.",
+  },
+  {
+    question: "What kind of systems will students build in this course?",
+    answer:
+      "Students build real AI agent systems such as research assistants, automated workflows, and task-executing agents that can gather information, process it, and take actions like sending emails or organizing results.",
+  },
+  {
+    question: "Do students need programming knowledge to build AI agents?",
+    answer:
+      "No coding experience is required. Students use no-code and low-code tools to build powerful AI agents while focusing on logic, workflows, and problem-solving instead of complex programming.",
+  },
+  {
+    question: "How is this course different from learning Generative AI basics?",
+    answer:
+      "Most Generative AI courses focus on using AI tools or writing prompts. This course goes further by teaching students how to build complete AI systems that can operate independently, connect tools, and perform multi-step tasks.",
+  },
+  {
+  question: "Will students learn how AI agents make decisions?",
+  answer:
+    "Yes. Students learn how AI agents break problems into steps, plan actions, and execute tasks. They also understand how memory works and how to design systems that make better decisions and reduce errors.",
+},
+  {
+    question: "Are these skills relevant for future careers?",
+    answer:
+      "Yes. Agentic AI is one of the fastest-growing areas in technology. Learning how to design AI systems and workflows gives students an early advantage in fields like AI engineering, automation, product building, and system design.",
+  },
+  {
+    question: "Is this course too advanced for school students?",
+    answer:
+      "No. The course is designed in a simplified, step-by-step way so students can understand complex ideas through hands-on projects and guided learning, without feeling overwhelmed.",
+  },
+  {
+    question: "What will students achieve by the end of the course?",
+    answer:
+      "By the end of the course, students will have built a complete AI agent system that can perform real tasks independently, along with a strong understanding of how intelligent systems are designed and used in the real world.",
+  },
+],
 pythonBeginner: [
   {
     question: "What is the Python Beginner course for kids?",
