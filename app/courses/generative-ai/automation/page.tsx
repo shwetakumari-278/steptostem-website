@@ -229,7 +229,7 @@ function RightSidebar() {
   return (
     <div className="lg:sticky lg:top-40 h-fit">
       <div className="bg-white rounded-2xl shadow-xl p-6 space-y-5">
-        <BookDemoButton course="Gen AI for Agentic AI" variant="inline" />
+       <BookDemoButton course="Gen AI for Agentic AI" variant="inline" />
 
         <h3 className="font-bold text-lg mt-6 mb-4">This course includes:</h3>
 

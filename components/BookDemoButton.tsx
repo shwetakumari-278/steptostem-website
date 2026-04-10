@@ -21,6 +21,9 @@ const courseMap: Record<string, string> = {
   "/courses/ai-ml/beginner": "Python Beginner",
   "/courses/ai-ml/advanced": "Python Advanced",
   "/courses/ml": "Machine Learning",
+  "/courses/generative-ai/automation": "Gen AI for Agentic AI",
+  "/courses/generative-ai/data-science": "Gen AI for Data Science",
+  "/courses/generative-ai/web-dev": "Gen AI for Web Development",
 };
 
 const finalCourse = courseMap[pathname] || course || "General Enquiry";
