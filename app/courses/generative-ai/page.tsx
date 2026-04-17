@@ -188,7 +188,7 @@ export default function GenerativeAICoursePage() {
   {/* Bundle Banner */}
   <div className="flex justify-center mb-6">
     <div className="bg-purple-100 text-purple-700 text-sm font-semibold px-6 py-2 rounded-full border border-purple-300">
-      🎓 Complete Generative AI Bundle — Web Dev + Automation + Data Science
+      🎓 Complete Generative AI Bundle — Web Dev + Agentic AI + Data Science
     </div>
   </div>
 
@@ -204,15 +204,15 @@ export default function GenerativeAICoursePage() {
       <div className="p-6 text-center">
         <div className="flex items-center justify-center gap-3">
           <p className="text-2xl font-semibold text-gray-300 line-through">
-            ₹1718
+            ₹2150 
           </p>
           <p className="text-4xl font-bold text-gray-900">
-            ₹859{" "}
+            ₹1075{" "}
             <span className="text-sm font-medium text-gray-700">/ session</span>
           </p>
         </div>
         <p className="text-md font-semibold mt-2">
-          24 Live Sessions — Complete Bundle
+          25 Live Sessions — Complete Bundle
         </p>
       </div>
 
@@ -223,9 +223,9 @@ export default function GenerativeAICoursePage() {
         </h4>
         <div className="grid grid-cols-3 gap-3 text-center text-sm">
           {[
-            { name: "Gen AI for Web Dev", lessons: 5 },
-            { name: "Gen AI for Automation", lessons: 7 },
-            { name: "Gen AI for Data Science", lessons: 12 },
+            { name: "Gen AI for Web Dev", lessons: 6 },
+            { name: "Agentic AI", lessons: 5 },
+            { name: "Gen AI for Data Science", lessons: 14 },
           ].map((module, i) => (
             <div key={i} className="bg-purple-50 rounded-xl p-3 border border-purple-200">
               <p className="font-bold text-purple-700 text-lg">{module.lessons}</p>

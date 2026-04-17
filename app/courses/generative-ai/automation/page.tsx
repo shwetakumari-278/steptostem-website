@@ -156,17 +156,17 @@ export default function GenAIAgenticCoursePage() {
                   <div className="p-6 text-center">
                     <div className="flex items-center justify-center gap-3">
                       <p className="text-2xl font-semibold text-gray-300 line-through">
-                        ₹1999
+                        ₹ 2299 
                       </p>
                       <p className="text-4xl font-bold text-gray-900">
-                        ₹999{" "}
+                        ₹1149{" "}
                         <span className="text-sm font-medium text-gray-700">
                           / session
                         </span>
                       </p>
                     </div>
                     <p className="text-md font-semibold mt-2">
-                      7 Live Sessions — Complete Course
+                      5 Live Sessions — Complete Course
                     </p>
                   </div>
 
@@ -235,7 +235,7 @@ function RightSidebar() {
 
         <ul className="space-y-4 text-sm text-gray-700">
           {[
-            "7 live 1-on-1 instructor-led sessions (60 mins each)",
+            "5 live 1-on-1 instructor-led sessions (60 mins each)",
             "Learn with an experienced Gen AI mentor",
             "Hands-on project every session",
 

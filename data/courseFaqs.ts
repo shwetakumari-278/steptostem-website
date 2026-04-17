@@ -327,7 +327,7 @@ genaiWebDev: [
   {
     question: "How many sessions does this course have?",
     answer:
-      "The course consists of 5 live one-on-one sessions of 60 minutes each. Every session is hands-on with a real project outcome.",
+      "The course consists of 6 live one-on-one sessions of 60 minutes each. Every session is hands-on with a real project outcome.",
   },
  {
   question: "Will students have something real to show after completing this course?",
