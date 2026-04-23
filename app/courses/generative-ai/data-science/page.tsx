@@ -65,7 +65,7 @@ export default function GenAIDataScienceCoursePage() {
               <Feature icon={<BarChart size={20} />} title="Suitable for" value="Grades 5–12" />
               <Feature icon={<Video size={20} />} title="Program Delivery" value="Online" />
               <Feature icon={<Award size={20} />} title="Certification" value="Provided" />
-              <Feature icon={<Clock size={20} />} title="Duration" value="12 Sessions" />
+              <Feature icon={<Clock size={20} />} title="Duration" value="14 Sessions" />
               <Feature icon={<Layers size={20} />} title="Program" value="10+ activities & projects" />
             </div>
 

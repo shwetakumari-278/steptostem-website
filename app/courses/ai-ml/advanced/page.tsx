@@ -168,10 +168,10 @@ export default function AIAdvancedCoursePage() {
                   <div className="p-6 text-center">
                     <div className="flex items-center justify-center gap-3">
   <p className="text-2xl font-semibold text-gray-300 line-through">
-    ₹1599
+    ₹2100
   </p>
   <p className="text-4xl font-bold text-gray-900">
-    ₹799{" "}
+    ₹1050{" "}
     <span className="text-sm font-medium text-gray-700">/ session</span>
   </p>
 </div>

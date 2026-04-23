@@ -74,7 +74,7 @@ export default function GenAIAgenticCoursePage() {
               <Feature
                 icon={<Clock size={20} />}
                 title="Duration"
-                value="7 Sessions"
+                value="5 Sessions"
               />
               <Feature
                 icon={<Layers size={20} />}
