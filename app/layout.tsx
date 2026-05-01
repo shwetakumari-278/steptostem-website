@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import AISummerCampFloating from "@/components/AISummerCampFloating";
+import BookDemoButton from "@/components/BookDemoButton";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
   {children}
   <AISummerCampFloating />
+ <BookDemoButton course="General Enquiry" variant="listener-only" />
 </body>
     </html>
   );

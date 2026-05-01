@@ -10,7 +10,7 @@ export default function BookDemoButton({
   label,
 }: {
   course: string;
-  variant?: "floating" | "inline";
+  variant?: "floating" | "inline" | "listener-only";
   label?: string;
 }) {
   console.log("COURSE PROP =", course);

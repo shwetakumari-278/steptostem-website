@@ -615,7 +615,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <BookDemoButton course="General Enquiry" />
+     
     </div>
   );
 }

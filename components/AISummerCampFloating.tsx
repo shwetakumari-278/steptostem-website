@@ -9,7 +9,7 @@ export default function AISummerCampFloating() {
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
       className="
-        fixed bottom-6 left-6 z-50
+        fixed bottom-6 right-6 z-[9999]
         flex items-center gap-4
         px-5 py-4
         rounded-2xl

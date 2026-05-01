@@ -324,9 +324,10 @@ export const curriculum = {
   label: "Lesson",
   title: "Image Generation with AI",
   tools: [
-    { name: "DALL·E", logo: "/tools/chatgpt.png" },
+    { name: "ChatGPT", logo: "/tools/chatgpt.png" },
     { name: "Ideogram", logo: "/tools/ideogram.png" },
     { name: "Gemini", logo: "/tools/gemini.svg" },
+    { name: "Meta AI", logo: "/tools/meta.png" },
     { name: "Google Flow", logo: "/tools/google-flow.png" },
   ],
   description:
