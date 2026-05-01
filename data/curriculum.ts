@@ -220,172 +220,8 @@ export const curriculum = {
       },
     ],
   },
-"genai-web-dev": {
-  title: "Gen AI for Web Development Curriculum",
-  modules: [
-    {
-      module: 1,
-      label: "Session",
-      title: "The Developer Mindset",
-      description:
-        "Students step into the world of software development — setting up professional tools, understanding how developers work with AI, and taking their first steps as real builders.",
-      outcomes: [
-        "Understand what a Software Developer does",
-        "Explore what AI can create today",
-        "Install and set up VS Code",
-        "Install Git and connect to GitHub",
-        "Understand the basic Git workflow",
-        "Get introduced to AI tools developers use daily",
-      ],
-    },
-    {
-      module: 2,
-      label: "Session",
-      title: "Building a Simple Website",
-      description:
-        "Students learn what websites are made of and how to use AI prompts to build them — exploring professional prompting techniques used by real developers.",
-      outcomes: [
-        "Understand what a webpage and website is made of",
-        "Write your first AI prompt",
-        "Learn the Prompt Framework",
-        "Apply Multimodal Prompting and Adding Constraints",
-        "Use Prompt Chaining and Chain-of-Thought Prompting",
-        "Practice Rephrase and Use Negation techniques",
-      ],
-    },
-    {
-      module: 3,
-      label: "Session",
-      title: "Taking Your Website Live",
-      description:
-        "Students understand how the internet works and deploy their first real website for the world to see using professional developer tools.",
-      outcomes: [
-        "Understand what a server is and how it works",
-        "Learn essential GitHub commands",
-        "Push your project to GitHub",
-        "Deploy your website live using Netlify",
-        "Understand the full journey from code to live website",
-      ],
-    },
-    {
-      module: 4,
-      label: "Session",
-      title: "Let's Build a Real Online Shop! – I",
-      description:
-        "Students begin building a professional fashion e-commerce website — creating the homepage and product listing sections using AI.",
-      outcomes: [
-        "Build a professional homepage using AI",
-        "Create a product collection section",
-        "Understand layout and structure of an e-commerce website",
-        "Use AI to generate UI components",
-        "Set up the base structure of the project",
-      ],
-    },
-    {
-      module: 5,
-      label: "Session",
-      title: "Let's Build a Real Online Shop! – II",
-      description:
-        "Students complete the core functionality of the e-commerce website by building product pages and implementing a working cart system.",
-      outcomes: [
-        "Design and build a product detail page",
-        "Implement a working cart system",
-        "Add add-to-cart functionality",
-        "Manage product data and interactions",
-        "Refine and test the website features",
-      ],
-    },
-    {
-      module: 6,
-      label: "Session",
-      title: "AI Voice Assistant Integration with Vapi",
-      description:
-        "Students enhance their website by integrating a real AI voice assistant using Vapi, enabling users to interact with the website through voice.",
-      outcomes: [
-        "Understand how Vapi works for voice AI",
-        "Set up a voice assistant using Vapi",
-        "Integrate voice interaction into the website",
-        "Enable real-time user interaction through voice",
-        "Build a complete AI-powered web experience",
-      ],
-    },
-  ],
-},
-"genai-agentic-ai": {
-  title: "Gen AI for Agentic AI Curriculum",
-  modules: [
-    {
-      module: 1,
-      label: "Lesson",
-      title: "Introduction to Automation & Agentic AI",
-      description:
-        "Understand automation, triggers, workflows, and how AI agents make decisions. Introduction to Make.com platform.",
-      outcomes: [
-        "Understand automation and workflows",
-        "Learn what AI agents are",
-        "Understand triggers and task flow",
-        "Get introduced to Make.com",
-        "Explore basic automation use cases",
-      ],
-    },
-    {
-      module: 2,
-      label: "Lesson",
-      title: "Building a Daily News AI Bot",
-      description:
-        "Create a bot that fetches latest news and sends it automatically to platforms like Telegram.",
-      outcomes: [
-        "Build a news automation bot",
-        "Fetch real-time data using APIs",
-        "Send automated messages to Telegram",
-        "Understand step-by-step workflow execution",
-        "Test and refine automation",
-      ],
-    },
-    {
-      module: 3,
-      label: "Lesson",
-      title: "Email Automation AI Agent",
-      description:
-        "Build an AI agent that reads emails, understands queries, and sends automated responses.",
-      outcomes: [
-        "Automate email reading and responses",
-        "Understand AI-based email handling",
-        "Connect Gmail with workflows",
-        "Build smart reply systems",
-        "Improve automation accuracy",
-      ],
-    },
-    {
-      module: 4,
-      label: "Lesson",
-      title: "Lead Capture & Workflow Automation",
-      description:
-        "Create forms that capture user data and automate storage and responses using Google Sheets and webhooks.",
-      outcomes: [
-        "Create lead capture forms",
-        "Store data in Google Sheets",
-        "Use webhooks for automation",
-        "Automate responses to users",
-        "Build complete lead systems",
-      ],
-    },
-    {
-      module: 5,
-      label: "Lesson",
-      title: "Advanced Agent Workflows & Integration",
-      description:
-        "Build complete automation systems by connecting multiple tools and workflows for real-world use cases.",
-      outcomes: [
-        "Combine multiple workflows",
-        "Integrate different tools",
-        "Build end-to-end automation systems",
-        "Understand advanced use cases",
-        "Create real-world AI agent solutions",
-      ],
-    },
-  ],
-},
+
+
 "genai-data-science": {
   title: "Gen AI for Data Science Curriculum",
   modules: [
@@ -457,6 +293,229 @@ export const curriculum = {
         "Understand how speech-to-text systems work",
         "Explore real-world AI use cases across industries",
         "Build a complete end-to-end data science project using AI",
+      ],
+    },
+  ],
+},
+"generative-ai": {
+  title: "Generative AI Tools & Applications Curriculum",
+  modules: [
+    {
+      module: 1,
+      label: "Lesson",
+      title: "Writing, Research & Brainstorming",
+      tools: [
+        { name: "ChatGPT", logo: "/tools/chatgpt.png" },
+        { name: "Gemini", logo: "/tools/gemini.svg" },
+        { name: "NotebookLM", logo: "/tools/notebooklm.png" },
+      ],
+      description:
+        "Learn how AI thinks and how to communicate with it effectively using prompt engineering and research tools.",
+      outcomes: [
+        "Understand basics of AI, LLMs, and Generative AI",
+        "Apply prompt engineering techniques to guide AI responses",
+        "Use AI tools for research and structured content creation",
+        "Extract insights from documents using AI tools",
+      ],
+    },
+
+    {
+  module: 2,
+  label: "Lesson",
+  title: "Image Generation with AI",
+  tools: [
+    { name: "DALL·E", logo: "/tools/chatgpt.png" },
+    { name: "Ideogram", logo: "/tools/ideogram.png" },
+    { name: "Gemini", logo: "/tools/gemini.svg" },
+    { name: "Google Flow", logo: "/tools/google-flow.png" },
+  ],
+  description:
+    "Turn imagination into visuals by generating images and creative designs using AI tools and prompt-based techniques.",
+  outcomes: [
+    "Understand text-to-image prompting techniques",
+    "Create posters, ads, and branded visuals using AI",
+    "Refine and improve generated images using prompts",
+    "Explore tools like Google Flow for advanced visual generation",
+  ],
+},
+
+{
+  module: 3,
+  label: "Lesson",
+  title: "AI Animation & Avatar Creation",
+  tools: [
+    { name: "HeyGen", logo: "/tools/heygen.png" },
+    { name: "Runway", logo: "/tools/runway.png" },
+    { name: "Google Flow", logo: "/tools/google-flow.png" },
+  ],
+  description:
+    "Create AI-powered animations and avatars using advanced tools without needing a camera or studio setup.",
+  outcomes: [
+    "Create AI avatar animations using tools like HeyGen",
+    "Generate and edit animations using Runway ML",
+    "Use Google Flow for animation and visual generation",
+    "Convert scripts into engaging animated content",
+  ],
+},
+
+    {
+      module: 4,
+      label: "Lesson",
+      title: "Voice & Audio AI — Part 1",
+      tools: [
+        { name: "ElevenLabs", logo: "/tools/elevenlabs.png" },
+      ],
+      description:
+        "Clone voices and generate human-like audio content using AI.",
+      outcomes: [
+        "Generate realistic voiceovers using ElevenLabs",
+        "Understand voice cloning and text-to-speech systems",
+        "Create narration for animations and presentations",
+        "Enhance audio clarity and expression using AI tools",
+      ],
+    },
+
+    {
+      module: 5,
+      label: "Lesson",
+      title: "Voice & Audio AI — Part 2",
+      tools: [
+        { name: "Minimax", logo: "/tools/minimax.png" },
+        { name: "Suno", logo: "/tools/suno.png" },
+      ],
+      description:
+        "Generate music and combine audio elements into complete projects.",
+      outcomes: [
+        "Generate original songs using AI tools like Suno",
+        "Understand how AI creates music from prompts",
+        "Combine voice, music, and visuals into projects",
+        "Create complete audio-visual storytelling content",
+      ],
+    },
+
+    {
+      module: 6,
+      label: "Lesson",
+      title: "Presentations & Storytelling",
+      tools: [
+        { name: "Gamma", logo: "/tools/gamma.png" },
+        { name: "Loom", logo: "/tools/loom.png" },
+      ],
+      description:
+        "Create presentations and communicate ideas effectively using AI tools.",
+      outcomes: [
+        "Create professional presentations using Gamma AI",
+        "Structure ideas into clear and engaging stories",
+        "Use AI tools for visual storytelling and communication",
+        "Record and share video explanations using Loom",
+      ],
+    },
+
+   {
+  module: 7,
+  label: "Lesson",
+  title: "No-Code Websites — Part 1",
+  tools: [
+    { name: "Lovable", logo: "/tools/lovable.png" },
+    { name: "Replit", logo: "/tools/replit.png" },
+    { name: "Claude", logo: "/tools/claude.png" },
+  ],
+  description:
+    "Design and build a complete website using AI tools without writing code, focusing on layout, structure, and content creation.",
+  outcomes: [
+    "Build website layouts using AI tools like Lovable",
+    "Generate website content using AI with prompt engineering",
+    "Understand basic UI/UX design for websites",
+    "Create a functional multi-section website using AI tools",
+  ],
+},
+
+{
+  module: 8,
+  label: "Lesson",
+  title: "No-Code Websites — Part 2",
+  tools: [
+    { name: "Lovable", logo: "/tools/lovable.png" },
+    { name: "Replit", logo: "/tools/replit.png" },
+    { name: "Claude", logo: "/tools/claude.png" },
+  ],
+  description:
+    "Enhance, refine, and launch your website by adding features, improving design, and making it live.",
+  outcomes: [
+    "Improve website design and responsiveness using AI",
+    "Add interactive elements and smart features",
+    "Test and refine website performance and structure",
+    "Deploy and share a live website created using AI tools",
+  ],
+},
+
+    {
+      module: 9,
+      label: "Lesson",
+      title: "AI Agents & Automation — Part 1",
+      tools: [
+        { name: "Make.com", logo: "/tools/make.png" },
+      ],
+      description:
+        "Understand how AI agents work and build your first automation workflow.",
+      outcomes: [
+        "Understand how AI agents think and operate",
+        "Create automation workflows using Make.com",
+        "Connect different apps using AI automation",
+        "Build your first working automation system",
+      ],
+    },
+
+    {
+      module: 10,
+      label: "Lesson",
+      title: "AI Agents & Automation — Part 2",
+      tools: [
+        { name: "Make.com", logo: "/tools/make.png" },
+        { name: "Replit", logo: "/tools/replit.png" },
+      ],
+      description:
+        "Build advanced AI agents that can perform real-world tasks.",
+      outcomes: [
+        "Create multi-step AI automation workflows",
+        "Build an AI agent that performs tasks automatically",
+        "Test and improve automation systems",
+        "Apply AI agents to real-world use cases",
+      ],
+    },
+
+    {
+      module: 11,
+      label: "Lesson",
+      title: "Holographic AI & 3D Animation",
+      tools: [
+        { name: "Antigravity", logo: "/tools/antigravity.png" },
+        { name: "Claude", logo: "/tools/claude.png" },
+      ],
+      description:
+        "Create holographic-style visuals and 3D animations using AI tools.",
+      outcomes: [
+        "Understand basics of 3D and holographic visuals",
+        "Create holographic-style effects using AI",
+        "Generate immersive visual content using prompts",
+        "Explore future technologies like AR/VR and AI visuals",
+      ],
+    },
+
+    {
+      module: 12,
+      label: "Lesson",
+      title: "Exploring ChatGPT Codex",
+      tools: [
+        { name: "Codex", logo: "/tools/codex.webp" },
+      ],
+      description:
+        "Explore AI coding tools and understand how AI can generate and assist with code.",
+      outcomes: [
+        "Understand what Codex is and how it works",
+        "Use AI to generate and modify code",
+        "Explore AI-assisted development workflows",
+        "Build simple logic using AI coding tools",
       ],
     },
   ],

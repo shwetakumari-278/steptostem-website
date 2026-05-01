@@ -13,6 +13,8 @@ import {
 import { projectsByCourse } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 import CourseFAQ from "@/components/CourseFAQ";
+import { curriculum } from "@/data/curriculum";
+import CurriculumAccordion from "@/components/CurriculumAccordion";
 import Link from "next/link";
 import Header from "@/components/Header";
 import CourseOfferBar from "@/components/CourseOfferBar";
@@ -20,6 +22,7 @@ import CourseTestimonials from "@/components/CourseTestimonials";
 import BookDemoButton from "@/components/BookDemoButton";
 
 export default function GenerativeAICoursePage() {
+  const modules = curriculum["generative-ai"]?.modules ?? [];
   return (
     <>
       <Header />
@@ -49,9 +52,9 @@ export default function GenerativeAICoursePage() {
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">
-                Students master prompt engineering and use tools like ChatGPT, Ollama, 
-  and Gemini to build real AI-powered projects — across web development, 
-  mobile apps, data science, and automation.
+                Students learn to use powerful AI tools like ChatGPT, Gemini, Runway, and Make.com 
+to build real-world projects — from websites and automation systems to animations, content creation, and AI agents. 
+Along the way, they also learn how to guide AI effectively using prompt engineering.
               </p>
 
               <p className="text-sm text-gray-500 mt-2">
@@ -65,7 +68,7 @@ export default function GenerativeAICoursePage() {
                 <Feature icon={<BarChart size={20} />} title="Suitable for" value="Grade 3–12" />
                 <Feature icon={<Video size={20} />} title="Program Delivery" value="Online" />
                 <Feature icon={<Award size={20} />} title="Certificates" value="Provided on completion" />
-                <Feature icon={<Layers size={20} />} title="Program" value="40+ Gen AI activities & projects" />
+                <Feature icon={<Layers size={20} />} title="Program" value="20+ Gen AI activities & projects" />
               </div>
             </div>
 
@@ -80,13 +83,15 @@ export default function GenerativeAICoursePage() {
     What does Generative AI mean for students?
   </h2>
 
-  <p className="text-gray-700 leading-relaxed">
-    Generative AI is the technology behind tools like ChatGPT, image generators,
-    and AI assistants. Students learn not just how to use these tools, but how
-    they actually work and how to build applications using them. This helps them
-    develop future-ready skills across web development, apps, data science, and
-    automation.
-  </p>
+ <p className="text-gray-700 leading-relaxed">
+  Generative AI helps students turn ideas into real creations using powerful tools. 
+From writing and research to websites, automation, and intelligent systems — students 
+learn how to build, create, and solve real-world problems using AI.
+
+They explore content creation like images and animations as part of the process, while also learning 
+how to guide AI effectively through prompt engineering. Instead of just using AI tools like ChatGPT, 
+Gemini, Runway, and Make.com, students learn how to build meaningful projects and systems with them.
+</p>
 </section>
             {/* OUTCOMES */}
 <section>
@@ -96,17 +101,20 @@ export default function GenerativeAICoursePage() {
 
   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
     {[
-      "Understand how Generative AI and large language models work",
-      "Write effective prompts using advanced prompting techniques",
-      "Build and deploy real AI-powered websites from scratch",
-      "Integrate AI tools like ChatGPT, Ollama, and Gemini into projects",
-      "Design intelligent mobile apps powered by Gen AI",
-      "Analyze real datasets and generate insights using AI",
-      "Build autonomous AI agents that complete tasks independently",
-      "Create multi-step AI automation workflows and systems",
-      "Deploy live projects using GitHub and Netlify",
-      "Build a portfolio of real-world Gen AI projects",
-    ].map((item, i) => (
+  "Research, write, and generate ideas using AI tools like ChatGPT, Gemini and NotebookLM",
+  "Understand and apply prompt engineering to guide AI for better results",
+  "Create images, posters, and visual content using AI tools",
+  "Build animations and AI avatar presentations without a camera",
+  "Generate voiceovers, clone voices, and create audio content using AI",
+  "Create professional level music, songs, and complete audio-visual projects using AI tools",
+  "Design professional presentations and storytelling decks using AI",
+  "Build and launch live websites using no-code AI tools",
+  "Add automation and smart AI features to websites using tools like Make.com",
+  "Build AI agents that can perform tasks like research, writing, and automation",
+  "Create comic stories and visual narratives using AI",
+  "Explore 3D, animation, and future technologies like holographic AI content",
+  "Use AI tools like Codex to generate and work with code efficiently",
+].map((item, i) => (
       <li key={i} className="flex gap-3">
         <CheckCircle className="text-green-600 mt-1 shrink-0" size={18} />
         <span>{item}</span>
@@ -115,54 +123,18 @@ export default function GenerativeAICoursePage() {
   </ul>
 </section>
 
-            {/* COURSE PATHS */}
-          <section className="mt-16">
-  <h2 className="text-3xl font-bold mb-4 text-center">
-    Choose Your Generative AI Learning Path
+     {/* CURRICULUM */}
+<section>
+  <h2 className="text-2xl font-bold mb-6">
+    Course Curriculum
   </h2>
 
-  <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-    Students explore different domains of Generative AI including web,
-    mobile apps, data science, and automation based on their interests.
-  </p>
-
-  <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-         <GenAiCard
-  title="Gen AI for Web Development"
-  subtitle="Prompt • Build • Deploy"
-  description="Learn to build and deploy real AI-powered websites. Students use prompt engineering, connect AI APIs, and ship a live e-commerce store with a built-in chatbot."
-  image="/asset/genai-webdev.png"
-  href="/courses/generative-ai/web-dev"
-  badge="Available Now"
-  color="from-pink-500 to-orange-400"
-/>
-
-
-
-<GenAiCard
-  title="Gen AI for Data Science"
-  subtitle="AI + Data"
-  description="Use Generative AI to analyze real datasets, generate insights, and extract meaningful information. Students learn to train and build AI models, ask questions of data using natural language, and present findings visually."
-  image="/asset/genai-datascience.jpg"
-  href="/courses/generative-ai/data-science"
-  badge="Available Now"
-  color="from-purple-500 to-violet-500"
-/>
-
-<GenAiCard
-  title="Gen AI for Agentic AI"
-  subtitle="Agents • Workflows"
-  description="Build autonomous AI agents that think, plan, and act. Students create smart automation workflows that connect AI to real tools and complete complex tasks with minimal human input."
-  image="/asset/genai-automation.jpg"
-  href="/courses/generative-ai/automation"
-  badge="Available Now"
-  color="from-blue-500 to-cyan-500"
-/>
-
-              </div>
-            </section>
-            
+  <div className="space-y-4">
+    {modules.map((module: any, index: number) => (
+      <CurriculumAccordion key={index} module={module} />
+    ))}
+  </div>
+</section>                  
 {/* PROJECTS */}
 <section>
   <h2 className="text-2xl font-bold mb-6">
@@ -175,93 +147,65 @@ export default function GenerativeAICoursePage() {
     ))}
   </div>
 </section>
-{/* PRICING */}
-<section className="mt-16">
-  <h2 className="text-3xl font-bold mb-4 text-center">
-    Simple & Transparent Pricing
-  </h2>
+  {/* PRICING */}
+            <section className="mt-16">
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                Simple & Transparent Pricing
+              </h2>
 
-  <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-    One-hour live 1:1 sessions. No hidden fees.
+              <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+                One-hour live 1:1 sessions. No hidden fees.
+              </p>
+
+              <div className="flex justify-center">
+                <div className="w-full max-w-2xl rounded-2xl border border-pink-300 bg-pink-50 shadow-xl overflow-hidden">
+                  {/* Header */}
+                  <div className="bg-gradient-to-r from-pink-500 to-orange-400 text-white text-center py-3 text-xl font-semibold">
+                    Starter Plan
+                  </div>
+
+                  {/* Body */}
+                  <div className="p-6 text-center">
+                    <div className="flex items-center justify-center gap-3">
+  <p className="text-2xl font-semibold text-gray-300 line-through">
+    ₹2100 
   </p>
+  <p className="text-4xl font-bold text-gray-900">
+    ₹1050{" "}
+    <span className="text-sm font-medium text-gray-700">/ session</span>
+  </p>
+</div>
+                    <p className="text-md font-semibold mt-2">
+                      12 Live Sessions — Complete Course
+                    </p>
+                  </div>
 
-  {/* Bundle Banner */}
-  <div className="flex justify-center mb-6">
-    <div className="bg-purple-100 text-purple-700 text-sm font-semibold px-6 py-2 rounded-full border border-purple-300">
-      🎓 Complete Generative AI Bundle — Web Dev + Agentic AI + Data Science
-    </div>
-  </div>
-
-  <div className="flex justify-center">
-    <div className="w-full max-w-2xl rounded-2xl border border-purple-300 bg-purple-50 shadow-xl overflow-hidden">
-
-      {/* Header */}
-      <div className="bg-gradient-to-r from-violet-600 to-pink-500 text-white text-center py-3 text-xl font-semibold">
-        Full Generative AI Plan
-      </div>
-
-      {/* Price */}
-      <div className="p-6 text-center">
-        <div className="flex items-center justify-center gap-3">
-          <p className="text-2xl font-semibold text-gray-300 line-through">
-            ₹2150 
-          </p>
-          <p className="text-4xl font-bold text-gray-900">
-            ₹1075{" "}
-            <span className="text-sm font-medium text-gray-700">/ session</span>
-          </p>
-        </div>
-        <p className="text-md font-semibold mt-2">
-          25 Live Sessions — Complete Bundle
-        </p>
-      </div>
-
-      {/* Module Breakdown */}
-      <div className="border-t px-6 py-4 bg-white">
-        <h4 className="font-semibold mb-3 text-sm text-gray-500 uppercase tracking-wide">
-          What's included
-        </h4>
-        <div className="grid grid-cols-3 gap-3 text-center text-sm">
-          {[
-            { name: "Gen AI for Web Dev", lessons: 6 },
-            { name: "Agentic AI", lessons: 5 },
-            { name: "Gen AI for Data Science", lessons: 14 },
-          ].map((module, i) => (
-            <div key={i} className="bg-purple-50 rounded-xl p-3 border border-purple-200">
-              <p className="font-bold text-purple-700 text-lg">{module.lessons}</p>
-              <p className="text-xs text-gray-500">sessions</p>
-              <p className="text-xs font-medium text-gray-700 mt-1">{module.name}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Features */}
-      <div className="border-t px-6 py-5">
-        <h4 className="font-semibold mb-4 text-left">
-          1:1 Personalized Learning
-        </h4>
-        <ul className="space-y-2 text-sm text-gray-700">
-          {[
-            "1:1 live instructor-led learning",
-            "Personal mentor focused on mastery",
-            "Sessions tailored to your learning pace",
-            "Flexible scheduling for students",
-            "Build real projects across web, apps, data & automation",
-          ].map((item, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <CheckCircle
-                className="text-green-600 mt-0.5 shrink-0"
-                size={16}
-              />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+                  {/* Features */}
+                  <div className="border-t px-6 py-5">
+                    <h4 className="font-semibold mb-4 text-left">
+                      1:1 Personalized Learning
+                    </h4>
+                    <ul className="space-y-2 text-sm text-gray-700">
+                      {[
+                        "1:1 live instructor-led learning",
+                        "Personal mentor focused on mastery",
+                        "Sessions tailored to your learning pace",
+                        "Flexible scheduling for students",
+                        "Build and deploy a real AI-powered website",
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <CheckCircle
+                            className="text-green-600 mt-0.5 shrink-0"
+                            size={16}
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
 
             <CourseTestimonials courseId="generative-ai" />
             <CourseFAQ courseKey="generativeAi" />
@@ -314,12 +258,12 @@ function RightSidebar() {
         <ul className="space-y-4 text-sm text-gray-700">
           <SidebarRow
                       icon={<Users size={16} />}
-                      text="1:1 Personalized Learning"
+                      text="12 live 1-on-1 instructor-led sessions (60 mins each)"
                     />
           
                     <SidebarRow
                       icon={<Layers size={16} />}
-                      text="50+ hands-on Gen-AI activities & projects"
+                      text="20+ hands-on Gen-AI activities & projects"
                     />
           
                     <SidebarRow

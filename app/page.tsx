@@ -67,18 +67,42 @@ export default function Home() {
     // After the ai-ml object, before web-dev:
 {
   id: "generative-ai",
-  title: "Generative AI",
-  description: "Go beyond using AI tools — learn how they work and build your own AI-powered apps, websites, and automation systems",
+  title: "Generative AI Tools & Systems",
+  description:
+    "Learn to build with AI — create websites, automate workflows, generate content, and develop intelligent AI-powered systems using modern tools",
 
   icon: Sparkles,
   color: "from-pink-500 to-orange-400",
   bgColor: "bg-pink-50",
-  image: "/asset/gen-ai.webp",   // add your image here
+  image: "/asset/gen-ai.webp",
+
   features: [
-    "AI-Powered Web Projects",
-  "Real World AI Applications",
-  "Live Deployment with GitHub",
+    "AI Websites & Real Projects",
+    "Automation & AI Workflows",
+    "Content, Video & Image Creation",
+    "AI Tools for Research & Productivity",
   ],
+
+  rating: 4.9,
+},
+{
+  id: "gen-ai-data-science",
+  title: "Generative AI with Data Science",
+  description:
+    "Combine AI tools with data science to build intelligent systems, analyze data, and create real-world AI-powered solutions",
+
+  icon: Cpu,
+  color: "from-purple-500 to-indigo-500",
+  bgColor: "bg-purple-50",
+  image: "/asset/genai-ds.jpg", 
+
+  features: [
+    "Data Analysis with Python",
+    "AI + Data Integration",
+    "Predictive & Smart Systems",
+    "Real-world AI Projects",
+  ],
+
   rating: 4.85,
 },
     {

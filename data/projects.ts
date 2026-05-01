@@ -46,24 +46,25 @@ export const projectsByCourse = {"ai-ml": [
     description:
       "Students build a complete e-commerce store with a built-in AI chatbot powered by Ollama. The project covers real web development, live deployment on Netlify, and integrating a local AI model directly into the website.",
   },
-  {
-  image: "/projects/genai-recipe-app.png",
-  title: "AI Recipe Generator Website",
-  description:
-    "Students build a website where users type in ingredients they have at home and the AI generates a complete recipe with steps and tips. Built and deployed live using GitHub and Netlify.",
-},
-  {
-  image: "/projects/genai-openclaw.jpg",
-  title: "Personal AI Assistant with OpenClaw",
-  description:
-    "Students set up and customize their own personal AI assistant using OpenClaw. They configure it to automate real tasks across platforms like WhatsApp and Telegram — building a fully working AI agent that runs on their own machine.",
-},
-  {
-    image: "/projects/genai-data-dashboard.png",
-    title: "AI Data Insights Dashboard",
+   {
+    title: "Email Analyzer Agent",
     description:
-      "Students use Gen AI to analyze a real dataset and present findings through a visual dashboard. The AI summarizes trends, answers questions about the data, and generates reports automatically.",
+      "Students create an AI agent that reads incoming emails, identifies important messages, summarizes content, and suggests or generates appropriate replies.",
+    image: "/projects/email-agent.jpg",
+    tag: "Communication Intelligence",
   },
+ {
+  image: "/projects/ai-product-advertisement.jpg",
+  title: "AI Product Advertisement Video",
+  description:
+    "Students create a cinematic product advertisement using Runway ML by generating visuals, editing scenes, and crafting storytelling using AI. This project focuses on turning ideas into high-quality marketing videos using only AI tools.",
+},
+  {
+  image: "/projects/ai-3d-hologram.jpg",
+  title: "AI Holographic Visual Effect",
+  description:
+    "Students create a futuristic holographic-style visual using their webcam, where objects like a glowing globe or digital effects appear in real time. Using AI assistance, they generate and run a script that turns their camera into an interactive visual experience.",
+},
   {
     image: "/projects/genai-automation-agent.webp",
     title: "AI Automation Agent",

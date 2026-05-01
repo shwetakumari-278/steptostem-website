@@ -111,7 +111,7 @@ export default function CourseCard({
         </div>
 
         {/* Course Stats – ONLY for Python & ML */}
-        {(course.id === "ai-ml" || course.id === "generative-ai") && (
+        {(course.id === "ai-ml" || course.id === "generative-ai" || course.id === "gen-ai-data-science") && (
           <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
             <div className="flex flex-col items-center">
               <Users className="w-4 h-4" />

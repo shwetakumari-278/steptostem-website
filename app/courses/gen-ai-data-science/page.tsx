@@ -65,7 +65,7 @@ export default function GenAIDataScienceCoursePage() {
               <Feature icon={<BarChart size={20} />} title="Suitable for" value="Grades 5–12" />
               <Feature icon={<Video size={20} />} title="Program Delivery" value="Online" />
               <Feature icon={<Award size={20} />} title="Certification" value="Provided" />
-              <Feature icon={<Clock size={20} />} title="Duration" value="14 Sessions" />
+              <Feature icon={<Clock size={20} />} title="Duration" value="13 Sessions" />
               <Feature icon={<Layers size={20} />} title="Program" value="10+ activities & projects" />
             </div>
 
@@ -167,15 +167,15 @@ export default function GenAIDataScienceCoursePage() {
                   <div className="p-6 text-center">
                     <div className="flex items-center justify-center gap-3">
   <p className="text-2xl font-semibold text-gray-300 line-through">
-    ₹2299 
+    ₹2100 
   </p>
   <p className="text-4xl font-bold text-gray-900">
-    ₹1149{" "}
+    ₹1050{" "}
     <span className="text-sm font-medium text-gray-700">/ session</span>
   </p>
 </div>
                     <p className="text-md font-semibold mt-2">
-                      14 Live Sessions — Complete Course
+                      13 Live Sessions — Complete Course
                     </p>
                   </div>
 
@@ -245,8 +245,8 @@ function RightSidebar() {
 
         <ul className="space-y-4 text-sm text-gray-700">
           {[
-            "14 live 1-on-1 instructor-led sessions (60 mins each)",
-            "Learn with an experienced Gen AI mentor",
+            "13 live 1-on-1 instructor-led sessions (60 mins each)",
+            "Learn with an experienced Data Science  mentor",
             "Hands-on project every session",
             
             "Lifetime access to course content",

@@ -32,6 +32,20 @@ export default function CurriculumAccordion({ module }: any) {
             <>
               <strong>{`${module.label ?? "Module"} ${module.module}:`}</strong>{" "}
 <span>{module.title}</span>
+{/* 🔥 ADD THIS PART */}
+  {module.tools && (
+    <div className="flex gap-2 mt-2 flex-wrap">
+      {module.tools.map((tool: any, i: number) => (
+        <div
+          key={i}
+          className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded-full text-xs"
+        >
+          <img src={tool.logo} alt={tool.name} className="w-4 h-4" />
+          <span>{tool.name}</span>
+        </div>
+      ))}
+    </div>
+  )}
             </>
           )}
         </div>

@@ -240,52 +240,52 @@ generativeAi: [
   {
     question: "What is the Generative AI course for kids and teens?",
     answer:
-      "The Generative AI course teaches students how modern AI tools like ChatGPT and image generators work and how to build applications using them. Students learn to create AI-powered websites, tools, and automation systems through hands-on projects."
+      "The Generative AI course teaches students how to use powerful AI tools to create real-world projects like videos, images, websites, and automation systems. It focuses on hands-on learning where students build using tools like ChatGPT, Runway, HeyGen, and Make.com."
   },
   {
     question: "What will students learn in the Generative AI course?",
     answer:
-      "Students learn prompt engineering, how AI models generate responses, and how to build real applications using AI APIs. They work on projects like chatbots, AI websites, content generators, and automation tools while understanding how AI works behind the scenes."
+      "Students learn how to research, write, design, and create using AI tools. They build videos, generate images, create websites, automate tasks, and even develop simple AI agents that can perform real-world tasks."
   },
   {
     question: "Is the Generative AI course suitable for beginners?",
     answer:
-      "Yes, the course is beginner-friendly and starts from the basics. Students are guided step by step, making it easy to understand even without prior AI knowledge."
+      "Yes, the course is completely beginner-friendly. Students are guided step by step, starting from basic tool usage to building advanced AI-powered projects."
   },
   {
     question: "Do students need coding experience before joining?",
     answer:
-      "No prior coding experience is required. Everything is taught from scratch in a structured way."
+      "No coding experience is required. Students learn using no-code and low-code AI tools, making it easy to build powerful projects without programming knowledge."
   },
   {
     question: "What tools and technologies will students use?",
     answer:
-      "Students work with modern AI tools and platforms such as OpenAI APIs, Gemini, and other generative AI systems. They also learn how to integrate AI into websites, apps, and workflows."
+      "Students use modern AI tools such as ChatGPT, Gemini, Runway ML, HeyGen, ElevenLabs, Suno, Gamma, Make.com, and website builders like Replit and Lovable."
   },
   {
     question: "What kind of projects will students build?",
     answer:
-      "Students build real-world AI projects such as chatbots, AI-powered websites, content generators, resume builders, and automation tools. These projects help them apply concepts and build a strong portfolio."
+      "Students create AI avatar videos, posters and images, music and voice content, live websites, automated workflows, AI agents, and creative storytelling projects like comics and visual stories."
   },
   {
     question: "What age group is suitable for this course?",
     answer:
-      "The course is suitable for students from Grades 3 to 12. Content is adapted based on the student’s level and learning pace."
+      "The course is suitable for students from Grades 3 to 12, with content adapted based on the student’s level and learning pace."
   },
   {
     question: "How is this course different from Python & Machine Learning?",
     answer:
-      "Python & Machine Learning focuses on building models from scratch and learning programming deeply. Generative AI focuses on using powerful existing AI models to build real applications quickly and creatively."
+      "Python & Machine Learning focuses on coding and building models from scratch. Generative AI focuses on using powerful AI tools to quickly create real-world projects like videos, websites, and automation systems."
   },
   {
     question: "How long does the Generative AI course take to complete?",
     answer:
-      "The duration depends on the selected track, but most students complete the program in a few weeks to a few months."
+      "The course is designed as a structured program with multiple modules and projects, typically completed over a few weeks depending on the learning pace."
   },
   {
     question: "Will students receive a certificate after completion?",
     answer:
-      "Yes, students receive a recognized certificate after completing the course."
+      "Yes, students receive a recognized certificate after successfully completing the course and projects."
   }
 ],
 genaiWebDev: [
