@@ -276,7 +276,7 @@ export default function Home() {
               <div className="w-28 h-28 mx-auto mb-6 rounded-full bg-white flex items-center justify-center shadow-lg overflow-hidden">
                 <img
                   src="/asset/logo_final1.png"
-                  alt="StepToSTEM Logo"
+                  alt="stemxlearning Logo"
                   className="w-[96%] h-[96%] object-contain rounded-full"
                 />
               </div>
@@ -554,7 +554,7 @@ export default function Home() {
               <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg overflow-hidden">
                 <img
                   src="/asset/logo_final.png"
-                  alt="StepToSTEM Logo"
+                  alt="stemxlearning Logo"
                   className="w-18 h-18 object-contain"
                 />
               </div>

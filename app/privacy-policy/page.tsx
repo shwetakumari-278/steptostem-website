@@ -154,10 +154,10 @@ export default function PrivacyPolicyPage() {
               <p>
                 Website:{" "}
                 <a
-                  href="https://StepToSTEM.netlify.app"
+                  href="https://www.stemxlearning.com/"
                   className="text-blue-600 hover:underline"
                 >
-                  https://StepToSTEM.netlify.app
+                  https://www.stemxlearning.com/
                 </a>
               </p>
             </div>

@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://steptostem.netlify.app",
+  siteUrl: "https://www.stemxlearning.com/",
   generateRobotsTxt: true,
 };

@@ -110,7 +110,7 @@ console.log("FINAL COURSE =", finalCourse);
           <div className="relative w-12 h-12 rounded-full overflow-hidden border">
             <img
               src="/asset/chatbot.jpg"
-              alt="StepToSTEM Demo"
+              alt="stemxlearning Demo"
               className="w-full h-full object-cover"
             />
           </div>

@@ -1,6 +1,6 @@
-# StepToSTEM - EdTech Website
+# stemxlearning - EdTech Website
 
-A modern, interactive website for StepToSTEM, an edtech startup focused on empowering students aged 9-18 in AI/ML, Web Development, Game Design, and Arduino programming.
+A modern, interactive website for stemxlearning, an edtech startup focused on empowering students aged 9-18 in AI/ML, Web Development, Game Design, and Arduino programming.
 
 ## 🚀 Features
 
@@ -31,7 +31,7 @@ A modern, interactive website for StepToSTEM, an edtech startup focused on empow
 ## 📁 Project Structure
 
 ```
-steptostem-website/
+stemxlearning-website/
 ├── app/
 │   ├── globals.css          # Global styles and Tailwind imports
 │   ├── layout.tsx           # Root layout component
@@ -62,7 +62,7 @@ steptostem-website/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd steptostem-website
+   cd stemxlearning-website
    ```
 
 2. **Install dependencies**
@@ -98,7 +98,7 @@ Each course has its own color scheme:
 ### Assets
 
 Place your images in the `asset/` folder:
-- `steptostem_com_logo.jpeg` - Company logo
+- `stemxlearning_com_logo.jpeg` - Company logo
 - `cursor.png` - Custom cursor
 - `chatbot.jpg` - Chat service button
 - Course-specific images for each program
@@ -167,7 +167,7 @@ npm run lint
 
 ## 📄 License
 
-This project is proprietary to StepToSTEM. All rights reserved.
+This project is proprietary to stemxlearning. All rights reserved.
 
 ## 🤝 Contributing
 

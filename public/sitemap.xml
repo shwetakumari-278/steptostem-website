@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>https://www.stemxlearning.com/sitemap-0.xml</loc>
-  </sitemap>
-</sitemapindex>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.stemxlearning.com/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/blog/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/hackathons/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/ai-ml/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/generative-ai/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/gen-ai-data-science/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/web-dev/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/game-design/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/app-development/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/blog/drag-and-drop-vs-typing-code-which-coding-path-is-right-for-your-child/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/blog/what-schools-dont-teach-about-technology/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/blog/chatgpt-for-students-smart-study-buddy-or-shortcut/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/blog/ai-for-kids-how-children-are-already-using-artificial-intelligence/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/blog/screen-time-that-actually-teaches-skills/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/blog/is-roblox-just-a-game-or-a-learning-tool-for-kids/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/privacy-policy/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/ai-ml/beginner/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/ai-ml/advanced/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/ai-ml/ml/</loc>
+  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
