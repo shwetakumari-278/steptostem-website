@@ -16,8 +16,20 @@ export const metadata: Metadata = {
   description:
     "STEMxLearning offers 1-on-1 live online classes in coding and AI for K-12 students with a mastery-based learning approach to ensure deep understanding and real skill development.",
 
-  keywords: "edtech, STEM, AI/ML, web development, coding",
-  authors: [{ name: "STEMxLearning Team" }],
+  keywords: [
+    "STEMxLearning",
+    "STEMx Learning",
+    "online coding classes for kids",
+    "AI classes for kids",
+    "Python classes for kids",
+    "machine learning for kids",
+    "generative AI classes for kids",
+    "data science classes for kids",
+    "web development classes for kids",
+    "game design classes for kids",
+    "app development classes for kids",
+    "robotics classes for kids",
+  ],
 
   alternates: {
     canonical: "/",

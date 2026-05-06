@@ -91,3 +91,11 @@
 <url><loc>https://www.stemxlearning.com/courses/game-design/scratch/</loc><lastmod>2026-01-31T16:16:23.518Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://www.stemxlearning.com/courses/web-dev/</loc><lastmod>2026-01-31T16:16:23.518Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
+<url>
+  <loc>https://www.stemxlearning.com/courses/generative-ai/</loc>
+  <lastmod>2026-05-04</lastmod>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/courses/gen-ai-data-science/</loc>
+  <lastmod>2026-05-04</lastmod>
+</url>
