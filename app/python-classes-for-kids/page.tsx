@@ -160,7 +160,41 @@ export default function PythonClassesPage() {
               </ul>
             </section>
 
-            
+            {/* PYTHON LEARNING PATHS */}
+<section className="space-y-6">
+  <h2 className="text-2xl font-bold">Choose Your Python Learning Path</h2>
+  <p className="text-gray-600">
+    Two structured paths — start from the basics or level up to advanced Python.
+    Students can progress from beginner to machine learning at their own pace.
+  </p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {paths.map((path, i) => (
+      <Link
+        key={i}
+        href={path.href}
+        className="group bg-white rounded-2xl overflow-hidden shadow-lg border hover:shadow-2xl transition"
+      >
+        <div className="relative">
+          <img
+            src={path.image}
+            alt={path.title}
+            className="h-36 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+          <span className={`absolute top-3 left-3 text-xs font-semibold text-white px-3 py-1 rounded-full bg-gradient-to-r ${path.color}`}>
+            {path.badge}
+          </span>
+        </div>
+        <div className="p-4 space-y-2">
+          <h3 className="font-bold text-base">{path.title}</h3>
+          <p className="text-xs text-gray-600 leading-relaxed">{path.description}</p>
+          <span className="inline-block pt-1 text-purple-600 font-semibold group-hover:underline text-sm">
+            View Course →
+          </span>
+        </div>
+      </Link>
+    ))}
+  </div>
+</section>
 
             {/* WHAT STUDENTS LEARN */}
             <section className="space-y-4">
