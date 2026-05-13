@@ -82,29 +82,6 @@ export const courseProjects = {
 }
 ,
   ],
- "genai-web-dev": [
-  {
-    title: "AI-Powered Fashion E-Commerce Store",
-    description:
-      "Students build a complete professional online shop with a homepage, product collection, product detail page, and a working cart system — all built and deployed live using GitHub and Netlify.",
-    image: "/projects/genai-fashion-shop.png",
-    tag: "Web Development & Deployment",
-  },
-  {
-    title: "AI Chatbot Widget",
-    description:
-      "Students install and set up Ollama locally, run a real AI model on their machine, build a chatbot, and embed it directly into their website as an interactive widget for users.",
-    image: "/projects/genai-chatbot-widget.webp",
-    tag: "AI Integration",
-  },
-  {
-    title: "AI Developer Portfolio",
-    description:
-      "Students use prompt engineering and AI tools to design and build their own developer portfolio website showcasing all their projects — then deploy it live for the world to see.",
-    image: "/projects/genai-portfolio1.webp",
-    tag: "Prompt Engineering & Deployment",
-  },
-],
 "genai-data-science": [
   {
     title: "Student Performance Predictor",
@@ -149,6 +126,30 @@ export const courseProjects = {
     tag: "Speech Recognition",
   },
 ],
+ "genai-web-dev": [
+  {
+    title: "AI-Powered Fashion E-Commerce Store",
+    description:
+      "Students build a complete professional online shop with a homepage, product collection, product detail page, and a working cart system — all built and deployed live using GitHub and Netlify.",
+    image: "/projects/genai-fashion-shop.png",
+    tag: "Web Development & Deployment",
+  },
+  {
+    title: "AI Chatbot Widget",
+    description:
+      "Students install and set up Ollama locally, run a real AI model on their machine, build a chatbot, and embed it directly into their website as an interactive widget for users.",
+    image: "/projects/genai-chatbot-widget.webp",
+    tag: "AI Integration",
+  },
+  {
+    title: "AI Developer Portfolio",
+    description:
+      "Students use prompt engineering and AI tools to design and build their own developer portfolio website showcasing all their projects — then deploy it live for the world to see.",
+    image: "/projects/genai-portfolio1.webp",
+    tag: "Prompt Engineering & Deployment",
+  },
+],
+
 "genai-agentic-ai": [
   {
     title: "AI Research Assistant Agent",

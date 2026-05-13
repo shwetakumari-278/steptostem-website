@@ -59,8 +59,67 @@ export default function BlogSlugPage({ params }: { params: { slug: string } }) {
 
   if (!blog) notFound();
 
+  const blogPostSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.title,
+    description: blog.excerpt,
+    image: `https://www.stemxlearning.com${blog.image}`,
+    author: {
+      "@type": "Organization",
+      name: "STEMxLearning",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "STEMxLearning",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.stemxlearning.com/favicon.png",
+      },
+    },
+    datePublished: blog.date,
+    dateModified: blog.date,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.stemxlearning.com/blog/${blog.slug}`,
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.stemxlearning.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://www.stemxlearning.com/blog/",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: blog.title,
+        item: `https://www.stemxlearning.com/blog/${blog.slug}`,
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
 
       <section className="relative overflow-hidden py-24">

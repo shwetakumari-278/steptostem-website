@@ -22,8 +22,69 @@ import CourseOfferBar from "@/components/CourseOfferBar";
 export default function AIBeginnerCoursePage() {
   const modules = curriculum["python-beginner"].modules;
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.stemxlearning.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Courses",
+        item: "https://www.stemxlearning.com/#courses",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Python & Machine Learning",
+        item: "https://www.stemxlearning.com/courses/ai-ml/",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Python Beginner",
+        item: "https://www.stemxlearning.com/courses/ai-ml/beginner/",
+      },
+    ],
+  };
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Python Programming for Kids (Beginner)",
+    description:
+      "Live 1:1 beginner Python course for K-12 students. Learn Python programming, logical thinking, and build real projects from scratch with a mastery-based approach.",
+    provider: {
+      "@type": "Organization",
+      name: "STEMxLearning",
+      sameAs: "https://www.stemxlearning.com/",
+    },
+    url: "https://www.stemxlearning.com/courses/ai-ml/beginner/",
+    educationalLevel: "Grade 4-12",
+    teaches: [
+      "Python Programming",
+      "Logical Thinking",
+      "Problem Solving",
+      "Loops and Functions",
+      "Mini Projects",
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
       {/* HEADER */}
       <Header />
 

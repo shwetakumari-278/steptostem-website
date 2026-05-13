@@ -44,7 +44,48 @@ export const courseFaqs: Record<
       "The time to learn web development depends on the course level. Beginner courses usually take a few weeks to a few months. Kids progress gradually through practice and projects."
   }
 ],
-
+onlineCodingIndia: [
+  {
+    question: "What is the right age for kids to start coding?",
+    answer:
+      "Children can start coding as early as Grade 3. Our courses are designed for Grade 3–12 students with beginner-friendly content that grows with the student.",
+  },
+  {
+    question: "Are these classes beginner-friendly?",
+    answer:
+      "Yes. All our courses start from the basics. No prior coding or AI experience is required to join any course at STEMxLearning.",
+  },
+  {
+    question: "Are these online coding classes suitable for students in India?",
+    answer:
+      "Absolutely. All classes are conducted online via live 1:1 sessions, making them accessible to students across India — from any city or town.",
+  },
+  {
+    question: "Do students build real projects?",
+    answer:
+      "Yes. Every course is project-based. Students build real websites, Python programs, AI tools, automation systems, and data science projects.",
+  },
+  {
+    question: "Is it a 1:1 class or a group class?",
+    answer:
+      "All our sessions are live 1:1 — one student, one dedicated mentor. This ensures personalized attention and a mastery-based learning pace tailored to each child.",
+  },
+  {
+    question: "What coding languages and tools do kids learn?",
+    answer:
+      "Depending on the course, students learn Python programming and work with AI tools like ChatGPT, Gemini, Runway, and Make.com.",
+  },
+  {
+    question: "How is STEMxLearning different from other coding platforms?",
+    answer:
+      "STEMxLearning uses a mastery-based 1:1 learning model — we move forward only when concepts are fully clear. Students build real projects, get regular parent updates, and learn at their own pace with a dedicated mentor.",
+  },
+  {
+    question: "What device does my child need to attend classes?",
+    answer:
+      "A laptop or desktop with a stable internet connection is sufficient. No special software or setup is required before the first session.",
+  },
+],
   appDevelopment: [
   {
     question: "What is app development for kids?",

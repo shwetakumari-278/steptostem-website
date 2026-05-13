@@ -576,16 +576,28 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Courses</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>Python & Machine Learning</li>
-                <li>Generative AI</li> 
-                <li>Web Development</li>
-                <li>Game Design</li>
-                <li>App-Development</li>
-              </ul>
-            </div>
+        <div>
+  <h4 className="text-lg font-semibold mb-4">Courses</h4>
+  <ul className="space-y-2 text-gray-300">
+    <li><Link href="/courses/ai-ml" className="hover:text-white transition-colors">Python & Machine Learning</Link></li>
+    <li><Link href="/courses/generative-ai" className="hover:text-white transition-colors">Generative AI</Link></li>
+    <li><Link href="/courses/gen-ai-data-science" className="hover:text-white transition-colors">Generative AI with Data Science</Link></li>
+    <li>Web Development</li>
+    <li>Game Design</li>
+    <li>App Development</li>
+  </ul>
+</div>
+
+<div>
+  <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+  <ul className="space-y-2 text-gray-300">
+    <li><Link href="/online-coding-classes-for-kids-india" className="hover:text-white transition-colors">Online Coding Classes for Kids in India</Link></li>
+    <li><Link href="/python-classes-for-kids" className="hover:text-white transition-colors">Python Classes for Kids</Link></li>
+    <li><Link href="/ai-classes-for-kids" className="hover:text-white transition-colors">
+  AI Classes for Kids
+</Link></li>
+  </ul>
+</div>
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>

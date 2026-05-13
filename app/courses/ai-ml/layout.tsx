@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Python Programming & Machine Learning Course for Kids | STEMxLearning",
+  title: "Python & Machine Learning Classes for Kids & Teens | STEMxLearning",
   description:
-    "A structured Python and Machine Learning program where students build strong coding fundamentals, work with real datasets, and create meaningful projects. Designed to help students develop deep understanding, logical thinking, and real programming confidence step by step.",
+    "Live 1:1 Python and Machine Learning classes for K-12 students. Learn Python programming, data analysis, and ML through real projects with a mastery-based approach. Beginner-friendly. No prior experience needed.",
+  alternates: {
+    canonical: "/courses/ai-ml",
+  },
 };
 
-export default function AIMLLayout({
+export default function AiMlLayout({
   children,
 }: {
   children: React.ReactNode;

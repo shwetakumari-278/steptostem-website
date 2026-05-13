@@ -23,8 +23,65 @@ import BookDemoButton from "@/components/BookDemoButton";
 
 export default function GenerativeAICoursePage() {
   const modules = curriculum["generative-ai"]?.modules ?? [];
+ const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.stemxlearning.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Courses",
+        item: "https://www.stemxlearning.com/#courses",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Generative AI",
+        item: "https://www.stemxlearning.com/courses/generative-ai/",
+      },
+    ],
+  };
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Generative AI for Kids & Teens",
+    description:
+      "Live 1:1 Generative AI course for K-12 students. Learn ChatGPT, Gemini, Runway, Make.com, prompt engineering, AI automation, websites, and AI agents through real projects.",
+    provider: {
+      "@type": "Organization",
+      name: "STEMxLearning",
+      sameAs: "https://www.stemxlearning.com/",
+    },
+    url: "https://www.stemxlearning.com/courses/generative-ai/",
+    educationalLevel: "Grade 3-12",
+    teaches: [
+      "Generative AI",
+      "Prompt Engineering",
+      "AI Automation",
+      "AI Websites",
+      "AI Agents",
+      "ChatGPT",
+      "Gemini",
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
       <Header />
       <CourseOfferBar
       course="all our courses"

@@ -21,8 +21,69 @@ import { courseProjects } from "@/data/courseProjects";
 export default function AIAdvancedCoursePage() {
   const modules = curriculum["python-advanced"].modules;
 
+ const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.stemxlearning.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Courses",
+        item: "https://www.stemxlearning.com/#courses",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Python & Machine Learning",
+        item: "https://www.stemxlearning.com/courses/ai-ml/",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Python Advanced",
+        item: "https://www.stemxlearning.com/courses/ai-ml/advanced/",
+      },
+    ],
+  };
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Python Programming Advanced for Kids & Teens",
+    description:
+      "Live 1:1 Advanced Python course for K-12 students. Learn OOP, data structures, data analysis, and build complete real-world applications through a mastery-based approach.",
+    provider: {
+      "@type": "Organization",
+      name: "STEMxLearning",
+      sameAs: "https://www.stemxlearning.com/",
+    },
+    url: "https://www.stemxlearning.com/courses/ai-ml/advanced/",
+    educationalLevel: "Grade 5-12",
+    teaches: [
+      "Advanced Python Programming",
+      "Object Oriented Programming",
+      "Data Structures",
+      "Data Analysis",
+      "Data Visualization",
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
       {/* HEADER */}
       <Header />
 <CourseOfferBar

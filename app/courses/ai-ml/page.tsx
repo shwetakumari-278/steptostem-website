@@ -27,8 +27,63 @@ import BookDemoButton from "@/components/BookDemoButton";
 export default function AICoursePage() {
   const courseKey = "ai-ml";
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.stemxlearning.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Courses",
+        item: "https://www.stemxlearning.com/#courses",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Python & Machine Learning",
+        item: "https://www.stemxlearning.com/courses/ai-ml/",
+      },
+    ],
+  };
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Python Programming & Machine Learning for Kids & Teens",
+    description:
+      "Live 1:1 Python and Machine Learning course for K-12 students. Learn Python programming, data analysis, and build real ML models through a structured mastery-based learning path.",
+    provider: {
+      "@type": "Organization",
+      name: "STEMxLearning",
+      sameAs: "https://www.stemxlearning.com/",
+    },
+    url: "https://www.stemxlearning.com/courses/ai-ml/",
+    educationalLevel: "Grade 4-12",
+    teaches: [
+      "Python Programming",
+      "Data Analysis",
+      "Machine Learning",
+      "Data Visualization",
+      "Object Oriented Programming",
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
       <Header />
 <CourseOfferBar
       course="all our courses"

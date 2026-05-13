@@ -21,8 +21,63 @@ import CourseOfferBar from "@/components/CourseOfferBar";
 export default function GenAIDataScienceCoursePage() {
   const modules = curriculum["genai-data-science"]?.modules ?? [];
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.stemxlearning.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Courses",
+        item: "https://www.stemxlearning.com/#courses",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Generative AI with Data Science",
+        item: "https://www.stemxlearning.com/courses/gen-ai-data-science/",
+      },
+    ],
+  };
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Generative AI for Data Science",
+    description:
+      "Live 1:1 Generative AI and Data Science course for K-12 students. Learn data analysis, visualization, machine learning models, and build real AI-powered projects.",
+    provider: {
+      "@type": "Organization",
+      name: "STEMxLearning",
+      sameAs: "https://www.stemxlearning.com/",
+    },
+    url: "https://www.stemxlearning.com/courses/gen-ai-data-science/",
+    educationalLevel: "Grade 5-12",
+    teaches: [
+      "Data Analysis",
+      "Data Visualization",
+      "Machine Learning",
+      "Generative AI",
+      "Predictive Modeling",
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
       <Header />
       <CourseOfferBar
         course="all our courses"

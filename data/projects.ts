@@ -1,4 +1,4 @@
-export const projectsByCourse = {"ai-ml": [
+export const projectsByCourse =   {"ai-ml": [
   {
     image: "/projects/ai-chatbot.jpg",
     title: "AI Chatbot",
