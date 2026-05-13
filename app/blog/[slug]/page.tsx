@@ -59,31 +59,34 @@ export default function BlogSlugPage({ params }: { params: { slug: string } }) {
 
   if (!blog) notFound();
 
-  const blogPostSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: blog.title,
-    description: blog.excerpt,
-    image: `https://www.stemxlearning.com${blog.image}`,
-    author: {
-      "@type": "Organization",
-      name: "STEMxLearning",
+ const isoDate = new Date(blog.date).toISOString().split("T")[0] + "T00:00:00+05:30";
+
+const blogPostSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: blog.title,
+  description: blog.excerpt,
+  image: `https://www.stemxlearning.com${blog.image}`,
+  author: {
+    "@type": "Organization",
+    name: "STEMxLearning",
+    url: "https://www.stemxlearning.com",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "STEMxLearning",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.stemxlearning.com/favicon.png",
     },
-    publisher: {
-      "@type": "Organization",
-      name: "STEMxLearning",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.stemxlearning.com/favicon.png",
-      },
-    },
-    datePublished: blog.date,
-    dateModified: blog.date,
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.stemxlearning.com/blog/${blog.slug}`,
-    },
-  };
+  },
+  datePublished: isoDate,
+  dateModified: isoDate,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `https://www.stemxlearning.com/blog/${blog.slug}`,
+  },
+};
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

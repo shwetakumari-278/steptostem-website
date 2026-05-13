@@ -13,6 +13,22 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://www.stemxlearning.com/online-coding-classes-for-kids-india/</loc>
+  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/python-classes-for-kids/</loc>
+  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.stemxlearning.com/ai-classes-for-kids/</loc>
+  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+
+<url>
   <loc>https://www.stemxlearning.com/blog/</loc>
   <lastmod>2026-05-06T09:34:26+00:00</lastmod>
   <priority>0.80</priority>
@@ -37,21 +53,7 @@
   <lastmod>2026-05-06T09:34:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://www.stemxlearning.com/courses/web-dev/</loc>
-  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.stemxlearning.com/courses/game-design/</loc>
-  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.stemxlearning.com/courses/app-development/</loc>
-  <lastmod>2026-05-06T09:34:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
 <url>
   <loc>https://www.stemxlearning.com/blog/drag-and-drop-vs-typing-code-which-coding-path-is-right-for-your-child/</loc>
   <lastmod>2026-05-06T09:34:26+00:00</lastmod>
