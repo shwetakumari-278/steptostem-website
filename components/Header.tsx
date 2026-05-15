@@ -24,15 +24,15 @@ export default function Header() {
 
   // ✅ CLEAN NAVIGATION (NO FEATURES)
   const navigation = [
-    { name: "Home", href: "/" },
+  { name: "Home", href: "/" },
 
-    // 👇 only add Locations if user is already on location pages
-    ...(isLocationPage ? [{ name: "Locations", href: "/locations" }] : []),
+  ...(isLocationPage ? [{ name: "Locations", href: "/locations" }] : []),
 
-    { name: "Courses", href: "/#courses" },
-    { name: "Contact", href: "/#contact" },
-    { name: "Blog", href: "/blog" },
-  ];
+  { name: "Courses", href: "/#courses" },
+  { name: "About", href: "/about-stemxlearning" },
+  { name: "Contact", href: "/#contact" },
+  { name: "Blog", href: "/blog" },
+];
 
   return (
     <motion.header
