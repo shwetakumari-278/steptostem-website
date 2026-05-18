@@ -28,6 +28,12 @@
   <priority>0.90</priority>
 </url>
 <url>
+  <loc>https://www.stemxlearning.com/student-projects/</loc>
+  <lastmod>2026-05-16T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
   <loc>https://www.stemxlearning.com/about-stemxlearning/</loc>
   <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   <priority>0.80</priority>

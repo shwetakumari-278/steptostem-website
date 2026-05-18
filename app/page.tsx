@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import CourseFAQ from "@/components/CourseFAQ";
 import HomeBlogs from "@/components/HomeBlogs";
+import StudentProjectsPreview from "@/components/StudentProjectsPreview";
 
 import {
   Brain,
@@ -440,7 +441,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+<StudentProjectsPreview />
       {/* Testimonials Section */}
       <section className="py-20 relative overflow-hidden">
         {/* Background Theme Image */}
@@ -596,6 +597,8 @@ export default function Home() {
     <li><Link href="/ai-classes-for-kids" className="hover:text-white transition-colors">
   AI Classes for Kids
 </Link></li>
+<Link href="/student-projects/">Student Projects</Link>
+
   </ul>
 </div>
 
